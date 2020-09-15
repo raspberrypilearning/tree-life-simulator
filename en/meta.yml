@@ -1,0 +1,11 @@
+title: planting-trees
+hero_image: images/banner.png
+description: planting-trees description
+version: 4
+listed: false
+copyedit: false
+last_tested: "2020-09-15"
+steps:
+  - title: Introduction
+  - title: Step title
+  - title: What next?
