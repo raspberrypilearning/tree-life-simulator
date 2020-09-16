@@ -1,6 +1,6 @@
 ## Introduction
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
+Use Scratch to create a simulation to show the impacts humans and natural disasters have on the environment.
 
 ### What you will make
 
@@ -27,8 +27,6 @@ title: What you will need
 ### Software
 
 + Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
 
 ### Downloads
 
