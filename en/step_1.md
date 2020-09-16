@@ -1,14 +1,14 @@
 ## Introduction
 
-Use Scratch to create a simulation to show the impacts humans and natural disasters have on the environment.
+Use Scratch to create a simulation to show the impact to wildlife of both planting trees and deforestation.
 
 ### What you will make
 
 --- no-print ---
-Add instructions for interacting with the embedded content here.
+Click on the green flag then move the slider to alter planting speed of new trees and click on the tree feller to request wood. Keep an eye out for natural disasters though - they're very disruptive!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
+  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/425670876/?autostart=false" frameborder="0"></iframe>
 </div>
 --- /no-print ---
 
@@ -39,9 +39,9 @@ title: What you will need
 title: What you will learn
 ---
 
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
++ How to create and use `variables`{:class="block3looks"} to store numbers
++ How to use `motion`{:class="block3looks"} and `looks`{:class="block3looks"} to create animation
++ How to `sense`{:class="block3looks"} `touch`{:class="block3looks"} then react
 
 --- /collapse ---
 
