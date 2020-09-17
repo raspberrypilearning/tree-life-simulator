@@ -43,9 +43,18 @@ end
 
 --- /task ---
 
+It’s important that we plant a variety of trees to house a range of animals.
+
+The **Tree** sprite has 3 costumes (tree 1, tree 2 and tree 3). Use the `random`{:class="block3operators"} operator to vary the looks of the trees and add variety to your forest.
+
 --- task ---
 
-Step content...
+Start a new script with a `when I start as a clone`{:class="block3control"} block. Add a `switch costume to`{:class="block3looks"} block to the script. Then drag a `pick random 1 to 10`{:class="block3operators"} block into the `switch costume to`{:class="block3looks"} block. Change the values `pick random`{:class="block3operators"} `1` and `10` to `pick random`{:class="block3operators"} `1` to `3`.  
+
+```blocks3
+when I start as a clone
+switch costume to (pick random (1) to (3))
+```
 
 --- /task ---
 
