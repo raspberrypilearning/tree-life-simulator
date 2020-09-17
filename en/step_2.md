@@ -27,9 +27,19 @@ repeat (50)
 
 --- /task ---
 
+Plant the new trees in random positions across the stage.
+
 --- task ---
 
-Step content...
+Use a `go to random position`{:class="block3motion"} block to vary where the trees grow. Then add a `create clone of myself`{:class="block3control"} block to create the forest.
+
+```blocks3
+when flag clicked
+repeat (50)
+  + go to (random position v)
+  + create clone of (myself v)
+end
+```
 
 --- /task ---
 
