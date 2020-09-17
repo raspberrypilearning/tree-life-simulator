@@ -49,7 +49,7 @@ The **Tree** sprite has 3 costumes (tree 1, tree 2 and tree 3). Use the `random`
 
 --- task ---
 
-Start a new script with a `when I start as a clone`{:class="block3control"} block. Add a `switch costume to`{:class="block3looks"} block to the script. Then drag a `pick random 1 to 10`{:class="block3operators"} block into the `switch costume to`{:class="block3looks"} block. Change the values `pick random`{:class="block3operators"} `1` and `10` to `pick random`{:class="block3operators"} `1` to `3`.  
+Start a new script with a `when I start as a clone`{:class="block3control"} block. Add a `switch costume to`{:class="block3looks"} block to the script. Then drag a `pick random`{:class="block3operators"}`1``to`{:class="block3operators"}`10` block into the `switch costume to`{:class="block3looks"} block. Change the values `1` and `10` to `1` to `3`.  
 
 ```blocks3
 when I start as a clone
