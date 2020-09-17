@@ -39,9 +39,9 @@ title: What you will need
 title: What you will learn
 ---
 
-+ How to create and use `variables`{:class="block3looks"} to store numbers
-+ How to use `motion`{:class="block3looks"} and `looks`{:class="block3looks"} to create animation
-+ How to `sense`{:class="block3looks"} `touch`{:class="block3looks"} then react
++ How to create and use `variables`{:class="block3variables"} to store numbers
++ How to use `motion`{:class="block3motion"} and `looks`{:class="block3looks"} to create animation
++ How to `sense`{:class="block3sensing"} `touch`{:class="block3sensing"} then react
 
 --- /collapse ---
 
