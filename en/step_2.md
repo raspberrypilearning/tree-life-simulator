@@ -1,6 +1,6 @@
 ## Create a forest
 
-Add an introductory sentence. What will learners achieve by the end of this step?
+Did you know that forests cover 30% of the Earth’s land surface? In this step you will add code to create a forest with a variety of different trees.
 
 --- task ---
 
@@ -8,9 +8,34 @@ If working **online**, open the [starter project](http://rpf.io/p/en/projectName
 
 If working **offline**, open the project [starter file](http://rpf.io/p/en/projectName-get){:target="_blank"} in the Scratch offline editor. If you need to download and install Scratch, you can find it [here](https://scratch.mit.edu/download){:target="_blank"}.
 
-You should see...
+You should see a green grassland background.
 
 ![starter project](images/starter_project.png)
+
+--- /task ---
+
+Use a loop to plant 50 trees to start your forest.
+
+--- task ---
+
+Go to the Sprites pane and click on the **Tree** sprite. Drag a `when flag clicked`{:class="block3events"} block and `repeat 10`{:class="block3control"} block onto your Code area. For the `repeat 10`{:class="block3control"} block change the value `10` to `50`.
+
+```blocks3
+when flag clicked
+repeat 50
+```
+
+--- /task ---
+
+--- task ---
+
+Step content...
+
+--- /task ---
+
+--- task ---
+
+Step content...
 
 --- /task ---
 
