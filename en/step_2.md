@@ -36,8 +36,8 @@ Use a `go to random position`{:class="block3motion"} block to vary where the tre
 ```blocks3
 when flag clicked
 repeat (50)
-  + go to (random position v)
-  + create clone of (myself v)
+  + go to [random position v]
+  + create clone of [myself v]
 end
 ```
 
