@@ -22,8 +22,7 @@ Go to the Sprites pane and click on the **Tree** sprite. Drag a `when flag click
 
 ```blocks3
 when flag clicked
-repeat 50
-end
+repeat (50)
 ```
 
 --- /task ---
