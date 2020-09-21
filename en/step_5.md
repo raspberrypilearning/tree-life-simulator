@@ -1,4 +1,4 @@
-## The impact on wildlife
+## Human deforestation
 
 Text.
 
