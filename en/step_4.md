@@ -4,7 +4,7 @@ Scientists monitor trees and wildlife. They record the cover (size), variety and
 
 --- task ---
 
-Create a new variable to store the number of trees. Call this variable `trees`.
+Create a new variable to store the number of trees. Call this variable `trees`{:class="block3variables"}.
 
 --- /task ---
 
@@ -30,11 +30,11 @@ end
 
 --- /task ---
 
-The survival rate for new trees is 80% meaning that 2 trees out of every 10 planted will die of natural causes before they are fully grown. Add new fully-grown trees to your count to see how many there are whilst the simulation is running.
+The survival rate for new trees is estimated to be 80% meaning that 2 trees out of every 10 planted will die of natural causes before they are fully-grown. Add new fully-grown trees to your `trees`{:class="block3variables"} count to see how many there are whilst the simulation is running.
 
 --- task ---
 
-At the end of your `when I start as a clone` script add a `change trees by 1` block.
+At the end of your `when I start as a clone`{:class="block3control"} script add a `change trees by 1`{:class="block3variables"} block.
 
 ```blocks3
 when I start as a clone
@@ -49,11 +49,11 @@ end
 
 --- /task ---
 
-We can now count our new trees but even fully-grown trees can die or be chopped down through both human and natural deforestation. We need to reduce our count of trees if a tree has been touched by the **Tree feller** or **Natural Disaster** sprites.
+We can now count our new trees but even fully-grown trees can die or be chopped down through either human and natural deforestation. We need to reduce our count of trees if a tree has been touched by the **Tree feller** sprite or **Natural Disaster** sprite.
 
 --- task ---
 
-Add a `wait until` block to the end of your code. Use an `or operator` to allow a choice of events. In the first circle of your `or` block add a `touching mouse-pointer ?` block and change the value to `Tree feller`. In the second circle of your `or` block add another `touching mouse-pointer ?` block and change the value to 'Natural Disaster'.
+Add a `wait until`{:class="block3control"} block to the end of your code. Use an `or`{:class="block3operators"} operator to allow a choice of events. In the first circle of your `or`{:class="block3operators"} block add a `touching mouse-pointer ?`{:class="bsensing"} block and change the value to `Tree feller`. In the second circle of your `or`{:class="block3operators"} block add another `touching mouse-pointer ?`{:class="block3sensing"} block and change the value to 'Natural Disaster'.
 
 ```blocks3
 when I start as a clone
