@@ -57,9 +57,9 @@ end
 
 --- task ---
 
-The slider will control the speed the trees are planted but currently the code is set to always wait 1 seconds. Moving the slider to the right will speed up the planting whilst moving to the left will decrease the speed.
+The slider will control the speed the trees grow but currently the code is set to always wait 1 seconds. Moving the slider to the right will speed up the growth whilst moving to the left will decrease the growth.
 
-Add a minus operator entering the value `5` in the first circle. Drag a rounded `planting speed` variable into the second circle. This means if `planting speed` equals `4` the wait time will be 1 second but if the `planting speed` equals `2` the wait time will be slower at 3 seconds.
+Add a `minus operator`{:class="block3operators"} entering the value `5` in the first circle. Drag a rounded `forest health`{:class="block3variables"} variable into the second circle. This means if `forest health`{:class="block3variables"} equals `4` the wait time will be 1 second but if `forest health` equals `2` the wait time will be slower at 3 seconds.
 
 ```blocks3
 when flag clicked
@@ -69,7 +69,7 @@ create clone of [myself v]
 end
 forever
 go to [random position v]
-+ wait ((5)-(planting speed)) seconds
++ wait ((5)-(forest health)) seconds
 create clone of [myself v]
 end
 ```
