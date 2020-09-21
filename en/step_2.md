@@ -49,7 +49,7 @@ The **Tree** sprite has 3 costumes (tree 1, tree 2 and tree 3). Use the `random`
 
 --- task ---
 
-Start a new script with a `when I start as a clone`{:class="block3control"} block. Add a `switch costume to`{:class="block3looks"} block to the script. Then drag a `pick random`{:class="block3operators"}`1``to`{:class="block3operators"}`10` block into the `switch costume to`{:class="block3looks"} block. Change the values `1` and `10` to `1` to `3`.  
+Start a new script with a `when I start as a clone`{:class="block3control"} block. Add a `switch costume to`{:class="block3looks"} block to the script. Then drag a `pick random`{:class="block3operators"}`1``to`{:class="block3operators"}`10` block into the `switch costume to`{:class="block3looks"} block. Change the values `1` and `10` to `1` and `3`.  
 
 ```blocks3
 when I start as a clone
@@ -60,7 +60,25 @@ switch costume to (pick random (1) to (3))
 
 --- task ---
 
-Step content...
+Test your project by clicking on the green flag. Make sure your forest has a variety of trees.
+
+--- /task ---
+
+Trees don't just appear fully-grown, they get bigger over time. Set up a repeat loop to change the size slowly creating an animated growth appearance.
+
+--- task ---
+
+To start small tell your cloned tree to `set size to `{:class="block3looks"}`100``%`{:class="block3looks"} but change the value to `0`. Next add a `repeat`{:class="block3control"}`10` block changing the value to `2`. Lastly the tree needs to pause after each size adjustment, add a `wait`{:class="block3control"} `1` `seconds`{:class="block3control"} block and change the value to `0.1` so that it changes quickly.  
+
+```blocks3
+when I start as a clone
+switch costume to (pick random (1) to (3))
++ set size to (0)%
++ repeat (10)
++ change size by (2)
++ wait 0.1 seconds
++ end
+```
 
 --- /task ---
 
