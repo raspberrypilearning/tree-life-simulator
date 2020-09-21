@@ -82,4 +82,10 @@ switch costume to (pick random (1) to (3))
 
 --- /task ---
 
+--- task ---
+
+Test your project again. Your trees will now grow like they would in a real forest.
+
+--- /task ---
+
 --- save ---
