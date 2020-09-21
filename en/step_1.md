@@ -1,11 +1,11 @@
 ## Introduction
 
-Use Scratch to create a simulation to show the impact to wildlife of both planting trees and deforestation.
+Use Scratch to create a simulation to show the impact to trees, wildlife and CO2 levels of both a healthy forest conditions and deforestation.
 
 ### What you will make
 
 --- no-print ---
-Click on the green flag then move the slider to alter planting speed of new trees and click on the tree feller to request wood. Keep an eye out for natural disasters though - they're very disruptive!
+Click on the green flag then move the slider to alter the forest health for growing trees and click on the tree feller to request wood. Keep an eye out for natural disasters though - they're very disruptive!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/425670876/?autostart=false" frameborder="0"></iframe>

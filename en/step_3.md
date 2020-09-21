@@ -1,8 +1,8 @@
-## Plant more trees
+## Grow more trees
 
-In the simulation we want to see the impact of planting trees at a faster or slower speed.
+In the simulation we want to see the impact of trees growing at a faster or slower speed. The speed at which a forest grows depends on a number of factors such as soil quality, sunlight and water.
 
-The speed will be stored in a variable.
+The growing speed will be stored in a variable.
 
 --- task ---
 
@@ -10,7 +10,7 @@ Create a new `variable`{:class="block3variables"} by clicking on the `Variables`
 
 Then click on the **Make a Variable** button.
 
-You can give your `variable`{:class="block3variables"} a name. Call this variable `planting speed`.
+You can give your `variable`{:class="block3variables"} a name. Call this variable `forest health`.
 
 --- /task ---
 
@@ -18,27 +18,27 @@ Your new variable is visible on the stage. Use a slider to control the speed in 
 
 --- task ---
 
-On the stage, right-click on the `planting speed`{:class="block3variables"} variable, and a menu will appear.
+On the stage, right-click on the `forest health`{:class="block3variables"} variable, and a menu will appear.
 
 Select slider in the menu.
 
 --- /task ---
 
-At the moment the planting speed range is too wide.
+At the moment the forest health range is too wide.
 
 --- task ---
 
-On the stage, right-click on the `planting speed`{:class="block3variables"} slider and select **change slider range**.
+On the stage, right-click on the `forest health`{:class="block3variables"} slider and select **change slider range**.
 
 Change the range to between `0` and `5`.
 
 --- /task ---
 
-Using our planting speed to grow the forest.
+Using `forest health`{:class="block3variables"} to grow the forest.
 
 --- task ---
 
-Add blocks to the end of the when flag clicked script so that new trees are planted forever.
+Add a `forever`{:class="block3control"} block to the end of the `when flag clicked script`{:class="block3events"} so that new trees are continuously planted. Within the `forever`{:class="block3control"} loop add a `go to mousepointer`{:class="block3motion"} block changing the value to `random position`. Next add a `wait 1 seconds`{:class="block3control"} block and a `create a clone of myself`{:class="block3control"} block to complete the loop.
 
 ```blocks3
 when flag clicked
@@ -47,10 +47,10 @@ go to [random position v]
 create clone of [myself v]
 end
 + forever
-+ go to [random position v]
-+ wait (1) seconds
-+ create clone of [myself v]
-+ end
+go to [random position v]
+wait (1) seconds
+create clone of [myself v]
+end
 ```
 
 --- /task ---
