@@ -2,26 +2,28 @@
 
 There are many reasons why humans chop down trees. The wood might be needed for making furniture, buildings or firewood. Alternatively, the land used by the forest might be needed for growing crops, grazing cattle or adding buildings.
 
+Code the tree feller to ask how many trees are needed each time it is clicked.
+
 --- task ---
 
-When this sprite is click ask how many trees are needed.
+Click on the **Tree Feller** sprite and drag a `When this sprite is clicked`{:class="block3events"} block to the Code area. Add an `ask (What is your name?) and wait`{:class="block3sensing"} block changing the value to ask `how many trees are needed?`.
 
 ```blocks3
 when this sprite clicked
-ask [How many trees do you need?] and wait
+ask [How many trees are needed?] and wait
 ```
 
 --- /task ---
 
 --- task ---
 
-Create a new variable called trees needed.
+Create a new variable to store the number of trees needed. Call this variable `trees needed`{:class="block3variables"}.
 
-Set the answer to trees needed.
+Store the answer to you question in the trees needed variable by adding a `set trees needed to 0`{:class="block3variables"} block and dragging an `answer`{:class="block3sensing"} block into the circle.
 
 ```blocks3
 when this sprite clicked
-ask [How many trees do you need?] and wait
+ask [How many trees are needed?] and wait
 + set [trees needed v] to (answer)
 ```
 
@@ -29,12 +31,12 @@ ask [How many trees do you need?] and wait
 
 --- task ---
 
-Create a new variable called trees felled set this to 0 in the beginning.
+Create another new variable and call it `trees felled`{:class="block3variables"}. Add a `set trees felled to 0`{:class="block3variables"} block to reset the number everytime the **Tree Feller** sprite is clicked.
 
 ```blocks3
 when this sprite clicked
 + set [trees felled v] to (0)
-ask [How many trees do you need?] and wait
+ask [How many trees are needed?] and wait
 set [trees needed v] to (answer)
 ```
 
@@ -50,7 +52,7 @@ set [trees felled v] to (0)
 + set rotation style [left-right v]
 + go to x: (-200) y: (150)
 + point in direction (90)
-ask [How many trees do you need?] and wait
+ask [How many trees are needed?] and wait
 set [trees needed v] to (answer)
 ```
 
@@ -66,7 +68,7 @@ set [trees felled v] to (0)
 set rotation style [left-right v]
 go to x: (-200) y: (150)
 point in direction (90)
-ask [How many trees do you need?] and wait
+ask [How many trees are needed?] and wait
 set [trees needed v] to (answer)
 + repeat until {(trees felled) = (trees needed)}
 move (4) steps
@@ -86,7 +88,7 @@ set [trees felled v] to (0)
 set rotation style [left-right v]
 go to x: (-200) y: (150)
 point in direction (90)
-ask [How many trees do you need?] and wait
+ask [How many trees are needed?] and wait
 set [trees needed v] to (answer)
 repeat until {(trees felled) = (trees needed)}
 move (4) steps
@@ -109,7 +111,7 @@ set [trees felled v] to (0)
 set rotation style [left-right v]
 go to x: (-200) y: (150)
 point in direction (90)
-ask [How many trees do you need?] and wait
+ask [How many trees are needed?] and wait
 set [trees needed v] to (answer)
 repeat until {(trees felled) = (trees needed)}
 move (4) steps
@@ -136,7 +138,7 @@ set [trees felled v] to (0)
 set rotation style [left-right v]
 go to x: (-200) y: (150)
 point in direction (90)
-ask [How many trees do you need?] and wait
+ask [How many trees are needed?] and wait
 set [trees needed v] to (answer)
 repeat until {(trees felled) = (trees needed)}
 move (4) steps
