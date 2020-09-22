@@ -31,7 +31,7 @@ ask [How many trees are needed?] and wait
 
 --- task ---
 
-Create another new variable and call it `trees felled`{:class="block3variables"}. Add a `set trees felled to 0`{:class="block3variables"} block to reset the number everytime the **Tree Feller** sprite is clicked.
+Create another new variable and call it `trees felled`{:class="block3variables"}. Add a `set trees felled to 0`{:class="block3variables"} block to reset the number every time the **Tree Feller** sprite is clicked.
 
 ```blocks3
 when this sprite clicked
@@ -42,9 +42,13 @@ set [trees needed v] to (answer)
 
 --- /task ---
 
+The Tree Feller will move through the forest from left-right and back again until it has felled enough trees.
+
 --- task ---
 
-Set the digger up to fell the forest
+Add blocks to set the starting position for the digger each time it is clicked.
+
+Insert a `set rotation style left-right`{:class="block3motion"} block so that the **Tree Feller** sprite does not tip upside-down at any point. Next add a `go to x:0 y:0`{:class="block3motion"} block changing the values to `-200` and `150` to make the **Tree Feller** sprite start in the top left corner of the stage. Finally, add a `point in direction 90`{:class="block3motion"} block.
 
 ```blocks3
 when this sprite clicked
@@ -60,7 +64,9 @@ set [trees needed v] to (answer)
 
 --- task ---
 
-Move the feller until trees felled = trees needed across the screen and back.
+Add a `repeat until`{:class="block3control"} loop and drag an `equals`{:class="block3operators"} operator into the block. In the first circle add a `trees felled`{:class="block3variables"} block and in the second circle a `trees needed`{:class="block3variables"} block.
+
+Within the `repeat`{:class="block3control"} block add a `move 10 steps`{:class="block3motion"} block changing the value to `4` so that the **Tree Feller** sprite repeatedly moves 4 steps until it has collected enough trees.
 
 ```blocks3
 when this sprite clicked
@@ -80,7 +86,9 @@ end
 
 --- task ---
 
-Move down and back.
+At the moment the **Tree Feller** sprite will only move across the top of the stage. Add an `if...then`{:class="block3control"} block within your `repeat until`{:class="block3control"} loop. Drag a `touching mouse-pointer`{:class="block3sensing"} block selecting `edge` from the dropdown.
+
+Inside the `if`{:class="block3control"} block add a `turn right by 15 degrees`{:class="block3motion"} block changing the value to `180` and a `change y by 10`{:class="block3motion"} block changing the value to `-40` so that the **Tree Feller** sprite turns round and moves down the Stage once it's reached the edge.
 
 ```blocks3
 when this sprite clicked
@@ -101,9 +109,11 @@ end
 
 --- /task ---
 
+Cutting down trees takes time even for a big forestry machine.
+
 --- task ---
 
-If the feller touches a tree it should pause to chop it down and change trees felled by 1.
+Add an `if...then`{:class="block3control"} block and drag across a `touching mouse-pointer`{:class="block3sensing"} block selecting `edge` from the dropdown. Inside your `if...then`{:class="block3control"} block add a `change trees felled by 1`{:class="block3variables"} block and a 'wait 1 seconds' block changing the value to `0.5` to create a small delay when the **Tree Feller** sprite comes across a tree.
 
 ```blocks3
 when this sprite clicked
@@ -128,9 +138,11 @@ end
 
 --- /task ---
 
+Once the **Tree Feller** sprite has felled enough trees announce how many have been collected.
+
 --- task ---
 
-Once we have enough trees say how many.
+Add a `say Hello! for 2 seconds`{:class="block3looks"} block to the end of your code. Replace the `Hello!` message by dragging a `join`{:class="block3operators"} block inside. In the first circle drag a `trees felled`{:class="block3variables"} block and in the second circle type ' trees felled'.
 
 ```blocks3
 when this sprite clicked
@@ -158,6 +170,6 @@ end
 
 --- task ---
 
-Test.
+Test your simulation. Click on the **Tree Feller** sprite a few times to request different amounts of wood. 
 
 --- /task ---
