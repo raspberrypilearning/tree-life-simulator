@@ -23,9 +23,9 @@ Forever go to show glide.
 when flag clicked
 hide
 + forever
-+ go to x:(0) y:(200)
-+ show
-+ glide (3) seconds to x:(0) y:(-200)
+go to x:(0) y:(200)
+show
+glide (3) secs to x:(0) y:(-200)
 + end
 ```
 
@@ -47,7 +47,7 @@ hide
 forever
 go to x:(0) y:(200)
 show
-glide (3) seconds to x:(0) y:(-200)
+glide (3) secs to x:(0) y:(-200)
 + hide
 + next costume
 end
@@ -66,7 +66,7 @@ forever
 + wait (pick random (10) to (20)) seconds
 go to x:(0) y:(200)
 show
-glide (3) seconds to x:(0) y:(-200)
+glide (3) secs to x:(0) y:(-200)
 hide
 next costume
 end
