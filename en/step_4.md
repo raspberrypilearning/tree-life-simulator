@@ -53,7 +53,7 @@ We can now count our new trees but even fully-grown trees can die or be chopped 
 
 --- task ---
 
-Add a `wait until`{:class="block3control"} block to the end of your code. Use an `or`{:class="block3operators"} operator to allow a choice of events. In the first circle of your `or`{:class="block3operators"} block add a `touching mouse-pointer`{:class="sensing"} block and change the value to `Tree feller`. In the second circle of your `or`{:class="block3operators"} block add another `touching mouse-pointer`{:class="block3sensing"} block and change the value to 'Natural Disaster'.
+Add a `wait until`{:class="block3control"} block to the end of your code. Use an `or`{:class="block3operators"} operator to allow a choice of events. In the first circle of your `or`{:class="block3operators"} block add a `touching mouse-pointer`{:class="sensing"} block and change the value to `Tree feller`. In the second circle of your `or`{:class="block3operators"} block add another `touching mouse-pointer`{:class="block3sensing"} block and change the value to `Natural Disaster`.
 
 ```blocks3
 when I start as a clone
@@ -70,7 +70,7 @@ change (trees) by (1)
 
 --- task ---
 
-Now, add a `change Trees by (1)` block changing the value to `-1` and finally a `delete this clone` block to remove the tree.
+Now, add a `change Trees by (1)`{:class="block3variables"} block changing the value to `-1` and finally a `delete this clone`{:class="block3control"} block to remove the tree.
 
 ```blocks3
 when I start as a clone
