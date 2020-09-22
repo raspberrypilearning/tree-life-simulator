@@ -8,7 +8,7 @@ When this sprite is click ask how many trees are needed.
 
 ```blocks3
 when this sprite clicked
-ask (How many trees do you need?) and wait
+ask [How many trees do you need?] and wait
 ```
 
 --- /task ---
@@ -21,7 +21,7 @@ Set the answer to trees needed.
 
 ```blocks3
 when this sprite clicked
-ask (How many trees do you need?) and wait
+ask [How many trees do you need?] and wait
 + set [trees needed v] to (answer)
 ```
 
@@ -34,7 +34,7 @@ Create a new variable called trees felled set this to 0 in the beginning.
 ```blocks3
 when this sprite clicked
 + set [trees felled v] to (0)
-ask (How many trees do you need?) and wait
+ask [How many trees do you need?] and wait
 set [trees needed v] to (answer)
 ```
 
@@ -50,7 +50,7 @@ set [trees felled v] to (0)
 + set rotation style [left-right v]
 + go to x: (-200) y: (150)
 + point in direction (90)
-ask (How many trees do you need?) and wait
+ask [How many trees do you need?] and wait
 set [trees needed v] to (answer)
 ```
 
@@ -70,9 +70,29 @@ ask [How many trees do you need?] and wait
 set [trees needed v] to (answer)
 + repeat until {(trees felled) = (trees needed)}
 move (4) steps
-if {touching [edge v]?} then
-turn right (180) degrees
-change y by (-40)
+end
++ end
+```
+
+--- /task ---
+
+--- task ---
+
+Move down and back.
+
+```blocks3
+when this sprite clicked
+set [trees felled v] to (0)
+set rotation style [left-right v]
+go to x: (-200) y: (150)
+point in direction (90)
+ask [How many trees do you need?] and wait
+set [trees needed v] to (answer)
+repeat until {(trees felled) = (trees needed)}
+move (4) steps
++ if {touching [edge v]?} then
++ turn right (180) degrees
++ change y by (-40)
 end
 + end
 ```
