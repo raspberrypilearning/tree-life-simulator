@@ -1,14 +1,14 @@
 ## Human deforestation
 
-Text.
+There are many reasons why humans chop down trees. The wood might be needed for making furniture, buildings or firewood. Alternatively, the land used by the forest might be needed for growing crops, grazing cattle or adding buildings.
 
 --- task ---
 
 When this sprite is click ask how many trees are needed.
 
 ```blocks3
-+ when this sprite clicked
-+ ask (How many trees do you need?) and wait
+when this sprite clicked
+ask (How many trees do you need?) and wait
 ```
 
 --- /task ---
@@ -47,7 +47,7 @@ Set the digger up to fell the forest
 ```blocks3
 when this sprite clicked
 set [trees felled v] to (0)
-+ set rotation style to [left-right v]
++ set rotation style [left-right v]
 + go to x: (-200) y: (150)
 + point in direction (90)
 ask (How many trees do you need?) and wait
@@ -129,7 +129,7 @@ change [trees felled v] by (1)
 wait (0.5) seconds
 end
 end
-+ say {join(trees felled)[ trees felled]} for (2) seconds 
++ say {join(trees felled)[ trees felled]} for (2) seconds
 ```
 
 --- /task ---

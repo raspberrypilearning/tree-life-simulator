@@ -1,8 +1,8 @@
 ## Grow more trees
 
-In the simulation we want to see the impact of trees growing at a faster or slower speed. The speed at which a forest grows depends on a number of factors such as soil quality, disease, ssunlight and water.
+In the simulation we want to see the impact of trees growing at a faster or slower speed. The speed at which a forest grows depends on a number of factors such as soil quality, disease, sunlight and water.
 
-The growing speed will be stored in a variable.
+The growing speed will be stored in a variable called forest health.
 
 --- task ---
 
@@ -55,9 +55,9 @@ end
 
 --- /task ---
 
---- task ---
-
 The slider will control the speed the trees grow but currently the code is set to always wait 1 seconds. Moving the slider to the right will speed up the growth whilst moving to the left will decrease the growth.
+
+--- task ---
 
 Add a `minus operator`{:class="block3operators"} entering the value `5` in the first circle. Drag a rounded `forest health`{:class="block3variables"} variable into the second circle. This means if `forest health`{:class="block3variables"} equals `4` the wait time will be 1 second but if `forest health`{:class="block3variables"} equals `2` the wait time will be slower at 3 seconds.
 

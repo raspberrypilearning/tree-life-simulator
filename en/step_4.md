@@ -30,7 +30,7 @@ end
 
 --- /task ---
 
-The survival rate for new trees is estimated to be 80% meaning that 2 trees out of every 10 planted will die of natural causes before they are fully-grown. Add new fully-grown trees to your `trees`{:class="block3variables"} count to see how many there are whilst the simulation is running.
+The survival rate for new trees is estimated to be 80% meaning that 2 trees out of every 10 planted will die of natural causes before they are fully-grown. Add new fully-grown trees to your `trees`{:class="block3variables"} count to monitor how many there are whilst the simulation is running.
 
 --- task ---
 
@@ -49,7 +49,7 @@ end
 
 --- /task ---
 
-We can now count our new trees but even fully-grown trees can die or be chopped down through either human and natural deforestation. We need to reduce our count of trees if a tree has been touched by the **Tree feller** sprite or **Natural Disaster** sprite.
+We can now count our new trees but even fully-grown trees can die or be chopped down through human and natural deforestation. We need to reduce our count of trees if a tree has been touched by the **Tree feller** sprite or **Natural Disaster** sprite.
 
 --- task ---
 
