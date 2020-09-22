@@ -85,7 +85,7 @@ forever
 wait (pick random (10) to (20)) seconds
 + go to x:(pick random (-200) to (200)) y:(200)
 show
-+ glide (3) seconds to x:(pick random (-200) to (200)) y:(-200)
++ glide (3) secs to x:(pick random (-200) to (200)) y:(-200)
 hide
 next costume
 end
