@@ -6,14 +6,6 @@ Trees also absorb carbon dioxide and help to reduce the rate of CO2 emitted acro
 
 Add a variable to your simulation to calculate the current amount of CO2 that would be absorbed by your fully-grown trees each year.
 
-protect - firefighters , fences around the forest , cattle grazing.
-
-
-
-variable - CO2 absorbed
-
-
-
 --- task ---
 
 Task Text.
