@@ -17,7 +17,7 @@ Click on the **Maya** sprite. You'll see a couple of blocks are already in the C
 ```blocks3
 when flag clicked
 + set [CO2 absorbed v] to (0)
-say [We need to nurture trees to slow down global warming and protect our planet] for (2) seconds
+say [Looking after trees slows down global warming and protects our planet] for (2) seconds
 ```
 
 --- /task ---
@@ -31,7 +31,7 @@ Add a forever block to the end of your code so that the calculation runs continu
 ```blocks3
 when flag clicked
 set [CO2 absorbed v] to (0)
-say [We need to nurture trees to slow down global warming and protect our planet] for (2) seconds
+say [Looking after trees slows down global warming and protects our planet] for (2) seconds
 + forever
 set [CO2 absorbed v] to {(trees)*(48)}
 end
