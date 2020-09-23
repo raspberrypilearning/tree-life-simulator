@@ -2,9 +2,7 @@
 
 Trees are extremely important to our quality of life on land. From trees people get fruits to eat, oils for healthy living and shelter from the weather. They are also home to many different species of animals.
 
-Trees also absorb carbon dioxide and help to reduce the rate of CO2 emitted across the globe. Trees help protect our planet!
-
-Add a variable to your simulation to calculate the current amount of CO2 that would be absorbed by your fully-grown trees each year.
+Trees also absorb carbon dioxide and help to reduce the rate of CO2 emitted across the globe. Trees help protect our planet! Add a variable to your simulation to calculate the current amount of CO2 that would be absorbed by your fully-grown trees each year.
 
 --- task ---
 
@@ -19,7 +17,7 @@ Click on the **Maya** sprite. You'll see a couple of blocks are already in the C
 ```blocks3
 when flag clicked
 + set [CO2 absorbed v] to (0)
-say [We need to plant and nurture trees to slow down global warming and protect our planet] for (2) seconds
+say [We need to nurture trees to slow down global warming and protect our planet] for (2) seconds
 ```
 
 --- /task ---
@@ -33,7 +31,7 @@ Add a forever block to the end of your code so that the calculation runs continu
 ```blocks3
 when flag clicked
 set [CO2 absorbed v] to (0)
-say [We need to plant and nurture trees to slow down global warming and protect our planet] for (2) seconds
+say [We need to nurture trees to slow down global warming and protect our planet] for (2) seconds
 + forever
 set [CO2 absorbed v] to {(trees)*(48)}
 end
