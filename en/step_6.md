@@ -82,26 +82,51 @@ else
 + say [The trees have gone! Our planet is in danger] for (2) seconds
 + stop [all v]
 end
+end
 ```
 
 --- /task ---
 
 Scientists use their observations to give warnings if levels are looking dangerous. Add an alert so that the **Maya** sprite warns if there are not many trees left in the forest.
 
+Set up a message to appear when the number of trees left is greather than `0` and less than `10`.
+
 --- task ---
 
-Task text
+Add an `if...then`{:class="block3control"} block underneath your `if...then...else`{:class="block3control"} block but still inside your `forever`{:class="block3control"} loop.
+
+Add some operators for your calculation. First add a `and`{:class="block3operators"} then in the first circle add a `greater than`{:class="block3operators"} operator and in the second circle a `less than`{:class="block3operators"} operator. You will now have four circles that you can add values to. In the first and third circle add a `trees`{:class="block3variables"} block and replace the two `50` circles with `0` and `10`. Lastly add a `say Hello! for 2 seconds`{:class="block3looks"} block changing `Hello!` to `Global warming is speeding up.`
+
+```blocks3
+when flag clicked
+set [CO2 absorbed v] to (0)
+say [Looking after trees slows down global warming & protects our planet] for (4) seconds
+forever
+if {(trees) > [0]} then
+set [CO2 absorbed v] to {(trees)*(48)}
+else
+set [CO2 absorbed v] to (0)
+say [The trees have gone! Our planet is in danger] for (2) seconds
+stop [all v]
+end
++ if {{(trees)>[0]} and {(trees)<[10]}} then
+say [Global warming is speeding up.] for (2) seconds
+end
+end
+```
+
+--- /task ---
+
+Add another warning message.
+
+--- task ---
+
+Right click on the last `if...then`{:class="block3control"} block and choose `Duplicate` from the menu. Insert your duplicated blocks below the last `if...then`{:class="block3control"} block and change the values from `0` and `10` to `10` and `20` think of a warning message to display in the `say`{:class="block3looks"} block.
 
 --- /task ---
 
 --- task ---
 
-Task text
-
---- /task ---
-
---- task ---
-
-Task text
+Test your simulation. When the number of trees gets low the **Maya** sprite will say a warning message.
 
 --- /task ---
