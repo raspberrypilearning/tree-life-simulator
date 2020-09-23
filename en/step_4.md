@@ -2,6 +2,8 @@
 
 Scientists monitor trees and wildlife. They record the cover (size), variety and health of the forests. By doing this they can see the true impact of deforestation. Observations are taken from planes and satellites in the air as well as sensors and people on the ground.
 
+Using their findings people can see where extra measures are needed to protect trees for example the addition of fences around the forest or employing more firefighters to help find and stop fires.
+
 --- task ---
 
 Create a new variable to store the number of trees. Call this variable `trees`{:class="block3variables"}.
