@@ -51,7 +51,7 @@ The simulation will end when the user stops it or when all the trees have gone.
 
 Add an `if...then...else`{:class="block3control"}block to your forever loop inserting your `set [CO2 absorbed v] to`{:class="block3variables"}`trees`{:class="block3variables"}`*`{:class="block3operators"}`48` block into the top `if..then`{:class="block3control"} section.
 
-Drag a `greater than`{:class="operators"} operator into the top of the block, adding `trees`{:class="block3variables"} to the first circle and changing the value `50` to `0` in the second circle.
+Add a `greater than`:class="operators"} operator into the top of the block, inserting `trees`{:class="block3variables"} to the first circle and changing the value `50` to `0` in the second circle.
 
 ```blocks3
 when flag clicked
@@ -68,7 +68,7 @@ end
 
 --- task ---
 
-In the `else`{:class="block3control"} section add a `set [CO2 absorbed v] to 0`{:class="block3variables"} block and a 'say Hello! for 2 seconds'{:class="block3looks"} block changing the value to `The trees have gone! Our planet is in danger`
+In the `else`{:class="block3control"} section add a `set [CO2 absorbed v] to 0`{:class="block3variables"} block and a 'say Hello! for 2 seconds'{:class="block3looks"} block changing the value to `The trees have gone! Our planet is in danger`. Add a `stop all`{:class="block3control"} block to end the simulation when the trees have gone.
 
 ```blocks3
 when flag clicked
@@ -80,10 +80,13 @@ set [CO2 absorbed v] to {(trees)*(48)}
 else
 + set [CO2 absorbed v] to (0)
 + say [The trees have gone! Our planet is in danger] for (2) seconds
++ stop [all v]
 end
 ```
 
 --- /task ---
+
+Scientists use their observations to give warnings if levels are looking dangerous. Add an alert so that the **Maya** sprite warns if there are not many trees left in the forest.
 
 --- task ---
 
