@@ -1,6 +1,6 @@
 ## Introduction
 
-Use Scratch to create a simulation to show the impact to trees, wildlife and CO2 levels of varying healthy forest conditions and levels of deforestation.
+Use Scratch to create a simulation that shows how varying the health of a forest and levels of deforestation impact trees, wildlife and the amount of CO2 absorbed.
 
 ### What you will make
 
