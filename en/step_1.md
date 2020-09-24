@@ -2,6 +2,12 @@
 
 Use Scratch to create a simulation that shows how varying the health of a forest and levels of deforestation impact trees, wildlife and the amount of CO2 absorbed.
 
+This project focuses on three of the United Nations Sustainable Development Goals:
+
++ [Responsible Consumption and Production](https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-12-responsible-consumption-and-production.html){:target="_blank"}
++ [Climate Action](https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-13-climate-action.html){:target="_blank"}
++ [Life on Land](https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-15-life-on-land.html){:target="_blank"}
+
 ### What you will make
 
 --- no-print ---
