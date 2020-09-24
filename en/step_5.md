@@ -98,13 +98,13 @@ set [trees needed v] to (answer)
 
 --- /task ---
 
-The **Tree Feller** sprite will move through the forest from left-right and back again until it has felled enough trees. The **Tree Feller** sprite will have collected enough trees when the number of trees felled equals the number of trees needed.
+The **Tree Feller** sprite will move through the forest from left-right and back again until it has felled enough trees. We need an operator so the **Tree Feller** knows it has collected enough trees when the number of trees felled equals the number of trees needed.
 
 --- task ---
 
-Add a `repeat until`{:class="block3control"} block and drag an `=`{:class="block3operators"} operator inside. In the first circle add a `trees felled`{:class="block3variables"} block and in the second circle a `trees needed`{:class="block3variables"} block.
+Add a `repeat until`{:class="block3control"} block and drag an equals `=`{:class="block3operators"} operator inside. Add the condition `trees felled`{:class="block3variables"} `=`{:class="block3operators"} `trees needed`{:class="block3variables"}.
 
-Within the `repeat`{:class="block3control"} block add a `move 10 steps`{:class="block3motion"} block changing the value to `4` so that the **Tree Feller** sprite repeatedly moves 4 steps until it has collected enough trees.
+Within the loop add a `move 10 steps`{:class="block3motion"} block changing the value to `4`.
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
@@ -123,11 +123,13 @@ end
 
 --- /task ---
 
+At the moment the **Tree Feller** sprite will only move across the top of the stage. Get it to sense if it is touching the edge of the stage so that it knows to change direction.
+
 --- task ---
 
-At the moment the **Tree Feller** sprite will only move across the top of the stage. Add an `if...then`{:class="block3control"} block within your `repeat until`{:class="block3control"} loop. Drag a `touching mouse-pointer`{:class="block3sensing"} block selecting `edge` from the dropdown.
+Add an `if...then`{:class="block3control"} block within your `repeat until`{:class="block3control"} loop. Add a `touching mouse-pointer`{:class="block3sensing"} block selecting `edge` from the dropdown. 
 
-Inside the `if`{:class="block3control"} block add a `turn right by 15 degrees`{:class="block3motion"} block changing the value to `180` and a `change y by 10`{:class="block3motion"} block changing the value to `-40` so that the **Tree Feller** sprite turns round and moves down the Stage once it's reached the edge.
+Inside the `if`{:class="block3control"} block add two mothion blocks  `turn right by 180 degrees`{:class="block3motion"} and `change y by -40`{:class="block3motion"}.
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
