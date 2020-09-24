@@ -49,9 +49,11 @@ Create another new variable and call it `trees felled`{:class="block3variables"}
 
 --- /task ---
 
+ We need to reset the number of trees felled every time the **Tree Feller** sprite is clicked so it clears the variable ready for a new request.
+
 --- task ---
 
-Insert a `set trees felled to 0`{:class="block3variables"} block to reset the number every time the **Tree Feller** sprite is clicked.
+Insert a `set trees felled to 0`{:class="block3variables"} block
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
@@ -64,20 +66,23 @@ set [trees needed v] to (answer)
 
 --- /task ---
 
+The stage is looking crowded with so many variables. We need to hide the ones that don't show the health of the forest and position them so they appear in better places in your simulation.
+
 --- task ---
-Position/hide your variables.
+
+Go to the Variables menu and untick the `trees felled`{:class="block3variables"} and `trees needed`{:class="block3variables"} variables.
+
+Drag the forest health slider variable and trees counter variable to the bottom corners of the stage.
 
 ![image of the stage with variables](images/tstage-with-variables.png)
 
 --- /task ---
 
-The Tree Feller will move through the forest from left-right and back again until it has felled enough trees.
+Set the starting position for the **Tree Feller** sprite each time it is clicked.
 
 --- task ---
 
-Add blocks to set the starting position for the **Tree Feller** sprite each time it is clicked.
-
-Insert a `set rotation style left-right`{:class="block3motion"} block so that the **Tree Feller** sprite does not tip upside-down at any point. Next add a `go to x:0 y:0`{:class="block3motion"} block changing the values to `-200` and `150` to make the **Tree Feller** sprite start in the top left corner of the stage. Finally, add a `point in direction 90`{:class="block3motion"} block.
+Insert a `set rotation style left-right`{:class="block3motion"} block so that the **Tree Feller** sprite does not tip upside-down. Get the **Tree Feller** sprite start at the top left corner by adding a `go to x:0 y:0`{:class="block3motion"} block changing the values to `-180` and `150`. Get the sprite to `point in direction 90`{:class="block3motion"}.
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
@@ -93,9 +98,11 @@ set [trees needed v] to (answer)
 
 --- /task ---
 
+The **Tree Feller** sprite will move through the forest from left-right and back again until it has felled enough trees. The **Tree Feller** sprite will have collected enough trees when the number of trees felled equals the number of trees needed.
+
 --- task ---
 
-Add a `repeat until`{:class="block3control"} loop and drag an `equals`{:class="block3operators"} operator into the block. In the first circle add a `trees felled`{:class="block3variables"} block and in the second circle a `trees needed`{:class="block3variables"} block.
+Add a `repeat until`{:class="block3control"} block and drag an `=`{:class="block3operators"} operator inside. In the first circle add a `trees felled`{:class="block3variables"} block and in the second circle a `trees needed`{:class="block3variables"} block.
 
 Within the `repeat`{:class="block3control"} block add a `move 10 steps`{:class="block3motion"} block changing the value to `4` so that the **Tree Feller** sprite repeatedly moves 4 steps until it has collected enough trees.
 
