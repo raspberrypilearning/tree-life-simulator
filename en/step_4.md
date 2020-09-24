@@ -61,11 +61,7 @@ Trees can also die or be chopped down through human and natural deforestation. W
 
 --- task ---
 
-Add a `wait until`{:class="block3control"} block to the end of your code.
-
-Use an `or`{:class="block3operators"} operator to sense if the **Tree** sprite is `touching`{:class="block3sensing"} either the `Natural Disaster`{:class="block3sensing"} or the `Tree Feller`{:class="block3sensing"} sprites.
-
-Add a `touching mouse-pointer`{:class="sensing"} block and change the value to `Tree feller`. Add another `touching mouse-pointer`{:class="block3sensing"} block and change the value to `Natural Disaster`.
+Add a `wait until`{:class="block3control"} block to the end of your code. Inside this block use an `or`{:class="block3operators"} operator. Add two more blocks to sense if the **Tree** sprite is `touching Natural Disaster`{:class="block3sensing"} or `touching Tree Feller`{:class="block3sensing"}.
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
@@ -84,7 +80,7 @@ change (trees) by (1)
 
 --- task ---
 
-Now, add a `change Trees by (1)`{:class="block3variables"} block changing the value to `-1` and finally a `delete this clone`{:class="block3control"} block to remove the tree.
+Now, add a `change Trees by 1`{:class="block3variables"} block changing the value to `-1` and finally a `delete this clone`{:class="block3control"} block to remove the tree.
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
