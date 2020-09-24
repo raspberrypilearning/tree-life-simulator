@@ -185,7 +185,7 @@ We'd like to know when the **Tree Feller** sprite has felled enough trees. Get t
 
 --- task ---
 
-Add a `Looks`{:class="block3looks"} block to the end of your code so that the **Tree Feller** sprite will `say`{:class="block3looks"}**how many trees it has felled**`for 2 seconds`{:class="block3looks"}. to say **how many trees it has felled**  `join`{:class="block3operators"} operator to link the `trees felled`{:class="block3variables"} variable and the text " trees felled".
+Add a `Looks`{:class="block3looks"} block to the end of your code so that the **Tree Feller** sprite will `say`{:class="block3looks"}`how many trees it has felled``for 2 seconds`{:class="block3looks"}. to say **how many trees it has felled**  `join`{:class="block3operators"} operator to link the `trees felled`{:class="block3variables"} variable and the text " trees felled".
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
