@@ -127,7 +127,7 @@ At the moment the **Tree Feller** sprite will only move across the top of the st
 
 --- task ---
 
-Add an `if...then`{:class="block3control"} block with a `touching edge`{:class="block3sensing"} condition block inside. Inside your `if`{:class="block3control"} loop add two `Motion`{:class="block3motion"} blocks:  `turn right by 180 degrees`{:class="block3motion"} and `change y by -40`{:class="block3motion"}.
+Add an `if...then`{:class="block3control"} block with a `touching edge`{:class="block3sensing"} condition. Inside your `if`{:class="block3control"} loop add two `Motion`{:class="block3motion"} blocks:  `turn right by 180 degrees`{:class="block3motion"} and `change y by -40`{:class="block3motion"}.
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
@@ -150,11 +150,11 @@ end
 
 --- /task ---
 
-Cutting down trees takes time even for a big forestry machine.
+When the **Tree Feller** sprite gets to a tree it needs to wait then add that tree to it's `trees felled`{:class="block3variables"} counter.
 
 --- task ---
 
-Add an `if...then`{:class="block3control"} block and drag across a `touching mouse-pointer`{:class="block3sensing"} block selecting `edge` from the dropdown. Inside your `if...then`{:class="block3control"} block add a `change trees felled by 1`{:class="block3variables"} block and a 'wait 1 seconds' block changing the value to `0.5` to create a small delay when the **Tree Feller** sprite comes across a tree.
+Add another `if...then`{:class="block3control"} block with a `touching Tree`{:class="block3sensing"} condition. Inside your `if...then`{:class="block3control"} loop add a `wait 0.5 seconds`{:class="block3control"} block and a `change trees felled by 1`{:class="block3variables"} block.
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
@@ -173,19 +173,19 @@ turn right (180) degrees
 change y by (-40)
 end
 + if {touching [Tree v]?} then
-change [trees felled v] by (1)
 wait (0.5) seconds
+change [trees felled v] by (1)
 + end
 end
 ```
 
 --- /task ---
 
-Once the **Tree Feller** sprite has felled enough trees announce how many have been collected.
+We'd like to know when the **Tree Feller** sprite has felled enough trees. Get the **Tree Feller** sprite to announce it has finished and say how many trees it has collected.
 
 --- task ---
 
-Add a `say Hello! for 2 seconds`{:class="block3looks"} block to the end of your code. Replace the `Hello!` message by dragging a `join`{:class="block3operators"} block inside. In the first circle drag a `trees felled`{:class="block3variables"} block and in the second circle type ' trees felled'.
+Add a `Looks`{:class="block3looks"} block to the end of your code so that the **Tree Feller** sprite will `say`{:class="block3looks"} how many trees it has felled `for 2 seconds`{:class="block3looks"}. Use a `join`{:class="block3operators"} operator to link the `trees felled`{:class="block3variables"} variable and the text ' trees felled'.
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
@@ -204,8 +204,8 @@ turn right (180) degrees
 change y by (-40)
 end
 if {touching [Tree v]?} then
-change [trees felled v] by (1)
 wait (0.5) seconds
+change [trees felled v] by (1)
 end
 end
 + say {join(trees felled)[ trees felled]} for (2) seconds
