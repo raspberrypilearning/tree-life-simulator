@@ -14,6 +14,8 @@ Create a new variable to store the amount of CO2 absorbed by fully-grown trees. 
 
 Click on the **Maya** sprite. You'll see a couple of blocks are already in the Code area. These tell Maya to start the simulation with some text for the users. Add a `set CO2 absorbed to 0`{:class="block3variables"} block when the simulation begins.
 
+![image of the Maya sprite](images/maya-sprite.png)
+
 ```blocks3
 when flag clicked
 + set [CO2 absorbed v] to (0)
@@ -27,6 +29,8 @@ Maya is a Scientist and knows that a typical hardwood tree can absorb as much as
 --- task ---
 
 Add a `forever`{:class="block3control"} block to the end of your code so that the calculation runs continuously throughout the simulation. Inside the `forever`{:class="block3control"} loop add a `set CO2 absorbed to 0`{:class="block3variables"} block. Replace the `0` with a `multiply`{:class="block3operators"} operator to set up the calculation. In the first circle add a `trees`{:class="block3variables"} block and in the second circle type `48`
+
+![image of the Maya sprite](images/maya-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -53,6 +57,8 @@ Add an `if...then...else`{:class="block3control"}block to your forever loop inse
 
 Add a `greater than`:class="operators"} operator into the top of the block, inserting `trees`{:class="block3variables"} to the first circle and changing the value `50` to `0` in the second circle.
 
+![image of the Maya sprite](images/maya-sprite.png)
+
 ```blocks3
 when flag clicked
 set [CO2 absorbed v] to (0)
@@ -69,6 +75,8 @@ end
 --- task ---
 
 In the `else`{:class="block3control"} section add a `set [CO2 absorbed v] to 0`{:class="block3variables"} block and a 'say Hello! for 2 seconds'{:class="block3looks"} block changing the value to `The trees have gone! Our planet is in danger`. Add a `stop all`{:class="block3control"} block to end the simulation when the trees have gone.
+
+![image of the Maya sprite](images/maya-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -96,6 +104,8 @@ Set up a message to appear when the number of trees left is greather than `0` an
 Add an `if...then`{:class="block3control"} block underneath your `if...then...else`{:class="block3control"} block but still inside your `forever`{:class="block3control"} loop.
 
 Add some operators for your calculation. First add a `and`{:class="block3operators"} then in the first circle add a `greater than`{:class="block3operators"} operator and in the second circle a `less than`{:class="block3operators"} operator. You will now have four circles that you can add values to. In the first and third circle add a `trees`{:class="block3variables"} block and replace the two `50` circles with `0` and `10`. Lastly add a `say Hello! for 2 seconds`{:class="block3looks"} block changing `Hello!` to `Global warming is speeding up.`
+
+![image of the Maya sprite](images/maya-sprite.png)
 
 ```blocks3
 when flag clicked

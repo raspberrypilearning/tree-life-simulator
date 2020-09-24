@@ -38,7 +38,9 @@ Using `forest health`{:class="block3variables"} to grow the forest.
 
 --- task ---
 
-Add a `forever`{:class="block3control"} block to the end of the `when flag clicked script`{:class="block3events"} so that new trees are continuously planted. Within the `forever`{:class="block3control"} loop add a `go to mousepointer`{:class="block3motion"} block changing the value to `random position`. Next add a `wait 1 seconds`{:class="block3control"} block and a `create a clone of myself`{:class="block3control"} block to complete the loop.
+Add a `forever`{:class="block3control"} block to the end of the `when flag clicked script`{:class="block3events"} in you **Tree** sprite so that new trees are continuously planted. Within the `forever`{:class="block3control"} loop add a `go to mousepointer`{:class="block3motion"} block changing the value to `random position`. Next add a `wait 1 seconds`{:class="block3control"} block and a `create a clone of myself`{:class="block3control"} block to complete the loop.
+
+![image of the Tree sprite](images/tree-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -60,6 +62,8 @@ The slider will control the speed the trees grow but currently the code is set t
 --- task ---
 
 Add a `minus operator`{:class="block3operators"} entering the value `5` in the first circle. Drag a rounded `forest health`{:class="block3variables"} variable into the second circle. This means if `forest health`{:class="block3variables"} equals `4` the wait time will be 1 second but if `forest health`{:class="block3variables"} equals `2` the wait time will be slower at 3 seconds.
+
+![image of the Tree sprite](images/tree-sprite.png)
 
 ```blocks3
 when flag clicked
