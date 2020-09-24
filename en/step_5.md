@@ -1,12 +1,14 @@
 ## Human deforestation
 
-There are many reasons why humans chop down trees. The wood might be needed for making furniture, buildings or firewood. Alternatively, the land used by the forest might be needed for growing crops, grazing cattle or adding buildings.
+There are many reasons why humans chop down trees. The wood might be needed for making furniture, constructing buildings or firewood. Alternatively, the land used by the forest might be needed for growing crops, grazing cattle or buildings.
 
-Code the tree feller to ask how many trees are needed each time it is clicked.
+In this step you will code the **Tree Feller** to get the amount of trees needed and move through the forest causing human deforestation.
+
+Code the **Tree Feller** to ask how many trees are needed each time it is clicked.
 
 --- task ---
 
-Click on the **Tree Feller** sprite and drag a `When this sprite is clicked`{:class="block3events"} block to the Code area. Add an `ask (What is your name?) and wait`{:class="block3sensing"} block changing the value to ask `How many trees are needed?`.
+Click on the **Tree Feller** sprite and start a new script with a `when this sprite clicked`{:class="block3events"} block. Add an `ask (What is your name?) and wait`{:class="block3sensing"} block changing the text to ask `How many trees are needed?`.
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
@@ -17,11 +19,17 @@ ask [How many trees are needed?] and wait
 
 --- /task ---
 
+We need a variable to hold the input from asking the question `How many trees are needed?`.
+
 --- task ---
 
-Create a new variable to store the number of trees needed. Call this variable `trees needed`{:class="block3variables"}.
+Create a new variable and call this variable `trees needed`{:class="block3variables"}.
 
-Store the answer to you question in the trees needed variable by adding a `set trees needed to 0`{:class="block3variables"} block and dragging an `answer`{:class="block3sensing"} block into the circle.
+--- /task ---
+
+--- task ---
+
+Store the answer to you question in the trees needed variable by adding a `set trees needed to 0`{:class="block3variables"} block and dragging an `answer`{:class="block3sensing"} block into where it says `0`.
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
@@ -33,9 +41,17 @@ ask [How many trees are needed?] and wait
 
 --- /task ---
 
+We need another variable to keep a count of trees felled so far so that the **Tree Feller** sprite knows when it has collected enough.
+
 --- task ---
 
-Create another new variable and call it `trees felled`{:class="block3variables"}. Add a `set trees felled to 0`{:class="block3variables"} block to reset the number every time the **Tree Feller** sprite is clicked.
+Create another new variable and call it `trees felled`{:class="block3variables"}.
+
+--- /task ---
+
+--- task ---
+
+Insert a `set trees felled to 0`{:class="block3variables"} block to reset the number every time the **Tree Feller** sprite is clicked.
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 

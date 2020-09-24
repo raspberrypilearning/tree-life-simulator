@@ -1,8 +1,8 @@
 ## Grow more trees
 
-In the simulation we want to see the impact of trees growing at a faster or slower speed. The speed at which a forest grows depends on a number of factors such as soil quality, disease, sunlight and water.
+In the simulation we want to see the impact of trees growing at a faster or slower speed. The speed at which a forest grows depends on a number of factors such as climate conditions, soil quality, disease, sunlight and water. In this step you'll add a slider to demonstrate the impact of forest health conditions on forest growth.
 
-The growing speed will be stored in a variable called forest health.
+The growing speed will be held in a variable called `forest health`{:class="block3variables"}.
 
 --- task ---
 

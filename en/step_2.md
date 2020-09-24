@@ -47,7 +47,7 @@ end
 
 --- /task ---
 
-It’s important that we plant a variety of trees to house a range of animals.
+It’s important that we plant a variety of trees to house a range of animals, restore our environment and benefit people.
 
 The **Tree** sprite has 3 costumes (tree 1, tree 2 and tree 3). Use the `random`{:class="block3operators"} operator to vary the looks of the trees and add variety to your forest.
 
