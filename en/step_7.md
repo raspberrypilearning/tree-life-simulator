@@ -63,6 +63,8 @@ end
 
 Test your project. The **Natural Disaster** sprite will move from top to bottom changing costume each time.
 
+![image of the Natural Disaster on stage](images/disaster-on-stage.png)
+
 --- /task ---
 
 Scientists can sometimes predict when natural disasters will occur but their timing is not as consistent as in your simulation. Add some randomness to the **Natural Disaster** sprite.

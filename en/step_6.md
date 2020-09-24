@@ -19,6 +19,7 @@ Click on the **Maya** sprite. You'll see a couple of blocks are already in the C
 ```blocks3
 when flag clicked
 + set [CO2 absorbed v] to (0)
+go to [front v] layer
 say [Looking after trees slows down global warming & protects our planet] for (4) seconds
 ```
 
@@ -35,6 +36,7 @@ Add a `forever`{:class="block3control"} block to the end of your code so that th
 ```blocks3
 when flag clicked
 set [CO2 absorbed v] to (0)
+go to [front v] layer
 say [Looking after trees slows down global warming & protects our planet] for (4) seconds
 + forever
 set [CO2 absorbed v] to {(trees)*(48)}
@@ -47,6 +49,8 @@ end
 
 Test your simulation. As fully-grown trees appear the CO2 absorbed will increase, if deforestation occurs the CO2 absorbed will go down to show the expected impact.
 
+![image of CO2 and trees in simulation](images/co2-trees.png)
+
 --- /task ---
 
 The simulation will end when the user stops it or when all the trees have gone.
@@ -55,13 +59,14 @@ The simulation will end when the user stops it or when all the trees have gone.
 
 Add an `if...then...else`{:class="block3control"}block to your forever loop inserting your `set [CO2 absorbed v] to`{:class="block3variables"}`trees`{:class="block3variables"}`*`{:class="block3operators"}`48` block into the top `if..then`{:class="block3control"} section.
 
-Add a `greater than`:class="operators"} operator into the top of the block, inserting `trees`{:class="block3variables"} to the first circle and changing the value `50` to `0` in the second circle.
+Add a `greater than`{:class="operators"} operator into the top of the block, inserting `trees`{:class="block3variables"} to the first circle and changing the value `50` to `0` in the second circle.
 
 ![image of the Maya sprite](images/maya-sprite.png)
 
 ```blocks3
 when flag clicked
 set [CO2 absorbed v] to (0)
+go to [front v] layer
 say [Looking after trees slows down global warming & protects our planet] for (4) seconds
 forever
 + if {(trees) > [0]} then
@@ -81,6 +86,7 @@ In the `else`{:class="block3control"} section add a `set [CO2 absorbed v] to 0`{
 ```blocks3
 when flag clicked
 set [CO2 absorbed v] to (0)
+go to [front v] layer
 say [Looking after trees slows down global warming & protects our planet] for (4) seconds
 forever
 if {(trees) > [0]} then
@@ -92,6 +98,8 @@ else
 end
 end
 ```
+
+![image of trees gone message](images/trees-gone-message.png)
 
 --- /task ---
 
@@ -110,6 +118,7 @@ Add some operators for your calculation. First add a `and`{:class="block3operato
 ```blocks3
 when flag clicked
 set [CO2 absorbed v] to (0)
+go to [front v] layer
 say [Looking after trees slows down global warming & protects our planet] for (4) seconds
 forever
 if {(trees) > [0]} then

@@ -62,11 +62,13 @@ when I start as a clone
 switch costume to (pick random (1) to (3))
 ```
 
+![image of the 50 trees ](images/50-trees.png)
+
 --- /task ---
 
 --- task ---
 
-Test your project by clicking on the green flag. Make sure your forest has a variety of trees.
+Test your simulation by clicking on the green flag. Make sure your forest has a variety of trees.
 
 --- /task ---
 
@@ -92,7 +94,7 @@ switch costume to (pick random (1) to (3))
 
 --- task ---
 
-Test your project again. Your trees will now grow like they would in a real forest.
+Test your simulation again. Your trees will now grow like they would in a real forest.
 
 --- /task ---
 

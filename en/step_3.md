@@ -38,7 +38,7 @@ Using `forest health`{:class="block3variables"} to grow the forest.
 
 --- task ---
 
-Add a `forever`{:class="block3control"} block to the end of the `when flag clicked script`{:class="block3events"} in you **Tree** sprite so that new trees are continuously planted. Within the `forever`{:class="block3control"} loop add a `go to mousepointer`{:class="block3motion"} block changing the value to `random position`. Next add a `wait 1 seconds`{:class="block3control"} block and a `create a clone of myself`{:class="block3control"} block to complete the loop.
+Add a `forever`{:class="block3control"} block to the end of the `when flag clicked script`{:class="block3events"} for the **Tree** sprite so that new trees are continuously planted. Within the `forever`{:class="block3control"} loop add a `go to random position`{:class="block3motion"} block. Next add a `wait 1 seconds`{:class="block3control"} block and a `create a clone of myself`{:class="block3control"} block to complete the loop.
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
@@ -57,7 +57,7 @@ end
 
 --- /task ---
 
-The slider will control the speed the trees grow but currently the code is set to always wait 1 seconds. Moving the slider to the right will speed up the growth whilst moving to the left will decrease the growth.
+ Currently the code is set to always wait 1 seconds but in our simulation the slider will control the speed the trees grow. Moving the slider to the right will speed up the growth whilst moving to the left will decrease the growth.
 
 --- task ---
 
@@ -77,5 +77,13 @@ go to [random position v]
 create clone of [myself v]
 end
 ```
+
+--- /task ---
+
+--- task ---
+
+Test your simulation again. The **forest health** slider will control the speed the forest grows.
+
+![image of a busy forest](images/busy-forest.png)
 
 --- /task ---

@@ -6,7 +6,7 @@ Code the tree feller to ask how many trees are needed each time it is clicked.
 
 --- task ---
 
-Click on the **Tree Feller** sprite and drag a `When this sprite is clicked`{:class="block3events"} block to the Code area. Add an `ask (What is your name?) and wait`{:class="block3sensing"} block changing the value to ask `how many trees are needed?`.
+Click on the **Tree Feller** sprite and drag a `When this sprite is clicked`{:class="block3events"} block to the Code area. Add an `ask (What is your name?) and wait`{:class="block3sensing"} block changing the value to ask `How many trees are needed?`.
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
@@ -48,11 +48,18 @@ set [trees needed v] to (answer)
 
 --- /task ---
 
+--- task ---
+Position/hide your variables.
+
+![image of the stage with variables](images/tstage-with-variables.png)
+
+--- /task ---
+
 The Tree Feller will move through the forest from left-right and back again until it has felled enough trees.
 
 --- task ---
 
-Add blocks to set the starting position for the digger each time it is clicked.
+Add blocks to set the starting position for the **Tree Feller** sprite each time it is clicked.
 
 Insert a `set rotation style left-right`{:class="block3motion"} block so that the **Tree Feller** sprite does not tip upside-down at any point. Next add a `go to x:0 y:0`{:class="block3motion"} block changing the values to `-200` and `150` to make the **Tree Feller** sprite start in the top left corner of the stage. Finally, add a `point in direction 90`{:class="block3motion"} block.
 
@@ -62,7 +69,7 @@ Insert a `set rotation style left-right`{:class="block3motion"} block so that th
 when this sprite clicked
 set [trees felled v] to (0)
 + set rotation style [left-right v]
-+ go to x: (-200) y: (150)
++ go to x: (-180) y: (150)
 + point in direction (90)
 ask [How many trees are needed?] and wait
 set [trees needed v] to (answer)
@@ -82,14 +89,13 @@ Within the `repeat`{:class="block3control"} block add a `move 10 steps`{:class="
 when this sprite clicked
 set [trees felled v] to (0)
 set rotation style [left-right v]
-go to x: (-200) y: (150)
+go to x: (-180) y: (150)
 point in direction (90)
 ask [How many trees are needed?] and wait
 set [trees needed v] to (answer)
 + repeat until {(trees felled) = (trees needed)}
 move (4) steps
 end
-+ end
 ```
 
 --- /task ---
@@ -106,7 +112,7 @@ Inside the `if`{:class="block3control"} block add a `turn right by 15 degrees`{:
 when this sprite clicked
 set [trees felled v] to (0)
 set rotation style [left-right v]
-go to x: (-200) y: (150)
+go to x: (-180) y: (150)
 point in direction (90)
 ask [How many trees are needed?] and wait
 set [trees needed v] to (answer)
@@ -133,7 +139,7 @@ Add an `if...then`{:class="block3control"} block and drag across a `touching mou
 when this sprite clicked
 set [trees felled v] to (0)
 set rotation style [left-right v]
-go to x: (-200) y: (150)
+go to x: (-180) y: (150)
 point in direction (90)
 ask [How many trees are needed?] and wait
 set [trees needed v] to (answer)
@@ -143,7 +149,7 @@ if {touching [edge v]?} then
 turn right (180) degrees
 change y by (-40)
 end
-+ if {touching [tree v]?} then
++ if {touching [Tree v]?} then
 change [trees felled v] by (1)
 wait (0.5) seconds
 + end
@@ -164,7 +170,7 @@ Add a `say Hello! for 2 seconds`{:class="block3looks"} block to the end of your 
 when this sprite clicked
 set [trees felled v] to (0)
 set rotation style [left-right v]
-go to x: (-200) y: (150)
+go to x: (-180) y: (150)
 point in direction (90)
 ask [How many trees are needed?] and wait
 set [trees needed v] to (answer)
@@ -174,7 +180,7 @@ if {touching [edge v]?} then
 turn right (180) degrees
 change y by (-40)
 end
-if {touching [tree v]?} then
+if {touching [Tree v]?} then
 change [trees felled v] by (1)
 wait (0.5) seconds
 end
@@ -187,5 +193,7 @@ end
 --- task ---
 
 Test your simulation. Click on the **Tree Feller** sprite a few times to request different amounts of wood.
+
+![image of the Tree Feller announcing trees felled](images/feller-trees-felled.png)
 
 --- /task ---
