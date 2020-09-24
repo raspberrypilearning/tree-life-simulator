@@ -127,9 +127,7 @@ At the moment the **Tree Feller** sprite will only move across the top of the st
 
 --- task ---
 
-Add an `if...then`{:class="block3control"} block within your `repeat until`{:class="block3control"} loop. Add a `touching mouse-pointer`{:class="block3sensing"} block selecting `edge` from the dropdown. 
-
-Inside the `if`{:class="block3control"} block add two mothion blocks  `turn right by 180 degrees`{:class="block3motion"} and `change y by -40`{:class="block3motion"}.
+Add an `if...then`{:class="block3control"} block with a `touching edge`{:class="block3sensing"} condition block inside. Inside your `if`{:class="block3control"} loop add two `Motion`{:class="block3motion"} blocks:  `turn right by 180 degrees`{:class="block3motion"} and `change y by -40`{:class="block3motion"}.
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
@@ -144,8 +142,8 @@ set [trees needed v] to (answer)
 repeat until {(trees felled) = (trees needed)}
 move (4) steps
 + if {touching [edge v]?} then
-+ turn right (180) degrees
-+ change y by (-40)
+turn right (180) degrees
+change y by (-40)
 end
 + end
 ```
