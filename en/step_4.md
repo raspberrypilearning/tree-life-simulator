@@ -10,11 +10,11 @@ Create a new variable to store the number of trees. Call this variable `trees`{:
 
 --- /task ---
 
-When the simulation begins the number of trees will be `0` and every time a new tree grows this will change by `1`.
+Reset the number of trees when the simulation starts to `0`.
 
 --- task ---
 
-To reset the number of trees when the simulation starts, go to your `when flag clicked`{:class="block3events"} script and insert a `set (trees) to (0)`{:class="block3variables"} block underneath the first block.
+Underneath the `when flag clicked`{:class="block3events"} block set the `trees`{:class="block3variables"} variable to `0`.
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
@@ -34,11 +34,11 @@ end
 
 --- /task ---
 
-The survival rate for new trees is estimated to be 80% meaning that 2 trees out of every 10 planted will die of natural causes before they are fully-grown. Add new fully-grown trees to your `trees`{:class="block3variables"} count to monitor how many there are whilst the simulation is running.
+ Make sure your counter records how many trees are being planted as the simulation is running.
 
 --- task ---
 
-At the end of your `when I start as a clone`{:class="block3control"} script add a `change trees by 1`{:class="block3variables"} block.
+Find your `when I start as a clone`{:class="block3control"} script and add a `change trees by 1`{:class="block3variables"} block at the end.
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
@@ -55,11 +55,17 @@ end
 
 --- /task ---
 
-We can now count our new trees but even fully-grown trees can die or be chopped down through human and natural deforestation. We need to reduce our count of trees if a tree has been touched by the **Tree feller** sprite or **Natural Disaster** sprite.
+We can now count our new trees however the survival rate for new trees is estimated to be 80% meaning that 2 trees out of every 10 planted will die of natural causes before they are fully-grown. We aren't going to reflect this in our simulation but its important to know that not all new trees survive naturally.
+
+Trees can also die or be chopped down through human and natural deforestation. We'll show this by reducing our count of trees if a tree has been touched by the **Tree feller** sprite or the **Natural Disaster** sprite.
 
 --- task ---
 
-Add a `wait until`{:class="block3control"} block to the end of your code. Use an `or`{:class="block3operators"} operator to allow a choice of events. In the first circle of your `or`{:class="block3operators"} block add a `touching mouse-pointer`{:class="sensing"} block and change the value to `Tree feller`. In the second circle of your `or`{:class="block3operators"} block add another `touching mouse-pointer`{:class="block3sensing"} block and change the value to `Natural Disaster`.
+Add a `wait until`{:class="block3control"} block to the end of your code.
+
+Use an `or`{:class="block3operators"} operator to sense if the **Tree** sprite is `touching`{:class="block3sensing"} either the `Natural Disaster`{:class="block3sensing"} or the `Tree Feller`{:class="block3sensing"} sprites.
+
+Add a `touching mouse-pointer`{:class="sensing"} block and change the value to `Tree feller`. Add another `touching mouse-pointer`{:class="block3sensing"} block and change the value to `Natural Disaster`.
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
