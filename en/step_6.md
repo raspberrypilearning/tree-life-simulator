@@ -2,17 +2,19 @@
 
 Trees are extremely important to our quality of life on land. From trees people get fruits to eat, oils for healthy living and shelter from the weather. They are also home to many different species of animals.
 
-Trees also absorb carbon dioxide and help to reduce the rate of CO2 emitted across the globe. Trees help protect our planet! Add a variable to your simulation to calculate the current amount of CO2 that would be absorbed by your fully-grown trees each year.
+Trees absorb carbon dioxide and help to reduce the rate of CO2 emitted across the globe. Trees help protect our planet! Add a variable to your simulation to calculate the current amount of CO2 that would be absorbed by your fully-grown trees each year.
 
 --- task ---
 
-Create a new variable to store the amount of CO2 absorbed by fully-grown trees. Call this variable `CO2 absorbed`{:class="block3variables"}.
+Click on the **Maya** sprite. Create a new variable to store the amount of CO2 absorbed by fully-grown trees. Call this variable `CO2 absorbed`{:class="block3variables"}.
 
 --- /task ---
 
+You'll see a couple of blocks are already in the Code area of the **Maya** sprite. These tell Maya to start the simulation with some text for the users. Set the CO2 absorbed level to zero when the simulation starts.
+
 --- task ---
 
-Click on the **Maya** sprite. You'll see a couple of blocks are already in the Code area. These tell Maya to start the simulation with some text for the users. Add a `set CO2 absorbed to 0`{:class="block3variables"} block when the simulation begins.
+ Add a `set CO2 absorbed to 0`{:class="block3variables"} block underneath the `when flag clicked`{:class="block3events"} block.
 
 ![image of the Maya sprite](images/maya-sprite.png)
 
@@ -25,11 +27,11 @@ say [Looking after trees slows down global warming & protects our planet] for (4
 
 --- /task ---
 
-Maya is a Scientist and knows that a typical hardwood tree can absorb as much as 48 pounds of carbon dioxide per year. Using this she can calculate the expected amount of CO2 absorbed by the forest each year.
+Maya is a Scientist and knows that a typical hardwood tree can absorb as much as 48 pounds of carbon dioxide per year. Using this she can calculate the expected amount of CO2 absorbed by the forest each year. Add a calculation so that the expected CO2 absorbed is calculated throughout the simulation.
 
 --- task ---
 
-Add a `forever`{:class="block3control"} block to the end of your code so that the calculation runs continuously throughout the simulation. Inside the `forever`{:class="block3control"} loop add a `set CO2 absorbed to 0`{:class="block3variables"} block. Replace the `0` with a `multiply`{:class="block3operators"} operator to set up the calculation. In the first circle add a `trees`{:class="block3variables"} block and in the second circle type `48`
+Add a `forever`{:class="block3control"} block to the end of your code. Inside the `forever`{:class="block3control"} loop add a `set CO2 absorbed to 0`{:class="block3variables"} block replacing the `0` with a `multiply`{:class="block3operators"} operator to set up the calculation. In the operator add a `trees`{:class="block3variables"} block and the second value `48`
 
 ![image of the Maya sprite](images/maya-sprite.png)
 
@@ -47,19 +49,21 @@ end
 
 --- task ---
 
-Test your simulation. As fully-grown trees appear the CO2 absorbed will increase, if deforestation occurs the CO2 absorbed will go down to show the expected impact.
+Test your simulation. As fully-grown trees appear the CO2 absorbed amount will increase, if deforestation occurs the CO2 absorbed will go down to show the expected impact.
 
 ![image of CO2 and trees in simulation](images/co2-trees.png)
 
 --- /task ---
 
-The simulation will end when the user stops it or when all the trees have gone.
+Add code to end the simulation when the user stops it or when all the trees have gone.
 
 --- task ---
 
-Add an `if...then...else`{:class="block3control"}block to your forever loop inserting your `set [CO2 absorbed v] to`{:class="block3variables"}`trees`{:class="block3variables"}`*`{:class="block3operators"}`48` block into the top `if..then`{:class="block3control"} section.
+Add an `if...then...else`{:class="block3control"} block to your forever loop. Insert a `greater than`{:class="operators"} operator and the condition, `trees`{:class="block3variables"}`greater than`{:class="operators"}`0`.
 
-Add a `greater than`{:class="operators"} operator into the top of the block, inserting `trees`{:class="block3variables"} to the first circle and changing the value `50` to `0` in the second circle.
+Place your existing `set [CO2 absorbed v] to`{:class="block3variables"}`trees`{:class="block3variables"}`*`{:class="block3operators"}`48` block into the `if..then`{:class="block3control"} section.
+
+
 
 ![image of the Maya sprite](images/maya-sprite.png)
 
@@ -77,9 +81,11 @@ end
 
 --- /task ---
 
+Let the user know when the trees have all gone.
+
 --- task ---
 
-In the `else`{:class="block3control"} section add a `set [CO2 absorbed v] to 0`{:class="block3variables"} block and a 'say Hello! for 2 seconds'{:class="block3looks"} block changing the value to `The trees have gone! Our planet is in danger`. Add a `stop all`{:class="block3control"} block to end the simulation when the trees have gone.
+In the `else`{:class="block3control"} section of your `if...then...else`{:class="block3control"} block add a `set [CO2 absorbed v] to 0`{:class="block3variables"} block. Add a `say`{:class="block3looks"}`The trees have gone! Our planet is in danger`{:class="block3looks"} block.
 
 ![image of the Maya sprite](images/maya-sprite.png)
 
@@ -111,7 +117,7 @@ Set up a message to appear when the number of trees left is greather than `0` an
 
 Add an `if...then`{:class="block3control"} block underneath your `if...then...else`{:class="block3control"} block but still inside your `forever`{:class="block3control"} loop.
 
-Add some operators for your calculation. First add a `and`{:class="block3operators"} then in the first circle add a `greater than`{:class="block3operators"} operator and in the second circle a `less than`{:class="block3operators"} operator. You will now have four circles that you can add values to. In the first and third circle add a `trees`{:class="block3variables"} block and replace the two `50` circles with `0` and `10`. Lastly add a `say Hello! for 2 seconds`{:class="block3looks"} block changing `Hello!` to `Global warming is speeding up.`
+Add some operators for your calculation. First add a `and`{:class="block3operators"} block then a `greater than`{:class="block3operators"} block and a `less than`{:class="block3operators"} block. Set up the calculation `trees`{:class="block3variables"}`greater than`{:class="block3operators"}`0``and`{:class="block3operators"}`trees`{:class="block3variables"}`less than`{:class="block3operators"}`10`. Insert a `say``Global warming is speeding up.``for 2 seconds`{:class="block3looks"} block.
 
 ![image of the Maya sprite](images/maya-sprite.png)
 

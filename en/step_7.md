@@ -1,12 +1,12 @@
 ## Natural deforestation
 
-Deforestation can happen when natural disasters such as drought, forest fire and tornados devastate an area of land. They can also be trigger by human activity, like a campfire, but spread quickly due to natural conditions like a very dry season. This can be particularly deadly as, in the wide area  affected, entire species can disappear with the destruction of their habitats.
+Deforestation can happen when natural disasters such as drought, forest fire and tornados devastate an area of land. They can also be triggered by human activity, like a campfire, but spread quickly due to natural conditions, like a very dry season. This can be particularly deadly as, in the wide area affected, entire species can disappear along with the destruction of their habitats.
 
-Simulate the impact of natural disasters randomly moving through the forest.
+Simulate the impact of natural disasters randomly moving through the forest. Hide the **Natural Disaster** sprite at the start of the simulation.
 
 --- task ---
 
-At the start of the simulation the **Natural Disaster** sprite will hide. Click on the **Natural Disaster** sprite then in the Code area add a `when flag clicked`{:class="block3events"} block followed by a `hide`{:class="block3looks"} block.
+Click on the **Natural Disaster** sprite then in the Code area add a `when flag clicked`{:class="block3events"} block followed by a `hide`{:class="block3looks"} block.
 
 ![image of the Natural Disaster sprite](images/natural-disaster-sprite.png)
 
@@ -38,9 +38,11 @@ glide (3) secs to x:(0) y:(-200)
 
 --- /task ---
 
+The **Natural Disaster** sprite has 3 costumes (Drought, Forest Fire and Tornado) as forests can be hit by many types of natural disaster. Add code so that the simulation has multiple disaster types.
+
 --- task ---
 
-Click on the Costumes tab. The **Natural Disaster** sprite has 3 costumes (Drought, Forest Fire and Tornado) as forests can be hit by many types of natural disaster. Click back to the Code tab and add a `hide`{:class="block3looks"} block when it reaches the bottom of the screen followed by a `next costume`{:class="block3looks"} block so that the simulation has multiple disaster types.
+ Click on the Costumes tab to view the costumes. Click back to the Code tab and add a `hide`{:class="block3looks"} block when it reaches the bottom of the screen followed by a `next costume`{:class="block3looks"} block.
 
 ![image of the Natural Disaster sprite](images/natural-disaster-sprite.png)
 
@@ -67,7 +69,7 @@ Test your project. The **Natural Disaster** sprite will move from top to bottom 
 
 --- /task ---
 
-Scientists can sometimes predict when natural disasters will occur but their timing is not as consistent as in your simulation. Add some randomness to the **Natural Disaster** sprite.
+Scientists can sometimes predict when natural disasters will occur but their timing is not as consistent as in your simulation. Add random timing to the **Natural Disaster** sprite.
 
 --- task ---
 
@@ -91,9 +93,11 @@ end
 
 --- /task ---
 
+Add randomness to the movement of the **Natural Disaster** sprite.
+
 --- task ---
 
-You can also add randomness to the movement of the **Natural Disaster** sprite. Drag a `pick random`{:class="block3operator"} operator into the x: coordinates of both the `go to`{:class="block3motion"} block and the `glide`{:class="block3motion"} block. Change the values in each to `-200` and `200`.
+Drag a `pick random`{:class="block3operator"} operator into the x: coordinates of both the `go to`{:class="block3motion"} block and the `glide`{:class="block3motion"} block. Change the values in each to `-200` and `200`.
 
 ![image of the Natural Disaster sprite](images/natural-disaster-sprite.png)
 
