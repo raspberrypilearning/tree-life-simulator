@@ -1,6 +1,6 @@
 ## Natural deforestation
 
-Deforestation can happen when natural disasters such as drought, forest fire and tornados devastate an area of land. This can be particularly deadly as, in the wide area  affected, entire species can disappear with the destruction of their habitats.
+Deforestation can happen when natural disasters such as drought, forest fire and tornados devastate an area of land. They can also be trigger by human activity, like a campfire, but spread quickly due to natural conditions like a very dry season. This can be particularly deadly as, in the wide area  affected, entire species can disappear with the destruction of their habitats.
 
 Simulate the impact of natural disasters randomly moving through the forest.
 
@@ -40,7 +40,7 @@ glide (3) secs to x:(0) y:(-200)
 
 --- task ---
 
-Click on the Comstumes tab. The **Natural Disaster** sprite has 3 costumes (Drought, Forest Fire and Tornado) as forests can be hit by many types of natural disaster. Click back to the Code tab and add a `hide`{:class="block3looks"} block when it reaches the bottom of the screen followed by a `next costume`{:class="block3looks"} block so that the simulation has multiple disaster types.
+Click on the Costumes tab. The **Natural Disaster** sprite has 3 costumes (Drought, Forest Fire and Tornado) as forests can be hit by many types of natural disaster. Click back to the Code tab and add a `hide`{:class="block3looks"} block when it reaches the bottom of the screen followed by a `next costume`{:class="block3looks"} block so that the simulation has multiple disaster types.
 
 ![image of the Natural Disaster sprite](images/natural-disaster-sprite.png)
 

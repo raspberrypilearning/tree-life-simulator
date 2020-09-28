@@ -1,6 +1,6 @@
 ## Create a forest
 
-Did you know that forests cover 30% of the Earth’s land surface? In this step you will add code to create a forest with a variety of different trees.
+Did you know that forests cover 30% of the Earth’s land surface? The way we look after our local forests now will have global impact for the future. In this step you will add code to create a forest with a variety of different trees.
 
 --- task ---
 
@@ -47,7 +47,7 @@ end
 
 --- /task ---
 
-It’s important that we plant a variety of trees to house a range of animals, restore our environment and benefit people.
+It’s important that we plant a variety of trees to house a range of animals, restore our environment and benefit people. An Australian Koala Bear relies on eucalyptus trees whilst a Lemur in Madagascar needs the deciduous trees there.  
 
 The **Tree** sprite has 3 costumes (tree 1, tree 2 and tree 3). Use the `random`{:class="block3operators"} operator to vary the looks of the trees and add variety to your forest.
 
