@@ -20,7 +20,7 @@ Your new variable is visible on the stage. Create a slider to control the speed 
 
 On the stage, right-click on the forest health variable, and a menu will appear.
 
-Select slider in the menu.
+Select **slider** in the menu.
 
 --- /task ---
 

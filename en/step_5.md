@@ -8,7 +8,7 @@ Code the **Tree Feller** to ask how many trees are needed each time it is clicke
 
 --- task ---
 
-Click on the **Tree Feller** sprite and start a new script with a `when this sprite clicked`{:class="block3events"} block. Add an `ask (What is your name?) and wait`{:class="block3sensing"} block changing the text to ask `How many trees are needed?`:
+Click on the **Tree Feller** sprite and start a new script with a `when this sprite clicked`{:class="block3events"} block. Add an `ask What is your name? and wait`{:class="block3sensing"} block changing the text to ask `How many trees are needed?`:
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
@@ -66,7 +66,7 @@ set [trees needed v] to (answer)
 
 --- /task ---
 
-The stage is looking crowded with so many variables. We need to hide the ones that don't show the health of the forest and position them so they appear in better places in your simulation.
+The stage is looking crowded with so many variables. We need to position them so they appear in better places in your simulation and hide the ones that don't show the health of the forest.
 
 --- task ---
 
@@ -185,7 +185,7 @@ We'd like to know when the **Tree Feller** sprite has felled enough trees. Get t
 
 --- task ---
 
-Add a `Looks`{:class="block3looks"} block to the end of your code so that the **Tree Feller** sprite will `say`{:class="block3looks"}`how many trees it has felled``for 2 seconds`{:class="block3looks"}. To say **how many trees it has felled**  `join`{:class="block3operators"} operator to link the `trees felled`{:class="block3variables"} variable and the text " trees felled":
+Add a `Looks`{:class="block3looks"} block to the end of your code so that the **Tree Feller** sprite will `say`{:class="block3looks"}`how many trees it has felled``for 2 seconds`{:class="block3looks"}. To say **how many trees it has felled** add a  `join`{:class="block3operators"} operator to link the `trees felled`{:class="block3variables"} variable and the text " trees felled":
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
