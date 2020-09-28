@@ -87,7 +87,7 @@ Let the user know when the trees have all gone.
 
 --- task ---
 
-In the `else`{:class="block3control"} section of your `if...then...else`{:class="block3control"} block add a `set CO2 absorbed to 0`{:class="block3variables"} block. Add a `say`{:class="block3looks"}`The trees have gone! Our planet is in danger``for 4 seconds`{:class="block3looks"} block:
+In the `else`{:class="block3control"} section of your `if...then...else`{:class="block3control"} block add a `set CO2 absorbed to 0`{:class="block3variables"} block. Add a `say`{:class="block3looks"}`The trees have gone! Our planet is in danger``for 2 seconds`{:class="block3looks"} block:
 
 ![image of the Maya sprite](images/maya-sprite.png)
 
