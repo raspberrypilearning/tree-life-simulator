@@ -14,7 +14,7 @@ You'll see a couple of blocks are already in the Code area of the **Maya** sprit
 
 --- task ---
 
- Add a `set CO2 absorbed to 0`{:class="block3variables"} block underneath the `when flag clicked`{:class="block3events"} block.
+ Add a `set CO2 absorbed to 0`{:class="block3variables"} block underneath the `when flag clicked`{:class="block3events"} block:
 
 ![image of the Maya sprite](images/maya-sprite.png)
 
@@ -31,7 +31,7 @@ Maya is a Scientist and knows that a typical hardwood tree can absorb as much as
 
 --- task ---
 
-Add a `forever`{:class="block3control"} block to the end of your code. Inside the `forever`{:class="block3control"} loop add a `set CO2 absorbed to 0`{:class="block3variables"} block replacing the `0` with a `multiply`{:class="block3operators"} operator to set up the calculation. In the operator add a `trees`{:class="block3variables"} block and the second value `48`
+Add a `forever`{:class="block3control"} block to the end of your code. Inside the `forever`{:class="block3control"} loop add a `set CO2 absorbed to 0`{:class="block3variables"} block replacing the `0` with a `multiply`{:class="block3operators"} operator to set up the calculation. In the operator add a `trees`{:class="block3variables"} block and the second value `48`:
 
 ![image of the Maya sprite](images/maya-sprite.png)
 
@@ -61,7 +61,7 @@ Add code to end the simulation when the user stops it or when all the trees have
 
 Add an `if...then...else`{:class="block3control"} block to your forever loop. Insert a `greater than`{:class="operators"} operator and the condition, `trees`{:class="block3variables"}`greater than`{:class="operators"}`0`.
 
-Place your existing `set [CO2 absorbed v] to`{:class="block3variables"}`trees`{:class="block3variables"}`*`{:class="block3operators"}`48` block into the `if..then`{:class="block3control"} section.
+Place your existing `set [CO2 absorbed v] to`{:class="block3variables"}`trees`{:class="block3variables"}`*`{:class="block3operators"}`48` block into the `if..then`{:class="block3control"} section:
 
 
 
@@ -85,7 +85,7 @@ Let the user know when the trees have all gone.
 
 --- task ---
 
-In the `else`{:class="block3control"} section of your `if...then...else`{:class="block3control"} block add a `set [CO2 absorbed v] to 0`{:class="block3variables"} block. Add a `say`{:class="block3looks"}`The trees have gone! Our planet is in danger`{:class="block3looks"} block.
+In the `else`{:class="block3control"} section of your `if...then...else`{:class="block3control"} block add a `set [CO2 absorbed v] to 0`{:class="block3variables"} block. Add a `say`{:class="block3looks"}`The trees have gone! Our planet is in danger`{:class="block3looks"} block:
 
 ![image of the Maya sprite](images/maya-sprite.png)
 
@@ -117,7 +117,7 @@ Set up a message to appear when the number of trees left is greather than `0` an
 
 Add an `if...then`{:class="block3control"} block underneath your `if...then...else`{:class="block3control"} block but still inside your `forever`{:class="block3control"} loop.
 
-Add some operators for your calculation. First add a `and`{:class="block3operators"} block then a `greater than`{:class="block3operators"} block and a `less than`{:class="block3operators"} block. Set up the calculation `trees`{:class="block3variables"}`greater than`{:class="block3operators"}`0``and`{:class="block3operators"}`trees`{:class="block3variables"}`less than`{:class="block3operators"}`10`. Insert a `say``Global warming is speeding up.``for 2 seconds`{:class="block3looks"} block.
+Add some operators for your calculation. First add a `and`{:class="block3operators"} block then a `greater than`{:class="block3operators"} block and a `less than`{:class="block3operators"} block. Set up the calculation `trees`{:class="block3variables"}`greater than`{:class="block3operators"}`0``and`{:class="block3operators"}`trees`{:class="block3variables"}`less than`{:class="block3operators"}`10`. Insert a `say``Global warming is speeding up.``for 2 seconds`{:class="block3looks"} block:
 
 ![image of the Maya sprite](images/maya-sprite.png)
 

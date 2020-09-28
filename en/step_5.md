@@ -8,7 +8,7 @@ Code the **Tree Feller** to ask how many trees are needed each time it is clicke
 
 --- task ---
 
-Click on the **Tree Feller** sprite and start a new script with a `when this sprite clicked`{:class="block3events"} block. Add an `ask (What is your name?) and wait`{:class="block3sensing"} block changing the text to ask `How many trees are needed?`.
+Click on the **Tree Feller** sprite and start a new script with a `when this sprite clicked`{:class="block3events"} block. Add an `ask (What is your name?) and wait`{:class="block3sensing"} block changing the text to ask `How many trees are needed?`:
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
@@ -29,7 +29,7 @@ Create a new variable and call this variable `trees needed`{:class="block3variab
 
 --- task ---
 
-Store the answer to you question in the trees needed variable by adding a `set trees needed to 0`{:class="block3variables"} block and dragging an `answer`{:class="block3sensing"} block into where it says `0`.
+Store the answer to you question in the trees needed variable by adding a `set trees needed to 0`{:class="block3variables"} block and dragging an `answer`{:class="block3sensing"} block into where it says `0`:
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
@@ -53,7 +53,7 @@ Create another new variable and call it `trees felled`{:class="block3variables"}
 
 --- task ---
 
-Insert a `set trees felled to 0`{:class="block3variables"} block
+Insert a `set trees felled to 0`{:class="block3variables"} block:
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
@@ -82,7 +82,7 @@ Set the starting position for the **Tree Feller** sprite each time it is clicked
 
 --- task ---
 
-Insert a `set rotation style left-right`{:class="block3motion"} block so that the **Tree Feller** sprite does not tip upside-down. Get the **Tree Feller** sprite start at the top left corner by adding a `go to x:0 y:0`{:class="block3motion"} block changing the values to `-180` and `150`. Get the sprite to `point in direction 90`{:class="block3motion"}.
+Insert a `set rotation style left-right`{:class="block3motion"} block so that the **Tree Feller** sprite does not tip upside-down. Get the **Tree Feller** sprite start at the top left corner by adding a `go to x:0 y:0`{:class="block3motion"} block changing the values to `-180` and `150`. Get the sprite to `point in direction 90`{:class="block3motion"}:
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
@@ -104,7 +104,7 @@ The **Tree Feller** sprite will move through the forest from left-right and back
 
 Add a `repeat until`{:class="block3control"} block and drag an equals `=`{:class="block3operators"} operator inside. Add the condition `trees felled`{:class="block3variables"} `=`{:class="block3operators"} `trees needed`{:class="block3variables"}.
 
-Within the loop add a `move 10 steps`{:class="block3motion"} block changing the value to `4`.
+Within the loop add a `move 10 steps`{:class="block3motion"} block changing the value to `4`:
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
@@ -127,7 +127,7 @@ At the moment the **Tree Feller** sprite will only move across the top of the st
 
 --- task ---
 
-Add an `if...then`{:class="block3control"} block with a `touching edge`{:class="block3sensing"} condition. Inside your `if`{:class="block3control"} loop add two `Motion`{:class="block3motion"} blocks:  `turn right by 180 degrees`{:class="block3motion"} and `change y by -40`{:class="block3motion"}.
+Add an `if...then`{:class="block3control"} block with a `touching edge`{:class="block3sensing"} condition. Inside your `if`{:class="block3control"} loop add two `Motion`{:class="block3motion"} blocks:  `turn right by 180 degrees`{:class="block3motion"} and `change y by -40`{:class="block3motion"}:
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
@@ -154,7 +154,7 @@ When the **Tree Feller** sprite gets to a tree it needs to wait then add that tr
 
 --- task ---
 
-Add another `if...then`{:class="block3control"} block with a `touching Tree`{:class="block3sensing"} condition. Inside your `if...then`{:class="block3control"} loop add a `wait 0.5 seconds`{:class="block3control"} block and a `change trees felled by 1`{:class="block3variables"} block.
+Add another `if...then`{:class="block3control"} block with a `touching Tree`{:class="block3sensing"} condition. Inside your `if...then`{:class="block3control"} loop add a `wait 0.5 seconds`{:class="block3control"} block and a `change trees felled by 1`{:class="block3variables"} block:
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
@@ -185,7 +185,7 @@ We'd like to know when the **Tree Feller** sprite has felled enough trees. Get t
 
 --- task ---
 
-Add a `Looks`{:class="block3looks"} block to the end of your code so that the **Tree Feller** sprite will `say`{:class="block3looks"}`how many trees it has felled``for 2 seconds`{:class="block3looks"}. To say **how many trees it has felled**  `join`{:class="block3operators"} operator to link the `trees felled`{:class="block3variables"} variable and the text " trees felled".
+Add a `Looks`{:class="block3looks"} block to the end of your code so that the **Tree Feller** sprite will `say`{:class="block3looks"}`how many trees it has felled``for 2 seconds`{:class="block3looks"}. To say **how many trees it has felled**  `join`{:class="block3operators"} operator to link the `trees felled`{:class="block3variables"} variable and the text " trees felled":
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 

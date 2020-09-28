@@ -38,7 +38,7 @@ Use a loop so that trees are continuously being planted in random positions.
 
 --- task ---
 
-Add a `forever`{:class="block3control"} block to the end of the `when flag clicked`{:class="block3events"} script for the **Tree**  sprite. Within the `forever`{:class="block3control"} loop add a `go to random position`{:class="block3motion"} block. Next add a `wait 1 seconds`{:class="block3control"} block and a `create a clone of myself`{:class="block3control"} block to complete the loop.
+Add a `forever`{:class="block3control"} block to the end of the `when flag clicked`{:class="block3events"} script for the **Tree**  sprite. Within the `forever`{:class="block3control"} loop add a `go to random position`{:class="block3motion"} block. Next add a `wait 1 seconds`{:class="block3control"} block and a `create a clone of myself`{:class="block3control"} block to complete the loop:
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
@@ -65,7 +65,7 @@ end
 
 --- task ---
 
-Go to the `Operator`{:class="block3operators"} menu and add a `-`{:class="block3operators"} block entering the value `5` and dragging a `forest health`{:class="block3variables"} into the operator.
+Go to the `Operator`{:class="block3operators"} menu and add a `-`{:class="block3operators"} block entering the value `5` and dragging a `forest health`{:class="block3variables"} into the operator:
 
 ![image of the Tree sprite](images/tree-sprite.png)
 

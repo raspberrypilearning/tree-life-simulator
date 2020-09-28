@@ -33,7 +33,7 @@ Plant the new trees in random positions across the stage.
 
 --- task ---
 
-Use a `go to random position`{:class="block3motion"} block to vary where the trees grow. Then add a `create clone of myself`{:class="block3control"} block to create the forest.
+Use a `go to random position`{:class="block3motion"} block to vary where the trees grow. Then add a `create clone of myself`{:class="block3control"} block to create the forest:
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
@@ -53,7 +53,7 @@ The **Tree** sprite has 3 costumes (tree 1, tree 2 and tree 3). Use the `random`
 
 --- task ---
 
-Start a new script with a `when I start as a clone`{:class="block3control"} block. Add a `switch costume to`{:class="block3looks"} block to the script. Drag a `pick random 1 to 10`{:class="block3operators"} block into the `switch costume to`{:class="block3looks"} block. Change the values from `1` and `10` to `1` and `3`.  
+Start a new script with a `when I start as a clone`{:class="block3control"} block. Add a `switch costume to`{:class="block3looks"} block to the script. Drag a `pick random 1 to 10`{:class="block3operators"} block into the `switch costume to`{:class="block3looks"} block. Change the values from `1` and `10` to `1` and `3`:  
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
@@ -76,7 +76,7 @@ Trees don't just appear fully-grown, they get bigger over time. Set up a repeat 
 
 --- task ---
 
-Get a `set size to 100% `{:class="block3looks"} block but change the value to `0` so that the **Tree** sprite starts from nothing. Add a `repeat 10`{:class="block3control"} block.
+Get a `set size to 100% `{:class="block3looks"} block but change the value to `0` so that the **Tree** sprite starts from nothing. Add a `repeat 10`{:class="block3control"} block:
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
@@ -94,7 +94,7 @@ Get the tree to resize and wait as it grows.
 
 --- task ---
 
- Add a `change size by 10`{:class="block3looks"} block within the loop and change the value to `2`. Add a `wait 1 seconds`{:class="block3control"} block and change the value to `0.1` so that it changes quickly.  
+ Add a `change size by 10`{:class="block3looks"} block within the loop and change the value to `2`. Add a `wait 1 seconds`{:class="block3control"} block and change the value to `0.1` so that it changes quickly:  
 
 ![image of the Tree sprite](images/tree-sprite.png)
 

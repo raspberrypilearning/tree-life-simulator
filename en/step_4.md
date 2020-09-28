@@ -1,6 +1,6 @@
 ## Count the trees
 
-Scientists monitor trees and wildlife. They record the cover (size), variety and health of the forests. By doing this they can see the true impact of deforestation. Observations are taken from planes and satellites in the air as well as sensors and people on the ground. Using their findings people can see where extra measures are needed to protect trees for example the addition of fences around the forest to allow trees to thrive or employing more firefighters to help find and stop fires. 
+Scientists monitor trees and wildlife. They record the cover (size), variety and health of the forests. By doing this they can see the true impact of deforestation. Observations are taken from planes and satellites in the air as well as sensors and people on the ground. Using their findings people can see where extra measures are needed to protect trees for example the addition of fences around the forest to allow trees to thrive or employing more firefighters to help find and stop fires.
 
 In this step we'll monitor the trees in your simulation by using variables to store the number of trees and reflect changes.
 
@@ -14,7 +14,7 @@ Reset the number of trees when the simulation starts to `0`.
 
 --- task ---
 
-Underneath the `when flag clicked`{:class="block3events"} block set the `trees`{:class="block3variables"} variable to `0`.
+Underneath the `when flag clicked`{:class="block3events"} block set the `trees`{:class="block3variables"} variable to `0`:
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
@@ -38,7 +38,7 @@ end
 
 --- task ---
 
-Find your `when I start as a clone`{:class="block3control"} script and add a `change trees by 1`{:class="block3variables"} block at the end.
+Find your `when I start as a clone`{:class="block3control"} script and add a `change trees by 1`{:class="block3variables"} block at the end:
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
@@ -61,7 +61,7 @@ Trees can also die or be chopped down through human and natural deforestation. W
 
 --- task ---
 
-Add a `wait until`{:class="block3control"} block to the end of your code. Inside this block use an `or`{:class="block3operators"} operator. Add two more blocks inside the `or`{:class="block3operators"} operator to sense if the **Tree** sprite is `touching Natural Disaster`{:class="block3sensing"} or `touching Tree Feller`{:class="block3sensing"}.
+Add a `wait until`{:class="block3control"} block to the end of your code. Inside this block use an `or`{:class="block3operators"} operator. Add two more blocks inside the `or`{:class="block3operators"} operator to sense if the **Tree** sprite is `touching Natural Disaster`{:class="block3sensing"} or `touching Tree Feller`{:class="block3sensing"}:
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
@@ -82,7 +82,7 @@ When a tree has been touched make sure the tree counter decreases and the tree c
 
 --- task ---
 
-Add a `change Trees by 1`{:class="block3variables"} block changing the value to `-1` and finally a `delete this clone`{:class="block3control"} block to remove the tree.
+Add a `change Trees by 1`{:class="block3variables"} block changing the value to `-1` and finally a `delete this clone`{:class="block3control"} block to remove the tree:
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
