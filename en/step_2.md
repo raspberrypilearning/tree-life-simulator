@@ -47,13 +47,13 @@ end
 
 --- /task ---
 
-It’s important that we plant a variety of trees to house a range of animals, restore our environment and benefit people. An Australian Koala Bear relies on eucalyptus trees whilst a Lemur in Madagascar needs the deciduous trees there.  
+It is important that we plant a variety of trees to house a range of animals, restore our environment and benefit people. For example an Australian Koala Bear relies on eucalyptus trees whilst a Lemur in Madagascar needs the deciduous trees that grow on the island.  
 
 The **Tree** sprite has 3 costumes (tree 1, tree 2 and tree 3). Use the `random`{:class="block3operators"} operator to vary the looks of the trees and add variety to your forest.
 
 --- task ---
 
-Start a new script with a `when I start as a clone`{:class="block3control"} block. Add a `switch costume to`{:class="block3looks"} block to the script. Drag a `pick random 1 to 10`{:class="block3operators"} block into the `switch costume to`{:class="block3looks"} block. Change the values from `1` and `10` to `1` and `3`:  
+Start a new script with a `when I start as a clone`{:class="block3control"} block. Add a `switch costume to`{:class="block3looks"} block below it. Drag a `pick random 1 to 10`{:class="block3operators"} block into the `switch costume to`{:class="block3looks"} block. Change the values from `1` and `10` to `1` and `3`:  
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
@@ -106,6 +106,7 @@ repeat (10)
 + change size by (2)
 + wait (0.1) seconds
 end
+```
 
 --- /task ---
 
