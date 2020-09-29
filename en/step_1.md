@@ -14,7 +14,7 @@ This project focuses on three of the United Nations Sustainable Development Goal
 Click on the green flag then move the slider to alter the forest health for growing trees and click on the tree feller to request wood. Keep an eye out for natural disasters though - they're very disruptive!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/425670876/?autostart=false" frameborder="0"></iframe>
+  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/430502962/?autostart=false" frameborder="0"></iframe>
 </div>
 --- /no-print ---
 
