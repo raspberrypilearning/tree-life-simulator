@@ -2,9 +2,10 @@
 
 In this project, you have:
 
-+ Organised your program using `procedures`{:class="block3myblocks"}
-+ Drawn with the `Pen`{:class="block3extensions"} extension block using `variables`{:class="block3variables"} and `procedures`{:class="block3myblocks"}
-+ Turned real world data (numbers) into an animated data visualisation
++ Create and use `variables`{:class="block3variables"} to store numbers
++ Used `motion`{:class="block3motion"} and `looks`{:class="block3looks"} to create animation
++ Explored the United Nations Sustainable Development Goals which focus on the importance of trees
+
 
 If you are following the [Protect our planet](https://projects.raspberrypi.org/en/raspberrypi/protect-our-planet) pathway, you can move on to the [Turtle tracker](https://projects.raspberrypi.org/en/projects/turtle-tracker) project. In this project, you will draw the routes of sea turtles using real data.
 
