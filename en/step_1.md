@@ -49,7 +49,7 @@ title: What you will learn
 
 + How to create and use `variables`{:class="block3variables"} to store numbers
 + How to use `motion`{:class="block3motion"} and `looks`{:class="block3looks"} to create animation
-+ Explored the United Nations Sustainable Development Goals which focus on the importance of trees
++ How to program a simulation to help understand an environmental problem
 
 --- /collapse ---
 
