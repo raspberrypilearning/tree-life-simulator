@@ -47,7 +47,7 @@ title: What you will learn
 
 + How to create and use `variables`{:class="block3variables"} to store numbers
 + How to use `motion`{:class="block3motion"} and `looks`{:class="block3looks"} to create animation
-+ How to describe the United Nations Sustainable Development Goals that focus on the importance of trees
++ Explored the United Nations Sustainable Development Goals which focus on the importance of trees
 
 --- /collapse ---
 
