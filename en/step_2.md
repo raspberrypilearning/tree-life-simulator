@@ -50,7 +50,7 @@ create clone of [myself v]
 
 It is important that we plant a variety of trees to house a range of animals, restore our environment and benefit people. For example a Koala Bear relies on the broadleaf evergreens in Australia whilst a Lemur in Madagascar needs the deciduous trees that grow on the island.  
 
-The **Tree** sprite has 3 costumes (tree 1, tree 2 and tree 3). Use the `random`{:class="block3operators"} operator to vary the looks of the trees and add variety to your forest.
+The **Tree** sprite has 3 costumes (**tree 1**, **tree 2** and **tree 3**). Use the `random`{:class="block3operators"} operator to vary the looks of the trees and add variety to your forest.
 
 --- task ---
 
@@ -73,11 +73,11 @@ Test your simulation by clicking on the green flag. Make sure your forest has a 
 
 --- /task ---
 
-Trees don't just appear fully-grown, they get bigger over time. Set up a repeat loop so you can change the size of the tree as it grows.
+Trees don't just appear fully-grown, they get bigger over time. Set up a repeat loop so you can change the size of the tree as it grows until its size equals 20%.
 
 --- task ---
 
-Get a `set size to 100% `{:class="block3looks"} block but change the value to `0` so that the **Tree** sprite starts from nothing. Add a `repeat 10`{:class="block3control"} block:
+Get a `set size to 100% `{:class="block3looks"} block but change the value to `0` so that the **Tree** sprite starts from nothing. Add a `repeat until`{:class="block3control"} block and drag an equals `=`{:class="block3operators"} operator inside. Add the condition `size`{:class="block3looks"}`=`{:class="block3operators"}`20` :
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
@@ -85,7 +85,7 @@ Get a `set size to 100% `{:class="block3looks"} block but change the value to `0
 when I start as a clone
 switch costume to (pick random (1) to (3))
 + set size to (0)%
-+ repeat (10)
++ repeat until {(size)=[20]}
 end
 ```
 
@@ -103,7 +103,7 @@ Get the tree to resize and wait as it grows.
 when I start as a clone
 switch costume to (pick random (1) to (3))
 set size to (0)%
-repeat (10)
+repeat until {(size)=[20]}
 + change size by (1)
 + wait (0.1) seconds
 end
