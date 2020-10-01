@@ -50,6 +50,8 @@ Click on the green flag and you'll notice the timer starts to count up immediate
 
 --- /task ---
 
+Reset the timer to zero each time the flag is clicked.
+
 --- task ---
 
 Insert a `reset timer`{:class="block3sensing"} block into your `when flag clicked`{:class="block3events"} script so that the timer resets each time a new tree is cloned. 
@@ -80,7 +82,7 @@ end
 
 --- task ---
 
-Test your simulation again. The **tree management** slider will control the speed the forest grows.
+Test your simulation again. The **tree management** slider will control the speed that the forest grows.
 
 ![image of a busy forest](images/busy-forest.png)
 
