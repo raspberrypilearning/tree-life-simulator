@@ -40,7 +40,7 @@ In our simulation the **tree management** slider will control the speed the tree
 
 This means if `tree management`{:class="block3variables"} equals `4` the wait time will be 2 seconds but if `tree management`{:class="block3variables"} equals `1` the wait time will be slower at 5 seconds. 
 
-We need to add a set of blocks to make sure that the **tree management** slider reacts quickly to the user.  
+You need to add a set of blocks to make sure that the trees growth quickly reacts to a change in the **tree management** slider.  
 
 --- task ---
 
@@ -72,7 +72,7 @@ Create a quick response to the slider so that the user imediately sees the impac
 
 --- task ---
 
-Add a `repeat until`{:class="block3control"} block with the condition `timer`{:class="block3sensing"} `>`{:class="block3operators"} `6` `-`{:class="block3operators"} `tree management`{:class="block3variables"}.  Within the `repeat until`{:class="block3control"} block add a `wait 1 seconds`{:class="block3control"} block:
+Insert a `repeat until`{:class="block3control"} block with the condition `timer`{:class="block3sensing"} `>`{:class="block3operators"} `6` `-`{:class="block3operators"} `tree management`{:class="block3variables"}.  Within the `repeat until`{:class="block3control"} block add a `wait 1 seconds`{:class="block3control"} block:
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
