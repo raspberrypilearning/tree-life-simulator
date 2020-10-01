@@ -28,7 +28,7 @@ At the moment the tree management range is too wide.
 
 --- task ---
 
-On the stage, right-click on the tree managementh slider and select **change slider range**.
+On the stage, right-click on the tree management slider and select **change slider range**.
 
 Change the range to between `0` and `5`.
 
@@ -38,13 +38,15 @@ In our simulation the **tree management** slider will control the speed the tree
 
  ![image of the slider maths](images/slider-maths.png)
 
-This means if `tree management`{:class="block3variables"} equals `4` the wait time will be 2 second but if `tree management`{:class="block3variables"} equals `1` the wait time will be slower at 5 seconds. 
+This means if `tree management`{:class="block3variables"} equals `4` the wait time will be 2 seconds but if `tree management`{:class="block3variables"} equals `1` the wait time will be slower at 5 seconds. 
 
-Scratch has a `timer`{:class="block3sensing"} block that you can use the the simulation. The Scratch timer starts when you click on the green flag 
+Scratch has a `timer`{:class="block3sensing"} block that you can use in the simulation. The Scratch timer starts when you click on the green flag 
 
 --- task ---
 
-Go to the `Sensing`{:class="block3sensing"} menu and click on the tick next to the `timer`{:class="block3sensing"} block to show the timer on the stage. Click on the green flag to start your simulation and you'll notice the timer starts to count up. Click on the tick again to hide the timer from view. 
+Go to the `Sensing`{:class="block3sensing"} menu and click on the tick next to the `timer`{:class="block3sensing"} block to show the timer on the stage. 
+
+Click on the green flag to start your simulation. You'll notice the timer starts to count up. Click on the tick again to hide the timer from view. 
 
 --- /task ---
 
@@ -52,7 +54,7 @@ You can use the `timer`{:class="block3sensing"} to make the speed of your **tree
 
 --- task ---
 
-Insert a `reset timer`{:class="block3sensing"} block into your `when flag clicked`{:class="block3events"} script. Below it add a `repeat until`{:class="block3control"} block with the condition `timer`{:class="block3sensing"}`>`{:class="block3operators"}`6``-`{:class="block3operators"}`tree management`{:class="block3variables"}. Within the `repeat until`{:class="block3control"} block add a `wait 1 seconds`{:class="block3control"} block:
+Insert a `reset timer`{:class="block3sensing"} block into your `when flag clicked`{:class="block3events"} script. Below it add a `repeat until`{:class="block3control"} block with the condition `timer`{:class="block3sensing"} `>`{:class="block3operators"} `6` `-`{:class="block3operators"} `tree management`{:class="block3variables"}. Within the `repeat until`{:class="block3control"} block add a `wait 1 seconds`{:class="block3control"} block:
 
 ```blocks3
 when flag clicked
