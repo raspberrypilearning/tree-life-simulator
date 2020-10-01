@@ -63,13 +63,13 @@ when I start as a clone
 switch costume to (pick random (1) to (3))
 ```
 
-![image of the first trees ](images/first-trees.png)
-
 --- /task ---
 
 --- task ---
 
 Test your simulation by clicking on the green flag. Make sure your forest has a variety of trees.
+
+![image of the first trees ](images/first-trees.png)
 
 --- /task ---
 
