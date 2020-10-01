@@ -54,7 +54,7 @@ You can use the `timer`{:class="block3sensing"} to make the speed of your **tree
 
 --- task ---
 
-Insert a `reset timer`{:class="block3sensing"} block into your `when flag clicked`{:class="block3events"} script. Below it add a `repeat until`{:class="block3control"} block with the condition `timer`{:class="block3sensing"} `>`{:class="block3operators"} `6` `-`{:class="block3operators"} `tree management`{:class="block3variables"}. Within the `repeat until`{:class="block3control"} block add a `wait 1 seconds`{:class="block3control"} block:
+Insert a `reset timer`{:class="block3sensing"} block into your `when flag clicked`{:class="block3events"} script so that the timer rests each time a new tree is cloned. Below it add a `repeat until`{:class="block3control"} block with the condition `timer`{:class="block3sensing"} `>`{:class="block3operators"} `6` `-`{:class="block3operators"} `tree management`{:class="block3variables"} this will control the amount of time before cloning another tree. Within the `repeat until`{:class="block3control"} block add a `wait 1 seconds`{:class="block3control"} block:
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
