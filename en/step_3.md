@@ -56,11 +56,11 @@ Insert a `reset timer`{:class="block3sensing"} block into your `when flag clicke
 
 --- /task ---
 
-Create a quick response to the slider by setting up a loop that checks the **tree management** value frequently and adjusts the speed before cloning another tree.
+Create a quick response to the slider so that the user imediately sees the impact of their interaction. Set up a loop that checks the **tree management** value frequently and adjusts the speed before cloning another tree.
 
 --- task ---
 
-Add a `repeat until`{:class="block3control"} block with the condition `timer`{:class="block3sensing"} `>`{:class="block3operators"} `6` `-`{:class="block3operators"} `tree management`{:class="block3variables"}  Within the `repeat until`{:class="block3control"} block add a `wait 1 seconds`{:class="block3control"} block:
+Add a `repeat until`{:class="block3control"} block with the condition `timer`{:class="block3sensing"} `>`{:class="block3operators"} `6` `-`{:class="block3operators"} `tree management`{:class="block3variables"}.  Within the `repeat until`{:class="block3control"} block add a `wait 1 seconds`{:class="block3control"} block:
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
