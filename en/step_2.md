@@ -18,7 +18,7 @@ In Scratch we can make up to 300 copies of one sprite! This is called **cloning*
 
 --- task ---
 
-Go to the Sprites pane and click on the **Tree** sprite. Drag a `when flag clicked`{:class="block3events"} block and a `forever`{:class="block3control"} block onto your Code area. Within the forever loop add a `go to x:`{:class="block3motion"}`0``y:`{:class="block3motion"}`0` block, a `wait 1 seconds`{:class="block3control"} block, and a `create clone of myself`{:class="block3control"} block:
+Go to the Sprites pane and click on the **Tree** sprite. Drag a `when flag clicked`{:class="block3events"} block and a `forever`{:class="block3control"} block onto your Code area. Within the forever loop add a `go to x:`{:class="block3motion"}`0``y:`{:class="block3motion"}`0` block and a `create clone of myself`{:class="block3control"} block:
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
@@ -26,7 +26,6 @@ Go to the Sprites pane and click on the **Tree** sprite. Drag a `when flag click
 when flag clicked
 forever
 go to x:(0) y:(0)
-wait (1) seconds
 create clone of [myself v]
 end
 ```
@@ -45,7 +44,6 @@ Add a `pick random`{:class="block3operators"} block to both your `x:`{:class="bl
 when flag clicked
 forever
 + go to x:(pick random (-150) to (200)) y:(pick random (-120) to (120))
-wait (1) seconds
 create clone of [myself v]
 end
 ```
@@ -132,7 +130,6 @@ when flag clicked
 + hide
 forever
 go to x:(pick random (-150) to (200)) y:(pick random (-120) to (120))
-wait (1) seconds
 create clone of [myself v]
 end
 ```
