@@ -48,7 +48,7 @@ title: What you will learn
 ---
 
 + How to use `clones`{:class="block3control"} and `random`{:class="block3operators"} numbers to simulate a natural environment
-+ How to use `>`operators`{:class="block3operators"} `<`operators`{:class="block3operators"} `operators`{:class="block3operators"} to control a simulation
++ How to use `>`{:class="block3operators"} `<`{:class="block3operators"} `operators`{:class="block3operators"} to control a simulation
 + How to program a simulation to help communicate an environmental issue
 
 --- /collapse ---
