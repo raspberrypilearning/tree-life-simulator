@@ -1,4 +1,4 @@
-## Grow more trees
+## Tree management
 
 In the simulation we want to see the impact of trees growing at a faster or slower speed. The speed at which a forest grows depends on a number of factors such as climate conditions, soil quality, disease, sunlight and water. In this step you'll add a slider to demonstrate the impact of forest health conditions on forest growth.
 
