@@ -47,9 +47,9 @@ title: What you will need
 title: What you will learn
 ---
 
-+ How to create and use `variables`{:class="block3variables"} to store numbers
-+ How to use `motion`{:class="block3motion"} and `looks`{:class="block3looks"} to create animation
-+ How to program a simulation to help understand an environmental problem
++ How to use `clones`{:class="block3control"} and `random`{:class="block3operators"} numbers to simulate a natural environment
++ How to use `>`operators`{:class="block3operators"} `<`operators`{:class="block3operators"} `operators`{:class="block3operators"} to control a simulation
++ How to program a simulation to help communicate an environmental issue
 
 --- /collapse ---
 
