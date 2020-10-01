@@ -56,6 +56,16 @@ Reset the timer to zero each time the flag is clicked.
 
 Insert a `reset timer`{:class="block3sensing"} block into your `when flag clicked`{:class="block3events"} script so that the timer resets each time a new tree is cloned. 
 
+```blocks3
+when flag clicked
+hide
+forever
+go to x:(pick random (-150) to (200)) y:(pick random (-120) to (120))
++ reset timer
+create clone of [myself v]
+end
+```
+
 --- /task ---
 
 Create a quick response to the slider so that the user imediately sees the impact of their interaction. Set up a loop that checks the **tree management** value frequently and adjusts the speed before cloning another tree.
@@ -71,7 +81,7 @@ when flag clicked
 hide
 forever
 go to x:(pick random (-150) to (200)) y:(pick random (-120) to (120))
-+ reset timer
+reset timer
 + repeat until {{(timer)>((6)-(tree management))}}
 wait (1) seconds
 end
