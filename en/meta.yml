@@ -8,7 +8,7 @@ last_tested: "2020-09-15"
 steps:
   - title: Introduction
   - title: Grow some trees
-  - title: Grow more trees
+  - title: Tree management
   - title: Count the trees
   - title: Human deforestation
   - title: Monitor CO2 levels
