@@ -40,19 +40,27 @@ In our simulation the **tree management** slider will control the speed the tree
 
 This means if `tree management`{:class="block3variables"} equals `4` the wait time will be 2 seconds but if `tree management`{:class="block3variables"} equals `1` the wait time will be slower at 5 seconds. 
 
-We need to add a set of blocks to make sure that the **tree management** slider reacts quickly to the users.  
+We need to add a set of blocks to make sure that the **tree management** slider reacts quickly to the user.  
 
 --- task ---
 
-In this task you'll see how the `timer`{:class="block3sensing"} block works. Go to the `Sensing`{:class="block3sensing"} menu and click on the tick next to the `timer`{:class="block3sensing"} block to show the timer on the stage. 
+In this task you'll see how the `timer`{:class="block3sensing"} block works. Go to the `Sensing`{:class="block3sensing"} menu and click on the tick next to the `timer`{:class="block3sensing"} block to show the timer on the Stage. 
 
-Click on the green flag to start your simulation. You'll notice the timer starts to count up immediately. Click on the tick again to hide the timer from view. 
+Click on the green flag and you'll notice the timer starts to count up immediately. Click on the tick again to hide the timer from view. 
 
 --- /task ---
 
 --- task ---
 
-Insert a `reset timer`{:class="block3sensing"} block into your `when flag clicked`{:class="block3events"} script so that the timer resets each time a new tree is cloned. Below it add a `repeat until`{:class="block3control"} block with the condition `timer`{:class="block3sensing"} `>`{:class="block3operators"} `6` `-`{:class="block3operators"} `tree management`{:class="block3variables"} this will create a quick response to the slider as it checks  frequently and adjusts before cloning another tree. Within the `repeat until`{:class="block3control"} block add a `wait 1 seconds`{:class="block3control"} block:
+Insert a `reset timer`{:class="block3sensing"} block into your `when flag clicked`{:class="block3events"} script so that the timer resets each time a new tree is cloned. 
+
+--- /task ---
+
+Create a quick response to the slider by setting up a loop that checks the **tree management** value frequently and adjusts the speed before cloning another tree.
+
+--- task ---
+
+Add a `repeat until`{:class="block3control"} block with the condition `timer`{:class="block3sensing"} `>`{:class="block3operators"} `6` `-`{:class="block3operators"} `tree management`{:class="block3variables"}  Within the `repeat until`{:class="block3control"} block add a `wait 1 seconds`{:class="block3control"} block:
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
