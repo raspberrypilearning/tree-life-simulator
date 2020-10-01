@@ -8,10 +8,12 @@ This project focuses on three of the United Nations Sustainable Development Goal
 + [Climate Action](https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-13-climate-action.html){:target="_blank"}
 + [Life on Land](https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-15-life-on-land.html){:target="_blank"}
 
+Thanks to Ecosia for their guidance on tree life simulation.
+
 ### What you will make
 
 --- no-print ---
-Click on the green flag then move the slider to alter the forest health for growing trees and click on the tree feller to request wood. Keep an eye out for natural disasters though - they're very disruptive!
+Click on the green flag and then move the slider to alter the tree management levels. Click on the tree feller to request wood. Keep an eye out for natural disasters though - they’re very disruptive!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/430502962/?autostart=false" frameborder="0"></iframe>
