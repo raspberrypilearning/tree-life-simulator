@@ -40,17 +40,17 @@ In our simulation the **tree management** slider will control the speed the tree
 
 This means if `tree management`{:class="block3variables"} equals `4` the wait time will be 2 seconds but if `tree management`{:class="block3variables"} equals `1` the wait time will be slower at 5 seconds. 
 
-Scratch has a `timer`{:class="block3sensing"} block that you can use in the simulation. The Scratch timer starts when you click on the green flag 
+In this task you'll see how the `timer`{:class="block3sensing"} block works. 
 
 --- task ---
 
 Go to the `Sensing`{:class="block3sensing"} menu and click on the tick next to the `timer`{:class="block3sensing"} block to show the timer on the stage. 
 
-Click on the green flag to start your simulation. You'll notice the timer starts to count up. Click on the tick again to hide the timer from view. 
+Click on the green flag to start your simulation. You'll notice the timer starts to count up immediately. Click on the tick again to hide the timer from view. 
 
 --- /task ---
 
-You can use the `timer`{:class="block3sensing"} to make the speed of your **tree management** animation adjust as soon as the slider moves.  
+You can use the `timer`{:class="block3sensing"} to make the speed of your **tree management** animation adjust immediately as soon as the slider moves.
 
 --- task ---
 
