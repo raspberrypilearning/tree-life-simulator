@@ -1,8 +1,8 @@
 ## Tree management
 
-In the simulation we want to see the impact of trees growing at a faster or slower speed. The speed at which a forest grows depends on a number of factors such as climate conditions, soil quality, disease, sunlight and water. In this step you'll add a slider to demonstrate the impact of forest health conditions on forest growth.
+In the simulation we want to see the impact of new trees sprouting at a faster or slower speed. The speed at which new trees grow depends on a number of factors such as climate conditions, soil quality, disease, sunlight and water. In this step you'll add a slider to demonstrate how managing these conditions impacts the growth of the number of trees in the area. 
 
-The growing speed will be held in a variable called `forest health`{:class="block3variables"}.
+The growing speed will be held in a variable called `tree management`{:class="block3variables"}.
 
 --- task ---
 
@@ -10,7 +10,7 @@ Create a new variable by clicking on the `Variables`{:class="block3variables"} b
 
 Then click on the **Make a Variable** button.
 
-You can give your variable a name. Call this variable `forest health`.
+You can give your variable a name. Call this variable `tree management`.
 
 --- /task ---
 
@@ -18,54 +18,69 @@ Your new variable is visible on the stage. Create a slider to control the speed 
 
 --- task ---
 
-On the stage, right-click on the forest health variable, and a menu will appear.
+On the stage, right-click on the tree management variable, and a menu will appear.
 
 Select **slider** in the menu.
 
 --- /task ---
 
-At the moment the forest health range is too wide.
+At the moment the tree management range is too wide.
 
 --- task ---
 
-On the stage, right-click on the forest health slider and select **change slider range**.
+On the stage, right-click on the tree managementh slider and select **change slider range**.
 
 Change the range to between `0` and `5`.
 
 --- /task ---
 
-Use a loop so that trees are continuously being planted in random positions.
+Currently the code is set to always wait 1 seconds but in our simulation the **tree management** slider will control the speed the trees grow. Moving the slider to the right will speed up the growth whilst moving to the left will slow down the growth. When the slider is at the right the simulation will wait 1 seconds to plant a tree and when it is at the left it will wait 6 seconds to plant a tree.
+
+ ![image of the slider maths](images/slider-maths.png)
+
+This means if `tree management`{:class="block3variables"} equals `4` the wait time will be 2 second but if `tree management`{:class="block3variables"} equals `1` the wait time will be slower at 5 seconds. 
+
+Scratch has a `timer`{:class="block3sensing"} block you can use the the simulation so that the **tree management** slider smoothly controls the number of trees growing. Your program should reset the timer each time a new sprouting position is chosen then repeat until the timer is greater than the sum of 6 - the value in the tree management slider.
 
 --- task ---
 
-Add a `forever`{:class="block3control"} block to the end of the `when flag clicked`{:class="block3events"} script for the **Tree**  sprite. Within the `forever`{:class="block3control"} loop add a `go to random position`{:class="block3motion"} block. Next add a `wait 1 seconds`{:class="block3control"} block and a `create a clone of myself`{:class="block3control"} block to complete the loop:
-
-![image of the Tree sprite](images/tree-sprite.png)
+Insert a `repeat until`{:class="block3control"} block in your `when flag clicked`{:class="block3events"} script wrapping it round the existing `wait 1 seconds`{:class="block3control"} and `create clone of myself`{:class="block3control"} blocks. Above your new `repeat until` block and a `reset timer`{:class="block3sensing"}.
 
 ```blocks3
 when flag clicked
-repeat (50)
-go to [random position v]
-create clone of [myself v]
-end
-+ forever
-go to [random position v]
+hide
+forever
+go to x:(pick random (-150) to (200)) y:(pick random (-120) to (120))
++ reset timer
++ repeat until ()
 wait (1) seconds
 create clone of [myself v]
 end
 ```
-
 --- /task ---
-
- Currently the code is set to always wait 1 seconds but in our simulation the **forest health** slider will control the speed the trees grow. Moving the slider to the right will speed up the growth whilst moving to the left will slow down the growth. When the slider is at the right the simulation will wait 0 seconds to plant a tree and when it is at the left it will wait 5 seconds to plant a tree.
-
- ![image of the slider maths](images/slider-maths.png)
-
- This means if `forest health`{:class="block3variables"} equals `4` the wait time will be 1 second but if `forest health`{:class="block3variables"} equals `2` the wait time will be slower at 3 seconds.
 
 --- task ---
 
-Go to the `Operator`{:class="block3operators"} menu and add a `-`{:class="block3operators"} block entering the value `5` and dragging a `forest health`{:class="block3variables"} into the operator:
+Add a greater than block into your `repeat until`{:class="block3control"} block and build the condition `timer`{:class="block3sensing"}`>`{:class="block3operators"}`6``-`{:class="block3operators"}`tree management`{:class="block3variables"}:
+
+```blocks3
+when flag clicked
+hide
+forever
+go to x:(pick random (-150) to (200)) y:(pick random (-120) to (120))
++ reset timer
++ repeat until ()
+wait (1) seconds
+create clone of [myself v]
+end
+```
+--- /task ---
+
+--- task ---
+
+Go to the `Sensing`{:class="block3sensing"} menu. 
+
+
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
