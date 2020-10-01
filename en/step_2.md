@@ -1,4 +1,4 @@
-## Create a forest
+## Grow some trees
 
 Did you know that forests cover 30% of the Earth’s land surface? The way we look after our local forests now will have global impact for the future. In this step you will add code to create a forest with a variety of different trees.
 
