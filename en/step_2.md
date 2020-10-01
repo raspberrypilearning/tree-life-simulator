@@ -43,9 +43,11 @@ Add a `pick random`{:class="block3operators"} block to both your `x:`{:class="bl
 
 ```blocks3
 when flag clicked
-go to x:(pick random (-150) to (200)) y:(pick random (-120) to (120))
+forever
++ go to x:(pick random (-150) to (200)) y:(pick random (-120) to (120))
 wait (1) seconds
 create clone of [myself v]
+end
 ```
 
 --- /task ---
@@ -128,9 +130,11 @@ Add a `hide`{:class="block3looks"} block to the start of your `when flag clicked
 ```blocks3
 when flag clicked
 + hide
+forever
 go to x:(pick random (-150) to (200)) y:(pick random (-120) to (120))
 wait (1) seconds
 create clone of [myself v]
+end
 ```
 
 ```blocks3
