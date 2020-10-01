@@ -14,40 +14,41 @@ You should see a green grassland background.
 
 --- /task ---
 
-Use a loop to plant 50 trees to start your forest.
+In Scratch we can make up to 300 copies of one sprite! This is called **cloning**. Add code to the **Tree** sprite so that it creates clones of itself on the stage.
 
 --- task ---
 
-Go to the Sprites pane and click on the **Tree** sprite. Drag a `when flag clicked`{:class="block3events"} block and `repeat 10`{:class="block3control"} block onto your Code area. For the `repeat 10`{:class="block3control"} block change the value `10` to `50`:
+Go to the Sprites pane and click on the **Tree** sprite. Drag a `when flag clicked`{:class="block3events"} block and `forever`{:class="block3control"} block onto your Code area. Within the forever loop add a `go to x:`{:class="block3motion"}`0``y:`{:class="block3motion"}`0` block, a `wait 1 seconds`{:class="block3control"} block, and a `create clone of myself`{:class="block3control"} block:
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
 ```blocks3
 when flag clicked
-repeat (50)
+go to x:(0) y:(0)
+wait (1) seconds
+create clone of [myself v]
 ```
 
 --- /task ---
 
-Plant the new trees in random positions across the stage.
+Plant the cloned trees in random positions across the stage.
 
 --- task ---
 
-Use a `go to random position`{:class="block3motion"} block to vary where the trees grow. Then add a `create clone of myself`{:class="block3control"} block to create the forest:
+Add a `pick random`{:class="block3operators"} block to your `x:`{:class="block3motion"} and `y:`{:class="block3motion"} values to vary where the trees grow. Change the `x:`{:class="block3motion"} coordinates to `pick random`{:class="block3operators"}`-150``to`{:class="block3operators"}`200`. Change the `y:`{:class="block3motion"} coordinates to `pick random`{:class="block3operators"}`-120``to`{:class="block3operators"}`120`:
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
 ```blocks3
 when flag clicked
-repeat (50)
-+go to [random position v]
-+create clone of [myself v]
-end
+go to x:(pick random (-150) to (200)) y:(pick random (-120) to (120))
+wait (1) seconds
+create clone of [myself v]
 ```
 
 --- /task ---
 
-It is important that we plant a variety of trees to house a range of animals, restore our environment and benefit people. For example an Australian Koala Bear relies on eucalyptus trees whilst a Lemur in Madagascar needs the deciduous trees that grow on the island.  
+It is important that we plant a variety of trees to house a range of animals, restore our environment and benefit people. For example a Koala Bear relies on the broadleaf evergreens in Australia whilst a Lemur in Madagascar needs the deciduous trees that grow on the island.  
 
 The **Tree** sprite has 3 costumes (tree 1, tree 2 and tree 3). Use the `random`{:class="block3operators"} operator to vary the looks of the trees and add variety to your forest.
 
@@ -62,7 +63,7 @@ when I start as a clone
 switch costume to (pick random (1) to (3))
 ```
 
-![image of the 50 trees ](images/50-trees.png)
+![image of the first trees ](images/first-trees.png)
 
 --- /task ---
 
@@ -94,7 +95,7 @@ Get the tree to resize and wait as it grows.
 
 --- task ---
 
- Add a `change size by 10`{:class="block3looks"} block within the loop and change the value to `2`. Add a `wait 1 seconds`{:class="block3control"} block and change the value to `0.1` so that it changes quickly:  
+ Add a `change size by 10`{:class="block3looks"} block within the loop and change the value to `1`. Add a `wait 1 seconds`{:class="block3control"} block and change the value to `0.1` so that it changes quickly:  
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
@@ -103,7 +104,7 @@ when I start as a clone
 switch costume to (pick random (1) to (3))
 set size to (0)%
 repeat (10)
-+ change size by (2)
++ change size by (1)
 + wait (0.1) seconds
 end
 ```
@@ -112,7 +113,40 @@ end
 
 --- task ---
 
-Test your simulation again. Your trees will now grow like they would in a real forest.
+Test your simulation again. Your trees will now grow but that a fully-grown tree appears wherever your next clone is growing.
+
+--- /task ---
+
+Hide the tree until it starts a new clone. 
+
+--- task ---
+
+Add a `hide` block to the start of your `when flag clicked` script and a `show` block to the start of your `when I start as a clone` script.
+
+```blocks3
+when flag clicked
++ hide
+go to x:(pick random (-150) to (200)) y:(pick random (-120) to (120))
+wait (1) seconds
+create clone of [myself v]
+```
+
+```blocks3
+when I start as a clone
++ show
+switch costume to (pick random (1) to (3))
+set size to (0)%
+repeat (10)
+change size by (1)
+wait (0.1) seconds
+end
+```
+
+--- /task ---
+
+--- task ---
+
+Test your simulation again. Your trees will now grow like they would in a real life.
 
 --- /task ---
 
