@@ -138,7 +138,7 @@ when I start as a clone
 + show
 switch costume to (pick random (1) to (3))
 set size to (0)%
-repeat (10)
+repeat until {(size)=[20]}
 change size by (1)
 wait (0.1) seconds
 end
