@@ -66,7 +66,7 @@ Reset the number of trees needed every time the green flag is clicked to start t
 
 --- task ---
 
-Start a new script with `when green flag clicked`{:class="block3control"} and add a `set trees needed to 0`{:class="block3variables"} block:
+Start a new script with `when green flag clicked`{:class="block3control"} block, and add a `set trees needed to 0`{:class="block3variables"} block:
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
