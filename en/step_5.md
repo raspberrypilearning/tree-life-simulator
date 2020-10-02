@@ -27,7 +27,7 @@ Create a new `variable`{:class="block3variables"} and call it `trees needed`.
 
 --- /task ---
 
-Each time someone submits a request for more trees, the **Tree Feller** sprite should add that number to the `trees needed`{:class="block3variables"} variable. 
+Each time someone submits a request for more trees, the **Tree Feller** sprite should add that number to the amount of trees needed. 
 
 --- task ---
 
