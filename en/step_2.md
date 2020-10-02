@@ -79,7 +79,7 @@ Trees don't just appear fully grown, they get bigger over time. You need to set 
 
 --- task ---
 
-Get a `set size to 100`{:class="block3looks"} (percent) block, but change the value to `0` so that the **Tree** sprite starts from nothing. Add a `repeat until`{:class="block3control"} block, and drag an equals `=`{:class="block3operators"} block inside. Add the condition `size`{:class="block3looks"} `=`{:class="block3operators"} `20` :
+Get a `set size to 100`{:class="block3looks"} (percent) block, but change the value to `0` so that the **Tree** sprite starts from nothing. Add a `repeat until`{:class="block3control"} block, and drag an equals `=`{:class="block3operators"} block inside. Add the condition `size`{:class="block3looks"} `=`{:class="block3operators"} `20`:
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
