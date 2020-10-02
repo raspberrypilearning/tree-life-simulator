@@ -1,12 +1,12 @@
 ## Grow some trees
 
-Did you know that trees cover 30% of the Earth’s land surface? The way we look after our local trees now will have global impact for the future. In this step you will add code to create an area of trees with a variety of different tree types.
+Did you know that trees cover 30% of the Earth’s land surface? The way we look after our local trees now will have global impact on the future of our planet. In this step, you will add code to create an area of trees with a variety of different tree types.
 
 --- task ---
 
-If working **online**, open the [starter project](http://rpf.io/p/en/projectName-on){:target="_blank"} in Scratch.
+**Online**: open the [starter project](http://rpf.io/p/en/projectName-on){:target="_blank"} in Scratch.
 
-If working **offline**, open the project [starter file](http://rpf.io/p/en/projectName-get){:target="_blank"} in the Scratch offline editor. If you need to download and install Scratch, you can find it [here](https://scratch.mit.edu/download){:target="_blank"}.
+**Offline**: open the [project starter file](http://rpf.io/p/en/projectName-get){:target="_blank"} in the Scratch offline editor. If you need to, you can [download and install Scratch here](https://scratch.mit.edu/download){:target="_blank"}.
 
 You should see a green grassland background.
 
@@ -14,11 +14,11 @@ You should see a green grassland background.
 
 --- /task ---
 
-In Scratch we can make up to 300 copies of one sprite! This is called **cloning**. Add code to the **Tree** sprite so that it creates clones of itself on the stage.
+In Scratch, you can make up to 300 copies of one sprite! This is called **cloning**. Add code to the **Tree** sprite so that it creates clones of itself on the Stage.
 
 --- task ---
 
-Go to the Sprites pane and click on the **Tree** sprite. Drag a `when flag clicked`{:class="block3events"} block and a `forever`{:class="block3control"} block onto your Code area. Within the forever loop add a `go to x:`{:class="block3motion"} `0` `y:`{:class="block3motion"} `0` block and a `create clone of myself`{:class="block3control"} block:
+Go to the Sprites pane, and click on the **Tree** sprite. Drag a `when green flag clicked`{:class="block3events"} block and a `forever`{:class="block3control"} block onto your Code area. Within the `forever`{:class="block3control"} block, add a `go to x:`{:class="block3motion"} `0` `y:`{:class="block3motion"} `0` block and a `create clone of myself`{:class="block3control"} block:
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
@@ -32,7 +32,7 @@ end
 
 --- /task ---
 
-Plant the cloned trees in random positions across the stage.
+Plant the cloned trees in random positions across the Stage.
 
 --- task ---
 
@@ -50,9 +50,9 @@ end
 
 --- /task ---
 
-It is important that we plant a variety of trees to house a range of animals, restore our environment and benefit people. For example a Koala Bear relies on the broadleaf evergreens in Australia whilst a Lemur in Madagascar needs the deciduous trees that grow on the island.  
+It is important that you plant a variety of trees to house a range of animals, restore the environment, and benefit people. For example, a Koala Bear relies on the broadleaf evergreens in Australia, while a Lemur in Madagascar needs the deciduous trees that grow on the island.  
 
-The **Tree** sprite has 3 costumes (**tree 1**, **tree 2** and **tree 3**). Use the `random`{:class="block3operators"} operator to vary the looks of the trees and add variety to the area.
+The **Tree** sprite has three costumes (**tree 1**, **tree 2**, and **tree 3**). Use the `random`{:class="block3operators"} operator to vary the looks of the trees and add variety to the area.
 
 --- task ---
 
@@ -75,11 +75,11 @@ Test your simulation by clicking on the green flag. Make sure you have a variety
 
 --- /task ---
 
-Trees don't just appear fully-grown, they get bigger over time. Set up a repeat until loop so you can change the size of the tree as it grows until its size equals 20%.
+Trees don't just appear fully grown, they get bigger over time. Set up a `repeat until`{:class="block3control"} loop so you can change the size of the tree as it grows until its size equals 20%.
 
 --- task ---
 
-Get a `set size to 100% `{:class="block3looks"} block but change the value to `0` so that the **Tree** sprite starts from nothing. Add a `repeat until`{:class="block3control"} block and drag an equals `=`{:class="block3operators"} operator inside. Add the condition `size`{:class="block3looks"} `=`{:class="block3operators"} `20` :
+Get a `set size to 100% `{:class="block3looks"} block, but change the value to `0` so that the **Tree** sprite starts from nothing. Add a `repeat until`{:class="block3control"} block, and drag an equals `=`{:class="block3operators"} operator inside. Add the condition `size`{:class="block3looks"} `=`{:class="block3operators"} `20` :
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
@@ -115,7 +115,7 @@ end
 
 --- task ---
 
-Test your simulation again. Your trees will grow but  a fully-grown tree also appears wherever your next clone is growing.
+Test your simulation again. Your trees will grow, but a fully grown tree also appears wherever your next clone is growing.
 
 --- /task ---
 
@@ -123,7 +123,7 @@ Hide the tree until it starts a new clone.
 
 --- task ---
 
-Add a `hide`{:class="block3looks"} block to the start of your `when flag clicked`{:class="block3events"} script and a `show`{:class="block3looks"} block to the start of your `when I start as a clone`{:class="block3control"} script.
+Add a `hide`{:class="block3looks"} block to the start of your `when green flag clicked`{:class="block3events"} script, and a `show`{:class="block3looks"} block to the start of your `when I start as a clone`{:class="block3control"} script.
 
 ```blocks3
 when flag clicked
@@ -149,7 +149,7 @@ end
 
 --- task ---
 
-Test your simulation again. Your trees will now grow like they would in a real life.
+Test your simulation again. Your trees shouls now grow like they would in a real life.
 
 --- /task ---
 
