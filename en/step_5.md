@@ -31,7 +31,7 @@ Each time someone submits a request for more trees the **Tree Feller** sprite sh
 
 --- task ---
 
-Store the answer to you question in the trees needed variable by adding a `change trees needed by 1`{:class="block3variables"} block and dragging an `answer`{:class="block3sensing"} block into where it says `1`:
+Store the answer to your question in the trees needed variable by adding a `change trees needed by 1`{:class="block3variables"} block and dragging an `answer`{:class="block3sensing"} block into where it says `1`:
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
@@ -57,6 +57,7 @@ ask [How many trees are needed?] and wait
 change [trees needed v] by (answer)
 + if {(trees neeed) > (20)} then
 set (trees needed v) to (20)
+end
 ```
 
 --- /task ---
@@ -152,6 +153,9 @@ Within the loop add a `move 10 steps`{:class="block3motion"} block changing the 
 when this sprite clicked
 ask [How many trees are needed? (max 20)] and wait
 change [trees needed v] by (answer)
+if {(trees neeed) > (20)} then
+set (trees needed v) to (20)
+end
 + repeat until {(trees needed) = (0)}
 move (4) steps
 end
@@ -177,6 +181,9 @@ Add an `if...then`{:class="block3control"} block with a `touching edge`{:class="
 when this sprite clicked
 ask [How many trees are needed? (max 20)] and wait
 change [trees needed v] by (answer)
+if {(trees neeed) > (20)} then
+set (trees needed v) to (20)
+end
 repeat until {(trees needed) = (0)}
 move (4) steps
 + if {touching [edge v]?} then
@@ -200,6 +207,9 @@ Add another `if...then`{:class="block3control"} block with a `y position`{:class
 when this sprite clicked
 ask [How many trees are needed? (max 20)] and wait
 change [trees needed v] by (answer)
+if {(trees neeed) > (20)} then
+set (trees needed v) to (20)
+end
 repeat until {(trees needed) = (0)}
 move (4) steps
 if {touching [edge v]?} then
@@ -226,6 +236,9 @@ Add a `Looks`{:class="block3looks"} block to the end of your code so that the **
 when this sprite clicked
 ask [How many trees are needed? (max 20)] and wait
 change [trees needed v] by (answer)
+if {(trees neeed) > (20)} then
+set (trees needed v) to (20)
+end
 repeat until {(trees needed) = (0)}
 move (4) steps
 if {touching [edge v]?} then
@@ -259,6 +272,9 @@ Add two Motion{:class="block3motion"} blocks, a `set x to -200`{:class="block3mo
 when this sprite clicked
 ask [How many trees are needed? (max 20)] and wait
 change [trees needed v] by (answer)
+if {(trees neeed) > (20)} then
+set (trees needed v) to (20)
+end
 repeat until {(trees needed) = (0)}
 move (4) steps
 if {touching [edge v]?} then
