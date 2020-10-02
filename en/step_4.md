@@ -1,6 +1,6 @@
 ## Count the trees
 
-Scientists monitor trees and wildlife. They record the cover (size), variety, and health of the trees and surrounding areas. By doing this, they can see the true impact of deforestation. Observations are taken from planes and satellites in the air, as well as sensors and people on the ground. People can use their findings to see where extra measures are needed to protect trees. For example, the addition of fences around a forest to allow trees to thrive or the employment of more firefighters to help find and stop fires.
+Scientists monitor trees and wildlife. They record the cover (size), variety, and health of the trees and surrounding areas. By doing this, they can see the true impact of deforestation. Observations are taken from planes and satellites in the air, as well as sensors and people on the ground. People can use their findings to see where extra measures are needed to protect trees. For example, the construction of fences around a forest to allow trees to thrive or the employment of more firefighters to help find and stop fires.
 
 In this step, you'll monitor the trees in your simulation through a variable that stores the number of trees and reflects changes. 
 
