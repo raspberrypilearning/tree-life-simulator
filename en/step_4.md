@@ -76,7 +76,7 @@ change size by (1)
 wait (0.1) seconds
 end
 change (mature trees) by (1)
-+ wait until {touching [Tree feller v]?}
++ wait until {touching [Tree Feller v]?}
 + change (mature trees) by (-1)
 + delete this clone
 ```
@@ -86,7 +86,7 @@ Trees can also die from natural deforestation, whether they are mature or still 
 
 --- task ---
 
-Start a new script with a `when I start as a clone`{:class="block3control"} block. Add a `wait until`{:class="block3control"} block to the end of your code, and inside this block a `touching Natural Disaster`{:class="block3sensing"} block. Add an `if...then`{:class="block3control"} block with the condition `size`{:class="block3looks"} `=`{:class="block3operators"} `20`. 
+Start a new script with a `when I start as a clone`{:class="block3control"} block. Add a `wait until`{:class="block3control"} block to the end of your code, and inside this block a `touching Natural Disaster`{:class="block3sensing"} block. Add an `if ... then`{:class="block3control"} block with the condition `size`{:class="block3looks"} `=`{:class="block3operators"} `20`. 
 
 Inside the `if ... then`{:class="block3control"} block, add a `change mature trees by 1`{:class="block3variables"} block, so that the count of mature trees is only decreased if it were a full-grown tree. Add a `delete this clone`{:class="block3control"} block to remove the tree:
 
