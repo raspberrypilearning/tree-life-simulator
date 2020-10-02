@@ -1,6 +1,6 @@
 ## Tree management
 
-In the simulation we want to see the impact of new trees sprouting at a faster or slower speed. The speed at which new trees grow depends on a number of factors such as climate conditions, soil quality, disease, sunlight and water. In this step you'll add a slider to demonstrate how managing these conditions impacts the growth of the number of trees in the area. 
+In the simulation we want to see the impact of new trees sprouting at a faster or slower speed. The speed at which new trees grow depends on a number of factors such as climate conditions, soil quality, disease, sunlight and water. In this step you'll add a slider to demonstrate how managing these conditions impacts the number of trees in the area. 
 
 The growing speed will be held in a variable called `tree management`{:class="block3variables"}.
 
@@ -14,11 +14,11 @@ You can give your variable a name. Call this variable `tree management`.
 
 --- /task ---
 
-Your new variable is visible on the stage. Create a slider to control the speed in your simulation.
+Your new variable is visible on the Stage. Create a slider to control the speed in your simulation.
 
 --- task ---
 
-On the stage, right-click on the tree management variable, and a menu will appear.
+On the Stage, right-click on the tree management variable, and a menu will appear.
 
 Select **slider** in the menu.
 
@@ -34,13 +34,13 @@ Change the range to between `0` and `5`.
 
 --- /task ---
 
-In our simulation the **tree management** slider will control the speed the trees grow. Moving the slider to the right will speed up the growth whilst moving to the left will slow down the growth. When the slider is at the right the simulation will wait 1 seconds to plant a tree and when it is at the left it will wait 6 seconds to plant a tree.
+In our simulation the **tree management** slider will control the speed new trees grow. Moving the slider to the right will speed up the growth whilst moving to the left will slow down the growth. When the slider is at the right the simulation will wait 1 seconds to plant a tree and when it is at the left it will wait 6 seconds to plant a tree.
 
  ![image of the slider maths](images/slider-maths.png)
 
 This means if `tree management`{:class="block3variables"} equals `4` the wait time will be 2 seconds but if `tree management`{:class="block3variables"} equals `1` the wait time will be slower at 5 seconds. 
 
-You need to add a set of blocks to make sure that the trees growth quickly reacts to a change in the **tree management** slider.  
+You need to add a set of blocks to make sure that the speed new trees grow quickly reacts to a change in the **tree management** slider.  
 
 --- task ---
 
@@ -68,7 +68,7 @@ end
 
 --- /task ---
 
-Create a quick response to the slider so that the user imediately sees the impact of their interaction. Set up a loop that checks the **tree management** value frequently and adjusts the speed before cloning another tree.
+Create a quick response to the slider so that the user immediately sees the impact of their interaction. Set up a loop that checks the **tree management** value frequently and adjusts the speed before cloning another tree.
 
 --- task ---
 
