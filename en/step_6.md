@@ -25,7 +25,7 @@ Add code to the simulation so that the **Maya** sprite says when all the trees h
 
 --- task ---
 
-Add a `forever`{:class="block3control"} block then insert an `if...then`{:class="block3control"} block inside. Add the condition, `mature trees`{:class="block3variables"} `=`{:class="block3operators"} `0`. Add a `say for 2 seconds`{:class="block3looks"} block typing "Our planet needs more trees":
+Add a `forever`{:class="block3control"} block then insert an `if...then`{:class="block3control"} block inside. Add the condition, `mature trees`{:class="block3variables"} `=`{:class="block3operators"} `0`. Add a `say for 2 seconds`{:class="block3looks"} block typing "Our planet needs more trees.":
 
 ![image of the Maya sprite](images/maya-sprite.png)
 
@@ -36,7 +36,7 @@ go to [front v] layer
 say [Looking after trees slows down global warming & protects our planet.] for (4) seconds
 + forever
 if {(mature trees) = [0]} then
-say (Our planet needs more trees.) for (2) seconds
+say [Our planet needs more trees.] for (2) seconds
 end
 ```
 
@@ -46,13 +46,13 @@ end
 
 Scientists use their observations to give warnings if levels are looking dangerous. Add an alert so that the **Maya** sprite warns if there are not enough trees.
 
-Set up a message to appear when the number of trees left is greather than `0` and less than `10`.
+Set up a message to appear when the number of mature trees left is greater than `0` and less than `10`.
 
 --- task ---
 
 Add an `if...then`{:class="block3control"} block inside your `forever`{:class="block3control"} loop.
 
-Add some operators for your calculation. First add a `and`{:class="block3operators"} block then a `greater than`{:class="block3operators"} block and a `less than`{:class="block3operators"} block. Set up the calculation `trees`{:class="block3variables"}`greater than`{:class="block3operators"}`0``and`{:class="block3operators"}`trees`{:class="block3variables"}`less than`{:class="block3operators"}`10`. Insert a `say`{:class="block3looks"}`Global warming is speeding up.``for 2 seconds`{:class="block3looks"} block:
+Add some operators for your calculation. First add a `and`{:class="block3operators"} block then a `greater than`{:class="block3operators"} block and a `less than`{:class="block3operators"} block. Set up the calculation `mature trees`{:class="block3variables"} `greater than`{:class="block3operators"} `0` `and`{:class="block3operators"} `mature trees`{:class="block3variables"} `less than`{:class="block3operators"} `10`. Insert a `say`{:class="block3looks"} `Global warming is at dangerous levels.` `for 2 seconds`{:class="block3looks"} block:
 
 ![image of the Maya sprite](images/maya-sprite.png)
 
@@ -63,7 +63,7 @@ go to [front v] layer
 say [Looking after trees slows down global warming & protects our planet.] for (4) seconds
 forever
 if {(mature trees) = [0]} then
-say (Our planet needs more trees.) for (2) seconds
+say [Our planet needs more trees.] for (2) seconds
 end
 + if {{(mature trees)>[0]} and {(mature trees)<[10]}} then
 say [Global warming is at dangerous levels.] for (2) seconds
@@ -86,7 +86,7 @@ go to [front v] layer
 say [Looking after trees slows down global warming & protects our planet.] for (4) seconds
 forever
 if {(mature trees) = [0]} then
-say (Our planet needs more trees.) for (2) seconds
+say [Our planet needs more trees.] for (2) seconds
 end
 if {{(mature trees)>[0]} and {(mature trees)<[10]}} then
 say [Global warming is at dangerous levels.] for (2) seconds
