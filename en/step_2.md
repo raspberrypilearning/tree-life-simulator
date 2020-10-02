@@ -1,6 +1,6 @@
 ## Grow some trees
 
-Did you know that forests cover 30% of the Earth’s land surface? The way we look after our local forests now will have global impact for the future. In this step you will add code to create a forest with a variety of different trees.
+Did you know that trees cover 30% of the Earth’s land surface? The way we look after our local trees now will have global impact for the future. In this step you will add code to create an area of trees with a variety of different tree types.
 
 --- task ---
 
@@ -18,7 +18,7 @@ In Scratch we can make up to 300 copies of one sprite! This is called **cloning*
 
 --- task ---
 
-Go to the Sprites pane and click on the **Tree** sprite. Drag a `when flag clicked`{:class="block3events"} block and a `forever`{:class="block3control"} block onto your Code area. Within the forever loop add a `go to x:`{:class="block3motion"}`0``y:`{:class="block3motion"}`0` block and a `create clone of myself`{:class="block3control"} block:
+Go to the Sprites pane and click on the **Tree** sprite. Drag a `when flag clicked`{:class="block3events"} block and a `forever`{:class="block3control"} block onto your Code area. Within the forever loop add a `go to x:`{:class="block3motion"} `0` `y:`{:class="block3motion"} `0` block and a `create clone of myself`{:class="block3control"} block:
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
@@ -36,7 +36,7 @@ Plant the cloned trees in random positions across the stage.
 
 --- task ---
 
-Add a `pick random`{:class="block3operators"} block to both your `x:`{:class="block3motion"} and `y:`{:class="block3motion"} values to vary where the trees grow. Change the `x:`{:class="block3motion"} coordinates to `pick random`{:class="block3operators"}`-150``to`{:class="block3operators"}`200`. Change the `y:`{:class="block3motion"} coordinates to `pick random`{:class="block3operators"}`-120``to`{:class="block3operators"}`120`:
+Add a `pick random`{:class="block3operators"} block to both your `x:`{:class="block3motion"} and `y:`{:class="block3motion"} values to vary where the trees grow. Change the `x:`{:class="block3motion"} coordinates to `pick random`{:class="block3operators"} `-150` `to`{:class="block3operators"} `200`. Change the `y:`{:class="block3motion"} coordinates to `pick random`{:class="block3operators"} `-120` `to`{:class="block3operators"} `120`:
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
@@ -79,7 +79,7 @@ Trees don't just appear fully-grown, they get bigger over time. Set up a repeat 
 
 --- task ---
 
-Get a `set size to 100% `{:class="block3looks"} block but change the value to `0` so that the **Tree** sprite starts from nothing. Add a `repeat until`{:class="block3control"} block and drag an equals `=`{:class="block3operators"} operator inside. Add the condition `size`{:class="block3looks"}`=`{:class="block3operators"}`20` :
+Get a `set size to 100% `{:class="block3looks"} block but change the value to `0` so that the **Tree** sprite starts from nothing. Add a `repeat until`{:class="block3control"} block and drag an equals `=`{:class="block3operators"} operator inside. Add the condition `size`{:class="block3looks"} `=`{:class="block3operators"} `20` :
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
