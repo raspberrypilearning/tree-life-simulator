@@ -87,7 +87,7 @@ When the **Tree Feller** sprite touches a mature tree, the number of trees neede
 
 --- task ---
 
-Click on the **Tree** sprite and add a `change trees needed by -1`{:class="block3variables"} block to the script after it `touches Tree Feller`{:class="block3sensing"}.
+Click on the **Tree** sprite and add `change trees needed by` {:class="block3variables"} `-1` to the script after it `touches Tree Feller`{:class="block3sensing"}.
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
