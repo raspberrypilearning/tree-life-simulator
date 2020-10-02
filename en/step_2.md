@@ -75,7 +75,7 @@ Test your simulation by clicking on the green flag. Make sure you have a variety
 
 --- /task ---
 
-Trees don't just appear fully grown, they get bigger over time. Set up a `repeat until`{:class="block3control"} loop so you can change the size of the tree as it grows until its size equals 20%.
+Trees don't just appear fully grown, they get bigger over time. You need to set up a `repeat until`{:class="block3control"} loop so you can change the size of the tree as it grows until its size equals 20%.
 
 --- task ---
 
