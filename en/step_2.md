@@ -32,7 +32,7 @@ end
 
 --- /task ---
 
-Plant the cloned trees in random positions across the Stage.
+Next, plant the cloned trees in random positions across the Stage.
 
 --- task ---
 
