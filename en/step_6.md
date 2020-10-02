@@ -52,7 +52,7 @@ Set up a message to appear when the number of mature trees left is greater than 
 
 Add an `if ... then`{:class="block3control"} block inside your `forever`{:class="block3control"} block.
 
-Add some operators for your calculation. First add a `and`{:class="block3operators"} block, then a `greater than`{:class="block3operators"} block, and a `less than`{:class="block3operators"} block. Set up the calculation `mature trees`{:class="block3variables"} `greater than`{:class="block3operators"} `0` `and`{:class="block3operators"} `mature trees`{:class="block3variables"} `less than`{:class="block3operators"} `10`. Insert a `say`{:class="block3looks"} `Global warming is at dangerous levels.` `for 2 seconds`{:class="block3looks"} block:
+Add some operators for your calculation. First add a `and`{:class="block3operators"} block, then a `greater than`{:class="block3operators"} block, and a `less than`{:class="block3operators"} block. Set up the calculation `mature trees`{:class="block3variables"} `greater than`{:class="block3operators"} `0` `and`{:class="block3operators"} `mature trees`{:class="block3variables"} `less than`{:class="block3operators"} `10`. Insert `say`{:class="block3looks"} `Global warming is at dangerous levels.` `for 2 seconds`{:class="block3looks"}:
 
 ![image of the Maya sprite](images/maya-sprite.png)
 
