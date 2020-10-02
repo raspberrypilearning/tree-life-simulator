@@ -31,7 +31,7 @@ Each time someone submits a request for more trees, the **Tree Feller** sprite s
 
 --- task ---
 
-To store the answer to your question in the `trees needed` {:class="block3variables"} variable, add a `change trees needed by 1`{:class="block3variables"} block and drag an `answer`{:class="block3sensing"} block into where it says `1`:
+To store the answer to your question in the `trees needed`{:class="block3variables"} variable, add a `change trees needed by 1`{:class="block3variables"} block and drag an `answer`{:class="block3sensing"} block into where it says `1`:
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
@@ -47,7 +47,7 @@ As trees are big and heavy, the maximum number that can be requested should be s
 
 --- task ---
 
-Add an `if ... then`{:class="block3control"} block to the end of your code with the condition `trees needed`{:class="block3variables"} `greater than`{:class="block3operators"} `20`. Inside the `if ... then`{:class="block3control"} block, add `set trees needed to` {:class="block3variables"} `20`:
+Add an `if ... then`{:class="block3control"} block to the end of your code with the condition `trees needed`{:class="block3variables"} `greater than`{:class="block3operators"} `20`. Inside the `if ... then`{:class="block3control"} block, add `set trees needed to`{:class="block3variables"} `20`:
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
@@ -87,7 +87,7 @@ When the **Tree Feller** sprite touches a mature tree, the number of trees neede
 
 --- task ---
 
-Click on the **Tree** sprite and add `change trees needed by` {:class="block3variables"} `-1` to the script after it `touches Tree Feller`{:class="block3sensing"}.
+Click on the **Tree** sprite and add `change trees needed by`{:class="block3variables"} `-1` to the script after it `touches Tree Feller`{:class="block3sensing"}.
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
