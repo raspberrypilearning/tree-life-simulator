@@ -14,7 +14,7 @@ You should see a green grassland background.
 
 --- /task ---
 
-In Scratch, you can make up to 300 copies of one sprite! This is called **cloning**. Add code to the **Tree** sprite so that it creates clones of itself on the Stage.
+In Scratch, you can make up to 300 copies of one sprite! This is called **cloning**. Your task is to add code to the **Tree** sprite so that it creates clones of itself on the Stage.
 
 --- task ---
 
