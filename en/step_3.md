@@ -34,7 +34,7 @@ Change the range to between `0` and `5`.
 
 --- /task ---
 
-In the simulation, the **tree management** slider will control the speed that new trees grow. Moving the slider to the right will speed up the growth, whilst moving to the left will slow down the growth. When the slider is at the right, the simulation will wait one second to plant a tree, and when it is at the left it will wait six seconds to plant a tree.
+In the simulation, the **tree management** slider will control the speed that new trees grow. Moving the slider to the right speeds up the growth, whilst moving to the left slows down the growth. When the slider is at the right, the simulation waits one second to plant a tree, and when it is at the left it waits six seconds to plant a tree.
 
  ![image of the slider maths](images/slider-maths.png)
 
