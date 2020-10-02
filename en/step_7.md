@@ -21,7 +21,7 @@ The **Natural Disaster** sprite will move from the top to the bottom of the scre
 
 --- task ---
 
-Add a `forever`{:class="block3control"} block to the end of your code. Within it, add a `go to x:0 y:0`{:class="block3motion"} block, and change the y: value to `200`. Add a `show`{:class="block3looks"} block, followed by a `glide 1 secs to x:0 y:0`{:class="block3motion"}, and change the seconds value to `3` and the `y:`{:class="block3motion"} value to `-200`:
+Add a `forever`{:class="block3control"} block to the end of your code. Within it, add a `go to x:0 y:0`{:class="block3motion"} block, and change the `y:`{:class="block3motion"} value to `200`. Add a `show`{:class="block3looks"} block, followed by a `glide 1 secs to x:0 y:0`{:class="block3motion"}, and change the seconds value to `3` and the `y:`{:class="block3motion"} value to `-200`:
 
 ![image of the Natural Disaster sprite](images/natural-disaster-sprite.png)
 
