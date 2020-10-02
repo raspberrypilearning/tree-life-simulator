@@ -1,14 +1,14 @@
 ## Monitor tree levels
 
-Trees are extremely important to our quality of life on land. From trees people get fruits to eat, oils for healthy living and shelter from the weather. Trees absorb carbon dioxide and help to reduce the rate of CO2 emitted across the globe. They are also home to many different species of animals. Trees help protect our planet! 
+Trees are extremely important to our quality of life on land. From trees people get fruits to eat, oils for healthy living, and shelter from the weather. Trees absorb carbon dioxide and help to reduce the rate of CO2 emitted across the globe. They are also home to many different species of animals. Trees help protect our planet! 
 
-In this step you will add code to monitor the number of trees and add messages to say if the tree area is healthy or too small.
+In this step, you will add code to monitor the number of trees, and add messages to say if the tree area is healthy or too small.
 
 Set the tree management level to zero when the simulation starts.
 
 --- task ---
 
-Click on the **Maya** sprite. You'll see a couple of blocks are already in the Code area. These tell Maya to start the simulation with some text for the users. Add a `set tree management to 0`{:class="block3variables"} block
+Click on the **Maya** sprite. You'll see a couple of blocks are already in the Code area. These tell Maya to start the simulation with some text for the users. Add a `set tree management to 0`{:class="block3variables"} block.
 
 ![image of the Maya sprite](images/maya-sprite.png)
 
@@ -25,7 +25,7 @@ Add code to the simulation so that the **Maya** sprite says when all the trees h
 
 --- task ---
 
-Add a `forever`{:class="block3control"} block then insert an `if...then`{:class="block3control"} block inside. Add the condition, `mature trees`{:class="block3variables"} `=`{:class="block3operators"} `0`. Add a `say for 2 seconds`{:class="block3looks"} block typing "Our planet needs more trees.":
+Add a `forever`{:class="block3control"} block, then insert an `if ... then`{:class="block3control"} block inside. Add the condition, `mature trees`{:class="block3variables"} `=`{:class="block3operators"} `0`. Add a `say for 2 seconds`{:class="block3looks"} block and type: `Our planet needs more trees.`:
 
 ![image of the Maya sprite](images/maya-sprite.png)
 
@@ -50,9 +50,9 @@ Set up a message to appear when the number of mature trees left is greater than 
 
 --- task ---
 
-Add an `if...then`{:class="block3control"} block inside your `forever`{:class="block3control"} loop.
+Add an `if ... then`{:class="block3control"} block inside your `forever`{:class="block3control"} block.
 
-Add some operators for your calculation. First add a `and`{:class="block3operators"} block then a `greater than`{:class="block3operators"} block and a `less than`{:class="block3operators"} block. Set up the calculation `mature trees`{:class="block3variables"} `greater than`{:class="block3operators"} `0` `and`{:class="block3operators"} `mature trees`{:class="block3variables"} `less than`{:class="block3operators"} `10`. Insert a `say`{:class="block3looks"} `Global warming is at dangerous levels.` `for 2 seconds`{:class="block3looks"} block:
+Add some operators for your calculation. First add a `and`{:class="block3operators"} block, then a `greater than`{:class="block3operators"} block, and a `less than`{:class="block3operators"} block. Set up the calculation `mature trees`{:class="block3variables"} `greater than`{:class="block3operators"} `0` `and`{:class="block3operators"} `mature trees`{:class="block3variables"} `less than`{:class="block3operators"} `10`. Insert a `say`{:class="block3looks"} `Global warming is at dangerous levels.` `for 2 seconds`{:class="block3looks"} block:
 
 ![image of the Maya sprite](images/maya-sprite.png)
 
@@ -77,7 +77,7 @@ Add another observation message.
 
 --- task ---
 
-Right click on the last `if...then`{:class="block3control"} block and choose **Duplicate** from the menu. Insert your duplicated blocks below the last `if...then`{:class="block3control"} block and change the values from `0` and `10` to `50` and `60` think of a warning message to display in the `say`{:class="block3looks"} block.
+Right-click on the last `if ... then`{:class="block3control"} block, and choose **Duplicate** from the menu. Insert your duplicated blocks below the last `if ... then`{:class="block3control"} block, and change the values from `0` and `10` to `50` and `60`. Think of a warning message to display in the `say`{:class="block3looks"} block.
 
 ```blocks3
 when flag clicked
@@ -101,7 +101,7 @@ end
 
 --- task ---
 
-Test your simulation. When the number of trees is gets to the range of your `if...then`{:class="block3control"} blocks the **Maya** sprite will say an observational message.
+Test your simulation. When the number of trees gets to the range of your `if ... then`{:class="block3control"} blocks, the **Maya** sprite will say an observational message.
 
 --- /task ---
 
