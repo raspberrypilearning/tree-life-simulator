@@ -34,7 +34,7 @@ end
 
 --- /task ---
 
-Make sure your counter records how many trees are being created while the simulation runs.
+Make sure your counter records how many trees are created while the simulation runs.
 
 --- task ---
 
