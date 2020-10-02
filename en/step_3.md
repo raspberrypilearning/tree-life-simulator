@@ -1,6 +1,6 @@
 ## Tree management
 
-You can use the simulation to see the impact of new trees sprouting at a faster or slower speed. The speed at which new trees grow depends on a number of factors, such as climate conditions, soil quality, disease, sunlight, and water. In this step, you'll add a slider to demonstrate how managing these conditions can impact the number of trees in the area. 
+You can use the simulation to see the impact of new trees sprouting at a faster or slower speed. The rate at which new trees grow depends on a number of factors, such as climate conditions, soil quality, disease, sunlight, and water. In this step, you'll add a slider to demonstrate how managing these conditions can impact the number of trees in the area. 
 
 The growing speed will be held in a `variable`{:class="block3variables"} called `tree management`{:class="block3variables"}.
 
