@@ -169,7 +169,7 @@ Run your simulation. Click on the **Tree Feller** sprite and request a number of
 
 --- /task ---
 
-At the moment the **Tree Feller** sprite only moves across the top of the Stage. You need to make it to sense if it is touching the edge of the Stage, so that it knows to change direction.
+At the moment, the **Tree Feller** sprite only moves across the top of the Stage. You need to make the sprite sense if it is touching the edge of the Stage, so that it knows to change direction.
 
 --- task ---
 
