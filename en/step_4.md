@@ -1,6 +1,6 @@
 ## Count the trees
 
-Scientists monitor trees and wildlife. They record the cover (size), variety and health of the trees and surroundign areas. By doing this they can see the true impact of deforestation. Observations are taken from planes and satellites in the air as well as sensors and people on the ground. Using their findings people can see where extra measures are needed to protect trees for example the addition of fences around a forest to allow trees to thrive or employing more firefighters to help find and stop fires.
+Scientists monitor trees and wildlife. They record the cover (size), variety and health of the trees and surrounding areas. By doing this they can see the true impact of deforestation. Observations are taken from planes and satellites in the air as well as sensors and people on the ground. Using their findings people can see where extra measures are needed to protect trees for example the addition of fences around a forest to allow trees to thrive or employing more firefighters to help find and stop fires.
 
 In this step we'll monitor the trees in your simulation by using a variable to store the number of trees and reflect changes.
 
@@ -86,9 +86,9 @@ Trees can also die from natural deforestation, whether they are mature or still 
 
 --- task ---
 
-Start a new script with a `when I start as a clone`{:class="block3control"} block. Add a `wait until`{:class="block3control"} block to the end of your code and inside this block a `touching Natural Disaster`{:class="block3sensing"} block.
+Start a new script with a `when I start as a clone`{:class="block3control"} block. Add a `wait until`{:class="block3control"} block to the end of your code and inside this block a `touching Natural Disaster`{:class="block3sensing"} block. Add an `if...then`{:class="block3control"} block with the condition `size`{:class="block3looks"} `=`{:class="block3operators"} `20`. 
 
-Add an `if...then`{:class="block3control"} block with the condition `size`{:class="block3looks"} `=`{:class="block3operators"} `20`. Inside the `if...then`{:class="block3control"} block add a `change mature trees by 1`{:class="block3variables"} block so that the count of mature trees is only decreased if the tree was fully-grown. Add a `delete this clone`{:class="block3control"} block to remove the tree:
+Inside the `if...then`{:class="block3control"} block add a `change mature trees by 1`{:class="block3variables"} block so that the count of mature trees is only decreased if the tree was fully-grown. Add a `delete this clone`{:class="block3control"} block to remove the tree:
 
 ```blocks3
 when I start as a clone
