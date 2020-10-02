@@ -149,7 +149,7 @@ end
 
 --- task ---
 
-Test your simulation again. Your trees should now grow like they would in a real life.
+Test your simulation again. Your trees should now grow like they would in real life.
 
 --- /task ---
 
