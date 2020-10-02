@@ -1,6 +1,6 @@
 ## Human deforestation
 
-There are many reasons why humans chop down trees. The wood might be needed for making furniture, constructing buildings, or firewood. Alternatively, the land used by the forest might be needed for growing crops, grazing cattle, or buildings.
+There are many reasons why humans chop down trees. The wood might be needed to create furniture, make buildings, or burn as firewood. Alternatively, the land used by the forest might be needed to grow crops, graze cattle, or construct buildings.
 
 In this step, you will code the **Tree Feller** sprite to get the amount of trees needed, and move through the forest causing human deforestation.
 
