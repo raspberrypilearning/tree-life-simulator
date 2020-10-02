@@ -1,6 +1,6 @@
 ## Introduction
 
-Use Scratch to create a simulation that shows how varying the health of a forest and levels of deforestation impact trees, wildlife and the amount of CO2 absorbed.
+Use Scratch to create a simulation that shows how varying how well an area of land is managed and altering amounts of deforestation will impact trees, wildlife and the environment.
 
 This project focuses on three of the United Nations Sustainable Development Goals:
 
