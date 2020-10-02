@@ -1,6 +1,6 @@
 ## Monitor tree levels
 
-Trees are extremely important to our quality of life on land. From trees, people get fruits to eat, oils for healthy living, and shelter from the weather. Trees absorb carbon dioxide and help to reduce the rate of CO2 emitted across the globe. They are also home to many different species of animals. Trees help protect our planet! 
+Trees are extremely important to our quality of life on land. From trees, people get fruits to eat, oils for healthy living, and shelter from the weather. Trees absorb carbon dioxide and help to reduce the rate of carbon dioxide emitted across the globe. They are also home to many different species of animals. Trees help protect our planet! 
 
 In this step, you will add code to monitor the number of trees, and add messages to say if the tree area is healthy or too small.
 
