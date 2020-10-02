@@ -16,7 +16,7 @@ Thanks to Ecosia for their guidance on tree life simulation.
 Click on the green flag and then move the slider to alter the tree management levels. Click on the tree feller to request wood. Keep an eye out for natural disasters though - they’re very disruptive!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/431390215/?autostart=false" frameborder="0"></iframe>
+  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/431800781/?autostart=false" frameborder="0"></iframe>
 </div>
 --- /no-print ---
 
