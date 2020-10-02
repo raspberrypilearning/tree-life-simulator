@@ -122,3 +122,5 @@ end
 Test your project again. Your **Natural Disaster** sprite will now wait between 10 and 20 seconds before falling from a random position to another random position. It will also change costume each time and remove any trees it touches.
 
 --- /task ---
+
+--- save ---
