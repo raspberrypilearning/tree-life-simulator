@@ -43,7 +43,7 @@ ask [How many trees are needed?] and wait
 
 --- /task ---
 
-Tree fellers cannot carry many trees as trees are big and heavy, so the maximum number that can be requested should be set to 20. 
+As trees are big and heavy, the maximum number that can be requested should be set to 20. 
 
 --- task ---
 
