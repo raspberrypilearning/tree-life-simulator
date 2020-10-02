@@ -54,7 +54,9 @@ Reset the timer to zero each time the flag is clicked.
 
 --- task ---
 
-Insert a `reset timer`{:class="block3sensing"} block into your `when flag clicked`{:class="block3events"} script so that the timer resets each time a new tree is cloned. 
+Insert a `reset timer`{:class="block3sensing"} block into your `when flag clicked`{:class="block3events"} script for the **Tree** sprite so that the timer resets each time a new tree is cloned: 
+
+![image of the Tree sprite](images/tree-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -92,7 +94,7 @@ end
 
 --- task ---
 
-Test your simulation again. The **tree management** slider will control the speed that the forest grows.
+Test your simulation again. The **tree management** slider will control the speed that new trees grow.
 
 ![image of a busy forest](images/busy-forest.png)
 
