@@ -44,7 +44,7 @@ end
 
 --- /task ---
 
-Scientists use their observations to give warnings if levels are looking dangerous. Add an alert so that the **Maya** sprite warns if there are not enough trees.
+Scientists use their observations to give warnings if CO2 levels are looking dangerous. Add an alert so that the **Maya** sprite warns if there are not enough trees.
 
 Set up a message to appear when the number of mature trees left is greater than `0` and less than `10`.
 
