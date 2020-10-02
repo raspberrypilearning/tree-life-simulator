@@ -24,7 +24,7 @@ Select **slider** in the menu.
 
 --- /task ---
 
-At the moment the tree management range is too wide.
+At the moment, the tree management range is too wide.
 
 --- task ---
 
