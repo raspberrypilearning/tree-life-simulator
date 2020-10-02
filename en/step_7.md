@@ -1,12 +1,12 @@
 ## Natural deforestation
 
-Deforestation can happen when natural disasters such as drought, forest fire and tornados devastate an area of land. They can also be triggered by human activity, like a campfire, but spread quickly due to natural conditions, like a very dry season. This can be particularly deadly as, in the wide area affected, entire species can disappear along with the destruction of their habitats.
+Deforestation can happen when natural disasters — such as drought, forest fire, and tornados — devastate an area of land. They can also be triggered by human activity, like a campfire, but spread quickly due to natural conditions, like a very dry season. This can be particularly deadly as, in the wide area affected, entire species can disappear along with the destruction of their habitats.
 
-Simulate the impact of natural disasters randomly moving through the forest. Hide the **Natural Disaster** sprite at the start of the simulation.
+Simulate the impact of natural disasters that randomly move through the forest. Hide the **Natural Disaster** sprite at the start of the simulation.
 
 --- task ---
 
-Click on the **Natural Disaster** sprite then in the Code area add a `when flag clicked`{:class="block3events"} block followed by a `hide`{:class="block3looks"} block:
+Click on the **Natural Disaster** sprite, then in the Code area add a `when green flag clicked`{:class="block3events"} block, followed by a `hide`{:class="block3looks"} block:
 
 ![image of the Natural Disaster sprite](images/natural-disaster-sprite.png)
 
@@ -21,7 +21,7 @@ The **Natural Disaster** sprite will move from the top to the bottom of the scre
 
 --- task ---
 
-Add a `forever`{:class="block3control"} block to the end of your code. Within it add a `go to x:0 y:0`{:class="block3motion"} block changing the y: value to `200`. Add a `show`{:class="block3looks"} block followed by a `glide 1 secs to x:0 y:0`{:class="block3motion"} changing the seconds value to `3` and the y: value to `-200`:
+Add a `forever`{:class="block3control"} block to the end of your code. Within it, add a `go to x:0 y:0`{:class="block3motion"} block, and change the y: value to `200`. Add a `show`{:class="block3looks"} block, followed by a `glide 1 secs to x:0 y:0`{:class="block3motion"}, and change the seconds value to `3` and the `y:`{:class="block3motion"} value to `-200`:
 
 ![image of the Natural Disaster sprite](images/natural-disaster-sprite.png)
 
@@ -38,11 +38,11 @@ glide (3) secs to x:(0) y:(-200)
 
 --- /task ---
 
-The **Natural Disaster** sprite has 3 costumes (**Drought**, **Forest Fire** and **Tornado**) as areas can be hit by many types of natural disaster. Add code so that the simulation has multiple disaster types.
+The **Natural Disaster** sprite has three costumes (**Drought**, **Forest Fire**, and **Tornado**) as areas can be hit by many types of natural disaster. Add code so that the simulation has multiple disaster types.
 
 --- task ---
 
- Click on the Costumes tab to view the costumes. Click back to the Code tab and add a `hide`{:class="block3looks"} block when it reaches the bottom of the screen followed by a `next costume`{:class="block3looks"} block:
+ Click on the **Costumes** tab to view the costumes. Click back to the **Code** tab and add a `hide`{:class="block3looks"} block when it reaches the bottom of the screen, followed by a `next costume`{:class="block3looks"} block:
 
 ![image of the Natural Disaster sprite](images/natural-disaster-sprite.png)
 
@@ -63,17 +63,17 @@ end
 
 --- task ---
 
-Test your project. The **Natural Disaster** sprite will move from top to bottom changing costume each time.
+Test your project. The **Natural Disaster** sprite now moves from top to bottom, and changes costume each time.
 
 ![image of the Natural Disaster on stage](images/disaster-on-stage.png)
 
 --- /task ---
 
-Scientists can sometimes predict when natural disasters will occur but their timing is not as consistent as in your simulation. Add random timing to the **Natural Disaster** sprite.
+Scientists can sometimes predict when natural disasters will occur, but their timing is not as consistent as in your simulation. Add random timing to the **Natural Disaster** sprite.
 
 --- task ---
 
-To create random timing add a `wait 1 seconds`{:class="block3control"} block to the top of your forever loop. Drag a `pick random`{:class="block3operators"} operator into the `wait`{:class="block3control"} block and change the values to `10` and `20`:
+To create random timing add a `wait 1 seconds`{:class="block3control"} block to the top of your `forever`{:class="block3control"} block. Drag a `pick random`{:class="block3operators"} operator into the `wait`{:class="block3control"} block, and change the values to `10` and `20`:
 
 ![image of the Natural Disaster sprite](images/natural-disaster-sprite.png)
 
@@ -119,7 +119,7 @@ end
 
 --- task ---
 
-Test your project again. Your **Natural Disaster** sprite will now wait between 10 and 20 seconds before falling from a random position to another random position. It will also change costume each time and remove any trees it touches.
+Test your project again. Your **Natural Disaster** sprite should now wait between 10 and 20 seconds before it falls from a random position to another random position. It also changes costume each time and remove any trees it touches.
 
 --- /task ---
 
