@@ -4,9 +4,9 @@ Did you know that trees cover 30 percent of the Earth’s land surface? The way 
 
 --- task ---
 
-**Online**: open the [starter project](http://rpf.io/p/en/projectName-on){:target="_blank"} in Scratch.
+**Online**: open the [starter project](http://rpf.io/p/en/tree-life-simulator-on){:target="_blank"} in Scratch.
 
-**Offline**: open the [project starter file](http://rpf.io/p/en/projectName-get){:target="_blank"} in the Scratch offline editor. If you need to, you can [download and install Scratch here](https://scratch.mit.edu/download){:target="_blank"}.
+**Offline**: open the [project starter file](http://rpf.io/p/en/tree-life-simulator-get){:target="_blank"} in the Scratch offline editor. If you need to, you can [download and install Scratch here](https://scratch.mit.edu/download){:target="_blank"}.
 
 You should see a green grassland background.
 
