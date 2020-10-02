@@ -38,7 +38,7 @@ title: What you will need
 
 ### Downloads
 
-+ If you are working offline, download the [project starter file](http://rpf.io/p/en/electricity-generation-go){:target="_blank"}
++ If you are working offline, download the [project starter file](http://rpf.io/p/en/tree-life-simulator-go){:target="_blank"}
 
 --- /collapse ---
 
