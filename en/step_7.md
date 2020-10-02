@@ -1,6 +1,6 @@
 ## Natural deforestation
 
-Deforestation can happen when a natural disaster — such as drought, forest fire, and a tornado — devastates an area of land. They can also be triggered by human activity, like a campfire, but spread quickly due to natural conditions, like a very dry season. This can be particularly deadly as, in the wide area affected, entire species can disappear along with the destruction of their habitats.
+Deforestation can happen when a natural disaster — such as drought, forest fire, and a tornado — devastates an area of land. It can also be triggered by human activity, like a campfire, but spread quickly due to natural conditions, like a very dry season. This can be particularly deadly as, in the wide area affected, entire species can disappear along with the destruction of their habitats.
 
 Simulate the impact of natural disasters that randomly move through the forest. Hide the **Natural Disaster** sprite at the start of the simulation.
 
