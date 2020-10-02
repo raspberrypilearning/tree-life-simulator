@@ -38,9 +38,9 @@ In the simulation, the **tree management** slider controls the speed that new tr
 
  ![image of the slider maths](images/slider-maths.png)
 
-This means if `tree management`{:class="block3variables"} equals `4`, the wait time is two seconds, but if `tree management`{:class="block3variables"} equals `1`, the wait time is slower at five seconds. 
+This means if `tree management`{:class="block3variables"} equals `4`, the wait time is 2 seconds, but if `tree management`{:class="block3variables"} equals `1`, the wait time is slower at 5 seconds. 
 
-You need to add a set of blocks to make sure that the speed that new trees grow quickly reacts to a change in the **tree management** slider.  
+You need to add a set of blocks to make sure that the speed that new trees grow is in reaction to a change in the **tree management** slider.  
 
 --- task ---
 
