@@ -97,7 +97,7 @@ Add randomness to the movement of the **Natural Disaster** sprite.
 
 --- task ---
 
-Drag a `pick random`{:class="block3operators"} operator into the x: coordinates of both the `go to`{:class="block3motion"} block and the `glide`{:class="block3motion"} block. Change the values in each to `-200` and `200`:
+Drag a `pick random`{:class="block3operators"} operator into the `x:`{:class="block3motion"} coordinates of both the `go to`{:class="block3motion"} block and the `glide`{:class="block3motion"} block. Change the values in each to `-200` and `200`:
 
 ![image of the Natural Disaster sprite](images/natural-disaster-sprite.png)
 
