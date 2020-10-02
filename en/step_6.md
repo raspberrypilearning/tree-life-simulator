@@ -1,109 +1,42 @@
 ## Monitor tree levels
 
-Trees are extremely important to our quality of life on land. From trees people get fruits to eat, oils for healthy living and shelter from the weather. They are also home to many different species of animals.
+Trees are extremely important to our quality of life on land. From trees people get fruits to eat, oils for healthy living and shelter from the weather. Trees absorb carbon dioxide and help to reduce the rate of CO2 emitted across the globe. They are also home to many different species of animals. Trees help protect our planet! 
 
-Trees absorb carbon dioxide and help to reduce the rate of CO2 emitted across the globe. Trees help protect our planet! In this step you will add code to monitor the expected CO2 absorbed by the trees and add warnings to alert if the forest is too small.
+In this step you will add code to monitor the number of trees and add messages to say if the tree area is healthy or too small.
 
-Add a variable to your simulation to calculate the current amount of CO2 that would be absorbed by your fully-grown trees each year.
-
---- task ---
-
-Click on the **Maya** sprite. Create a new variable to store the amount of CO2 absorbed by fully-grown trees. Call this variable `CO2 absorbed`{:class="block3variables"}.
-
---- /task ---
-
-You'll see a couple of blocks are already in the Code area of the **Maya** sprite. These tell Maya to start the simulation with some text for the users. Set the CO2 absorbed level to zero when the simulation starts.
+Set the tree management level to zero when the simulation starts.
 
 --- task ---
 
- Add a `set CO2 absorbed to 0`{:class="block3variables"} block underneath the `when flag clicked`{:class="block3events"} block:
+Click on the **Maya** sprite. You'll see a couple of blocks are already in the Code area. These tell Maya to start the simulation with some text for the users. Add a `set tree management to 0`{:class="block3variables"} block
 
 ![image of the Maya sprite](images/maya-sprite.png)
 
 ```blocks3
 when flag clicked
-+ set [CO2 absorbed v] to (0)
++ set [tree management v] to (0)
 go to [front v] layer
 say [Looking after trees slows down global warming & protects our planet] for (4) seconds
 ```
 
 --- /task ---
 
-Maya is a Scientist and knows that a typical hardwood tree can absorb as much as 48 pounds of carbon dioxide per year. Using this she can calculate the expected amount of CO2 absorbed by the forest each year. Add a calculation so that the expected CO2 absorbed is calculated throughout the simulation.
+Add code to the simulation so that the **Maya** sprite says when all the trees have gone.
 
 --- task ---
 
-Add a `forever`{:class="block3control"} block to the end of your code. Inside the `forever`{:class="block3control"} loop add a `set CO2 absorbed to 0`{:class="block3variables"} block replacing the `0` with a `multiply`{:class="block3operators"} operator to set up the calculation. In the `*`{:class="block3operators"} operator add a `trees`{:class="block3variables"} block and the value `48`:
+Add a `forever`{:class="block3control"} block then insert an `if...then`{:class="block3control"} block inside. Add the condition, `mature trees`{:class="block3variables"} `=`{:class="block3operators"} `0`. Add a `say for 2 seconds`{:class="block3looks"} block typing "Our planet needs more trees":
 
 ![image of the Maya sprite](images/maya-sprite.png)
 
 ```blocks3
 when flag clicked
-set [CO2 absorbed v] to (0)
+set [tree management v] to (0)
 go to [front v] layer
-say [Looking after trees slows down global warming & protects our planet] for (4) seconds
+say [Looking after trees slows down global warming & protects our planet.] for (4) seconds
 + forever
-set [CO2 absorbed v] to {(trees)*(48)}
-end
-```
-
---- /task ---
-
---- task ---
-
-Test your simulation. As fully-grown trees appear the CO2 absorbed amount will increase, if deforestation occurs the CO2 absorbed will go down to show the expected impact.
-
-![image of CO2 and trees in simulation](images/co2-trees.png)
-
---- /task ---
-
-Add code to end the simulation when the user stops it or when all the trees have gone.
-
---- task ---
-
-Add an `if...then...else`{:class="block3control"} block to your forever loop. Insert a `greater than`{:class="block3operators"} operator and the condition, `trees`{:class="block3variables"}`greater than`{:class="block3operators"}`0`.
-
-Place your existing `set CO2 absorbed to`{:class="block3variables"}`trees`{:class="block3variables"}`*`{:class="block3operators"}`48` block into the `if..then`{:class="block3control"} section:
-
-
-
-![image of the Maya sprite](images/maya-sprite.png)
-
-```blocks3
-when flag clicked
-set [CO2 absorbed v] to (0)
-go to [front v] layer
-say [Looking after trees slows down global warming & protects our planet] for (4) seconds
-forever
-+ if {(trees) > [0]} then
-set [CO2 absorbed v] to {(trees)*(48)}
-else
-end
-```
-
---- /task ---
-
-Let the user know when the trees have all gone.
-
---- task ---
-
-In the `else`{:class="block3control"} section of your `if...then...else`{:class="block3control"} block add a `set CO2 absorbed to 0`{:class="block3variables"} block. Add a `say`{:class="block3looks"}`The trees have gone! Our planet is in danger``for 2 seconds`{:class="block3looks"} block:
-
-![image of the Maya sprite](images/maya-sprite.png)
-
-```blocks3
-when flag clicked
-set [CO2 absorbed v] to (0)
-go to [front v] layer
-say [Looking after trees slows down global warming & protects our planet] for (4) seconds
-forever
-if {(trees) > [0]} then
-set [CO2 absorbed v] to {(trees)*(48)}
-else
-+ set [CO2 absorbed v] to (0)
-+ say [The trees have gone! Our planet is in danger] for (2) seconds
-+ stop [all v]
-end
+if {(mature trees) = [0]} then
+say (Our planet needs more trees.) for (2) seconds
 end
 ```
 
@@ -111,13 +44,13 @@ end
 
 --- /task ---
 
-Scientists use their observations to give warnings if levels are looking dangerous. Add an alert so that the **Maya** sprite warns if there are not many trees left in the forest.
+Scientists use their observations to give warnings if levels are looking dangerous. Add an alert so that the **Maya** sprite warns if there are not enough trees.
 
 Set up a message to appear when the number of trees left is greather than `0` and less than `10`.
 
 --- task ---
 
-Add an `if...then`{:class="block3control"} block underneath your `if...then...else`{:class="block3control"} block but still inside your `forever`{:class="block3control"} loop.
+Add an `if...then`{:class="block3control"} block inside your `forever`{:class="block3control"} loop.
 
 Add some operators for your calculation. First add a `and`{:class="block3operators"} block then a `greater than`{:class="block3operators"} block and a `less than`{:class="block3operators"} block. Set up the calculation `trees`{:class="block3variables"}`greater than`{:class="block3operators"}`0``and`{:class="block3operators"}`trees`{:class="block3variables"}`less than`{:class="block3operators"}`10`. Insert a `say`{:class="block3looks"}`Global warming is speeding up.``for 2 seconds`{:class="block3looks"} block:
 
@@ -125,35 +58,49 @@ Add some operators for your calculation. First add a `and`{:class="block3operato
 
 ```blocks3
 when flag clicked
-set [CO2 absorbed v] to (0)
+set [tree management v] to (0)
 go to [front v] layer
-say [Looking after trees slows down global warming & protects our planet] for (4) seconds
+say [Looking after trees slows down global warming & protects our planet.] for (4) seconds
 forever
-if {(trees) > [0]} then
-set [CO2 absorbed v] to {(trees)*(48)}
-else
-set [CO2 absorbed v] to (0)
-say [The trees have gone! Our planet is in danger] for (2) seconds
-stop [all v]
+if {(mature trees) = [0]} then
+say (Our planet needs more trees.) for (2) seconds
 end
-+ if {{(trees)>[0]} and {(trees)<[10]}} then
-say [Global warming is speeding up.] for (2) seconds
++ if {{(mature trees)>[0]} and {(mature trees)<[10]}} then
+say [Global warming is at dangerous levels.] for (2) seconds
 end
 end
 ```
 
 --- /task ---
 
-Add another warning message.
+Add another observation message.
 
 --- task ---
 
-Right click on the last `if...then`{:class="block3control"} block and choose **Duplicate** from the menu. Insert your duplicated blocks below the last `if...then`{:class="block3control"} block and change the values from `0` and `10` to `10` and `20` think of a warning message to display in the `say`{:class="block3looks"} block.
+Right click on the last `if...then`{:class="block3control"} block and choose **Duplicate** from the menu. Insert your duplicated blocks below the last `if...then`{:class="block3control"} block and change the values from `0` and `10` to `50` and `60` think of a warning message to display in the `say`{:class="block3looks"} block.
+
+```blocks3
+when flag clicked
+set [tree management v] to (0)
+go to [front v] layer
+say [Looking after trees slows down global warming & protects our planet.] for (4) seconds
+forever
+if {(mature trees) = [0]} then
+say (Our planet needs more trees.) for (2) seconds
+end
+if {{(mature trees)>[0]} and {(mature trees)<[10]}} then
+say [Global warming is at dangerous levels.] for (2) seconds
+end
++ if {{(mature trees)>[50]} and {(mature trees)<[60]}} then
+say [Animals have many habitats.] for (2) seconds
+end
+end
+```
 
 --- /task ---
 
 --- task ---
 
-Test your simulation. When the number of trees gets low the **Maya** sprite will say a warning message.
+Test your simulation. When the number of trees is gets to the range of your `if...then`{:class="block3control"} blocks the **Maya** sprite will say an observational message.
 
 --- /task ---
