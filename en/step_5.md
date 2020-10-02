@@ -285,7 +285,7 @@ if {(y position)<(-120)} then
 go to x: (-200) y: (150)
 end
 end
-say (Requests completed) for (2) seconds
+say [Requests completed.] for (2) seconds
 + set x to (-200)
 + point in direction (90)
 ```
