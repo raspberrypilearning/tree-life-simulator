@@ -199,7 +199,7 @@ If the **Tree Feller** sprite reaches the bottom of the Stage it needs to start 
 
 --- task ---
 
-Add another `if...then`{:class="block3control"} block with a `y position`{:class="block3motion"} `<`{:class="block3operators"} `120` condition. Inside your `if...then`{:class="block3control"} loop add a `go to x: -200 y: 150`{:class="block3motion"} block so that it moves back to the starting position:
+Add another `if...then`{:class="block3control"} block with a `y position`{:class="block3motion"} `<`{:class="block3operators"} `-120` condition. Inside your `if...then`{:class="block3control"} loop add a `go to x: -200 y: 150`{:class="block3motion"} block so that it moves back to the starting position:
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
@@ -216,7 +216,7 @@ if {touching [edge v]?} then
 turn right (180) degrees
 change y by (-40)
 end
-+ if {(y position)<(120)} then
++ if {(y position)<(-120)} then
 go to x: (-200) y: (150)
 end
 end
@@ -245,7 +245,7 @@ if {touching [edge v]?} then
 turn right (180) degrees
 change y by (-40)
 end
-if {(y position)<(120)} then
+if {(y position)<(-120)} then
 go to x: (-200) y: (150)
 end
 end
@@ -281,7 +281,7 @@ if {touching [edge v]?} then
 turn right (180) degrees
 change y by (-40)
 end
-if {(y position)<(120)} then
+if {(y position)<(-120)} then
 go to x: (-200) y: (150)
 end
 end
