@@ -1,6 +1,6 @@
 ## Grow some trees
 
-Did you know that trees cover 30% of the Earth’s land surface? The way we look after our local trees now, will have an impact on the future of our planet. In this step, you will add code to create an area of trees with a variety of different tree types.
+Did you know that trees cover 30 percent of the Earth’s land surface? The way we look after our local trees now, will have an impact on the future of our planet. In this step, you will add code to create an area of trees with a variety of different tree types.
 
 --- task ---
 
@@ -75,11 +75,11 @@ Test your simulation by clicking on the green flag. Make sure you have a variety
 
 --- /task ---
 
-Trees don't just appear fully grown, they get bigger over time. You need to set up a `repeat until`{:class="block3control"} loop so you can change the size of the tree as it grows until its size equals 20%.
+Trees don't just appear fully grown, they get bigger over time. You need to set up a `repeat until`{:class="block3control"} loop so you can change the size of the tree as it grows until its size equals 20 percent.
 
 --- task ---
 
-Get a `set size to 100% `{:class="block3looks"} block, but change the value to `0` so that the **Tree** sprite starts from nothing. Add a `repeat until`{:class="block3control"} block, and drag an equals `=`{:class="block3operators"} block inside. Add the condition `size`{:class="block3looks"} `=`{:class="block3operators"} `20` :
+Get a `set size to 100`{:class="block3looks"} (percent) block, but change the value to `0` so that the **Tree** sprite starts from nothing. Add a `repeat until`{:class="block3control"} block, and drag an equals `=`{:class="block3operators"} block inside. Add the condition `size`{:class="block3looks"} `=`{:class="block3operators"} `20` :
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
