@@ -173,7 +173,7 @@ At the moment, the **Tree Feller** sprite only moves across the top of the Stage
 
 --- task ---
 
-Add an `if ... then`{:class="block3control"} block with a `touching edge`{:class="block3sensing"} condition. Inside your `if`{:class="block3control"} loop, add two `Motion`{:class="block3motion"} blocks:  `turn right by 180 degrees`{:class="block3motion"} and `change y by -40`{:class="block3motion"}:
+Add an `if ... then`{:class="block3control"} block with a `touching edge`{:class="block3sensing"} condition. Inside your `if`{:class="block3control"} loop, add two `Motion`{:class="block3motion"} blocks:  `turn right by`{:class="block3motion"} `180` `degrees`{:class="block3motion"} and `change y by`{:class="block3motion"} `-40`:
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
