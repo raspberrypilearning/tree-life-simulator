@@ -27,7 +27,7 @@ Create a new variable and call this variable `trees needed`{:class="block3variab
 
 --- /task ---
 
-Each time someone submits a request for more trees the **tree feller** sprite should add that number to the amount of trees needed. 
+Each time someone submits a request for more trees the **Tree Feller** sprite should add that number to the amount of trees needed. 
 
 --- task ---
 
@@ -43,7 +43,7 @@ ask [How many trees are needed?] and wait
 
 --- /task ---
 
-Tree fellers cannot carry too many trees as trees are big and heavy, the maximum number that can be requested should be 20. 
+Tree fellers cannot carry many trees as trees are big and heavy, the maximum number that can be requested should be set to 20. 
 
 --- task ---
 
@@ -61,7 +61,7 @@ set (trees needed v) to (20)
 
 --- /task ---
 
-We need to reset the number of trees needed every time the green flag is clicked to start the simulation so it clears the variable ready for a new request.
+Reset the number of trees needed every time the green flag is clicked to start the simulation so it clears the variable ready for a new request.
 
 --- task ---
 
@@ -75,6 +75,14 @@ set [trees needed v] to (0)
 ```
 
 --- /task ---
+
+--- task ---
+
+Run your simulation. Click on the **Tree Feller** sprite and request a number of trees. Try entering different numbers to see what happens to the `trees needed`{:class="block3variables"} variable each time.
+
+--- /task ---
+
+When the **Tree Feller** sprite touches a mature tree the number of trees needed will decrease.
 
 --- task ---
 
@@ -96,10 +104,11 @@ wait until {touching [Tree feller v]?}
 + change (trees needed) by (-1)
 change (mature trees) by (-1)
 delete this clone
+```
 
 --- /task ---
 
-The stage is looking crowded with so many variables. We need to position them so they appear in better places in your simulation and hide the ones that don't show values relating to tree management.
+The stage is looking crowded with so many variables. Position them so they appear in better places in your simulation and hide the ones that don't show values relating to tree management.
 
 --- task ---
 
@@ -129,7 +138,7 @@ set [trees felled v] to (0)
 
 --- /task ---
 
-The **Tree Feller** sprite will move through the forest from left-right and back again until it has felled enough trees. We need an operator so the **Tree Feller** knows it has collected enough trees when the number of trees needed equals zero.
+The **Tree Feller** sprite will move through the forest from left-right and back again until it has felled enough trees. Use an operator so the **Tree Feller** knows it has collected enough trees when the number of trees needed equals zero.
 
 --- task ---
 
@@ -150,7 +159,13 @@ end
 
 --- /task ---
 
-At the moment the **Tree Feller** sprite will only move across the top of the stage. Get it to sense if it is touching the edge of the stage so that it knows to change direction.
+--- task ---
+
+Run your simulation. Click on the **Tree Feller** sprite and request a number of trees. Does the **Tree Feller** sprite move through the whole Stage? 
+
+--- /task ---
+
+At the moment the **Tree Feller** sprite will only move across the top of the Stage. Get it to sense if it is touching the edge of the Stage so that it knows to change direction.
 
 --- task ---
 
@@ -173,11 +188,11 @@ end
 
 --- /task ---
 
-If the **Tree Feller** sprite reaches the bottom of the stage it needs to start again from the top.
+If the **Tree Feller** sprite reaches the bottom of the Stage it needs to start again from the top.
 
 --- task ---
 
-Add another `if...then`{:class="block3control"} block with a `touching Tree`{:class="block3sensing"} condition. Inside your `if...then`{:class="block3control"} loop add a `wait 0.5 seconds`{:class="block3control"} block and a `change trees felled by 1`{:class="block3variables"} block:
+Add another `if...then`{:class="block3control"} block with a `y position`{:class="block3motion"} `<`{:class="block3operators"} `120` condition. Inside your `if...then`{:class="block3control"} loop add a `go to x: -200 y: 150`{:class="block3motion"} block so that it moves back to the starting position:
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
@@ -203,7 +218,7 @@ We'd like to know when the **Tree Feller** sprite has felled enough trees. Get t
 
 --- task ---
 
-Add a `Looks`{:class="block3looks"} block to the end of your code so that the **Tree Feller** sprite will `say`{:class="block3looks"}`Requests completed``for 2 seconds`{:class="block3looks"}:
+Add a `Looks`{:class="block3looks"} block to the end of your code so that the **Tree Feller** sprite will `say`{:class="block3looks"} `Requests completed.` `for 2 seconds`{:class="block3looks"}:
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
@@ -221,16 +236,22 @@ if {(y position)<(120)} then
 go to x: (-200) y: (150)
 end
 end
-+ say (Requests completed) for (2) seconds
++ say [Requests completed.] for (2) seconds
 ```
 
 --- /task ---
 
-Get the **Tree Feller** sprite to move to the side of the tree area ready for the next request. 
+--- task ---
+
+Run your simulation. Click on the **Tree Feller** sprite and request a number of trees. Once the **Tree Feller** sprite has collected enough trees it will tell you it has finished. 
+
+--- /task ---
+
+Once the requests are complete, get the **Tree Feller** sprite to move to the side of the tree area ready for the next request. 
 
 --- task ---
 
-Add two Motion blocks{:class="block3motion"}, a `set x to -200`{:class="block3motion"} block and a `point in direction 90`{:class="block3motion"} block.
+Add two Motion{:class="block3motion"} blocks, a `set x to -200`{:class="block3motion"} block and a `point in direction 90`{:class="block3motion"} block.
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
