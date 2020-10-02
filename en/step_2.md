@@ -1,6 +1,6 @@
 ## Grow some trees
 
-Did you know that trees cover 30% of the Earth’s land surface? The way we look after our local trees now will have an impact on the future of our planet. In this step, you will add code to create an area of trees with a variety of different tree types.
+Did you know that trees cover 30% of the Earth’s land surface? The way we look after our local trees now, will have an impact on the future of our planet. In this step, you will add code to create an area of trees with a variety of different tree types.
 
 --- task ---
 
