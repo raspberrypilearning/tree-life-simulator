@@ -264,7 +264,7 @@ Once the requests are complete, get the **Tree Feller** sprite to move to the si
 
 --- task ---
 
-Add two Motion{:class="block3motion"} blocks: a `set x to -200`{:class="block3motion"} block and a `point in direction 90`{:class="block3motion"} block.
+Add two `Motion`{:class="block3motion"} blocks: a `set x to -200`{:class="block3motion"} block and a `point in direction 90`{:class="block3motion"} block.
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
