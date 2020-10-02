@@ -38,7 +38,7 @@ glide (3) secs to x:(0) y:(-200)
 
 --- /task ---
 
-The **Natural Disaster** sprite has 3 costumes (Drought, Forest Fire and Tornado) as forests can be hit by many types of natural disaster. Add code so that the simulation has multiple disaster types.
+The **Natural Disaster** sprite has 3 costumes (**Drought**, **Forest Fire** and **Tornado**) as areas can be hit by many types of natural disaster. Add code so that the simulation has multiple disaster types.
 
 --- task ---
 
@@ -119,6 +119,6 @@ end
 
 --- task ---
 
-Test your project again. Your **Natural Disaster** sprite will now wait between 10 and 20 seconds before falling from a random position to another random position. It will also change costume each time.
+Test your project again. Your **Natural Disaster** sprite will now wait between 10 and 20 seconds before falling from a random position to another random position. It will also change costume each time and remove any trees it touches.
 
 --- /task ---
