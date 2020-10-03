@@ -38,7 +38,7 @@ glide (3) secs to x:(0) y:(-200)
 
 --- /task ---
 
-The **Natural Disaster** sprite has three costumes (**Drought**, **Forest Fire**, and **Tornado**) as these areas can be hit by many types of natural disaster. Add code so that the simulation has multiple disaster types.
+The **Natural Disaster** sprite has three costumes: **Drought**, **Forest Fire**, and **Tornado** as trees can be hit by many types of natural disaster. Add code so that the simulation has multiple disaster types.
 
 --- task ---
 
@@ -69,7 +69,7 @@ Test your project. The **Natural Disaster** sprite now moves from top to bottom,
 
 --- /task ---
 
-Scientists can sometimes predict when natural disasters will occur, but their timing is not as consistent as in your simulation. Add random timing to the **Natural Disaster** sprite.
+Scientists can sometimes predict when natural disasters will occur, though this can be difficult because their timing isn't always clear, unlike in the simulation. Now, add random timing to the **Natural Disaster** sprite to make the sprite's appearance unpredictable like in real life.
 
 --- task ---
 
