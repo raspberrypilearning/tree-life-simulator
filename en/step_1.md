@@ -1,6 +1,6 @@
 ## Introduction
 
-Use Scratch to create a simulation that shows how varying the way an area of land is managed and altering amounts of deforestation will impact trees, wildlife, and the environment.
+Use Scratch to create a simulation that shows the impact of land management and deforestation on trees, wildlife, and the environment.
 
 This project focuses on three of the United Nations Sustainable Development Goals:
 
