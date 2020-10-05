@@ -44,9 +44,9 @@ You need to add a set of blocks to make sure that the speed that new trees grow 
 
 --- task ---
 
-In this task, you'll see how the `timer`{:class="block3sensing"} block works. Go to the `Sensing`{:class="block3sensing"} blocks menu, and click on the tick next to the `timer`{:class="block3sensing"} block to show the timer on the Stage. 
+In this task, you'll see how the `timer`{:class="block3sensing"} block works. Go to the `Sensing`{:class="block3sensing"} blocks menu, and click on the checkbox next to the `timer`{:class="block3sensing"} block to show the timer on the Stage. 
 
-Click on the green flag and you'll notice the timer starts to count up immediately. Click on the tick again to hide the timer from view. 
+Click on the green flag and you'll notice the timer starts to count up immediately. Click on the checkbox again to hide the timer from view. 
 
 --- /task ---
 
