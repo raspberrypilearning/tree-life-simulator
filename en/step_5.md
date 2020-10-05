@@ -31,7 +31,7 @@ Each time someone submits a request for more trees, the **Tree Feller** sprite s
 
 --- task ---
 
-To store the answer to your question in the `trees needed`{:class="block3variables"} variable, add a `change trees needed by 1`{:class="block3variables"} block and drag an `answer`{:class="block3sensing"} block into where it says `1`:
+To store the answer to your question in the `trees needed`{:class="block3variables"} variable, add a `change trees needed by 1`{:class="block3variables"} block and drag an `answer`{:class="block3sensing"} block into where it says `1`{:class="block3variables"}:
 
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 
