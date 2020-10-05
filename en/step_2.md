@@ -52,9 +52,9 @@ end
 
 It is important that you plant a variety of trees to house a range of animals, restore the environment, and benefit people. For example, a koala relies on the broadleaf evergreens in Australia, while a lemur in Madagascar needs the deciduous trees that grow on the island.  
 
-The **Tree** sprite has three costumes: **tree 1**, **tree 2**, and **tree 3**. Click on the Costumes tab to see them.
+The **Tree** sprite has three costumes: **tree 1**, **tree 2**, and **tree 3**. Click on the **Costumes** tab to see them.
 
-Click back to the Code tab and use the `random`{:class="block3operators"} operator to vary the looks of the trees and add variety to the area.
+Click back to the **Code** tab and use the `random`{:class="block3operators"} operator to vary the looks of the trees and add variety to the area.
 
 --- task ---
 
