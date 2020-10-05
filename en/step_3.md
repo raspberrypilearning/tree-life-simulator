@@ -24,11 +24,11 @@ Select **slider** in the menu.
 
 --- /task ---
 
-At the moment, the tree management range is too wide.
+At the moment, the `tree management`{:class="block3variables"} range is too wide.
 
 --- task ---
 
-On the Stage, right-click on the tree management slider and select **change slider range**.
+On the Stage, right-click on the **tree management** slider and select **change slider range**.
 
 Change the range to between `0` and `5`.
 
