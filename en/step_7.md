@@ -38,7 +38,7 @@ glide (3) secs to x:(0) y:(-200)
 
 --- /task ---
 
-The **Natural Disaster** sprite has three costumes: **Drought**, **Forest Fire**, and **Tornado** as trees can be hit by many types of natural disaster. Add code so that the simulation has multiple disaster types.
+The **Natural Disaster** sprite has three costumes: **Drought**, **Forest Fire**, and **Tornado**, as trees can be hit by many types of natural disaster. Add code so that the simulation has multiple disaster types.
 
 --- task ---
 
