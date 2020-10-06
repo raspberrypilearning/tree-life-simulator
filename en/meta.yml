@@ -1,0 +1,17 @@
+title: Tree life simulator
+hero_image: images/banner.png
+description: tree-life-simulator description
+version: 4
+listed: false
+copyedit: false
+last_tested: "2020-09-15"
+steps:
+  - title: Introduction
+  - title: Grow some trees
+  - title: Tree management
+  - title: Count the trees
+  - title: Human deforestation
+  - title: Monitor tree levels
+  - title: Natural deforestation
+  - title: Share your project
+  - title: What next?
