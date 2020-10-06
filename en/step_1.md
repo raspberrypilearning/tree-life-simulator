@@ -8,7 +8,7 @@ This project focuses on three of the United Nations Sustainable Development Goal
 + [Climate Action](https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-13-climate-action.html){:target="_blank"}
 + [Life on Land](https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-15-life-on-land.html){:target="_blank"}
 
-Thanks to Ecosia, for their guidance on tree life simulation.
+Thanks to [Ecosia](https://www.ecosia.org){:target="_blank"}, for their guidance on tree life simulation.
 
 ### What you will make
 
