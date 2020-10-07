@@ -77,7 +77,9 @@ Add another observation message.
 
 --- task ---
 
-Right-click on the last `if ... then`{:class="block3control"} block, and choose **Duplicate** from the menu. Insert your duplicated blocks below the last `if ... then`{:class="block3control"} block, and change the values from `0` and `10` to `50` and `60`. Think of a warning message to display in the `say`{:class="block3looks"} block.
+Right-click on the last `if ... then`{:class="block3control"} block, and choose **Duplicate** from the menu. Insert your duplicated blocks below the last `if ... then`{:class="block3control"} block, and change the values from `0` and `10` to `50` and `60`. Think of a warning message to display in the `say`{:class="block3looks"} block:
+
+![image of the Maya sprite](images/maya-sprite.png)
 
 ```blocks3
 when flag clicked
