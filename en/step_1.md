@@ -63,3 +63,5 @@ You can [download the completed project here](http://rpf.io/p/en/tree-life-simul
 If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/tree-life-simulator/print){:target="_blank"}.
 
 --- /collapse ---
+
+![](http://code.org/api/hour/begin_rp_tree.png)
