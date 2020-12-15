@@ -133,7 +133,7 @@ Click on the **Tree Feller** sprite and in the `when green flag clicked`{:class=
 
 ```blocks3
 when flag clicked
-set [trees felled v] to (0)
+set [trees needed v] to (0)
 + set rotation style [left-right v]
 + go to x: (-200) y: (150)
 + point in direction (90)
@@ -155,7 +155,7 @@ Within the loop, add a `move 10 steps`{:class="block3motion"} block and change t
 when this sprite clicked
 ask [How many trees are needed? (max 20)] and wait
 change [trees needed v] by (answer)
-if {(trees neeed) > (20)} then
+if {(trees needed) > (20)} then
 set (trees needed v) to (20)
 end
 + repeat until {(trees needed) = (0)}
@@ -183,7 +183,7 @@ Add an `if ... then`{:class="block3control"} block with a `touching edge`{:class
 when this sprite clicked
 ask [How many trees are needed? (max 20)] and wait
 change [trees needed v] by (answer)
-if {(trees neeed) > (20)} then
+if {(trees needed) > (20)} then
 set (trees needed v) to (20)
 end
 repeat until {(trees needed) = (0)}
@@ -209,7 +209,7 @@ Add another `if ... then`{:class="block3control"} block with a `y position`{:cla
 when this sprite clicked
 ask [How many trees are needed? (max 20)] and wait
 change [trees needed v] by (answer)
-if {(trees neeed) > (20)} then
+if {(trees needed) > (20)} then
 set (trees needed v) to (20)
 end
 repeat until {(trees needed) = (0)}
@@ -238,7 +238,7 @@ Add a `Looks`{:class="block3looks"} block to the end of your code so that the **
 when this sprite clicked
 ask [How many trees are needed? (max 20)] and wait
 change [trees needed v] by (answer)
-if {(trees neeed) > (20)} then
+if {(trees needed) > (20)} then
 set (trees needed v) to (20)
 end
 repeat until {(trees needed) = (0)}
@@ -274,7 +274,7 @@ Add two `Motion`{:class="block3motion"} blocks: a `set x to`{:class="block3motio
 when this sprite clicked
 ask [How many trees are needed? (max 20)] and wait
 change [trees needed v] by (answer)
-if {(trees neeed) > (20)} then
+if {(trees needed) > (20)} then
 set (trees needed v) to (20)
 end
 repeat until {(trees needed) = (0)}
