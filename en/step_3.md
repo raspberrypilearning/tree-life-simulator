@@ -34,13 +34,11 @@ Change the range to between `0` and `5`.
 
 --- /task ---
 
-In the simulation, the **tree management** slider controls the speed that new trees grow. If you move the slider to the right, it speeds up the growth; if you move it to the left, it slows down the growth. When the slider is at the right, the simulation waits one second to plant a tree, and when it is at the left it waits six seconds to plant a tree.
+In the simulation, the **tree management** slider controls the speed that new trees grow. If you move the slider to the right, it speeds up the growth; if you move it to the left, it slows down the growth. 
 
- ![image of the slider maths](images/slider-maths.png)
+When the slider is at the right (5), the simulation waits one second to plant a tree, and when it is at the left (0) it waits six seconds to plant a tree.
 
-This means if `tree management`{:class="block3variables"} equals `4`, the wait time is 2 seconds, but if `tree management`{:class="block3variables"} equals `1`, the wait time is slower at 5 seconds. 
-
-You need to add a set of blocks to make sure that the speed that new trees grow is in reaction to a change in the **tree management** slider.  
+You will add a set of blocks to make sure that the speed that new trees grow is in reaction to a change in the **tree management** slider.  
 
 --- task ---
 
