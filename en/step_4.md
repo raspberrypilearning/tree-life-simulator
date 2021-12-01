@@ -80,6 +80,7 @@ change (mature trees) by (1)
 + change (mature trees) by (-1)
 + delete this clone
 ```
+
 --- /task ---
 
 Trees can also die from natural deforestation, whether they are mature or still growing. To show this, reduce your count of trees if a tree has been touched by the **Natural Disaster** sprite.
