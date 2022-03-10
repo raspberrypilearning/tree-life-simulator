@@ -1,0 +1,20 @@
+---
+title: ट्री लाईफ सिम्युलेटर
+hero_image: images/banner.png
+description: एक सिम्युलेशन तयार करा जे झाडे, वन्यजीव आणि पर्यावरणावर जमीन व्यवस्थापन आणि जंगलतोड यांचा प्रभाव दर्शवेल
+version: 4
+listed: true
+copyedit: false
+last_tested: '2020-09-15'
+steps:
+  - title: परिचय
+    completion: engaged
+  - title: काही झाडे लावा
+  - title: वृक्ष व्यवस्थापन
+  - title: वृक्ष मोजा
+  - title: मानवी जंगलतोड
+  - title: वृक्षाच्या लेवलचे निरीक्षण करा
+  - title: नैसर्गीक जंगलतोड
+    completion: internal
+  - title: तुमचा प्रोजेक्ट शेअर करा
+  - title: पुढे काय?

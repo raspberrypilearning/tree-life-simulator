@@ -1,0 +1,20 @@
+---
+title: ಮರದ ಬದುಕಿನ ಸಾದೃಶ್ಯ
+hero_image: images/banner.png
+description: ಮರಗಳು, ವನ್ಯಜೀವಿಗಳು ಮತ್ತು ವಾತಾವರಣದ ಮೇಲೆ ನಿರ್ವಹಣೆ ಮತ್ತು ಅರಣ್ಯನಾಶದ ಪರಿಣಾಮವನ್ನು ತೋರಿಸುವ ಸಾದೃಶ್ಯವನ್ನು ರಚಿಸಿ
+version: 4
+listed: true
+copyedit: false
+last_tested: '2020-09-15'
+steps:
+  - title: ಪರಿಚಯ
+    completion: engaged
+  - title: ಕೆಲವು ಮರಗಳನ್ನು ಬೆಳೆಸಿ
+  - title: ಮರದ ನಿರ್ವಹಣೆ
+  - title: ಮರಗಳನ್ನು ಎಣಿಸಿ
+  - title: ಮಾನವ ಅರಣ್ಯನಾಶ
+  - title: ಮರದ ಮಟ್ಟಗಳನ್ನು ಗಮನಿಸಿ
+  - title: ನೈಸರ್ಗಿಕ ಅರಣ್ಯನಾಶ
+    completion: internal
+  - title: ನಿಮ್ಮ ಪ್ರಾಜೆಕ್ಟ್‌ನ್ನು ಹಂಚಿಕೊಳ್ಳಿ
+  - title: ಮುಂದೆ ಏನು?
