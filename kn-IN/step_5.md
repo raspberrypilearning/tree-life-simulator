@@ -1,16 +1,16 @@
-## Human deforestation
+## ಮಾನವ ಅರಣ್ಯನಾಶ
 
-There are many reasons why humans chop down trees. The wood might be needed to create furniture, make buildings, or burn as firewood. Alternatively, the land used by the forest might be needed to grow crops, graze cattle, or construct buildings.
+ಮಾನವರು ಮರಗಳನ್ನು ಕಡಿಯಲು ಹಲವು ಕಾರಣಗಳಿವೆ. ಪೀಠೋಪಕರಣಗಳನ್ನು ರಚಿಸಲು, ಕಟ್ಟಡಗಳನ್ನು ಮಾಡಲು ಅಥವಾ ಉರುವಲುಗಳಾಗಿ ಸುಡಲು ಮರದ ಅಗತ್ಯವಿರಬಹುದು. ಪರ್ಯಾಯವಾಗಿ, ಅರಣ್ಯವು ಬಳಸುವ ಭೂಮಿ ಬೆಳೆಗಳನ್ನು ಬೆಳೆಯಲು, ದನಗಳನ್ನು ಮೇಯಿಸಲು ಅಥವಾ ಕಟ್ಟಡಗಳನ್ನು ನಿರ್ಮಿಸಲು ಬೇಕಾಗಬಹುದು.
 
-In this step, you will code the **Tree Feller** sprite to get the amount of trees needed, and move through the forest causing human deforestation.
+ಈ ಹಂತದಲ್ಲಿ, ನೀವು ಅವಶ್ಯವಿರುವ ಮರಗಳ ಮೊತ್ತವನ್ನು ಪಡೆಯಲು ನೀವು **Tree Feller** ಸ್ಪ್ರೈಟ್‌ನ್ನು ಕೋಡ್‌ ಮಾಡುತ್ತೀರಿ ಮತ್ತು ಮಾನವ ಅರಣ್ಯನಾಶ ಮಾಡುತ್ತ ಅರಣ್ಯದಲ್ಲಿ ಚಲಿಸುತ್ತಿರಿ.
 
-Code the **Tree Feller** sprite to ask how many trees are needed each time it is clicked.
+ಅದನ್ನು ಪ್ರತಿಬಾರಿ ಕ್ಲಿಕ್‌ ಮಾಡಿದಾಗ ಎಷ್ಟು ಮರಗಳು ಬೇಕು ಎಂದು ಕೇಳಲು **Tree Feller** ಸ್ಪ್ರೈಟ್‌ನ್ನು ಕೋಡ್‌ ಮಾಡಿ.
 
 --- task ---
 
-Click on the **Tree Feller** sprite and start a new script with a `when this sprite clicked`{:class="block3events"} block. Add an `ask What is your name? and wait`{:class="block3sensing"} block and change the text to ask `How many trees are needed? (max 20)`:
+**Tree Feller** ಸ್ಪ್ರೈಟ್‌ ಮೇಲೆ ಕ್ಲಿಕ್‌ ಮಾಡಿ ಮತ್ತು `when this sprite clicked`{:class="block3events"} ಬ್ಲಾಕ್‌ನೊಂದಿಗೆ ಹೊಸ ಬರಹ ಪ್ರಾರಂಭಿಸಿ. `ask What is your name? and wait</0>{:class="block3sensing"} ನ್ನು ಸೇರಿಸಿ ಬ್ಲಾಕ್‌ ಸೇರಿಸಿ ಮತ್ತು <code>How many trees are needed? (max 20)</1> ಕೇಳಲು ಪಠ್ಯವನ್ನು ಬದಲಾಯಿಸಿ,: (max 20)`:
 
-![image of the Tree Feller sprite](images/tree-feller-sprite.png)
+![Tree Feller ಸ್ಪ್ರೈಟ್ ಚಿತ್ರ](images/tree-feller-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -19,21 +19,21 @@ ask [How many trees are needed? (max 20)] and wait
 
 --- /task ---
 
-Next, you need a variable to hold the input from asking the question `How many trees are needed? (max 20)`.
+ಮುಂದೆ, ಪ್ರಶ್ನೆಯನ್ನು ಕೇಳುವುದರಿಂದ ಇನ್‌ಪುಟ್ ಅನ್ನು ಹಿಡಿದಿಡಲು ನಿಮಗೆ ವೇರಿಯಬಲ್ ಅಗತ್ಯವಿದೆ `How many trees are needed?(max 20)</0>? (max 20)`.
 
 --- task ---
 
-Create a new `variable`{:class="block3variables"} and call it `trees needed`.
+ಹೊಸ `variable`{:class="block3variables"} ನ್ನು ರಚಿಸಿ ಮತ್ತು ಅದನ್ನು `trees needed` ಎಂದು ಕರೆಯಿರಿ.
 
 --- /task ---
 
-Each time someone submits a request for more trees, the **Tree Feller** sprite should add that number to the amount of trees needed.
+ಪ್ರತಿಬಾರಿ ಯಾರಾದರೂ ಹೆಚ್ಚು ಮರಗಳಿಗೆ ಮನವಿಯನ್ನು ಸಲ್ಲಿಸಿದಾಗ, **Tree Feller** ಸ್ಪ್ರೈಟ್‌ ಆ ಸಂಖ್ಯೆಯನ್ನು ಅವಶ್ಯವಿರುವ ಮರಗಳ ಮೊತ್ತಕ್ಕೆ ಸೇರಿಸಬೇಕು.
 
 --- task ---
 
-To store the answer to your question in the `trees needed`{:class="block3variables"} variable, add a `change trees needed by 1`{:class="block3variables"} block and drag an `answer`{:class="block3sensing"} block into where it says `1`{:class="block3variables"}:
+`trees needed`{:class="block3variables"} ವೇರಿಯೇಬಲ್‌ನಲ್ಲಿ ನಿಮ್ಮ ಪ್ರಶ್ನೆಯ ಉತ್ತರವನ್ನು ಸಂಗ್ರಹಣೆ ಮಾಡಲು, `change trees needed by 1`{:class="block3variables"} ಬ್ಲಾಕ್‌ನ್ನು ಸೇರಿಸಿ ಮತ್ತು `answer`{:class="block3sensing"} ಬ್ಲಾಕ್‌ನ್ನು ಅದು `1`{:class="block3variables"} ಎಂದು ಹೇಳುತ್ತದೆಯೋ ಅಲ್ಲಿಗೆ ಎಳೆಯಿರಿ:
 
-![image of the Tree Feller sprite](images/tree-feller-sprite.png)
+![Tree Feller ಸ್ಪ್ರೈಟ್ ಚಿತ್ರ](images/tree-feller-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -43,13 +43,13 @@ ask [How many trees are needed?] and wait
 
 --- /task ---
 
-As trees are big and heavy, the maximum number that can be requested should be set to 20.
+ಮರಗಳು ದೊಡ್ಡದು ಮತ್ತು ಭಾರವಾಗಿರುವುದರಿಂದ, ಮನವಿಮಾಡಿಕೊಳ್ಳಬಹುದಾದ ಗರಿಷ್ಠ ಸಂಖ್ಯೆಯನ್ನು 20 ಕ್ಕೆ ಹೊಂದಿಸಬೇಕು.
 
 --- task ---
 
-Add an `if ... then`{:class="block3control"} block to the end of your code with the condition `trees needed`{:class="block3variables"} `greater than`{:class="block3operators"} `20`. Inside the `if ... then`{:class="block3control"} block, add `set trees needed to`{:class="block3variables"} `20`:
+`trees needed`{:class="block3variables"} `greater than`{:class="block3operators"} `20` ಷರತ್ತಿನೊಂದಿಗೆ `if ... then`{:class="block3control"} ಬ್ಲಾಕ್‌ನ್ನು ನಿಮ್ಮ ಕೋಡ್‌ನ ಕೊನೆಯಲ್ಲಿ ಸೇರಿಸಿ . `if ... then`{:class="block3control"} ಬ್ಲಾಕ್‌ ಒಳಗಡೆ, `set trees needed to`{:class="block3variables"} `20` ನ್ನು ಸೇರಿಸಿ:
 
-![image of the Tree Feller sprite](images/tree-feller-sprite.png)
+![Tree Feller ಸ್ಪ್ರೈಟ್ ಚಿತ್ರ](images/tree-feller-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -62,13 +62,13 @@ end
 
 --- /task ---
 
-Reset the number of trees needed every time the green flag is clicked to start the simulation, so it clears the variable ready for a new request.
+ಪ್ರತಿಬಾರಿ ಸಾದೃಶ್ಯವನ್ನು ಪ್ರಾರಂಭಿಸಲು ಹಸಿರು ಬಾವುಟವನ್ನು ಕ್ಲಿಕ್‌ ಮಾಡಿದಾಗ ಅವಶ್ಯವಿರುವ ಮರಗಳ ಸಂಖ್ಯೆಯನ್ನು ಮರುಹೊಂದಿಸಿ, ಅದರಿಂದ ಅದು ವೇರಿಯೇಬಲ್‌ನ್ನು ಖಾಲಿ ಮಾಡಿ ಹೊಸ ಮನವಿಗೆ ಸಿದ್ಧಪಡಿಸುತ್ತದೆ.
 
 --- task ---
 
-Start a new script with `when green flag clicked`{:class="block3control"} block, and add a `set trees needed to 0`{:class="block3variables"} block:
+`when green flag clicked`{:class="block3control"} ಬ್ಲಾಕ್‌ನೊಂದಿಗೆ ಹೊಸ ಬರಹವನ್ನು ಪ್ರಾರಂಭಿಸಿ ಮತ್ತು `set trees needed to 0`{:class="block3variables"} ಬ್ಲಾಕ್‌ನ್ನು ಸೇರಿಸಿ:
 
-![image of the Tree Feller sprite](images/tree-feller-sprite.png)
+![Tree Feller ಸ್ಪ್ರೈಟ್ ಚಿತ್ರ](images/tree-feller-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -79,19 +79,19 @@ set [trees needed v] to (0)
 
 --- task ---
 
-Run your simulation. Click on the **Tree Feller** sprite and request a number of trees. Enter different numbers to see what happens to the `trees needed`{:class="block3variables"} variable each time.
+ನಿಮ್ಮ ಸಾದೃಶ್ಯವನ್ನು ರನ್‌ ಮಾಡಿ. **Tree Feller** ಸ್ಪ್ರೈಟ್‌ ಮೇಲೆ ಕ್ಲಿಕ್‌ ಮಾಡಿ ಮತ್ತು ಮರಗಳ ಸಂಖ್ಯೆಗಳನ್ನು ಮನವಿ ಮಾಡಿ. ಪ್ರತಿಬಾರಿ `trees needed`{:class="block3variables"} ವೇರಿಯೇಬಲ್‌ಗೆ ಏನಾಗುತ್ತದೆ ಎಂದು ನೋಡಲು ಬೇರೆ ಬೇರೆ ಸಂಖ್ಯೆಗಳನ್ನು ಎಂಟರ್‌ ಮಾಡಿ.
 
 --- /task ---
 
-When the **Tree Feller** sprite touches a mature tree, the number of trees needed will decrease.
+**Tree Feller** ಸ್ಪ್ರೈಟ್‌ ಪ್ರೌಢ ಮರವನ್ನು ಸ್ಪರ್ಶಿಸಿದಾಗ, ಅವಶ್ಯವಿರುವ ಮರಗಳ ಸಂಖ್ಯೆ ಕಡಿಮೆಯಾಗುತ್ತದೆ.
 
 --- task ---
 
-Click on the **Tree** sprite and add `change trees needed by`{:class="block3variables"} `-1` to the script after it `touches Tree Feller`{:class="block3sensing"}.
+**Tree** ಸ್ಪ್ರೈಟ್‌ ಮೇಲೆ ಕ್ಲಿಕ್‌ ಮಾಡಿ ಮತ್ತು `change trees needed by`{:class="block3variables"} `-1` ನ್ನು ಅದು `touches Tree Feller`{:class="block3sensing"} ನಂತರ ಬರಹಕ್ಕೆ ಸೇರಿಸಿ.
 
-Change the condition of the `wait until`{:class="block3control"} block to be `touches Tree Feller`{:class="block3sensing"} `and`{:class="block3operators"} `trees needed`{:class="block3variables"} `>`{:class="block3operators"} `0`
+`wait until`{:class="block3control"} ಬ್ಲಾಕ್‌ನ ಷರತ್ತನ್ನು `touches Tree Feller`{:class="block3sensing"} `and`{:class="block3operators"} `trees needed`{:class="block3variables"} `>`{:class="block3operators"} `0` ಆಗುವಂತೆ ಬದಲಾಯಿಸಿ
 
-![image of the Tree sprite](images/tree-sprite.png)
+![Tree ಸ್ಪ್ರೈಟ್‌ನ ಚಿತ್ರ](images/tree-sprite.png)
 
 ```blocks3
 when I start as a clone
@@ -111,25 +111,25 @@ delete this clone
 
 --- /task ---
 
-The Stage is looking crowded with so many `variables`{:class="block3variables"}. Position them so they appear in better places in your simulation, and hide the ones that don't show values relating to tree management.
+ಬಹಳಷ್ಟು `variables`{:class="block3variables"} ಗಳಿಂದ Stage ಕಿಕ್ಕಿರಿದಿರುವಂತೆ ಕಾಣಿಸುತ್ತಿದೆ. ಅವುಗಳು ನಿಮ್ಮ ಸಾದೃಶ್ಯದಲ್ಲಿ ಉತ್ತಮ ಸ್ಥಳಗಳಲ್ಲಿ ಕಾಣುವಂತೆ ಅವುಗಳನ್ನು ಇರಿಸಿ ಮತ್ತು ಮರ ನಿರ್ವಹಣೆಗೆ ಸಂಬಂಧಿಸಿದ ಮೌಲ್ಯಗಳನ್ನು ತೋರಿಸದೇ ಇರುವವುಗಳನ್ನು ಮರೆಮಾಡಿ.
 
 --- task ---
 
-Go to the `Variables`{:class="block3variables"} blocks menu and untick the `trees needed`{:class="block3variables"} variable.
+`Variables`{:class="block3variables"} ಬ್ಲಾಕ್‌ಗಳ ಮೆನುಗೆ ಹೋಗಿ ಮತ್ತು `trees needed`{:class="block3variables"} ವೇರಿಯೇಬಲ್‌ನ್ನು ಅನ್‌ಟಿಕ್‌ ಮಾಡಿ.
 
-Drag the **tree management** slider variable and **mature trees** counter variable to the bottom corners of the Stage.
+**tree management** ಸ್ಲೈಡರ್‌ ವೇರಿಯೇಬಲ್‌ನ್ನು ಮತ್ತು **mature trees** ಕೌಂಟರ್‌ ವೇರಿಯೇಬಲ್‌ನ್ನು Stage ನ ಕೆಳ ಮೂಲಗೆ ಎಳೆಯಿರಿ.
 
-![image of the stage with variables](images/stage-with-variables.png)
+![ವೇರಿಯೇಬಲ್‌ಗಳೊಂದಿಗೆ ವೇದಿಕೆಯ ಚಿತ್ರ](images/stage-with-variables.png)
 
 --- /task ---
 
-Set the starting position for the **Tree Feller** sprite each time the simulation starts.
+ಪ್ರತಿಯೊಂದು ಬಾರಿ ಸಾದೃಶ್ಯ ಪ್ರಾರಂಭವಾದಾಗ **Tree Feller** ಸ್ಪ್ರೈಟ್‌ಗೆ ಪ್ರಾರಂಭಿಕ ಸ್ಥಾನವನ್ನು ಹೊಂದಿಸಿ.
 
 --- task ---
 
-Click on the **Tree Feller** sprite and in the `when green flag clicked`{:class="block3events"} script, insert a `set rotation style left-right`{:class="block3motion"} block so that the **Tree Feller** sprite does not tip upside down. To get the **Tree Feller** sprite to start at the top left-hand corner, add a `go to x:0 y:0`{:class="block3motion"} block and change the values to `-200` and `150`. Get the sprite to `point in direction 90`{:class="block3motion"}:
+**Tree Feller** ಸ್ಪ್ರೈಟ್‌ ಮೇಲೆ ಕ್ಲಿಕ್‌ ಮಾಡಿ ಮತ್ತು `when green flag clicked`{:class="block3events"} ಬರಹದಲ್ಲಿ, `set rotation style left-right`{:class="block3motion"} ಬ್ಲಾಕ್‌ನ್ನು ಒಳಸೇರಿಸಿ, ಅದರಿಂದ **Tree Feller** ಸ್ಪ್ರೈಟ್‌ ತಲೆಕೆಳಗಾಗಿ ತಿರುಗುವುದಿಲ್ಲ. **Tree Feller** ಸ್ಪ್ರೈಟ್‌ ಮೇಲಿನ ಎಡ ಮೂಲೆಯಲ್ಲಿ ಪ್ರಾರಂಭಿಸುವಂತೆ ಮಾಡಲು, `go to x:0 y:0`{:class="block3motion"} ಬ್ಲಾಕ್‌ ಸೇರಿಸಿ ಮತ್ತು ಮೌಲ್ಯಗಳನ್ನು `-200` ಮತ್ತು `150` ಕ್ಕೆ ಬದಲಾಯಿಸಿ. ಸ್ಪ್ರೈಟ್ `point in direction 90`{:class="block3motion"}‌ ಮಾಡುವಂತೆ ಮಾಡಲು:
 
-![image of the Tree Feller sprite](images/tree-feller-sprite.png)
+![Tree Feller ಸ್ಪ್ರೈಟ್ ಚಿತ್ರ](images/tree-feller-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -141,15 +141,15 @@ set [trees needed v] to (0)
 
 --- /task ---
 
-The **Tree Feller** sprite will move through the forest from left to right and back again, until it has felled enough trees. Use an operator so the **Tree Feller** sprite knows it has collected enough trees when the number of trees needed equals zero.
+**Tree Feller** ಸ್ಪ್ರೈಟ್‌ ಅರಣ್ಯದಲ್ಲಿ ಎಡದಿಂದ ಬಲಕ್ಕೆ ಮತ್ತೆ ಅಲ್ಲಿಂದ ಹಿಂದಕ್ಕೆ ಅದು ಸಾಕಷ್ಟು ಮರಗಳನ್ನು ಕಡಿಯುವವರೆಗೆ ಚಲಿಸುತ್ತದೆ. ಅವಶ್ಯವಿರುವ ಮರಗಳ ಸಂಖ್ಯೆ ಸೊನ್ನೆಯಾದಾಗ **Tree Feller** ಸ್ಪ್ರೈಟ್‌ಗೆ ಅದು ಸಾಕಷ್ಟು ಮರಗಳನ್ನು ಸಂಗ್ರಹಿಸಿದೆ ಎಂದು ತಿಳಿಸಲು ಆಪರೇಟರ್‌ನ್ನು ಉಪಯೋಗಿಸಿ.
 
 --- task ---
 
-In the `when this sprite clicked`{:class="block3events"} script, add a `repeat until`{:class="block3control"} block and drag an equals `=`{:class="block3operators"} block inside. Add the condition `trees needed`{:class="block3variables"} `=`{:class="block3operators"} `0`.
+`when this sprite clicked`{:class="block3events"} ಬರಹದಲ್ಲಿ, `repeat until`{:class="block3control"} ಬ್ಲಾಕ್‌ನ್ನು ಸೇರಿಸಿ ಮತ್ತು ಒಂದು ಬರೋಬ್ಬರಿ `=`{:class="block3operators"} ಬ್ಲಾಕ್‌ನ್ನು ಒಳಕ್ಕೆ ಎಳೆಯಿರಿ. `trees needed`{:class="block3variables"} `=`{:class="block3operators"} `0` ಷರತ್ತನ್ನು ಸೇರಿಸಿ.
 
-Within the loop, add a `move 10 steps`{:class="block3motion"} block and change the value to `4`:
+ಲೂಪ್‌ ಒಳಗೆ, `move 10 steps`{:class="block3motion"} ಬ್ಲಾಕ್‌ ಸೇರಿಸಿ ಮತ್ತು ಮೌಲ್ಯವನ್ನು `4` ಕ್ಕೆ ಬದಲಾಯಿಸಿ:
 
-![image of the Tree Feller sprite](images/tree-feller-sprite.png)
+![Tree Feller ಸ್ಪ್ರೈಟ್ ಚಿತ್ರ](images/tree-feller-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -167,17 +167,17 @@ end
 
 --- task ---
 
-Run your simulation. Click on the **Tree Feller** sprite and request a number of trees. Does the **Tree Feller** sprite move through the whole Stage?
+ನಿಮ್ಮ ಸಾದೃಶ್ಯವನ್ನು ರನ್‌ ಮಾಡಿ. **Tree Feller** ಸ್ಪ್ರೈಟ್‌ ಮೇಲೆ ಕ್ಲಿಕ್‌ ಮಾಡಿ ಮತ್ತು ಮರಗಳ ಸಂಖ್ಯೆಗಳನ್ನು ಮನವಿ ಮಾಡಿ. **Tree Feller** ಸ್ಪ್ರೈಟ್‌ ಸಂಪೂರ್ಣ Stage ಮೂಲಕ ಚಲಿಸುತ್ತದೆಯೇ?
 
 --- /task ---
 
-At the moment, the **Tree Feller** sprite only moves across the top of the Stage. You need to make the sprite sense if it is touching the edge of the Stage, so that it knows to change direction.
+ಈ ಸಮಯದಲ್ಲಿ, **Tree Feller** ಸ್ಪ್ರೈಟ್‌ Stage ನ ಮೇಲ್ಭಾಗದ ಉದ್ದಕ್ಕೂ ಚಲಿಸುತ್ತದೆ. ಸ್ಪ್ರೈಟ್‌ Stage ನ ಅಂಚನ್ನು ಸ್ಪರ್ಶಿಸುತ್ತಿದೆಯೇ ಎಂದು ಅದು ಗ್ರಹಿಸುವಂತೆ ಮಾಡಬೇಕು, ಅದರಿಂದ ಅದಕ್ಕೆ ದಿಕ್ಕನ್ನು ಬದಲಾಯಿಸಬೇಕು ಎಂದು ತಿಳಿಯುತ್ತದೆ.
 
 --- task ---
 
-Add an `if ... then`{:class="block3control"} block with a `touching edge`{:class="block3sensing"} condition. Inside your `if`{:class="block3control"} loop, add two `Motion`{:class="block3motion"} blocks:  `turn right by`{:class="block3motion"} `180` `degrees`{:class="block3motion"} and `change y by`{:class="block3motion"} `-40`:
+`touching edge`{:class="block3sensing"} ಷರತ್ತಿನೊಂದಿಗೆ `if ... then`{:class="block3control"} ಬ್ಲಾಕ್‌ ಸೇರಿಸಿ. ನಿಮ್ಮ `if`{:class="block3control"} ಲೂಪ್‌ ಒಳಗೆ,ಎರಡು `Motion`{:class="block3motion"}ಬ್ಲಾಕ್‌ಗಳನ್ನು ಸೇರಿಸಿ:  `turn right by`{:class="block3motion"} `180` `degrees`{:class="block3motion"} ಮತ್ತು `change y by`{:class="block3motion"} `-40`:
 
-![image of the Tree Feller sprite](images/tree-feller-sprite.png)
+![Tree Feller ಸ್ಪ್ರೈಟ್ ಚಿತ್ರ](images/tree-feller-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -197,13 +197,13 @@ end
 
 --- /task ---
 
-If the **Tree Feller** sprite reaches the bottom of the Stage, it needs to start again from the top.
+**Tree Feller** ಸ್ಪ್ರೈಟ್‌ ಸ್ಟೇಜ್‌ನ ಕೆಳಭಾಗವನ್ನು ತಲುಪಿದರೆ, ಅದು ಮತ್ತೆ ಮೇಲಿನಿಂದ ಪ್ರಾರಂಭಿಸಬೇಕು.
 
 --- task ---
 
-Add another `if ... then`{:class="block3control"} block with a `y position`{:class="block3motion"} `<`{:class="block3operators"} `-120` condition. Inside your `if ... then`{:class="block3control"} loop, add `go to x:`{:class="block3motion"} `-200` `y:`{:class="block3motion"} `150` so that it moves back to the starting position:
+`y position`{:class="block3motion"} `<`{:class="block3operators"} `-120` ಷರತ್ತಿನೊಂದಿಗೆ ಇನ್ನೊಂದು `if ... then`{:class="block3control"} ಬ್ಲಾಕ್‌ ಸೇರಿಸಿ. ನಿಮ್ಮ `if ... then`{:class="block3control"} ಲೂಪ್‌ ಒಳಗೆ, `go to x:`{:class="block3motion"} `-200` `y:`{:class="block3motion"} `150` ನ್ನು ಸೇರಿಸಿ ಅದರಿಂದ ಅದು ಪ್ರಾರಂಭಿಕ ಸ್ಥಾನಕ್ಕೆ ಮರಳುತ್ತದೆ:
 
-![image of the Tree Feller sprite](images/tree-feller-sprite.png)
+![Tree Feller ಸ್ಪ್ರೈಟ್ ಚಿತ್ರ](images/tree-feller-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -226,13 +226,13 @@ end
 
 --- /task ---
 
-Next, you need to find out when the **Tree Feller** sprite has felled enough trees. Get the **Tree Feller** sprite to announce it has finished the requests.
+ನಂತರ, ನೀವು **Tree Feller** ಸ್ಪ್ರೈಟ್‌ ಯಾವಾಗ ಸಾಕಷ್ಟು ಮರಗಳನ್ನು ಕಡಿದಿದೆ ಎಂದು ಪತ್ತೆ ಮಾಡಬೇಕು. **Tree Feller** ಸ್ಪ್ರೈಟ್‌ ಅದು ಮನವಿಗಳನ್ನು ಮುಗಿಸಿದೆ ಎಂದು ಘೋಷಿಸುವಂತೆ ಮಾಡಬೇಕು.
 
 --- task ---
 
-Add a `Looks`{:class="block3looks"} block to the end of your code so that the **Tree Feller** sprite will `say`{:class="block3looks"} `Requests completed.` `for 2 seconds`{:class="block3looks"}:
+`Looks`{:class="block3looks"} ಬ್ಲಾಕ್‌ನ್ನು ನಿಮ್ಮ ಕೋಡ್‌ನ ಕೊನೆಯಲ್ಲಿ ಸೇರಿಸಿ ಅದರಿಂದ **Tree Feller** ಸ್ಪ್ರೈಟ್ `say`{:class="block3looks"} `Requests completed.` `for 2 seconds`{:class="block3looks"}‌ ಮಾಡುತ್ತದೆ:
 
-![image of the Tree Feller sprite](images/tree-feller-sprite.png)
+![Tree Feller ಸ್ಪ್ರೈಟ್ ಚಿತ್ರ](images/tree-feller-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -258,17 +258,17 @@ end
 
 --- task ---
 
-Run your simulation. Click on the **Tree Feller** sprite and request a number of trees. Once the **Tree Feller** sprite has collected enough trees, it will tell you it has finished.
+ನಿಮ್ಮ ಸಾದೃಶ್ಯವನ್ನು ರನ್‌ ಮಾಡಿ. **Tree Feller** ಸ್ಪ್ರೈಟ್‌ ಮೇಲೆ ಕ್ಲಿಕ್‌ ಮಾಡಿ ಮತ್ತು ಮರಗಳ ಸಂಖ್ಯೆಗಳನ್ನು ಮನವಿ ಮಾಡಿ. ಒಮ್ಮೆ **Tree Feller** ಸ್ಪ್ರೈಟ್‌ ಸಾಕಷ್ಟು ಮರಗಳನ್ನು ಸಂಗ್ರಹಿಸಿದ ನಂತರ, ಅದು ಮುಗಿಸಿದೆ ಎಂದು ನಿಮಗೆ ಹೇಳುತ್ತದೆ.
 
 --- /task ---
 
-Once the requests are complete, get the **Tree Feller** sprite to move to the side of the tree area, ready for the next request.
+ಒಮ್ಮೆ ಮನವಿಗಳೆಲ್ಲಾ ಪೂರ್ಣಗೊಂಡಾಗ,, **Tree Feller** ಸ್ಪ್ರೈಟ್‌ ಮುಂದಿನ ಮನವಿಗೆ ಸಿದ್ಧವಾಗಿ ಮರದ ಪ್ರದೇಶದಿಂದ ಪಕ್ಕಕ್ಕೆ ಚಲಿಸುವಂತೆ ಮಾಡಿ.
 
 --- task ---
 
-Add two `Motion`{:class="block3motion"} blocks: a `set x to`{:class="block3motion"} `-200` block and a `point in direction 90`{:class="block3motion"} block.
+`Motion`{:class="block3motion"} ಬ್ಲಾಕ್‌ಗಳನ್ನು ಸೇರಿಸಿ: `set x to`{:class="block3motion"} `-200` ಬ್ಲಾಕ್ ಮತ್ತು `point in direction 90`{:class="block3motion"} ಬ್ಲಾಕ್.
 
-![image of the Tree Feller sprite](images/tree-feller-sprite.png)
+![Tree Feller ಸ್ಪ್ರೈಟ್ ಚಿತ್ರ](images/tree-feller-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -296,9 +296,9 @@ say [Requests completed.] for (2) seconds
 
 --- task ---
 
-Test your simulation. Click on the **Tree Feller** sprite a few times to request different amounts of wood.
+ನಿಮ್ಮ ಸಾದೃಶ್ಯವನ್ನು ಪರೀಕ್ಷಿಸಿ. ಬೇರೆ ಬೇರೆ ಮೊತ್ತದ ಕಟ್ಟಿಗೆಗಳನ್ನು ಮನವಿಮಾಡಲು **Tree Feller** ಸ್ಪ್ರೈಟ್‌ ಮೇಲೆ ಕೆಲವು ಬಾರಿ ಕ್ಲಿಕ್ ಮಾಡಿ.
 
-![image of the Tree Feller announcing trees felled](images/feller-trees-felled.png)
+![Tree Feller ಮರ ಕಡಿದಾಗಿದೆ ಎಂದು ಘೋಷಿಸುವ ಚಿತ್ರ](images/feller-trees-felled.png)
 
 --- /task ---
 
