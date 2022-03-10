@@ -1,20 +1,20 @@
-## Introduction
+## परिचय
 
-Use Scratch to create a simulation that shows the impact of land management and deforestation on trees, wildlife, and the environment.
+Scratch का उपयोग करके एक सिम्युलेशन बनाएं जो भूमि प्रबंधन और वनोन्मूलन के पेड़ों, वन्य जीवन और पर्यावरण पर प्रभाव दिखाता है
 
-This project focuses on three of the United Nations Sustainable Development Goals:
+यह परियोजना संयुक्त राष्ट्र सतत विकास लक्ष्यों में से तीन पर केंद्रित है:
 
-+ [Responsible Consumption and Production](https://www.undp.org/sustainable-development-goals#responsible-consumption-and-production){:target="_blank"}
-+ [Climate Action](https://www.undp.org/sustainable-development-goals#climate-action){:target="_blank"}
-+ [Life Below Water](https://www.undp.org/sustainable-development-goals#below-water){:target="_blank"}
++ [संवहनीय उपभोग और उत्पादन](https://www.undp.org/sustainable-development-goals#responsible-consumption-and-production){:target="_blank"}
++ [जलवायु कार्यवाही](https://www.undp.org/sustainable-development-goals#climate-action){:target="_blank"}
++ [जलीय जीवों की सुरक्षा](https://www.undp.org/sustainable-development-goals#below-water){:target="_blank"}
 
-Thanks to [Ecosia](https://www.ecosia.org){:target="_blank"}, for their guidance on tree life simulation.
+वृक्ष जीवन सिमुलेशन पर उनके मार्गदर्शन के लिए [Ecosia](https://www.ecosia.org){:target="_blank"} को धन्यवाद।
 
-### What you will make
+### आप क्या बनाएँगे
 
 --- no-print ---
 
-Click on the green flag and then move the slider to alter the tree management levels. Click on the tree feller to request wood. Keep an eye out for natural disasters though — they’re very disruptive!
+हरे झंडे पर क्लिक करें और फिर व्रख प्रबंधन स्तरों को बदलने के लिए स्लाइडर (slider) को हिलाएँ। लकड़ी माँगने के लिए पेड़ काटने वाले पर क्लिक करें। हालांकि प्राकृतिक आपदाओं पर नज़र रखें - वे बहुत विघटनकारी होती हैं!
 
 <div class="scratch-preview">
   <iframe src="https://scratch.mit.edu/projects/431800781/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
@@ -24,48 +24,48 @@ Click on the green flag and then move the slider to alter the tree management le
 
 --- print-only ---
 
-![Complete project](images/showcase_static.png)
+![पूरा प्रोजेक्ट](images/showcase_static.png)
 
 --- /print-only ---
 
 --- collapse ---
 ---
-title: What you will need
+title: आपको किन चीजों की आवश्यकता होगी
 ---
 
-### Hardware
+### हार्डवेयर
 
-+ A computer or tablet capable of running Scratch 3
++ Scratch 3 चलाने में सक्षम कंप्यूटर या टैबलेट
 
-### Software
+### सॉफ्टवेयर
 
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
++ Scratch 3 (या तो [ऑनलाइन](https://scratch.mit.edu/){:target="_blank"} या [ऑफलाइन](https://scratch.mit.edu/download){:target="_blank"})
 
-### Downloads
+### डाउनलोड
 
-+ If you are working offline, download the [project starter file](https://rpf.io/p/en/tree-life-simulator-go){:target="_blank"}
++ यदि आप ऑफ़लाइन काम कर रहे हैं, तो [प्रोजेक्ट स्टार्टर फ़ाइल](https://rpf.io/p/en/tree-life-simulator-go){:target="_blank"} डाउनलोड करें
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: What you will learn
+title: आप क्या सीखेंगे
 ---
 
-+ How to use `clone`{:class="block3control"} blocks and `random`{:class="block3operators"} numbers to simulate a natural environment
-+ How to use `>`{:class="block3operators"} `<`{:class="block3operators"} operators to control a simulation
-+ How to program a simulation to help communicate an environmental issue
++ प्राकृतिक वातावरण को स्टिमुलेट करने के लिए `clone`{:class="block3control"}ब्लॉक और `random`{:class="block3operators"} संख्याओं का उपयोग कैसे करें
++ सिमुलेशन को नियंत्रित करने के लिए `>`{:class="block3operators"} `<`{:class="block3operators"} ऑपरेटरों का उपयोग कैसे करें
++ एक पर्यावरणीय मुद्दे को संप्रेषित करने में मदद करने के लिए सिमुलेशन कैसे प्रोग्राम करें
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: Additional information for educators
+title: शिक्षकों के लिए अतिरिक्त जानकारी
 ---
 
-You can [download the completed project here](https://rpf.io/p/en/tree-life-simulator-get){:target="_blank"}.
+आप [पूरे प्रॉजेक्ट को यहाँ डाउनलोड कर सकते हैं ](https://rpf.io/p/en/tree-life-simulator-get){:target="_blank"}.
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/tree-life-simulator/print){:target="_blank"}.
+यदि आप इस प्रोजेक्ट को प्रिंट करना चाहते हैं, तो कृपया [प्रिंटर-अनुकूल संस्करण](https://projects.raspberrypi.org/en/projects/tree-life-simulator/print){:target="_blank"} का उपयोग करें।
 
 --- /collapse ---
 
