@@ -1,20 +1,20 @@
-## Introduction
+## పరిచయం
 
-Use Scratch to create a simulation that shows the impact of land management and deforestation on trees, wildlife, and the environment.
+చెట్లు, వన్యప్రాణులు మరియు పర్యావరణంపై భూమి నిర్వహణ మరియు అటవీ నిర్మూలన ప్రభావాన్ని చూపే అనుకరణను రూపొందించడానికి Scratch ని ఉపయోగించండి.
 
-This project focuses on three of the United Nations Sustainable Development Goals:
+ఈ ప్రాజెక్ట్ United Nations సస్టైనబుల్ డెవలప్‌మెంట్ గోల్స్‌లో మూడింటిపై దృష్టి పెడుతుంది:
 
-+ [Responsible Consumption and Production](https://www.undp.org/sustainable-development-goals#responsible-consumption-and-production){:target="_blank"}
-+ [Climate Action](https://www.undp.org/sustainable-development-goals#climate-action){:target="_blank"}
-+ [Life Below Water](https://www.undp.org/sustainable-development-goals#below-water){:target="_blank"}
++ [బాధ్యతాయుతమైన వినియోగం మరియు ఉత్పత్తి](https://www.undp.org/sustainable-development-goals#responsible-consumption-and-production){:target="_blank"}
++ [వాతావరణ చర్య](https://www.undp.org/sustainable-development-goals#climate-action){:target="_blank"}
++ [నీటి కింద జీవితం](https://www.undp.org/sustainable-development-goals#below-water){:target="_blank"}
 
-Thanks to [Ecosia](https://www.ecosia.org){:target="_blank"}, for their guidance on tree life simulation.
+ట్రీ లైఫ్ సిమ్యులేటర్ పై మార్గదర్శకతకు [Ecosia](https://www.ecosia.org){:target="_blank"}కి ధన్యవాదాలు.
 
-### What you will make
+### మీరు ఏమి చేయబోతున్నారు
 
 --- no-print ---
 
-Click on the green flag and then move the slider to alter the tree management levels. Click on the tree feller to request wood. Keep an eye out for natural disasters though — they’re very disruptive!
+ఆకుపచ్చ జెండాపై క్లిక్ చేసి, చెట్టు నిర్వహణ స్థాయిలను మార్చడానికి స్లయిడర్‌ను తరలించండి. కలపను అభ్యర్థించడానికి ట్రీ ఫెల్లర్ అనగా చెట్లు నరికేవాడిని క్లిక్ చేయండి. అయితే ప్రకృతి వైపరీత్యాల కోసం ఒక కన్ను వేసి ఉంచండి - అవి చాలా విఘాతం కలిగిస్తాయి!
 
 <div class="scratch-preview">
   <iframe src="https://scratch.mit.edu/projects/431800781/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
@@ -24,48 +24,48 @@ Click on the green flag and then move the slider to alter the tree management le
 
 --- print-only ---
 
-![Complete project](images/showcase_static.png)
+![పూర్తి ప్రాజెక్ట్](images/showcase_static.png)
 
 --- /print-only ---
 
 --- collapse ---
 ---
-title: What you will need
+title: మీకు కావల్సినవి
 ---
 
-### Hardware
+### హార్డ్‌వేర్
 
-+ A computer or tablet capable of running Scratch 3
++ Scratchని అమలు చేయగల సామర్థ్యం ఉన్న కంప్యూటర్ లేదా టాబ్లెట్
 
-### Software
+### సాఫ్ట్‌వేర్
 
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
++ Scratch 3 ( [online](https://scratch.mit.edu/){:target="_blank"} లేదా [offline](https://scratch.mit.edu/download){:target="_blank"})
 
-### Downloads
+### డౌన్‌లోడ్‌లు
 
-+ If you are working offline, download the [project starter file](https://rpf.io/p/en/tree-life-simulator-go){:target="_blank"}
++ మీరు ఆఫ్‌లైన్‌లో పని చేస్తుంటే, [ప్రాజెక్ట్ స్టార్టర్ ఫైల్](https://rpf.io/p/en/tree-life-simulator-go){:target="_blank"}ని డౌన్‌లోడ్ చేయండి
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: What you will learn
+title: మీరు నేర్చుకోబోయేది
 ---
 
-+ How to use `clone`{:class="block3control"} blocks and `random`{:class="block3operators"} numbers to simulate a natural environment
-+ How to use `>`{:class="block3operators"} `<`{:class="block3operators"} operators to control a simulation
-+ How to program a simulation to help communicate an environmental issue
++ సహజ వాతావరణాన్ని సిమ్యులేట్ చేయడానికి `clone`{:class="block3control"} బ్లాక్‌లు మరియు `random`{:class="block3operators"} సంఖ్యలను ఎలా ఉపయోగించాలి
++ సిమ్యులేషన్ ను నియంత్రించడానికి `>`{:class="block3operators"} `<`{:class="block3operators"} ఆపరేటర్‌లను ఎలా ఉపయోగించాలి
++ పర్యావరణ సమస్యను తెలియజేయడంలో సహాయపడటానికి సిమ్యులేషన్ ను ఎలా ప్రోగ్రామ్ చేయాలి
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: Additional information for educators
+title: అధ్యాపకులకు అదనపు సమాచారం
 ---
 
-You can [download the completed project here](https://rpf.io/p/en/tree-life-simulator-get){:target="_blank"}.
+మీరు [పూర్తి ప్రాజెక్ట్ ఇక్కడ డౌన్ లోడ్ చేయవచ్చు](https://rpf.io/p/en/tree-life-simulator-get){: target = "_ blank"}.
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/tree-life-simulator/print){:target="_blank"}.
+మీరు ఈ ప్రాజెక్ట్‌ను ప్రింట్ చేయాలనుకుంటే, దయచేసి [ప్రింటర్ అనుకూల వెర్షన్](https://projects.raspberrypi.org/en/projects/tree-life-simulator/print){:target="_blank"}ని ఉపయోగించండి.
 
 --- /collapse ---
 
