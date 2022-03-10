@@ -1,80 +1,79 @@
-## Tree management
+## वृक्ष प्रबंधन
 
-The rate at which new trees grow depends on a number of factors, such as climate conditions, soil quality, disease, sunlight, and water. In this step, you'll add a slider to demonstrate how managing these conditions can impact the number of trees in the area.
+जिस दर पर नए पेड़ उगते हैं, वह कई कारकों पर निर्भर करता है, जैसे कि जलवायु की स्थिति, मिट्टी की गुणवत्ता, रोग, धूप और पानी। इस चरण में, आप यह प्रदर्शित करने के लिए एक स्लाइडर जोड़ेंगे कि इन स्थितियों का प्रबंधन क्षेत्र में पेड़ों की संख्या को कैसे प्रभावित कर सकता है।
 
-The growing speed will be held in a `variable`{:class="block3variables"} called `tree management`{:class="block3variables"}.
+विकास की दर `variable`{:class="block3variables"}में रखी जाएगी जिसे `tree management`{:class="block3variables"}कहा जाता है।
 
 --- task ---
 
-To create a new variable, click on the `Variables`{:class="block3variables"} blocks menu.
+एक नया वेरिएबल बनाने के लिए, `Variables`{:class="block3variables"} ब्लॉक मेनू पर क्लिक करें।
 
-Then click on the **Make a Variable** button.
+फिर, **Make a Variable** बटन पर क्लिक करें।
 
-You can give your `variable`{:class="block3variables"} a name. Call it `tree management`.
+आप अपने `variable`{:class="block3variables"} को एक नाम दे सकते हैं। इसे `tree management` कहें।
 
 --- /task ---
 
-Your new `variable`{:class="block3variables"} is visible on the Stage. Next, create a slider to control the speed in your simulation.
+आपका नया `variable`{:class="block3variables"} Stage पर दिखाई दे रहा है। इसके बाद, अपने सिमुलेशन में गति को नियंत्रित करने के लिए एक स्लाइडर बनाएं।
 
 --- task ---
 
-On the Stage, right-click on the `tree management`{:class="block3variables"} variable, and a menu will appear.
+Stage पर, `tree`{:class="block3variables"} वेरियबल पर राइट-क्लिक करें, और एक मेनू दिखाई देगा।
 
-Select **slider** in the menu.
+मेनू में **slider** चुनें।
 
 --- /task ---
 
-At the moment, the `tree management`{:class="block3variables"} range is too wide.
+इस समय, `tree management`{:class="block3variables"} की सीमा बहुत व्यापक है।
 
 --- task ---
 
-On the Stage, right-click on the **tree management** slider and select **change slider range**.
+Stage पर, **tree**{: class="block3variables"} स्लाइडर पर राइट-क्लिक करें और **change slider range** चुनें।
 
-Change the range to between `0` and `5`.
+सीमा को `0` और `5` के बीच बदलें।
 
 --- /task ---
 
-In the simulation, the **tree management** slider controls the speed that new trees grow. If you move the slider to the right, it speeds up the growth; if you move it to the left, it slows down the growth.
+सिमुलेशन में, **tree management** स्लाइडर नए पेड़ों के बढ़ने की गति को नियंत्रित करता है। यदि आप स्लाइडर को दाईं ओर ले जाते हैं, तो यह वृद्धि को गति देता है; यदि आप इसे बाईं ओर ले जाते हैं, तो यह वृद्धि को धीमा कर देता है।
 
-When the slider is at the right (5), the simulation waits one second to plant a tree, and when it is at the left (0) it waits six seconds to plant a tree.
+जब स्लाइडर दाईं ओर (5) होता है, तो सिमुलेशन एक पेड़ लगाने के लिए एक सेकंड की प्रतीक्षा करता है, और जब यह बाईं ओर (0) होता है तो यह एक पेड़ लगाने के लिए छह सेकंड तक प्रतीक्षा करता है।
 
-You will add a set of blocks to make sure that the speed that new trees grow is in reaction to a change in the **tree management** slider.
+आप यह सुनिश्चित करने के लिए ब्लॉक का एक सेट जोड़ेंगे कि नए पेड़ बढ़ने की गति **tree management** स्लाइडर में बदलाव की प्रतिक्रिया में है।
 
 --- task ---
 
-In this task, you'll see how the `timer`{:class="block3sensing"} block works. Go to the `Sensing`{:class="block3sensing"} blocks menu, and click on the checkbox next to the `timer`{:class="block3sensing"} block to show the timer on the Stage.
+इस कार्य में, आप देखेंगे कि `timer`{:class="block3sensing"} ब्लॉक कैसे काम करता है। Stage पर घड़ी दिखाने के लिए `Sensing`{:class="block3sensing"} ब्लॉक मेनू पर जाएं, और `timer`{:class="block3sensing"} ब्लॉक के बगल में स्थित चेकबॉक्स पर क्लिक करें।
 
-Click on the green flag and you'll notice the timer starts to count up immediately. Click on the checkbox again to hide the timer from view.
+हरे झंडे पर क्लिक करें और आप देखेंगे कि घड़ी तुरंत गिनना शुरू कर देता है। घड़ी को दिखने से छिपाने के लिए फिर से चेकबॉक्स पर क्लिक करें।
 
 --- /task ---
 
-Reset the timer to zero each time the flag is clicked.
+हर बार फ़्लैग पर क्लिक करने पर घड़ी को शून्य पर रीसेट करें।
 
 --- task ---
 
-Insert a `reset timer`{:class="block3sensing"} block into your `when green flag clicked`{:class="block3events"} script for the **Tree** sprite, so that the timer resets each time a new tree is cloned:
+`when green flag clicked`{:class="block3events"} स्क्रिप्ट पर `reset timer</0{:class="block3sensing"} ब्लॉक डालें, ताकि घड़ी हर बार एक नया पेड़ क्लोन होने पर रीसेट हो जाए।: </p>
 
-![image of the Tree sprite](images/tree-sprite.png)
+<p spaces-before="0"><img src="images/tree-sprite.png" alt="Tree स्प्राइट की छवि" /></p>
 
-```blocks3
-when flag clicked
+<pre><code class="blocks3">when flag clicked
 hide
 forever
 go to x:(pick random (-150) to (200)) y:(pick random (-120) to (120))
 + reset timer
 create clone of [myself v]
 end
-```
+`</pre>
 
 --- /task ---
 
-Create a quick response to the slider so that the user immediately sees the impact of their interaction. Set up a loop that checks the **tree management** slider value frequently and adjusts the speed before cloning another tree.
+स्लाइडर के लिए त्वरित प्रतिक्रिया बनाएं ताकि उपयोगकर्ता तुरंत उनकी पारस्परिक क्रिया के प्रभाव को देख सके। एक लूप सेट करें जो **tree management** स्लाइडर मान को बार-बार जांचता है और दूसरे पेड़ को क्लोन करने से पहले गति को समायोजित करता है।
 
 --- task ---
 
-Insert a `repeat until`{:class="block3control"} block with the condition `timer`{:class="block3sensing"} `>`{:class="block3operators"} `6` `-`{:class="block3operators"} `tree management`{:class="block3variables"}.  Within the `repeat until`{:class="block3control"} block, add a `wait 1 seconds`{:class="block3control"} block:
+एक `repeat until`{:class="block3control"} ब्लॉक डालें इस शर्त`timer`{:class="block3sensing"} `>`{:class="block3operators"} `6` `-`{:class="block3operators"} `tree management`{:class="block3variables"} के साथ।  `repeat until`{:class="block3control"} ब्लॉक के भीतर `wait 1 seconds`{:class="block3control"} ब्लॉक जोड़ें:
 
-![image of the Tree sprite](images/tree-sprite.png)
+![Tree स्प्राइट की छवि](images/tree-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -93,9 +92,9 @@ end
 
 --- task ---
 
-Test your simulation again. The **tree management** slider should control the speed that new trees grow.
+अपने सिमुलेशन का फिर से परीक्षण करें। सिमुलेशन में, **tree management** स्लाइडर नए पेड़ों के बढ़ने की गति को नियंत्रित करता है।
 
-![image of a busy forest](images/busy-forest.png)
+![व्यस्त जंगल की छवि](images/busy-forest.png)
 
 --- /task ---
 
