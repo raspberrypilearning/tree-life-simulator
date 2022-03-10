@@ -1,27 +1,29 @@
 ---
-title: Tree life simulator
-hero_image: images/banner.png
-description: Create a simulation that shows the impact of land management and deforestation on trees, wildlife, and the environment
+title: ಮರದ ಬದುಕಿನ ಸಾದೃಶ್ಯ
+hero_image: images / banner.png
+description: ಮರಗಳು, ವನ್ಯಜೀವಿಗಳು ಮತ್ತು ವಾತಾವರಣದ ಮೇಲೆ ನಿರ್ವಹಣೆ ಮತ್ತು ಅರಣ್ಯನಾಶದ ಪರಿಣಾಮವನ್ನು ತೋರಿಸುವ ಸಾದೃಶ್ಯವನ್ನು ರಚಿಸಿ
 version: 4
 listed: true
 copyedit: false
-last_tested: "2020-09-15"
+last_tested: '2020-09-15'
 steps:
   - 
-    title: Introduction
+    title: ಪರಿಚಯ
+    completion: engaged
   - 
-    title: Grow some trees
+    title: ಕೆಲವು ಮರಗಳನ್ನು ಬೆಳೆಸಿ
   - 
-    title: Tree management
+    title: ಮರದ ನಿರ್ವಹಣೆ
   - 
-    title: Count the trees
+    title: ಮರಗಳನ್ನು ಎಣಿಸಿ
   - 
-    title: Human deforestation
+    title: ಮಾನವ ಅರಣ್ಯನಾಶ
   - 
-    title: Monitor tree levels
+    title: ಮರದ ಮಟ್ಟಗಳನ್ನು ಗಮನಿಸಿ
   - 
-    title: Natural deforestation
+    title: ನೈಸರ್ಗಿಕ ಅರಣ್ಯನಾಶ
+    completion: internal
   - 
-    title: Share your project
+    title: ನಿಮ್ಮ ಪ್ರಾಜೆಕ್ಟ್‌ನ್ನು ಹಂಚಿಕೊಳ್ಳಿ
   - 
-    title: What next?
+    title: ಮುಂದೆ ಏನು?
