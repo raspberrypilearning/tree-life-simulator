@@ -1,60 +1,60 @@
-## Tree management
+## वृक्ष व्यवस्थापन
 
-The rate at which new trees grow depends on a number of factors, such as climate conditions, soil quality, disease, sunlight, and water. In this step, you'll add a slider to demonstrate how managing these conditions can impact the number of trees in the area.
+नवीन झाडांच्या वाढीचा दर विविध घटकांवर अवलंबून असतो, जसेकी, हवामान स्थिती, मातीचा दर्जा, आजार, सुर्यप्रकाश, आणि पाणी. या टप्प्यात, हे स्थिती व्यवस्थापन केल्याने एरियामधील झाडांच्या संख्येवर परिणाम कसा होतो हे दर्शविण्यासाठी तुम्ही स्लाइडर जोडाल.
 
-The growing speed will be held in a `variable`{:class="block3variables"} called `tree management`{:class="block3variables"}.
+वाढता वेग `variable`{:class="block3variables"} मध्ये धरला जाईल ज्याला `tree management`{:class="block3variables"} म्हणतात.
 
 --- task ---
 
-To create a new variable, click on the `Variables`{:class="block3variables"} blocks menu.
+नवीन व्हेरिएबल तयार करण्यासाठी `Variables`{:class="block3variables"} ब्लॉक्स मेनूवर क्लिक करा.
 
-Then click on the **Make a Variable** button.
+त्यानंतर **Make a Variable** बटनवर क्लिक करा.
 
-You can give your `variable`{:class="block3variables"} a name. Call it `tree management`.
+तुम्ही तुमचे `variable`{:class="block3variables"} नाव देऊ शकता. त्याला `वृक्ष व्यवस्थापन` म्हणा.
 
 --- /task ---
 
-Your new `variable`{:class="block3variables"} is visible on the Stage. Next, create a slider to control the speed in your simulation.
+तुमचा नवीन `variable`{:class="block3variables"} Stage वर दिसण्यायोग्य आहे. पुढे, तुमच्या सिम्युलेशन मध्ये वेग नियंत्रीत करण्यासाठी स्लाइडर तयार करा.
 
 --- task ---
 
-On the Stage, right-click on the `tree management`{:class="block3variables"} variable, and a menu will appear.
+Stage वर, `tree management`{:class="block3variables"} व्हेरिएबलवर राईट-क्लिक करा, आणि मेनू दिसेल.
 
-Select **slider** in the menu.
+मेनूमध्ये **slider** निवडा.
 
 --- /task ---
 
-At the moment, the `tree management`{:class="block3variables"} range is too wide.
+याक्षणी, `tree management`{:class="block3variables"} रेंज खूप मोठी आहे.
 
 --- task ---
 
-On the Stage, right-click on the **tree management** slider and select **change slider range**.
+Stage वर, **tree management** स्लाइडरवर राईट-क्लिक करा आणि **change slider range** निवडा.
 
-Change the range to between `0` and `5`.
+रेंज `0` आणि `5` दरम्यान बदला.
 
 --- /task ---
 
-In the simulation, the **tree management** slider controls the speed that new trees grow. If you move the slider to the right, it speeds up the growth; if you move it to the left, it slows down the growth.
+सिम्युलेशन मध्ये, **tree management** स्लाइडर नवीन झाड वाढणाऱ्या वेगाला नियंत्रीत करतो. तुम्ही स्लाइडरला उजवीकडे हलवले तर, तो वाढण्याचा वेग वाढवेल; तुम्ही ते डावीकडे हलवले, तर त्याची वाढ हळूवार होईल.
 
-When the slider is at the right (5), the simulation waits one second to plant a tree, and when it is at the left (0) it waits six seconds to plant a tree.
+स्लाइडर उजवीकडे असतांना (5), सिम्युलेशन झाड लावण्यासाठी एक सेकंद प्रतिक्षा करतो, आणि तो डावीकडे (0) असतांना, तो झाड लावण्यासाठी सहा सेकंद प्रतिक्षा करतो.
 
-You will add a set of blocks to make sure that the speed that new trees grow is in reaction to a change in the **tree management** slider.
+नवीन झाड वाढण्याचा वेग **tree management** स्लाइडर मधील बदलानूसार असण्याची खात्री करण्यासाठी तुम्ही ब्लॉक्सचा सेट जोडाल.
 
 --- task ---
 
-In this task, you'll see how the `timer`{:class="block3sensing"} block works. Go to the `Sensing`{:class="block3sensing"} blocks menu, and click on the checkbox next to the `timer`{:class="block3sensing"} block to show the timer on the Stage.
+या कार्यात, `timer`{:class="block3sensing"} ब्लॉक कसा कार्य करतो हे तुम्ही बघाल. `Sensing`{:class="block3sensing"} ब्लॉक्स मेनूवर जा आणि Stage वर टाइमर दाखवण्यासाठी `timer`{:class="block3sensing"} ब्लॉकच्या पुढील चेकबॉक्सवर क्लिक करा.
 
-Click on the green flag and you'll notice the timer starts to count up immediately. Click on the checkbox again to hide the timer from view.
+हिरव्या झेंड्यावर क्लिक करा आणि तात्काळ काऊंट चालू करण्यासाठी टाइमरकडे तुम्ही लक्ष द्याल. टाइमर दिसण्यापासून लपवण्यासाठी पुन्हा चेकबॉक्सवर क्लिक करा.
 
 --- /task ---
 
-Reset the timer to zero each time the flag is clicked.
+प्रत्येक वेळी झेंड्यावर क्लिक केल्यावर टाइमर शून्यावर रीसेट करा.
 
 --- task ---
 
-Insert a `reset timer`{:class="block3sensing"} block into your `when green flag clicked`{:class="block3events"} script for the **Tree** sprite, so that the timer resets each time a new tree is cloned:
+`reset timer`{:class="block3sensing"} ब्लॉक तुमच्या `when green flag clicked`{:class="block3events"} स्क्रिप्टमध्ये इंसर्ट करा **Tree** स्प्राईटसाठी, जेणेकरून प्रत्येक वेळी नवीन झाड क्लोन झाल्यावर टाइमर रीसेट होईल:
 
-![image of the Tree sprite](images/tree-sprite.png)
+![Tree स्प्राईटची इमेज](images/tree-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -68,13 +68,13 @@ end
 
 --- /task ---
 
-Create a quick response to the slider so that the user immediately sees the impact of their interaction. Set up a loop that checks the **tree management** slider value frequently and adjusts the speed before cloning another tree.
+स्लाइडरवर तात्काळ प्रतिसाद निर्माण करा जेणेकरून यूजरला त्यांच्या परस्पर संवादाचा परिणाम दिसेल. लूप सेट करा जो **tree management** स्लाइडर व्हॅल्यू वारंवार तपासतो आणि दुसऱ्या झाडाला क्लोन करण्याआधी वेग ऍडजस्ट करतो.
 
 --- task ---
 
-Insert a `repeat until`{:class="block3control"} block with the condition `timer`{:class="block3sensing"} `>`{:class="block3operators"} `6` `-`{:class="block3operators"} `tree management`{:class="block3variables"}.  Within the `repeat until`{:class="block3control"} block, add a `wait 1 seconds`{:class="block3control"} block:
+`repeat until`{:class="block3control"} ब्लॉक स्थितीसह इंसर्ट करा `timer`{:class="block3sensing"} `>`{:class="block3operators"} `6` `-`{:class="block3operators"} `tree management`{:class="block3variables"}.  `repeat until`{:class="block3control"} ब्लॉक मध्ये `wait 1 seconds`{:class="block3control"} ब्लॉक जोडा:
 
-![image of the Tree sprite](images/tree-sprite.png)
+![Tree स्प्राईटची इमेज](images/tree-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -93,9 +93,9 @@ end
 
 --- task ---
 
-Test your simulation again. The **tree management** slider should control the speed that new trees grow.
+तुमच्या सिम्युलेशनची पुन्हा चाचणी करा. **tree management** स्लाइडरने नवीन झाडाच्या वाढीचा वेग नियंत्रीत करायला हवा.
 
-![image of a busy forest](images/busy-forest.png)
+![भरलेल्या जंगलाची इमेज](images/busy-forest.png)
 
 --- /task ---
 
