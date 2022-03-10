@@ -1,11 +1,11 @@
-## What next?
+## తర్వాత ఏంటి?
 
-In this project, you have:
+ఈ ప్రాజెక్ట్‌లో, మీరు కలిగి ఉన్నవి:
 
-+ Used `clone`{:class="block3control"} blocks to generate trees in `random`{:class="block3operators"} locations
-+ Used `>`{:class="block3operators"} `<`{:class="block3operators"} operators to control the human character to alert the user about the state of the environment
-+ Programmed a simulation to explore the impact of humans on trees and the surrounding wildlife
++ `random`{:class="block3operators"} ప్రదేశాలలో చెట్లను సృష్టించడానికి `clone`{:class="block3control"} బ్లాక్ ని ఉపయోగించండి
++ పర్యావరణ స్థితి గురించి యూజర్ ని హెచ్చరించడానికి, ఇంకా మానవ స్వభావాన్ని నియంత్రించడానికి `>`{:class="block3operators"} `<`{:class="block3operators"} ఆపరేటర్‌లను ఉపయోగించారు
++ చెట్లు మరియు చుట్టుపక్కల వన్యప్రాణులపై మానవుల ప్రభావాన్ని అన్వేషించడానికి సిమ్యులేషన్ ప్రోగ్రామ్ చేసారు
 
-If you are following the [Protect our planet](https://projects.raspberrypi.org/en/raspberrypi/protect-our-planet) projects, then try out the next project, [Count the creatures](https://projects.raspberrypi.org/en/projects/count-the-creatures). In this project, you will create a program to input real data on the range of natural resources used by countries to generate electricity. Then, you will compare the results using animated and interactive data visualisation.
+మీరు [Protect our planet](https://projects.raspberrypi.org/en/raspberrypi/protect-our-planet) ప్రాజెక్ట్‌లను చూస్తున్నట్టయితే, తదుపరి ప్రాజెక్ట్, [Count the creatures](https://projects.raspberrypi.org/en/projects/count-the-creatures) ను ప్రయత్నించండి. ఈ ప్రాజెక్ట్‌లో, విద్యుత్‌ను ఉత్పత్తి చేయడానికి దేశాలు ఉపయోగించే సహజ వనరుల శ్రేణిపై నిజమైన డేటాను ఇన్‌పుట్ చేయడానికి మీరు ప్రోగ్రామ్‌ను సృష్టిస్తారు. అప్పుడు, మీరు యానిమేటెడ్ మరియు ఇంటరాక్టివ్ డేటా విజువలైజేషన్ ఉపయోగించి ఫలితాలను సరిపోల్చండి.
 
-Did you enjoy the project? Have you spotted a mistake? Please click the **Send feedback** button below and let us know!
+మీరు ప్రాజెక్ట్‌ను ఆస్వాదించారా? మీరు ఏదైనా పొరపాటును గుర్తించారా? ఈ దిగువన కల **Send feedback** బటన్‌ను క్లిక్ చేసి, మాకు తెలియజేయండి!
