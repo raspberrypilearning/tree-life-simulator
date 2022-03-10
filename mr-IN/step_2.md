@@ -4,9 +4,9 @@
 
 --- task ---
 
-**ऑनलाईन:** Scratch मधील [starter project](http://rpf.io/tree-life-simulator-on){:target="_blank"} उघडा.
+**ऑनलाईन:** Scratch मधील [स्टार्टर प्रोजेक्ट](http://rpf.io/tree-life-simulator-on){:target="_blank"} उघडा.
 
-**ऑफलाईन:** Scratch ऑफलाईन एडिटरमधील [project starter file](http://rpf.io/p/en/tree-life-simulator-get){:target="_blank"} उघडा. तुम्हाला आवश्यकता असल्यास, तुम्ही [येथे Scratch डाऊनलोड आणि इंस्टॉल करू शकता](https://scratch.mit.edu/download){:target="_blank"}.
+**ऑफलाईन:** Scratch ऑफलाईन एडिटरमधील [प्रोजेक्ट स्टार्टर फाईल](http://rpf.io/p/en/tree-life-simulator-get){:target="_blank"} उघडा. तुम्हाला आवश्यकता असल्यास, तुम्ही [येथे Scratch डाऊनलोड आणि इंस्टॉल करू शकता](https://scratch.mit.edu/download){:target="_blank"}.
 
 तुम्हाला हिरव्या गवताळ प्रदेशाचे बॅकग्राऊंड दिसायला हवे.
 
