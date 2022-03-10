@@ -1,26 +1,26 @@
-## Grow some trees
+## काही झाडे लावा
 
-Did you know that trees cover 30 percent of the Earth’s land surface? The way we look after our local trees now, will have an impact on the future of our planet. In this step, you will add code to create an area of trees with a variety of different tree types.
+पृथ्वीच्या 30 टक्के भूभाग झाडांनी व्यापलेला आहे हे तुम्हाला माहित आहे का? आपण आता आपल्या स्थानिक झाडांची काळजी जशी घेऊ, त्याप्रमाणे आपल्या ग्रहावर परिणाम होईल. या टप्प्यात, तुम्ही विविध झाडांच्या विविध प्रकारांसह झाडांचे क्षेत्र तयार करण्यासाठी कोड जोडाल.
 
 --- task ---
 
-**Online**: open the [starter project](http://rpf.io/tree-life-simulator-on){:target="_blank"} in Scratch.
+**ऑनलाईन:** Scratch मधील [starter project](http://rpf.io/tree-life-simulator-on){:target="_blank"} उघडा.
 
-**Offline**: open the [project starter file](http://rpf.io/p/en/tree-life-simulator-get){:target="_blank"} in the Scratch offline editor. If you need to, you can [download and install Scratch here](https://scratch.mit.edu/download){:target="_blank"}.
+**ऑफलाईन:** Scratch ऑफलाईन एडिटरमधील [project starter file](http://rpf.io/p/en/tree-life-simulator-get){:target="_blank"} उघडा. तुम्हाला आवश्यकता असल्यास, तुम्ही [येथे Scratch डाऊनलोड आणि इंस्टॉल करू शकता](https://scratch.mit.edu/download){:target="_blank"}.
 
-You should see a green grassland background.
+तुम्हाला हिरव्या गवताळ प्रदेशाचे बॅकग्राऊंड दिसायला हवे.
 
-![starter project](images/starter_project.png)
+![स्टार्टर प्रोजेक्ट](images/starter_project.png)
 
 --- /task ---
 
-In Scratch, you can make up to 300 copies of one sprite! This is called **cloning**. Your task is to add code to the **Tree** sprite so that it creates clones of itself on the Stage.
+Scratch मध्ये, तुम्ही एका स्प्राईटच्या 300 पर्यंत प्रती तयार करू शकता! याला **क्लोनिंग** म्हणतात. **Tree** स्प्राईटला तुमचा कोड जोडणे हे तुमचे कार्य आहे जेणेकरून तो Stage वर स्वतःच क्लोन्स निर्माण करेल.
 
 --- task ---
 
-Go to the Sprites pane, and click on the **Tree** sprite. Drag a `when green flag clicked`{:class="block3events"} block and a `forever`{:class="block3control"} block onto your Code area. Within the `forever`{:class="block3control"} block, add a `go to x:`{:class="block3motion"} `0` `y:`{:class="block3motion"} `0` block and a `create clone of myself`{:class="block3control"} block:
+Sprites pane वर जा, आणि **Tree** स्प्राईटवर क्लिक करा. कोड एरियात `when green flag clicked`{:class="block3events"} ब्लॉक आणि `forever`{:class="block3control"} ब्लॉक ड्रॅग करा. `forever`{:class="block3control"} ब्लॉकमध्ये, `go to x:`{:class="block3motion"} `0` `y:`{:class="block3motion"} `0` ब्लॉक जोडा आणि `create clone of myself`{:class="block3control"} ब्लॉक:
 
-![image of the Tree sprite](images/tree-sprite.png)
+![Tree स्प्राईटची इमेज](images/tree-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -32,13 +32,13 @@ end
 
 --- /task ---
 
-Next, plant the cloned trees in random positions across the Stage.
+पुढे, Stage वर कोणत्याही पोजिशनमध्ये क्लोन केलेली झाडे लावा.
 
 --- task ---
 
-Add a `pick random`{:class="block3operators"} block to both your `x:`{:class="block3motion"} and `y:`{:class="block3motion"} values to vary where the trees grow. Change the `x:`{:class="block3motion"} coordinates to `pick random`{:class="block3operators"} `-150` `to`{:class="block3operators"} `200`. Change the `y:`{:class="block3motion"} coordinates to `pick random`{:class="block3operators"} `-120` `to`{:class="block3operators"} `120`:
+झाडे वाढत आहेत का हे बघण्यासाठी `pick random`{:class="block3operators"} ब्लॉक तुमच्या दोन्ही `x:`{:class="block3motion"} आणि `y:`{:class="block3motion"} व्हॅल्यूजला जोडा. `x:`{:class="block3motion"} कोऑर्डीनेटर्स बदला `pick random`{:class="block3operators"} `-150` `to`{:class="block3operators"} `200`. `y:`{:class="block3motion"} कोऑर्डीनेटर्स बदला `pick random`{:class="block3operators"} `-120` `to`{:class="block3operators"} `120`:
 
-![image of the Tree sprite](images/tree-sprite.png)
+![Tree स्प्राईटची इमेज](images/tree-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -50,17 +50,17 @@ end
 
 --- /task ---
 
-It is important that you plant a variety of trees to house a range of animals, restore the environment, and benefit people. For example, a koala relies on the broadleaf evergreens in Australia, while a lemur in Madagascar needs the deciduous trees that grow on the island.
+प्राण्यांची संख्या वाढवणे, पर्यावरणाचा पुनर्संचय करणे, आणि लोकांना लाभ होण्यासाठी विविध प्रकारची झाडे तुम्ही लावणे महत्वाचे आहे. उदाहरणार्थ, कोआला ऑस्ट्रेलियातील ब्रॉडलीफ एव्हरग्रीनवर अवलंबून असतो, तर मादागास्करमधील लेमरला बेटावर वाढणारी पानझडी झाडे आवश्यक असतात.
 
-The **Tree** sprite has three costumes: **tree 1**, **tree 2**, and **tree 3**. Click on the **Costumes** tab to see them.
+**Tree** स्प्राईटला तीन कॉश्चुम असतात: **tree 1**, **tree 2**, and **tree 3**. ते बघण्यासाठी **Costumes** टॅबवर क्लिक करा.
 
-Click back to the **Code** tab and use the `random`{:class="block3operators"} operator to vary the looks of the trees and add variety to the area.
+**Code** टॅबवर पुन्हा क्लिक करा आणि झाडांचे स्वरूप बदलणे आणि एरियामध्ये विविधता जोडण्यासाठी `random`{:class="block3operators"} ऑपरेटरचा वापर करा.
 
 --- task ---
 
-Start a new script with a `when I start as a clone`{:class="block3control"} block. Add a `switch costume to`{:class="block3looks"} block below it. Drag a `pick random 1 to 10`{:class="block3operators"} block into the `switch costume to`{:class="block3looks"} block. Change the values from `1` and `10` to `1` and `3`:
+`when I start as a clone`{:class="block3control"} ब्लॉकसह नवीन स्क्रिप्ट चालू करा. त्याखाली `switch costume to`{:class="block3looks"} ब्लॉक जोडा. `pick random 1 to 10`{:class="block3operators"} ब्लॉक `switch costume to`{:class="block3looks"} ब्लॉकमध्ये ड्रॅग करा. `1` आणि `10` ते `1` आणि `3` व्हॅल्यूज बंद करा:
 
-![image of the Tree sprite](images/tree-sprite.png)
+![Tree स्प्राईटची इमेज](images/tree-sprite.png)
 
 ```blocks3
 when I start as a clone
@@ -71,19 +71,19 @@ switch costume to (pick random (1) to (3))
 
 --- task ---
 
-Test your simulation by clicking on the green flag. Make sure you have a variety of trees.
+हिरव्या झेंड्यावर क्लिक करून तुमचा सिम्युलेशन तपासा. तुमच्याकडे विविध प्रकारची झाडे आहेत याची खात्री करा.
 
-![image of the first trees ](images/first-trees.png)
+![पहिल्या झाडाची इमेज ](images/first-trees.png)
 
 --- /task ---
 
-Trees don't just appear full grown, they get bigger over time. You need to set up a `repeat until`{:class="block3control"} loop so you can change the size of the tree as it grows, until its size equals 20 percent.
+झाडे फक्त पूर्ण वाढलेली दिसत नाहीत, ती कालांतराने मोठी होतात. तुम्हाला `repeat until`{:class="block3control"} लूप सेट करण्याची आवश्यकता आहे जेणेकरून तुम्ही साईज 20 टक्के होईपर्यंत झाडाची वाढण्याची साईज बदलू शकता.
 
 --- task ---
 
-Get a `set size to 100`{:class="block3looks"} (percent) block, but change the value to `0` so that the **Tree** sprite starts from nothing. Add a `repeat until`{:class="block3control"} block, and drag an equals `=`{:class="block3operators"} block inside. Add the condition `size`{:class="block3looks"} `=`{:class="block3operators"} `20`:
+`set size to 100`{:class="block3looks"} (टक्के) ब्लॉक मिळवा, परंतु व्हॅल्यू `0` ला बदला जेणेकरून **Tree** स्प्राईट शून्यापासून चालू करेल. `repeat until`{:class="block3control"} ब्लॉक जोडा आणि बरोबर `=`{:class="block3operators"} चा ब्लॉक आत ड्रॅग करा. स्थिती जोडा `size`{:class="block3looks"} `=`{:class="block3operators"} `20`:
 
-![image of the Tree sprite](images/tree-sprite.png)
+![Tree स्प्राईटची इमेज](images/tree-sprite.png)
 
 ```blocks3
 when I start as a clone
@@ -95,13 +95,13 @@ end
 
 --- /task ---
 
-Get the tree to resize and wait as it grows.
+झाडाला रीसाईज होऊ द्या आणि तो कसा वाढतो त्याची प्रतीक्षा करा.
 
 --- task ---
 
-Add a `change size by 10`{:class="block3looks"} block within the loop and change the value to `1`. Add a `wait 1 seconds`{:class="block3control"} block and change the value to `0.1` so that it changes quickly:
+लूपमध्ये `change size by 10`{:class="block3looks"} ब्लॉक जोडा आणि व्हॅल्यू `1` मध्ये बदला. `wait 1 seconds`{:class="block3control"} ब्लॉक जोडा आणि व्हॅल्यू `0.1` मध्ये बदला जेणेकरून तो तात्काळ बदलेल:
 
-![image of the Tree sprite](images/tree-sprite.png)
+![Tree स्प्राईटची इमेज](images/tree-sprite.png)
 
 ```blocks3
 when I start as a clone
@@ -117,15 +117,15 @@ end
 
 --- task ---
 
-Test your simulation again. Your trees will grow, but a full-grown tree also appears wherever your next clone is growing.
+तुमच्या सिम्युलेशनची पुन्हा चाचणी करा. तुमची झाडे वाढतील, परंतु जेव्हा तुमचा पुढील क्लोन वाढतो त्याचवेळी पूर्ण वाढलेले झाड सुद्धा दिसते.
 
 --- /task ---
 
-Hide the tree until it starts a new clone.
+नवीन क्लोन चालू होईपर्यंत झाड लपवा.
 
 --- task ---
 
-Add a `hide`{:class="block3looks"} block to the start of your `when green flag clicked`{:class="block3events"} script, and a `show`{:class="block3looks"} block to the start of your `when I start as a clone`{:class="block3control"} script.
+`hide`{:class="block3looks"} ब्लॉक जोडा तुमची `when green flag clicked`{:class="block3events"} स्क्रिप्ट चालू करण्यासाठी, आणि `show`{:class="block3looks"} ब्लॉक जोडा तुमची `when I start as a clone`{:class="block3control"} स्क्रिप्ट चालू करण्यासाठी.
 
 ```blocks3
 when flag clicked
@@ -151,7 +151,7 @@ end
 
 --- task ---
 
-Test your simulation again. Your trees should now grow like they would in real life.
+तुमच्या सिम्युलेशनची पुन्हा चाचणी करा. तुमची झाडे आता खऱ्या जीवनात वाढतील तशी वाढायला हवी.
 
 --- /task ---
 
