@@ -1,14 +1,14 @@
-## Natural deforestation
+## సహజ అటవీ నిర్మూలన
 
-Deforestation can happen when a natural disaster — such as drought, a forest fire, or a tornado — devastates an area of land. It can also be triggered by human activity, like a campfire, but spread quickly due to natural conditions, like a very dry season. This can be particularly deadly as, in the wide area affected, entire species can disappear along with the destruction of their habitats.
+కరువు, అడవి మంటలు లేదా సుడిగాలి వంటి ప్రకృతి విపత్తులు భూమిని నాశనం చేసినప్పుడు అటవీ నిర్మూలన జరుగుతుంది. ఇది క్యాంప్‌ఫైర్ వంటి మానవ కార్యకలాపాల ద్వారా కూడా ప్రేరేపించబడుతుంది, కానీ చాలా పొడి కాలం వంటి సహజ పరిస్థితుల కారణంగా త్వరగా వ్యాపిస్తుంది. ఇది ముఖ్యంగా ప్రాణాంతకం కావచ్చు, ఎందుకంటే ప్రభావితమైన విస్తృత ప్రాంతంలో, మొత్తం జాతులు, వాటి నివాసాలు నాశనం కావడంతో అదృశ్యమవుతాయి.
 
-Simulate the impact of natural disasters that randomly move through the forest. Hide the **Natural Disaster** sprite at the start of the simulation.
+అడవిలో యాదృచ్ఛికంగా కదిలే ప్రకృతి వైపరీత్యాల ప్రభావాన్ని సిమ్యులేట్ చేయండి. సిమ్యులేషన్ ప్రారంభంలో **Natural Disaster** sprite ను దాచండి.
 
 --- task ---
 
-Click on the **Natural Disaster** sprite, then in the Code area add a `when green flag clicked`{:class="block3events"} block, followed by a `hide`{:class="block3looks"} block:
+**Natural Disaster** sprite పై క్లిక్ చేయండి, తరువాత Code ప్రాంతంలో `when green flag clicked`{:class="block3events"} బ్లాక్, దాంతోపాటు `hide`{:class="block3looks"} బ్లాకుని జోడించండి:
 
-![image of the Natural Disaster sprite](images/natural-disaster-sprite.png)
+![Natural Disaster sprite యొక్క చిత్రం](images/natural-disaster-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -17,13 +17,13 @@ hide
 
 --- /task ---
 
-The **Natural Disaster** sprite will move from the top to the bottom of the screen.
+**Natural Disaster** sprite స్క్రీన్ పై నుండి క్రిందికి కదులుతుంది.
 
 --- task ---
 
-Add a `forever`{:class="block3control"} block to the end of your code. Within it, add a `go to x:0 y:0`{:class="block3motion"} block, and change the `y:`{:class="block3motion"} value to `200`. Add a `show`{:class="block3looks"} block, followed by a `glide 1 secs to x:0 y:0`{:class="block3motion"}, and change the seconds value to `3` and the `y:`{:class="block3motion"} value to `-200`:
+`forever`{:class="block3control"} బ్లాకుని మీ కోడ్ చివరకు జోఢించండి. అందులో `go to x:0 y:0`{:class="block3motion"} బ్లాక్ జోడించండి, మరియు `y:`{:class="block3motion"} విలువను `200` కి మార్చండి. `show`{:class="block3looks"} బ్లాక్ ని జోడించండి, దాని తర్వాత `glide 1 secs to x:0 y:0`{:class="block3motion"} ని జోడించండి, మరియు సెకండ్స్ విలువను `3` మరియు `y:`{:class="block3motion"} విలువను `-200` కు మార్చండి:
 
-![image of the Natural Disaster sprite](images/natural-disaster-sprite.png)
+![Natural Disaster sprite యొక్క చిత్రం](images/natural-disaster-sprite.png)
 
 
 ```blocks3
@@ -38,13 +38,13 @@ glide (3) secs to x:(0) y:(-200)
 
 --- /task ---
 
-The **Natural Disaster** sprite has three costumes: **Drought**, **Forest Fire**, and **Tornado**, as trees can be hit by many types of natural disaster. Add code so that the simulation has multiple disaster types.
+**Natural Disaster** sprite, మూడు costumes కలిగి ఉంది: **Drought**, **Forest Fire**, మరియు **Tornado**, ఎందుకంటే చెట్లను అనేక రకాల ప్రకృతి వైపరీత్యాలు దెబ్బతీస్తాయి. సిమ్యులేషన్ బహుళ విపత్తు రకాలను కలిగి ఉండేలా కోడ్‌ని జోడించండి.
 
 --- task ---
 
- Click on the **Costumes** tab to view the costumes. Click back to the **Code** tab and add a `hide`{:class="block3looks"} block when it reaches the bottom of the screen, followed by a `next costume`{:class="block3looks"} block:
+ Costumes వీక్షించడానికి **Costumes** ట్యాబ్‌పై క్లిక్ చేయండి. **Code** ట్యాబ్ ను తిరిగి క్లిక్ చేయండి మరియు అది స్క్రీన్ చివరకు చేరినప్పుడు, `hide`{:class="block3looks"} బ్లాకు, అనంతరం `next costume`{:class="block3looks"} బ్లాకుని జోడించండి:
 
-![image of the Natural Disaster sprite](images/natural-disaster-sprite.png)
+![Natural Disaster sprite యొక్క చిత్రం](images/natural-disaster-sprite.png)
 
 
 ```blocks3
@@ -63,19 +63,19 @@ end
 
 --- task ---
 
-Test your project. The **Natural Disaster** sprite now moves from top to bottom, and changes costume each time.
+మీ ప్రాజెక్ట్‌ను పరీక్షించండి. **Natural Disaster** sprite ఇప్పుడు పై నుండి క్రిందికి కదులుతుంది మరియు ప్రతిసారీ costume లను మారుస్తుంది.
 
-![image of the Natural Disaster on stage](images/disaster-on-stage.png)
+![Stage పై Natural Disaster యొక్క చిత్రం](images/disaster-on-stage.png)
 
 --- /task ---
 
-Scientists can sometimes predict when natural disasters will occur, though this can be difficult because their timing isn't always clear, unlike in the simulation. Now, add random timing to the **Natural Disaster** sprite to make the sprite's appearance unpredictable like in real life.
+ప్రకృతి వైపరీత్యాలు ఎప్పుడు సంభవిస్తాయో శాస్త్రవేత్తలు కొన్నిసార్లు అంచనా వేయగలరు, అయితే ఇది కష్టంగా ఉంటుంది, ఎందుకంటే సిమ్యులేషన్ లో వలే కాకుండా అవి సంభవించే సమయం ఎల్లప్పుడూ స్పష్టంగా ఉండదు. ** Natural Disaster** sprite కు యాదృచ్ఛిక సమయాన్ని జోడించి, నిజ జీవితంలో మాదిరిగా sprite రూపాన్ని అనూహ్యంగా మార్చండి.
 
 --- task ---
 
-To create random timing add a `wait 1 seconds`{:class="block3control"} block to the top of your `forever`{:class="block3control"} block. Drag a `pick random`{:class="block3operators"} operator into the `wait`{:class="block3control"} block, and change the values to `10` and `20`:
+సమయాన్ని యాదృచ్ఛికంగా సృష్టించడానికి, `wait 1 seconds`{:class="block3control"} బ్లాక్ ని మీ `forever`{:class="block3control"} బ్లాక్ పైన జోడించండి. `pick random`{:class="block3operators"} ఆపరేటర్ ని `wait`{:class="block3control"} బ్లాక్ లోనికి డ్రాగ్ చేయండి, మరియు విలువలను `10` ఇంకా `20` కి మార్చండి:
 
-![image of the Natural Disaster sprite](images/natural-disaster-sprite.png)
+![Natural Disaster sprite యొక్క చిత్రం](images/natural-disaster-sprite.png)
 
 
 ```blocks3
@@ -93,13 +93,13 @@ end
 
 --- /task ---
 
-Add randomness to the movement of the **Natural Disaster** sprite.
+**Natural Disaster** sprite కదలికకు యాదృచ్ఛికతను జోడించండి.
 
 --- task ---
 
-Drag a `pick random`{:class="block3operators"} operator into the `x:`{:class="block3motion"} coordinates of both the `go to`{:class="block3motion"} block and the `glide`{:class="block3motion"} block. Change the values in each to `-200` and `200`:
+`pick random`{:class="block3operators"} ఆపరేటర్‌ని `go to`{:class="block3motion"} బ్లాక్ మరియు `glide`{:class="block3motion"} బ్లాక్ యొక్క `x:`{:class="block3motion"} అక్షాంశాలలోనికి డ్రాగ్ చేయండి. ప్రతి దానిలోని విలువలను `-200` మరియు `200`కి మార్చండి:
 
-![image of the Natural Disaster sprite](images/natural-disaster-sprite.png)
+![Natural Disaster sprite యొక్క చిత్రం](images/natural-disaster-sprite.png)
 
 
 ```blocks3
@@ -119,7 +119,7 @@ end
 
 --- task ---
 
-Test your project again. Your **Natural Disaster** sprite should now wait between 10 and 20 seconds before it falls from a random position to another random position. It also changes costume each time and removes any trees it touches.
+మీ ప్రాజెక్ట్‌ను మళ్లీ పరీక్షించండి. మీ **Natural Disaster** sprite ఇప్పుడు ఒక యాదృచ్ఛిక స్థానం నుండి మరొక యాదృచ్ఛిక స్థానానికి పడిపోయే ముందు 10 మరియు 20 సెకన్ల మధ్య వేచి ఉండాలి. ఇది ప్రతిసారీ costume మారుస్తుంది మరియు తాకిన చెట్లను తొలగిస్తుంది.
 
 --- /task ---
 
