@@ -1,16 +1,16 @@
-## Human deforestation
+## మానవ అటవీ నిర్మూలన
 
-There are many reasons why humans chop down trees. The wood might be needed to create furniture, make buildings, or burn as firewood. Alternatively, the land used by the forest might be needed to grow crops, graze cattle, or construct buildings.
+మనుషులు చెట్లను నరకడానికి చాలా కారణాలున్నాయి. కలప ఫర్నిచర్ తయారు చేయడానికి, భవనాలు కట్డడానికి లేదా కట్టెలుగా కాల్చడానికి అవసరం కావచ్చు. ప్రత్యామ్నాయంగా, పంటలు పండించడానికి, పశువులను మేపడానికి లేదా భవనాలను నిర్మించడానికి అడవి ఉపయోగించే భూమి అవసరం కావచ్చు.
 
-In this step, you will code the **Tree Feller** sprite to get the amount of trees needed, and move through the forest causing human deforestation.
+ఈ దశలో, మీరు **Tree Feller** sprite ను కోడ్ చేసి, అవసరమైన మొత్తం చెట్లను పొందడానికి మరియు మానవ అటవీ నిర్మూలనకు కారణమవుతూ అడవి గుండా వెళతారు.
 
-Code the **Tree Feller** sprite to ask how many trees are needed each time it is clicked.
+**Tree Feller** sprite ని క్లిక్ చేసిన ప్రతిసారీ ఎన్ని చెట్లు అవసరమో అడగడానికి కోడ్ చేయండి.
 
 --- task ---
 
-Click on the **Tree Feller** sprite and start a new script with a `when this sprite clicked`{:class="block3events"} block. Add an `ask What is your name? and wait`{:class="block3sensing"} block and change the text to ask `How many trees are needed? (max 20)`:
+**Tree Feller** sprite పై క్లిక్ చేసి, `when this sprite clicked`{:class="block3events"} బ్లాక్‌ తో కొత్త స్క్రిప్ట్‌ను ప్రారంభించండి. `ask What is your name? and wait`{:class="block3sensing"} బ్లాకుని జోడించండి మరియు `How many trees are needed? (max 20)` అని అడిగేలా మార్పు చేయండి:
 
-![image of the Tree Feller sprite](images/tree-feller-sprite.png)
+![Tree Feller sprite యొక్క చిత్రం](images/tree-feller-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -19,21 +19,21 @@ ask [How many trees are needed? (max 20)] and wait
 
 --- /task ---
 
-Next, you need a variable to hold the input from asking the question `How many trees are needed? (max 20)`.
+`How many trees are needed? (max 20)</0>  ఈ ప్రశ్నకి వచ్చే సమాధానాన్ని పట్టుకోవడానికి,  తదుపరి మీకు వేరియబుల్ అవసరం</p>
 
---- task ---
+<p spaces-before="0">--- task ---</p>
 
-Create a new `variable`{:class="block3variables"} and call it `trees needed`.
+<p spaces-before="0">కొత్త <code>variable`{:class="block3variables"} ని సృష్టించండి మరియు దానిని `trees needed` అని పిలవండి.
 
 --- /task ---
 
-Each time someone submits a request for more trees, the **Tree Feller** sprite should add that number to the amount of trees needed.
+ఎవరైనా ఎక్కువ చెట్ల కోసం అభ్యర్థనను సమర్పించిన ప్రతిసారీ, **Tree Feller** sprite ఆ సంఖ్యను అవసరమైన చెట్ల మొత్తానికి జోడించాలి.
 
 --- task ---
 
-To store the answer to your question in the `trees needed`{:class="block3variables"} variable, add a `change trees needed by 1`{:class="block3variables"} block and drag an `answer`{:class="block3sensing"} block into where it says `1`{:class="block3variables"}:
+`trees needed`{:class="block3variables"} వేరియబుల్ లో మీ ప్రశ్నకు సమాధానం నిల్వ చేయడానికి, `change trees needed by 1`{:class="block3variables"} బ్లాకుని జోడించండి మరియు `1`{:class="block3variables"} అనబడే దాంట్లోకి  `answer`{:class="block3sensing"} బ్లాకుని డ్రాగ్ చేయండి.
 
-![image of the Tree Feller sprite](images/tree-feller-sprite.png)
+![Tree Feller sprite యొక్క చిత్రం](images/tree-feller-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -43,13 +43,13 @@ ask [How many trees are needed?] and wait
 
 --- /task ---
 
-As trees are big and heavy, the maximum number that can be requested should be set to 20.
+చెట్లు పెద్దవి మరియు భారీగా ఉన్నందున, అభ్యర్థించగల గరిష్ట సంఖ్యను 20కి సెట్ చేయాలి.
 
 --- task ---
 
-Add an `if ... then`{:class="block3control"} block to the end of your code with the condition `trees needed`{:class="block3variables"} `greater than`{:class="block3operators"} `20`. Inside the `if ... then`{:class="block3control"} block, add `set trees needed to`{:class="block3variables"} `20`:
+`trees needed`{:class="block3variables"} `greater than`{:class="block3operators"} `20` కండిషన్ తో `if ... then`{:class="block3control"} బ్లాక్ ని కోడ్ చివర జోడించండి. `if ... then`{:class="block3control"} బ్లాక్ లోపల, `set trees needed to`{:class="block3variables"} `20` ని జోడించండి:
 
-![image of the Tree Feller sprite](images/tree-feller-sprite.png)
+![Tree Feller sprite యొక్క చిత్రం](images/tree-feller-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -62,13 +62,13 @@ end
 
 --- /task ---
 
-Reset the number of trees needed every time the green flag is clicked to start the simulation, so it clears the variable ready for a new request.
+సిమ్యులేషన్ ప్రారంభించడానికి ఆకుపచ్చ జెండాను క్లిక్ చేసిన ప్రతిసారీ అవసరమైన చెట్ల సంఖ్యను రీసెట్ చేయండి, కనుక ఇది కొత్త అభ్యర్థన కోసం సిద్ధంగా ఉన్న వేరియబుల్‌ను క్లియర్ చేస్తుంది.
 
 --- task ---
 
-Start a new script with `when green flag clicked`{:class="block3control"} block, and add a `set trees needed to 0`{:class="block3variables"} block:
+`when green flag clicked`{:class="block3control"} బ్లాక్‌ తో కొత్త స్క్రిప్ట్‌ను ప్రారంభించండి మరియు `set trees needed to 0 `{:class="block3variables"} బ్లాక్ ను జోడించండి:
 
-![image of the Tree Feller sprite](images/tree-feller-sprite.png)
+![Tree Feller sprite యొక్క చిత్రం](images/tree-feller-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -79,19 +79,19 @@ set [trees needed v] to (0)
 
 --- task ---
 
-Run your simulation. Click on the **Tree Feller** sprite and request a number of trees. Enter different numbers to see what happens to the `trees needed`{:class="block3variables"} variable each time.
+మీ సిమ్యులేషన్ ను అమలు చేయండి. **Tree Feller** sprite పై క్లిక్ చేసి, అనేక చెట్లను అభ్యర్థించండి. `trees needed`{:class="block3variables"} వేరియబుల్ కు వేర్వేరు సంఖ్యలను నమోదు చేసి ఏమి జరుగుతుందో చూడండి.
 
 --- /task ---
 
-When the **Tree Feller** sprite touches a mature tree, the number of trees needed will decrease.
+**Tree Feller** sprite ఎదిగిన చెట్టును తాకినప్పుడు, అవసరమైన చెట్ల సంఖ్య తగ్గుతుంది.
 
 --- task ---
 
-Click on the **Tree** sprite and add `change trees needed by`{:class="block3variables"} `-1` to the script after it `touches Tree Feller`{:class="block3sensing"}.
+**Tree** sprite పై క్లిక్ చేసి, `touches Tree Feller`{:class="block3sensing"} తరువాత, `change trees needed by`{:class="block3variables"} `-1` ను స్క్రిప్ట్ కు జోడించండి.
 
-Change the condition of the `wait until`{:class="block3control"} block to be `touches Tree Feller`{:class="block3sensing"} `and`{:class="block3operators"} `trees needed`{:class="block3variables"} `>`{:class="block3operators"} `0`
+`wait until`{:class="block3control"} యొక్క కండిషన్ ను, `touches Tree Feller`{:class="block3sensing"} `and`{:class="block3operators"} `trees needed`{:class="block3variables"} `>`{:class="block3operators"} `0` మార్పు చేయండి.
 
-![image of the Tree sprite](images/tree-sprite.png)
+![Tree sprite యొక్క చిత్రం](images/tree-sprite.png)
 
 ```blocks3
 when I start as a clone
@@ -111,25 +111,25 @@ delete this clone
 
 --- /task ---
 
-The Stage is looking crowded with so many `variables`{:class="block3variables"}. Position them so they appear in better places in your simulation, and hide the ones that don't show values relating to tree management.
+చాలా `variables`{:class="block3variables"}తో Stage రద్దీగా కనిపిస్తోంది. అవి మీ సిమ్యులేషన్ లో మెరుగైన ప్రదేశాలలో కనిపించేలా వాటిని సరైన స్థానాలలో ఉంచండి. మరియు చెట్ల నిర్వహణకు సంబంధించి ఉపయోగపడని వాటిని దాచండి.
 
 --- task ---
 
-Go to the `Variables`{:class="block3variables"} blocks menu and untick the `trees needed`{:class="block3variables"} variable.
+`Variables`{:class="block3variables"} బ్లాక్స్ మెనుకి వెళ్లి,`trees needed`{:class="block3variables"} వేరియబుల్ ను అన్ టిక్ చేయండి.
 
-Drag the **tree management** slider variable and **mature trees** counter variable to the bottom corners of the Stage.
+**tree management** స్లయిడర్ వేరియబుల్ మరియు **mature trees** కౌంటర్ వేరియబుల్‌ని Stage దిగువ మూలలకు డ్రాగ్ చేయండి.
 
-![image of the stage with variables](images/stage-with-variables.png)
+![వేరియబుల్స్‌తో Stage యొక్క చిత్రం](images/stage-with-variables.png)
 
 --- /task ---
 
-Set the starting position for the **Tree Feller** sprite each time the simulation starts.
+సిమ్యులేషన్ ప్రారంభించిన ప్రతిసారీ **Tree Feller** sprite కోసం ప్రారంభ స్థానాన్ని సెట్ చేయండి.
 
 --- task ---
 
-Click on the **Tree Feller** sprite and in the `when green flag clicked`{:class="block3events"} script, insert a `set rotation style left-right`{:class="block3motion"} block so that the **Tree Feller** sprite does not tip upside down. To get the **Tree Feller** sprite to start at the top left-hand corner, add a `go to x:0 y:0`{:class="block3motion"} block and change the values to `-200` and `150`. Get the sprite to `point in direction 90`{:class="block3motion"}:
+**Tree Feller** sprite పై క్లిక్ చేయండి మరియు `when green flag clicked`{:class="block3events"} స్క్రిప్ట్‌ లో `set rotation style left-right`{:class="block3motion"} బ్లాక్‌ని ఇన్సర్ట్ చేయండి తద్వారా **Tree Feller** sprite తలక్రిందులుగా ఉండదు. **Tree Feller** sprite ను ఎగువ ఎడమవైపు మూలలో ప్రారంభించడానికి, ` x:0 y:0`{:class="block3motion"} బ్లాక్‌ని జోడించండి, మరియు విలువలను `-200` మరియు `150` లకు మార్చండి. `point in direction 90`{:class="block3motion"} కు sprite ను తీసుకు రండి:
 
-![image of the Tree Feller sprite](images/tree-feller-sprite.png)
+![Tree Feller sprite యొక్క చిత్రం](images/tree-feller-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -141,15 +141,15 @@ set [trees needed v] to (0)
 
 --- /task ---
 
-The **Tree Feller** sprite will move through the forest from left to right and back again, until it has felled enough trees. Use an operator so the **Tree Feller** sprite knows it has collected enough trees when the number of trees needed equals zero.
+**Tree Feller** sprite తగినంత చెట్లను నరికే వరకు అడవిలో ఎడమ నుండి కుడికి మరియు మళ్లీ వెనుకకు కదులుతుంది. ఆపరేటర్‌ని ఉపయోగించండి, తద్వారా **Tree Feller** sprite కు అవసరమైన చెట్ల సంఖ్య సున్నాకి సమానం అయినప్పుడు అది తగినంత చెట్లను సేకరించిందని తెలుసుకుంటుంది.
 
 --- task ---
 
-In the `when this sprite clicked`{:class="block3events"} script, add a `repeat until`{:class="block3control"} block and drag an equals `=`{:class="block3operators"} block inside. Add the condition `trees needed`{:class="block3variables"} `=`{:class="block3operators"} `0`.
+`when this sprite clicked`{:class="block3events"} స్క్రిప్ట్ లో, `repeat until`{:class="block3control"} బ్లాకుని జోడించండి మరియు దాని లోపలకు ఈక్వల్స్ `=`{:class="block3operators"} బ్లాకుని డ్రాగ్ చేయండి. `trees needed`{:class="block3variables"} `=`{:class="block3operators"} `0` కండిషన్ ను జోడించండి.
 
-Within the loop, add a `move 10 steps`{:class="block3motion"} block and change the value to `4`:
+లూప్‌లో, `move 10 steps`{:class="block3motion"} బ్లాక్‌ని జోడించి, విలువను `4`కి మార్చండి:
 
-![image of the Tree Feller sprite](images/tree-feller-sprite.png)
+![Tree Feller sprite యొక్క చిత్రం](images/tree-feller-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -167,17 +167,17 @@ end
 
 --- task ---
 
-Run your simulation. Click on the **Tree Feller** sprite and request a number of trees. Does the **Tree Feller** sprite move through the whole Stage?
+మీ సిమ్యులేషన్ ను అమలు చేయండి. **Tree Feller** sprite పై క్లిక్ చేసి, అనేక చెట్లను అభ్యర్థించండి. **Tree Feller** sprite మొత్తం Stage గుండా కదులుతుందా?
 
 --- /task ---
 
-At the moment, the **Tree Feller** sprite only moves across the top of the Stage. You need to make the sprite sense if it is touching the edge of the Stage, so that it knows to change direction.
+ప్రస్తుతానికి, **Tree Feller** sprite, Stage పైభాగంలో మాత్రమే కదులుతుంది. Sprite, Stage అంచుని తాకినట్లయితే అది గుర్తు పట్టాలి, తద్వారా అది దిశను మార్చడం తెలుసుకోవాలి.
 
 --- task ---
 
-Add an `if ... then`{:class="block3control"} block with a `touching edge`{:class="block3sensing"} condition. Inside your `if`{:class="block3control"} loop, add two `Motion`{:class="block3motion"} blocks:  `turn right by`{:class="block3motion"} `180` `degrees`{:class="block3motion"} and `change y by`{:class="block3motion"} `-40`:
+`if ... then`{:class="block3control"} బ్లాక్‌ని `touching edge`{:class="block3sensing"} కండిషన్ ను జోడించండి. `if`{:class="block3control"} లూపు లోపల, రెండు `Motion`{:class="block3motion"} బ్లాకులు: `turn right by`{:class="block3motion"} `180` `degrees`{:class="block3motion"} మరియు `change y by`{:class="block3motion"} `-40` ని జోడించండి:
 
-![image of the Tree Feller sprite](images/tree-feller-sprite.png)
+![Tree Feller sprite యొక్క చిత్రం](images/tree-feller-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -197,13 +197,13 @@ end
 
 --- /task ---
 
-If the **Tree Feller** sprite reaches the bottom of the Stage, it needs to start again from the top.
+**Tree feller** sprite, Stage దిగువకు చేరుకుంటే, అది మళ్లీ పై నుండి ప్రారంభించాలి.
 
 --- task ---
 
-Add another `if ... then`{:class="block3control"} block with a `y position`{:class="block3motion"} `<`{:class="block3operators"} `-120` condition. Inside your `if ... then`{:class="block3control"} loop, add `go to x:`{:class="block3motion"} `-200` `y:`{:class="block3motion"} `150` so that it moves back to the starting position:
+మరొక `if ... then`{:class="block3control"} బ్లాక్ ను `y position`{:class="block3motion"} `<`:class="block3operators"} `-120` కండిషన్ తో జోడించండి. మీ `if ... then`{:class="block3control"} లూపు లోపల, `go to x:`{:class="block3motion"} `-200` `y:`{:class="block3motion"} `150` ను జోడించండి తద్వారా అది ప్రారంభ స్థానానికి, తిరిగి వెళ్తుంది:
 
-![image of the Tree Feller sprite](images/tree-feller-sprite.png)
+![Tree Feller sprite యొక్క చిత్రం](images/tree-feller-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -226,13 +226,13 @@ end
 
 --- /task ---
 
-Next, you need to find out when the **Tree Feller** sprite has felled enough trees. Get the **Tree Feller** sprite to announce it has finished the requests.
+తర్వాత, **Tree Feller** sprite తగినంత చెట్లను ఎప్పుడు పడగొట్టిందో మీరు కనుగొనాలి. అభ్యర్థనలను పూర్తి చేసినట్లు **Tree Feller ** ప్రకటించేలా చేయండి.
 
---- task ---
+--- పని ---
 
-Add a `Looks`{:class="block3looks"} block to the end of your code so that the **Tree Feller** sprite will `say`{:class="block3looks"} `Requests completed.` `for 2 seconds`{:class="block3looks"}:
+**Tree Feller** sprite ` 2 సెకండ్స్ కోసం`{:class="block3looks"} `అభ్యర్ధనలు పూర్తయ్యాయి` అని `say`:class="block3looks"} చెప్పేలా `Looks`{:class="block3looks"} బ్లాకుని, మీకోడ్ చివరన జోడించండి:
 
-![image of the Tree Feller sprite](images/tree-feller-sprite.png)
+![Tree Feller sprite యొక్క చిత్రం](images/tree-feller-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -258,17 +258,17 @@ end
 
 --- task ---
 
-Run your simulation. Click on the **Tree Feller** sprite and request a number of trees. Once the **Tree Feller** sprite has collected enough trees, it will tell you it has finished.
+మీ సిమ్యులేషన్ ను అమలు చేయండి. **Tree Feller** sprite పై క్లిక్ చేసి, అనేక చెట్లను అభ్యర్థించండి. **Tree Feller** sprite తగినంత చెట్లను సేకరించిన తర్వాత, అది పూర్తయినట్లు మీకు తెలియజేస్తుంది.
 
 --- /task ---
 
-Once the requests are complete, get the **Tree Feller** sprite to move to the side of the tree area, ready for the next request.
+అభ్యర్థనలు పూర్తయిన తర్వాత, **Tree Feller** sprite ని చెట్ల పక్కకు తరలించండి, తదుపరి అభ్యర్థన కోసం సిద్ధంగా ఉండండి.
 
 --- task ---
 
-Add two `Motion`{:class="block3motion"} blocks: a `set x to`{:class="block3motion"} `-200` block and a `point in direction 90`{:class="block3motion"} block.
+రెండు `Motion`{:class="block3motion"} బ్లాక్‌లను జోడించండి: ఒక `set x to`{:class="block3motion"} `-200` బ్లాక్ మరియు `point in direction 90`{:class="block3motion"} బ్లాకు.
 
-![image of the Tree Feller sprite](images/tree-feller-sprite.png)
+![Tree Feller sprite యొక్క చిత్రం](images/tree-feller-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -296,9 +296,9 @@ say [Requests completed.] for (2) seconds
 
 --- task ---
 
-Test your simulation. Click on the **Tree Feller** sprite a few times to request different amounts of wood.
+మీ సిమ్యులేషన్ ను అమలు చేయండి. వివిధ రకాల కలపను అభ్యర్థించడానికి **Tree Feller** sprite పై కొన్ని సార్లు క్లిక్ చేయండి.
 
-![image of the Tree Feller announcing trees felled](images/feller-trees-felled.png)
+![చెట్లను నరికివేసినట్లు ప్రకటించిన Tree Feller యొక్క చిత్రం](images/feller-trees-felled.png)
 
 --- /task ---
 
