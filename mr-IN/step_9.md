@@ -1,11 +1,11 @@
-## What next?
+## पुढे काय?
 
-In this project, you have:
+प्रोजेक्टमध्ये, तुमच्याकडे आहे:
 
-+ Used `clone`{:class="block3control"} blocks to generate trees in `random`{:class="block3operators"} locations
-+ Used `>`{:class="block3operators"} `<`{:class="block3operators"} operators to control the human character to alert the user about the state of the environment
-+ Programmed a simulation to explore the impact of humans on trees and the surrounding wildlife
++ `clone`{:class="block3control"} ब्लॉकचा `random`{:class="block3operators"} लोकेशन मध्या झाडे तयार करण्यासाठी वापर केला
++ यूजरला पर्यावरणाच्या स्थितीबद्दल सावध करण्यास मानवी कॅरेक्टरला नियंत्रीत करण्यासाठी `>`{:class="block3operators"} `<`{:class="block3operators"} ऑपरेटर्सचा वापर केला
++ झाडांवर आणि आजूबाजूच्या वन्यजीवांवर मानवांचा प्रभाव शोधण्यासाठी एक सिम्युलेशन प्रोग्राम केले
 
-If you are following the [Protect our planet](https://projects.raspberrypi.org/en/raspberrypi/protect-our-planet) projects, then try out the next project, [Count the creatures](https://projects.raspberrypi.org/en/projects/count-the-creatures). In this project, you will create a program to input real data on the range of natural resources used by countries to generate electricity. Then, you will compare the results using animated and interactive data visualisation.
+तुम्ही [आपल्या ग्रहाचे संरक्षण करा](https://projects.raspberrypi.org/en/raspberrypi/protect-our-planet) प्रोजेक्टचे अनुसरण करत असलात, तर पुढील प्रोजेक्ट [जीवांची मोजणी करा](https://projects.raspberrypi.org/en/projects/count-the-creatures) चा प्रयत्न करा. या प्रोजेक्टमध्ये, तुम्ही वीज निर्मितीसाठी देशांद्वारे वापरल्या जाणार्‍या नैसर्गिक संसाधनांच्या श्रेणीवर वास्तविक डेटा इनपुट करण्यासाठी एक प्रोग्राम तयार कराल. त्यानंतर, तुम्ही ऍनिमेटेड आणि परस्परसंवादी डेटा व्हिज्युअलायझेशन वापरून परिणामांची तुलना कराल.
 
-Did you enjoy the project? Have you spotted a mistake? Please click the **Send feedback** button below and let us know!
+तुम्ही प्रोजेक्टचा आनंद घेतला का? तुमची चूक लक्षात आली आहे का? कृपया खालील **Send feedback** बटनावर क्लिक करा आणि आम्हाला कळवा!
