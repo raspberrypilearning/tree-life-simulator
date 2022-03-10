@@ -52,7 +52,7 @@ end
 
 अपने `forever`{:class="block3control"} ब्लॉक के अंदर एक`if ... then`{:class="block3control"} ब्लॉक जोड़ें।
 
-अपनी गणना के लिए कुछ ऑपरेटरों को जोड़ें। पहले एक`and`{:class="block3operators"} ब्लॉक जोड़ें, फिर एक `greater than`{:class="block3operators"} block, और एक `less than`{:class="block3operators"} ब्लॉक जोड़ें। गणना सेट करें `mature trees`{:class="block3variables"} `greater than`{:class="block3operators"} `0` ` और `{:class="block3operators"} `mature trees`{:class="block3variables"} `less than`{:class="block3operators"} `10`. `say`{:class="block3looks"} `Global warming is at dangerous levels.` `for 2 seconds`{:class="block3looks"} डालें:
+अपनी गणना के लिए कुछ ऑपरेटरों को जोड़ें। पहले एक `and`{:class="block3operators"} ब्लॉक जोड़ें, फिर एक `greater than`{:class="block3operators"} block, और एक `less than`{:class="block3operators"} ब्लॉक जोड़ें। गणना सेट करें `mature trees`{:class="block3variables"} `greater than`{:class="block3operators"} `0` `and`{:class="block3operators"} `mature trees`{:class="block3variables"} `less than`{:class="block3operators"} `10`. `say`{:class="block3looks"} `Global warming is at dangerous levels.` `for 2 seconds`{:class="block3looks"} डालें:
 
 ![Maya स्प्राइट की छवि](images/maya-sprite.png)
 

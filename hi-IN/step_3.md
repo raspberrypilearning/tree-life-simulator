@@ -56,14 +56,15 @@ Stage पर, **tree**{: class="block3variables"} स्लाइडर पर �
 
 <p spaces-before="0"><img src="images/tree-sprite.png" alt="Tree स्प्राइट की छवि" /></p>
 
-<pre><code class="blocks3">when flag clicked
+```blocks3
+when flag clicked
 hide
 forever
 go to x:(pick random (-150) to (200)) y:(pick random (-120) to (120))
 + reset timer
 create clone of [myself v]
 end
-`</pre>
+```
 
 --- /task ---
 
