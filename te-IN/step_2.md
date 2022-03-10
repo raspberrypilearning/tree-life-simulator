@@ -1,26 +1,26 @@
-## Grow some trees
+## కొన్ని చెట్లను పెంచండి
 
-Did you know that trees cover 30 percent of the Earth’s land surface? The way we look after our local trees now, will have an impact on the future of our planet. In this step, you will add code to create an area of trees with a variety of different tree types.
+భూమి యొక్క భూ ఉపరితలంలో 30 శాతం చెట్లు ఆక్రమించాయని మీకు తెలుసా? మనం ఇప్పుడు మన స్థానిక చెట్లను చూసుకునే విధానం మన గ్రహం యొక్క భవిష్యత్తుపై ప్రభావం చూపుతుంది. ఈ దశలో, మీరు వివిధ రకాల చెట్లతో నిండిన ప్రాంతాన్ని సృష్టించడానికి కోడ్‌ని జోడిస్తారు.
 
 --- task ---
 
-**Online**: open the [starter project](http://rpf.io/tree-life-simulator-on){:target="_blank"} in Scratch.
+**Online:** Scratch లో [స్టార్టర్ ప్రాజెక్ట్ ](http://rpf.io/tree-life-simulator-on){:target="_blank"} ని తెరవండి.
 
-**Offline**: open the [project starter file](http://rpf.io/p/en/tree-life-simulator-get){:target="_blank"} in the Scratch offline editor. If you need to, you can [download and install Scratch here](https://scratch.mit.edu/download){:target="_blank"}.
+**Offline:** Scratch యొక్క ఆఫ్ లైన్ ఎడిటర్ లో [ప్రాజెక్టు స్టార్టర్ ఫైల్](http://rpf.io/p/en/tree-life-simulator-get){:target="_blank"} ని తెరవండి. మీకు అవసరమైతే, మీరు [ఇక్కడ Scratch ను డౌన్ లోడ్ చేసి ఇన్‌స్టాల్ చేయవచ్చు.](https://scratch.mit.edu/download){:target="_blank"}.
 
-You should see a green grassland background.
+మీరు ఆకుపచ్చ గడ్డి మైదానం నేపథ్యాన్ని చూడాలి.
 
-![starter project](images/starter_project.png)
+![స్టార్టర్ ప్రాజెక్ట్](images/starter_project.png)
 
 --- /task ---
 
-In Scratch, you can make up to 300 copies of one sprite! This is called **cloning**. Your task is to add code to the **Tree** sprite so that it creates clones of itself on the Stage.
+Scratchలో, మీరు ఒక స్ప్రైట్ యొక్క 300 కాపీల వరకు తయారు చేయవచ్చు! దీనిని **క్లోనింగ్**అంటారు. **Tree** sprite కు కోడ్‌ని జోడించడం మీ పని, తద్వారా అది Stage పై స్వయంగా క్లోన్‌లను సృష్టిస్తుంది.
 
 --- task ---
 
-Go to the Sprites pane, and click on the **Tree** sprite. Drag a `when green flag clicked`{:class="block3events"} block and a `forever`{:class="block3control"} block onto your Code area. Within the `forever`{:class="block3control"} block, add a `go to x:`{:class="block3motion"} `0` `y:`{:class="block3motion"} `0` block and a `create clone of myself`{:class="block3control"} block:
+Sprites పేన్‌కి వెళ్లి, **Tree** sprite పై క్లిక్ చేయండి. `when green flag clicked`{:class="block3events"} బ్లాక్‌ని మరియు `forever`{:class="block3control"} బ్లాక్‌ని మీ కోడ్ ప్రాంతంలోకి డ్రాగ్ చేయండి. `forever`:class="block3control"} బ్లాక్ లోపల, ఒక `go to x:`{:class="block3motion"} `0` `y:`{:class="block3motion"} `0` మరియు ఒక `create clone of myself`{:class="block3control"} బ్లాక్ ని జోడించండి:
 
-![image of the Tree sprite](images/tree-sprite.png)
+![Tree sprite యొక్క చిత్రం](images/tree-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -32,13 +32,13 @@ end
 
 --- /task ---
 
-Next, plant the cloned trees in random positions across the Stage.
+తరువాత, Stage అంతటా యాదృచ్ఛిక స్థానాల్లో క్లోన్ చేసిన చెట్లను నాటండి.
 
 --- task ---
 
-Add a `pick random`{:class="block3operators"} block to both your `x:`{:class="block3motion"} and `y:`{:class="block3motion"} values to vary where the trees grow. Change the `x:`{:class="block3motion"} coordinates to `pick random`{:class="block3operators"} `-150` `to`{:class="block3operators"} `200`. Change the `y:`{:class="block3motion"} coordinates to `pick random`{:class="block3operators"} `-120` `to`{:class="block3operators"} `120`:
+చెట్లు వివిధ ప్రాంతాలలో పెరగడానికి, `x:`{:class="block3motion"} మరియు `y:`{:class="block3motion"} విలువలు రెండింటికీ `pick random`{:class="block3operators"} బ్లాక్‌ని జోడించండి. `x:`{:class="block3motion"} కోఆర్డినేట్‌లను `pick random`{:class="block3operators"} `-150` `నుండి`{:class="block3operators"} `200` కు మార్చండి. `y:`{:class="block3motion"} కోఆర్డినేట్‌లను `pick random`{:class="block3operators"} `-120` `to`{:class="block3operators"} `120` కు మార్చండి:
 
-![image of the Tree sprite](images/tree-sprite.png)
+![Tree sprite యొక్క చిత్రం](images/tree-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -50,17 +50,17 @@ end
 
 --- /task ---
 
-It is important that you plant a variety of trees to house a range of animals, restore the environment, and benefit people. For example, a koala relies on the broadleaf evergreens in Australia, while a lemur in Madagascar needs the deciduous trees that grow on the island.
+అనేక రకాల జంతువులను నివాసం కల్పించడానికి, పర్యావరణాన్ని పునరుద్ధరించడానికి మరియు ప్రజలకు ప్రయోజనం చేకూర్చడానికి మీరు వివిధ రకాల చెట్లను నాటడం ముఖ్యం. ఉదాహరణకు, కోయలా ఆస్ట్రేలియాలోని విశాలమైన సతతహరితాలపై ఆధారపడుతుంది, అయితే మడగాస్కర్‌లోని లెమర్‌కు ద్వీపంలో పెరిగే ఆకురాల్చే చెట్లు అవసరం.
 
-The **Tree** sprite has three costumes: **tree 1**, **tree 2**, and **tree 3**. Click on the **Costumes** tab to see them.
+**Tree** sprite మూడు costumes లను కలిగి ఉంది: **tree 1**, **tree 2**, మరియు **tree 3**. వాటిని చూడటానికి **Costumes** ట్యాబ్‌పై క్లిక్ చేయండి.
 
-Click back to the **Code** tab and use the `random`{:class="block3operators"} operator to vary the looks of the trees and add variety to the area.
+**Code** ట్యాబ్‌ను తిరిగి క్లిక్ చేయండి మరియు చెట్ల రూపాన్ని మార్చడానికి మరియు ప్రాంతానికి విభిన్నతను జోడించడానికి `random`{:class="block3operators"} ఆపరేటర్‌ని ఉపయోగించండి.
 
 --- task ---
 
-Start a new script with a `when I start as a clone`{:class="block3control"} block. Add a `switch costume to`{:class="block3looks"} block below it. Drag a `pick random 1 to 10`{:class="block3operators"} block into the `switch costume to`{:class="block3looks"} block. Change the values from `1` and `10` to `1` and `3`:
+`when i start as a clone`{:class="block3control"} బ్లాక్‌తో కొత్త స్క్రిప్ట్‌ను ప్రారంభించండి. దాని క్రింద `switch costume to`{:class="block3looks"} బ్లాక్‌ని జోడించండి. `pick random 1 to 10`{:class="block3operators"} బ్లాక్‌ని `switch costume to`{:class="block3looks"} బ్లాక్‌ లోనికి లాగండి. విలువలను `1` మరియు `10` నుండి `1` మరియు `3`కి మార్చండి:
 
-![image of the Tree sprite](images/tree-sprite.png)
+![Tree sprite యొక్క చిత్రం](images/tree-sprite.png)
 
 ```blocks3
 when I start as a clone
@@ -71,19 +71,19 @@ switch costume to (pick random (1) to (3))
 
 --- task ---
 
-Test your simulation by clicking on the green flag. Make sure you have a variety of trees.
+ఆకుపచ్చ జెండాపై క్లిక్ చేయడం ద్వారా మీ సిమ్యులేషన్ ను పరీక్షించండి. మీకు రకరకాల చెట్లు ఉన్నాయని నిర్ధారించుకోండి.
 
-![image of the first trees ](images/first-trees.png)
+![మొదటి చెట్ల యొక్క చిత్రం ](images/first-trees.png)
 
 --- /task ---
 
-Trees don't just appear full grown, they get bigger over time. You need to set up a `repeat until`{:class="block3control"} loop so you can change the size of the tree as it grows, until its size equals 20 percent.
+చెట్లు పూర్తిగా పెరిగినట్లు కనిపించవు, అవి కాలక్రమేణా పెద్దవిగా ఉంటాయి. మీరు `repeat until`{:class="block3control"} లూప్ ను సెటప్ చేయాల్సి ఉంటుంది, తద్వారా మీరు చెట్టు పెరిగే కొద్దీ దాని పరిమాణం 20 శాతానికి సమానం అయ్యే వరకు మార్చవచ్చు.
 
 --- task ---
 
-Get a `set size to 100`{:class="block3looks"} (percent) block, but change the value to `0` so that the **Tree** sprite starts from nothing. Add a `repeat until`{:class="block3control"} block, and drag an equals `=`{:class="block3operators"} block inside. Add the condition `size`{:class="block3looks"} `=`{:class="block3operators"} `20`:
+`set size to 100`{:class="block3looks"} (percent) బ్లాక్‌ని పొందండి, కానీ విలువను `0` కి మార్చండి, తద్వారా **Tree** sprite శూన్యం నుంచి ప్రారంభమవుతుంది. `repeat until`{:class="block3control"} బ్లాక్‌ని జోడించి, దాని లోపలకు `=`{:class="block3operators"} బ్లాక్‌ని లాగండి. `size`{:class="block3looks"} `=`{:class="block3operators"} `20` కండిషన్ ను జోడించండి:
 
-![image of the Tree sprite](images/tree-sprite.png)
+![Tree sprite యొక్క చిత్రం](images/tree-sprite.png)
 
 ```blocks3
 when I start as a clone
@@ -95,13 +95,13 @@ end
 
 --- /task ---
 
-Get the tree to resize and wait as it grows.
+చెట్టు పరిమాణాన్ని మార్చండి మరియు అది పెరిగేదాకా వేచి ఉండండి.
 
 --- task ---
 
-Add a `change size by 10`{:class="block3looks"} block within the loop and change the value to `1`. Add a `wait 1 seconds`{:class="block3control"} block and change the value to `0.1` so that it changes quickly:
+`change size by 10`{:class="block3looks"} బ్లాక్‌ను లూప్ లోపల జోడించి, విలువను `1`కి మార్చండి. `wait 1 seconds`{:class="block3control"} బ్లాక్‌ని జోడించి, విలువను `0.1` కి మార్చండి, తద్వారా ఇది త్వరగా మార్పు చెందుతుంది:
 
-![image of the Tree sprite](images/tree-sprite.png)
+![Tree sprite యొక్క చిత్రం](images/tree-sprite.png)
 
 ```blocks3
 when I start as a clone
@@ -117,22 +117,21 @@ end
 
 --- task ---
 
-Test your simulation again. Your trees will grow, but a full-grown tree also appears wherever your next clone is growing.
+మీ సిమ్యులేషన్ ను మళ్లీ పరీక్షించండి. మీ చెట్లు పెరుగుతాయి, కానీ మీ తదుపరి క్లోన్ పెరుగుతున్న చోట పూర్తిగా పెరిగిన చెట్టు కూడా కనిపిస్తుంది.
 
 --- /task ---
 
-Hide the tree until it starts a new clone.
+చెట్టు కొత్త క్లోన్‌ను ప్రారంభించే వరకు దానిని దాచండి.
 
 --- task ---
 
-Add a `hide`{:class="block3looks"} block to the start of your `when green flag clicked`{:class="block3events"} script, and a `show`{:class="block3looks"} block to the start of your `when I start as a clone`{:class="block3control"} script.
+మీ `when green flag clicked`{:class="block3events"} స్క్రిప్ట్ ప్రారంభానికి `hide`{:class="block3looks"} బ్లాక్‌ను జోడించండి మరియు `show`{:class="block3looks"} బ్లాకుని మీ `when I start as a clone`{:class="block3control"} స్క్రిప్ట్‌ యొక్క ప్రారంభానికి జోడించండి.
 
 ```blocks3
-when flag clicked
-+ hide
+when flag clicked 
 forever
-go to x:(pick random (-150) to (200)) y:(pick random (-120) to (120))
-create clone of [myself v]
+ + go to x:(pick random (-150) to (200)) y:(pick random (-120) to (120)) 
+Create clone of [myself v]
 end
 ```
 
@@ -151,7 +150,7 @@ end
 
 --- task ---
 
-Test your simulation again. Your trees should now grow like they would in real life.
+మీ సిమ్యులేషన్ ను మళ్లీ పరీక్షించండి. మీ చెట్లు ఇప్పుడు నిజ జీవితంలో లాగా పెరగాలి.
 
 --- /task ---
 
