@@ -1,29 +1,29 @@
-## Natural deforestation
+## ನೈಸರ್ಗಿಕ ಅರಣ್ಯನಾಶ
 
-Deforestation can happen when a natural disaster — such as drought, a forest fire, or a tornado — devastates an area of land. It can also be triggered by human activity, like a campfire, but spread quickly due to natural conditions, like a very dry season. This can be particularly deadly as, in the wide area affected, entire species can disappear along with the destruction of their habitats.
+ಬರ, ಕಾಡ್ಗಿಚ್ಚು, ಅಥವಾ ಸುಂಟರಗಾಳಿಯಂತಹ ನೈಸರ್ಗಿಕ ವಿಪತ್ತು- ಭೂ ಪ್ರದೇಶವೊಂದನ್ನು ಧ್ವಂಸಗೊಳಿಸಿದಾಗ ಅರಣ್ಯನಾಶ ಸಂಭವಿಸಬಹುದು. ಕ್ಯಾಂಪ್‌ ಫೈರ್‌ನಂತಹ ಮಾನವ ಚಟುವಟಿಕೆಯಿಂದ ಸಹ ಅದು ಪ್ರಚೋದನೆಗೊಂಡಿರಬಹುದು, ಆದರೆ ತುಂಬಾ ಒಣ ಋತುವಿನಂತಹ ನೈಸರ್ಗಿಕ ಪರಿಸ್ಥಿತಿಗಳಿಂದ ಬೇಗ ಹರಡುತ್ತದೆ. ಪೀಡಿತ ವಿಶಾಲ ಪ್ರದೇಶದಲ್ಲಿ ಸಂಪೂರ್ಣ ಪ್ರಭೇದಗಳು ಅವುಗಳ ಆವಾಸಸ್ಥಾನಗಳೊಂದಿಗೆ ಕಣ್ಮರೆಯಾಗಬಹುದಾದುರಿಂದ ಇದು ವಿಶೇಷವಾಗಿ ಮಾರಣಾಂತಿಕವಾಗಬಹುದು.
 
-Simulate the impact of natural disasters that randomly move through the forest. Hide the **Natural Disaster** sprite at the start of the simulation.
+ಅರಣ್ಯದಲ್ಲಿ ಯಾದೃಚ್ಛಿಕವಾಗಿ ಚಲಿಸುವ ಪ್ರಕೃತಿ ವಿಕೋಪದ ಪ್ರಭಾವವನ್ನು ಸಾದೃಶ್ಯಗೊಳಿಸಿ. ಸಾದೃಶ್ಯದ ಪ್ರಾರಂಭದಲ್ಲಿ **Natural Disaster** ಸ್ಪ್ರೈಟ್‌ನ್ನು ಮರೆಮಾಚಿ.
 
---- task ---
+--- ಕಾರ್ಯ ---
 
-Click on the **Natural Disaster** sprite, then in the Code area add a `when green flag clicked`{:class="block3events"} block, followed by a `hide`{:class="block3looks"} block:
+**Natural Disaster** ಸ್ಪ್ರೈಟ್‌ ಮೇಲೆ ಕ್ಲಿಕ್‌ ಮಾಡಿ, ನಂತರ Code ಪ್ರದೇಶದಲ್ಲಿ `when green flag clicked`{:class="block3events"} ಬ್ಲಾಕ್‌ನ್ನು ಸೇರಿಸಿ, ಅದಾದ ನಂತರ `hide`{:class="block3looks"} ಬ್ಲಾಕ್‌ ಸೇರಿಸಿ:
 
-![image of the Natural Disaster sprite](images/natural-disaster-sprite.png)
+![Natural Disaster ಸ್ಪ್ರೈಟ್‌ನ ಚಿತ್ರ](images/natural-disaster-sprite.png)
 
 ```blocks3
 when flag clicked
 hide
 ```
 
---- /task ---
+--- /ಕಾರ್ಯ ---
 
-The **Natural Disaster** sprite will move from the top to the bottom of the screen.
+**Natural Disaster** ಸ್ಪ್ರೈಟ್‌ ಪರದೆಯ ಮೇಲೆ ಮೇಲಿನಿಂದ ಕೆಳಕ್ಕೆ ಚಲಿಸುತ್ತದೆ.
 
---- task ---
+--- ಕಾರ್ಯ ---
 
-Add a `forever`{:class="block3control"} block to the end of your code. Within it, add a `go to x:0 y:0`{:class="block3motion"} block, and change the `y:`{:class="block3motion"} value to `200`. Add a `show`{:class="block3looks"} block, followed by a `glide 1 secs to x:0 y:0`{:class="block3motion"}, and change the seconds value to `3` and the `y:`{:class="block3motion"} value to `-200`:
+`forever`{:class="block3control"} ಬ್ಲಾಕ್‌ನ್ನು ನಿಮ್ಮ ಕೋಡ್‌ ಕೊನೆಯಲ್ಲಿ ಸೇರಿಸಿ. ಅದರೊಳಗೆ, `go to x:0 y:0`{:class="block3motion"} ಬ್ಲಾಕ್‌ನ್ನು ಸೇರಿಸಿ, ಮತ್ತು `y:`{:class="block3motion"} ಮೌಲ್ಯವನ್ನು `200` ಕ್ಕೆ ಬದಲಾಯಿಸಿ. `show`{:class="block3looks"} ಬ್ಲಾಕ್ ಸೇರಿಸಿ, ಅದಾದ ನಂತರ `glide 1 secs to x:0 y:0`{:class="block3motion"}, ಮತ್ತು ಸೆಕೆಂಡುಗಳ ಮೌಲ್ಯವನ್ನು `3` ಮತ್ತು `y:`{:class="block3motion"} ಮೌಲ್ಯವನ್ನು `-200`‌ ಕ್ಕೆ ಬದಲಾಯಿಸಿ:
 
-![image of the Natural Disaster sprite](images/natural-disaster-sprite.png)
+![Natural Disaster ಸ್ಪ್ರೈಟ್‌ನ ಚಿತ್ರ](images/natural-disaster-sprite.png)
 
 
 ```blocks3
@@ -36,15 +36,15 @@ glide (3) secs to x:(0) y:(-200)
 + end
 ```
 
---- /task ---
+--- /ಕಾರ್ಯ ---
 
-The **Natural Disaster** sprite has three costumes: **Drought**, **Forest Fire**, and **Tornado**, as trees can be hit by many types of natural disaster. Add code so that the simulation has multiple disaster types.
+**Natural Disaster** ಸ್ಪ್ರೈಟ್‌ ಮೂರು ಉಡುಪುಗಳನ್ನು ಹೊಂದಿದೆ: **Drought**, **Forest Fire**, ಮತ್ತು **Tornado**, ಏಕೆಂದರೆ ಮರಗಳು ಅನೇಕ ವಿಧದ ಪ್ರಕೃತಿ ವಿಕೋಪಗಳಿಂದ ಹೊಡೆತಕ್ಕೊಳಗಾಗಬಹುದು. ಕೊಡ್‌ನ್ನು ಸೇರಿಸಿ ಅದರಿಂದ ಸಾದೃಶ್ಯವು ಬಹು ವಿಧಗಳ ವಿಪತ್ತುಗಳನ್ನು ಹೊಂದಿರುತ್ತದೆ.
 
---- task ---
+--- ಕಾರ್ಯ ---
 
- Click on the **Costumes** tab to view the costumes. Click back to the **Code** tab and add a `hide`{:class="block3looks"} block when it reaches the bottom of the screen, followed by a `next costume`{:class="block3looks"} block:
+ ಉಡುಪುಗಳನ್ನು ನೋಡಲು **Costumes** ಟ್ಯಾಬ್‌ ಕ್ಲಿಕ್‌ ಮಾಡಿ. ಹಿಂತಿರುಗಿ **Code** ಟ್ಯಾಬ್‌ ಮೇಲೆ ಕ್ಲಿಕ್‌ ಮಾಡಿ ಮತ್ತು ಅದು ಪರದೆಯ ಕೆಳಭಾಗಕ್ಕೆ ತಲುಪಿದಾಗ `hide`{:class="block3looks"} ಬ್ಲಾಕ್‌ ಸೇರಿಸಿ, ಅದಾದ ನಂತರ `next costume`{:class="block3looks"} ಬ್ಲಾಕ್‌ ಸೇರಿಸಿ:
 
-![image of the Natural Disaster sprite](images/natural-disaster-sprite.png)
+![Natural Disaster ಸ್ಪ್ರೈಟ್‌ನ ಚಿತ್ರ](images/natural-disaster-sprite.png)
 
 
 ```blocks3
@@ -59,23 +59,23 @@ glide (3) secs to x:(0) y:(-200)
 end
 ```
 
---- /task ---
+--- /ಕಾರ್ಯ ---
 
---- task ---
+--- ಕಾರ್ಯ ---
 
-Test your project. The **Natural Disaster** sprite now moves from top to bottom, and changes costume each time.
+ನಿಮ್ಮ ಪ್ರಾಜೆಕ್ಟನ್ನು ಪರೀಕ್ಷಿಸಿ. **Natural Disaster** ಸ್ಪ್ರೈಟ್‌ ಈಗ ಮೇಲಿನಿಂದ ಕೆಳಕ್ಕೆ ಚಲಿಸುತ್ತದೆ ಮತ್ತು ಪ್ರತಿಬಾರಿ ಉಡುಪನ್ನು ಬದಲಾಯಿಸುತ್ತದೆ.
 
-![image of the Natural Disaster on stage](images/disaster-on-stage.png)
+![ವೇದಿಕೆ ಮೇಲೆ ಪ್ರಕೃತಿ ವಿಕೋಪದ ಚಿತ್ರ](images/disaster-on-stage.png)
 
---- /task ---
+--- /ಕಾರ್ಯ ---
 
-Scientists can sometimes predict when natural disasters will occur, though this can be difficult because their timing isn't always clear, unlike in the simulation. Now, add random timing to the **Natural Disaster** sprite to make the sprite's appearance unpredictable like in real life.
+ಪ್ರಕೃತಿ ವಿಕೋಪಗಳು ಯಾವಾಗ ಸಂಭವಿಸುತ್ತವೆ ಎಂಬುದನ್ನು ವಿಜ್ಞಾನಿಗಳು ಕೆಲವೊಮ್ಮೆ ಊಹಿಸಬಹುದು, ಆದರೂ ಇದು ಕಷ್ಟಕರವಾಗಿರುತ್ತದೆ ಏಕೆಂದರೆ ಸಾದೃಶ್ಯದಂತೆ ಅವುಗಳ ಸಮಯವು ಯಾವಾಗಲೂ ಸ್ಪಷ್ಟವಾಗಿರುವುದಿಲ್ಲ,. ಈಗ, ನಿಜ ಜೀವನದಂತೆ ಸ್ಪ್ರೈಟ್‌ನ ಕಾಣಿಸಿಕೊಳ್ಳುವಿಕೆಯನ್ನು ಅನಿರೀಕ್ಷಿತಗೊಳೀಸಲು **Natural Disaster** ಸ್ಪ್ರೈಟ್‌ಗೆ ಯಾದೃಚ್ಛಿಕ ಸಮಯಗಳನ್ನು ಸೇರಿಸಿ.
 
---- task ---
+--- ಕಾರ್ಯ ---
 
-To create random timing add a `wait 1 seconds`{:class="block3control"} block to the top of your `forever`{:class="block3control"} block. Drag a `pick random`{:class="block3operators"} operator into the `wait`{:class="block3control"} block, and change the values to `10` and `20`:
+ಯಾದೃಚ್ಛಿಕ ಸಮಯಗಳನ್ನು ರಚಿಸಲು `wait 1 seconds`{:class="block3control"} ಬ್ಲಾಕ್‌ನ್ನು ನಿಮ್ಮ `forever`{:class="block3control"} ಬ್ಲಾಕ್‌ ಮೇಲ್ಗಡೆ ಸೇರಿಸಿ. `pick random`{:class="block3operators"} ಆಪರೇಟರ್‌ನ್ನು`wait`{:class="block3control"} ಬ್ಲಾಕ್‌ ಒಳಗೆ ಎಳೆಯಿರಿ ಮತ್ತು ಮೌಲ್ಯಗಳನ್ನು `10` ಮತ್ತು `20`ಕ್ಕೆ ಬದಲಾಯಿಸಿ:
 
-![image of the Natural Disaster sprite](images/natural-disaster-sprite.png)
+![Natural Disaster ಸ್ಪ್ರೈಟ್‌ನ ಚಿತ್ರ](images/natural-disaster-sprite.png)
 
 
 ```blocks3
@@ -91,15 +91,15 @@ next costume
 end
 ```
 
---- /task ---
+--- /ಕಾರ್ಯ ---
 
-Add randomness to the movement of the **Natural Disaster** sprite.
+**Natural Disaster** ಸ್ಪ್ರೈಟ್‌ನ ಚಲನೆಗೆ ಯಾದೃಚ್ಛಿಕತೆಯನ್ನು ಸೇರಿಸಿ.
 
---- task ---
+--- ಕಾರ್ಯ ---
 
-Drag a `pick random`{:class="block3operators"} operator into the `x:`{:class="block3motion"} coordinates of both the `go to`{:class="block3motion"} block and the `glide`{:class="block3motion"} block. Change the values in each to `-200` and `200`:
+`pick random`{:class="block3operators"} ಆಪರೇಟರ್‌ನ್ನು `x:`{:class="block3motion"} ರೊಳಗೆ `go to`{:class="block3motion"} ಬ್ಲಾಕ್‌ ಮತ್ತು `glide`{:class="block3motion"} ಬ್ಲಾಕ್‌ಗಳೆರಡರ ನಿರ್ದೇಶಾಂಕಗಳಿಗೆ ಎಳೆಯಿರಿ. ಪ್ರತಿಯೊಂದರಲ್ಲೂ ಮೌಲ್ಯಗಳನ್ನು `-200` ಮತ್ತು `200` ಕ್ಕೆ ಬದಲಾಯಿಸಿ:
 
-![image of the Natural Disaster sprite](images/natural-disaster-sprite.png)
+![Natural Disaster ಸ್ಪ್ರೈಟ್‌ನ ಚಿತ್ರ](images/natural-disaster-sprite.png)
 
 
 ```blocks3
@@ -115,12 +115,12 @@ next costume
 end
 ```
 
---- /task ---
+--- /ಕಾರ್ಯ ---
 
---- task ---
+--- ಕಾರ್ಯ ---
 
-Test your project again. Your **Natural Disaster** sprite should now wait between 10 and 20 seconds before it falls from a random position to another random position. It also changes costume each time and removes any trees it touches.
+ನಿಮ್ಮ ಪ್ರಾಜೆಕ್ಟನ್ನು ಮತ್ತೊಮ್ಮೆ ಪರೀಕ್ಷಿಸಿ. ನಿಮ್ಮ **Natural Disaster** ಸ್ಪ್ರೈಟ್‌ ಈಗ ಒಂದು ಯಾದೃಚ್ಛಿಕ ಸ್ಥಾನದಿಂದ ಇನ್ನೊಂದು ಯಾದೃಚ್ಛಿಕ ಸ್ಥಾನಕ್ಕೆ ಬೀಳುವ ಮೊದಲು 10 ಮತ್ತು 20 ಸೆಕೆಂಡುಗಳ ನಡುವೆ ಕಾಯಬೇಕು. ಅದು ಪ್ರತಿಬಾರಿಯೂ ಉಡುಪನ್ನೂ ಸಹ ಬದಲಾಯಿಸುತ್ತದೆ ಮತ್ತು ಅದು ಸ್ಪರ್ಶಿಸುವ ಯಾವುದೇ ಮರವನ್ನು ತೆಗೆದುಹಾಕುತ್ತದೆ.
 
---- /task ---
+--- /ಕಾರ್ಯ ---
 
---- save ---
+---ಉಳಿಸು ---
