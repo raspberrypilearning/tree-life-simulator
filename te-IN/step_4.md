@@ -89,7 +89,7 @@ change (mature trees) by (1)
 
 `when i start as a clone`{:class="block3control"} బ్లాక్‌తో కొత్త స్క్రిప్ట్‌ను ప్రారంభించండి. `wait until`{:class="block3control"} బ్లాక్ ని మీ కోడ్ చివర జోడించండి, మరియు దాని లోపల `touchind Natural Disaster`{:class="block3sensing"} బ్లాక్‌ను జోడించండి. `size`{:class="block3looks"} `=`{:class="block3operators"} `20` కండిషన్తో `if ... then`{:class="block3control"} బ్లాక్‌ని జోడించండి .
 
-`if ... then`{: class = "block3control"} బ్లాక్ లోపల, ఒక జోడించండి `change mature trees by 1`: {class = "block3variables"} బ్లాక్ ను జోడించండి, తద్వారా పూర్తిగా పెరిగితేనే, పరిపక్వ చెట్ల సంఖ్య తక్కువవుతుంది.,. చెట్టును తొలగించడానికి, `delete this clone`{:class="block3control"} బ్లాక్‌ను జోడించండి:
+`if ... then`{: class = "block3control"} బ్లాక్ లోపల, ఒక జోడించండి `change mature trees by 1`{:class="block3variables"} బ్లాక్ ను జోడించండి, తద్వారా పూర్తిగా పెరిగితేనే, పరిపక్వ చెట్ల సంఖ్య తక్కువవుతుంది.,. చెట్టును తొలగించడానికి, `delete this clone`{:class="block3control"} బ్లాక్‌ను జోడించండి:
 
 ```blocks3
 when I start as a clone

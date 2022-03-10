@@ -127,7 +127,7 @@ delete this clone
 
 --- task ---
 
-**Tree Feller** sprite పై క్లిక్ చేయండి మరియు `when green flag clicked`{:class="block3events"} స్క్రిప్ట్‌ లో `set rotation style left-right`{:class="block3motion"} బ్లాక్‌ని ఇన్సర్ట్ చేయండి తద్వారా **Tree Feller** sprite తలక్రిందులుగా ఉండదు. **Tree Feller** sprite ను ఎగువ ఎడమవైపు మూలలో ప్రారంభించడానికి, ` x:0 y:0`{:class="block3motion"} బ్లాక్‌ని జోడించండి, మరియు విలువలను `-200` మరియు `150` లకు మార్చండి. `point in direction 90`{:class="block3motion"} కు sprite ను తీసుకు రండి:
+**Tree Feller** sprite పై క్లిక్ చేయండి మరియు `when green flag clicked`{:class="block3events"} స్క్రిప్ట్‌ లో `set rotation style left-right`{:class="block3motion"} బ్లాక్‌ని ఇన్సర్ట్ చేయండి తద్వారా **Tree Feller** sprite తలక్రిందులుగా ఉండదు. **Tree Feller** sprite ను ఎగువ ఎడమవైపు మూలలో ప్రారంభించడానికి, `x:0 y:0`{:class="block3motion"} బ్లాక్‌ని జోడించండి, మరియు విలువలను `-200` మరియు `150` లకు మార్చండి. `point in direction 90`{:class="block3motion"} కు sprite ను తీసుకు రండి:
 
 ![Tree Feller sprite యొక్క చిత్రం](images/tree-feller-sprite.png)
 
@@ -201,7 +201,7 @@ end
 
 --- task ---
 
-మరొక `if ... then`{:class="block3control"} బ్లాక్ ను `y position`{:class="block3motion"} `<`:class="block3operators"} `-120` కండిషన్ తో జోడించండి. మీ `if ... then`{:class="block3control"} లూపు లోపల, `go to x:`{:class="block3motion"} `-200` `y:`{:class="block3motion"} `150` ను జోడించండి తద్వారా అది ప్రారంభ స్థానానికి, తిరిగి వెళ్తుంది:
+మరొక `if ... then`{:class="block3control"} బ్లాక్ ను `y position`{:class="block3motion"} `<`{:class="block3operators"} `-120` కండిషన్ తో జోడించండి. మీ `if ... then`{:class="block3control"} లూపు లోపల, `go to x:`{:class="block3motion"} `-200` `y:`{:class="block3motion"} `150` ను జోడించండి తద్వారా అది ప్రారంభ స్థానానికి, తిరిగి వెళ్తుంది:
 
 ![Tree Feller sprite యొక్క చిత్రం](images/tree-feller-sprite.png)
 
@@ -226,11 +226,11 @@ end
 
 --- /task ---
 
-తర్వాత, **Tree Feller** sprite తగినంత చెట్లను ఎప్పుడు పడగొట్టిందో మీరు కనుగొనాలి. అభ్యర్థనలను పూర్తి చేసినట్లు **Tree Feller ** ప్రకటించేలా చేయండి.
+తర్వాత, **Tree Feller** sprite తగినంత చెట్లను ఎప్పుడు పడగొట్టిందో మీరు కనుగొనాలి. అభ్యర్థనలను పూర్తి చేసినట్లు **Tree Feller** ప్రకటించేలా చేయండి.
 
 --- task ---
 
-**Tree Feller** sprite `for 2 seconds`{:class="block3looks"} `Requests completed` అని `say`:class="block3looks"} చెప్పేలా `Looks`{:class="block3looks"} బ్లాకుని, మీకోడ్ చివరన జోడించండి:
+**Tree Feller** sprite `for 2 seconds`{:class="block3looks"} `Requests completed` అని `say`{:class="block3looks"} చెప్పేలా `Looks`{:class="block3looks"} బ్లాకుని, మీకోడ్ చివరన జోడించండి:
 
 ![Tree Feller sprite యొక్క చిత్రం](images/tree-feller-sprite.png)
 

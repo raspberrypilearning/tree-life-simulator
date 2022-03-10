@@ -130,7 +130,7 @@ end
 ```blocks3
 when flag clicked 
 forever
- + go to x:(pick random (-150) to (200)) y:(pick random (-120) to (120)) 
++ go to x:(pick random (-150) to (200)) y:(pick random (-120) to (120)) 
 Create clone of [myself v]
 end
 ```
