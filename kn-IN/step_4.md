@@ -1,22 +1,22 @@
-## Count the trees
+## ಮರಗಳನ್ನು ಎಣಿಸಿ
 
-Scientists monitor trees and wildlife. They record the cover (size), variety, and health of the trees and surrounding areas. By doing this, they can see the true impact of deforestation. Observations can be taken from planes and satellites in the air, as well as sensors and people on the ground. People can use their findings to see where extra measures are needed to protect trees. For example, the construction of fences around a forest to allow trees to thrive, or the employment of more firefighters to help find and stop fires.
+ವಿಜ್ಞಾನಿಗಳು ಮರಗಳು ಮತ್ತು ವನ್ಯಜೀವಿಗಳನ್ನು ಗಮನಿಸುತ್ತಿರುತ್ತಾರೆ. ಅವರು ಮರಗಳ ಮತ್ತು ಸುತ್ತಮುತ್ತಲಿನ ಪ್ರದೇಶಗಳ ಹೊದಿಕೆ(ಗಾತ್ರ), ವೈವಿಧ್ಯ, ಮತ್ತು ಆರೋಗ್ಯವನ್ನು ದಾಖಲು ಮಾಡಿಕೊಳ್ಳುತ್ತಾರೆ. ಇದನ್ನು ಮಾಡುವುದರಿಂದ, ಅವರು ಅರಣ್ಯನಾಶದ ನಿಜವಾದ ಪರಿಣಾಮವನ್ನು ನೋಡಬಹುದು. ಗಾಳಿಯಲ್ಲಿ ವಿಮಾನಗಳು ಮತ್ತು ಉಪಗ್ರಹಗಳು, ಹಾಗೆಯೇ ಸೆನ್ಸರ್‌ಗಳು ಮತ್ತು ನೆಲದ ಮೇಲಿನ ಜನರಿಂದ ಅವಲೋಕನಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳಬಹುದು. ಮರಗಳನ್ನು ಸಂರಕ್ಷಿಸಲು ಎಲ್ಲಿ ಅಧಿಕ ಕ್ರಮಗಳ ಅವಶ್ಯಕತೆ ಇದೆ ಎಂದು ಜನರು ನೋಡಲು ತಮ್ಮ ಸಂಶೋಧನೆಗಳನ್ನು ಉಪಯೋಗಿಸಬಹುದು. ಉದಾಹರಣೆಗೆ, ಮರಗಳು ಹುಲುಸಾಗಿ ಬೆಳೆಯಲು ಅರಣ್ಯದ ಸುತ್ತ ಬೇಲಿ ನಿರ್ಮಿಸುವುದು ಅಥವಾ ಕಾಡ್ಗಿಚ್ಚನ್ನು ಪತ್ತೆ ಮಾಡಲು ಮತ್ತು ನಿಲ್ಲಿಸಲು ಸಹಾಯಕವಾಗಲು ಹೆಚ್ಚು ಅಗ್ನಿಶಾಮಕ ಸಿಬ್ಬಂದಿಗಳನ್ನು ನೇಮಕ ಮಾಡಿಕೊಳ್ಳುವುದು.
 
-In this step, you'll monitor the trees in your simulation through a variable that stores the number of trees and reflects changes to the environment.
+ಈ ಹಂತದಲ್ಲಿ, ಮರಗಳ ಸಂಖ್ಯೆಯನ್ನು ಸಂಗ್ರಹವನ್ನು ಮಾಡುವ ಮತ್ತು ವಾತಾವರಣದಲ್ಲಿನ ಬದಲಾವಣೆಯನ್ನು ಪ್ರತಿಫಲನ ಮಾಡುವ ವೇರಿಯೇಬಲ್‌ ಮೂಲಕ ನೀವು ನಿಮ್ಮ ಸಾದೃಶ್ಯದಲ್ಲಿ ಮರಗಳನ್ನು ಗಮನಿಸುತ್ತೀರಿ.
 
 --- task ---
 
-Create a new `variable`{:class="block3variables"} to store the number of full-grown trees. Call this variable `mature trees`{:class="block3variables"}.
+ಸಂಪೂರ್ಣವಾಗಿ ಬೆಳೆದಿರುವ ಮರಗಳ ಸಂಖ್ಯೆಯನ್ನು ಸಂಗ್ರಹಿಸಲು ಹೊಸ `variable`{:class="block3variables"} ರಚಿಸಿ. ಈ ವೇರಿಯೇಬಲ್‌ನ್ನು `mature trees`{:class="block3variables"} ಎಂದು ಕರೆಯಿರಿ.
 
 --- /task ---
 
-Reset the number of trees when the simulation starts to `0`.
+ಸಾದೃಶ್ಯ `0` ಕ್ಕೆ ಪ್ರಾರಂಭವಾದಾಗ ಮರಗಳ ಸಂಖ್ಯೆಯನ್ನು ಮರುಹೊಂದಿಸಿ.
 
 --- task ---
 
-Underneath the `when green flag clicked`{:class="block3events"} block, set the `mature trees`{:class="block3variables"} variable to `0`:
+`when green flag clicked`{:class="block3events"} ಬ್ಲಾಕ್‌ ಕೆಳಗೆ, `mature trees`{:class="block3variables"} ವೇರಿಯೇಬಲ್‌ನ್ನು `0` ಗೆ ಹೊಂದಿಸಿ:
 
-![image of the Tree sprite](images/tree-sprite.png)
+![Tree  ಸ್ಪ್ರೈಟ್‌ನ ಚಿತ್ರ](images/tree-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -34,13 +34,13 @@ end
 
 --- /task ---
 
-Make sure your counter records how many trees are created while the simulation runs.
+ಸಾದೃಶ್ಯ ರನ್‌ ಆಗುತ್ತಿರುವಾಗ ನಿಮ್ಮ ಕೌಂಟರ್‌ ಎಷ್ಟು ಮರಗಳು ರಚನೆಯಾದವು ಎನ್ನುವುದನ್ನು ದಾಖಲಿಸಿಕೊಳ್ಳುತ್ತದೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.
 
 --- task ---
 
-Find your `when I start as a clone`{:class="block3control"} script and add a `change mature trees by 1`{:class="block3variables"} block at the end:
+ನಿಮ್ಮ `when I start as a clone`{:class="block3control"} ಬರಹವನ್ನು ಪತ್ತೆ ಮಾಡಿ ಮತ್ತು `change mature trees by 1`{:class="block3variables"} ಬ್ಲಾಕ್‌ನ್ನು ಕೊನೆಯಲ್ಲಿ ಸೇರಿಸಿ:
 
-![image of the Tree sprite](images/tree-sprite.png)
+![Tree  ಸ್ಪ್ರೈಟ್‌ನ ಚಿತ್ರ](images/tree-sprite.png)
 
 ```blocks3
 when I start as a clone
@@ -56,15 +56,15 @@ end
 
 --- /task ---
 
-Now you can count your new trees, however not all those trees will survive. The survival rate for new trees is estimated to be 80 percent, which means that 2 trees out of every 10 planted will die of natural causes before they are full grown. You aren't going to reflect this in your simulation, but it's important to know that not all new trees survive naturally.
+ಅವುಗಳಲ್ಲಿ ಎಲ್ಲಾ ಮರಗಳೂ ಬದುಕುವುದಿಲ್ಲವಾದರೂ, ಈಗ ನೀವು ನಿಮ್ಮ ಹೊಸ ಮರಗಳನ್ನು ಎಣಿಸಬಹುದು. ಹೊಸ ಮರಗಳು ಬದುಕುಳಿಯುವ ದರವನ್ನು ಶೇಕಡಾ 80 ಎಂದು ಅಂದಾಜು ಮಾಡಲಾಗಿದೆ, ಅಂದರೆ ನೆಟ್ಟಿರುವ 10 ಮರಗಳಲ್ಲಿ 2 ಮರಗಳು ಸಂಪೂರ್ಣವಾಗಿ ಬೆಳೆಯುವ ಮೊದಲೇ ನೈಸರ್ಗಿಕ ಕಾರಣಗಳಿಂದ ಸಾಯುತ್ತವೆ. ನೀವು ಇದನ್ನು ನಿಮ್ಮ ಸಾದೃಶ್ಯದಲ್ಲಿ ಪ್ರತಿಬಿಂಬಿಸುವುದಿಲ್ಲ, ಆದರೆ ಎಲ್ಲಾ ಹೊಸ ಮರಗಳೂ ಸಹಜವಾಗಿ ಬದುಕುವುದಿಲ್ಲ ಎಂದು ತಿಳಿದುಕೊಳ್ಳುವುದು ಮಹತ್ವವಾಗಿರುತ್ತದೆ.
 
-Mature trees can also be chopped down through human deforestation. To show this, reduce the count of mature trees if a tree has been touched by the **Tree Feller** sprite.
+ಮಾನವ ಅರಣ್ಯನಾಶದ ಮೂಲಕ ಬೆಳೆದಿರುವ ಮರಗಳನ್ನೂ ಸಹ ಕಡಿಯಬಹುದು. ಇದನ್ನು ತೋರಿಸಲು, ಮರವನ್ನು **Tree Feller** ಸ್ಪ್ರೈಟ್‌ ಸ್ಪರ್ಶಿಸಿದರೆ ಪ್ರೌಢ ಮರಗಳ ಸಂಖ್ಯೆಯನ್ನು ಕಡಿಮೆ ಮಾಡಿ.
 
 --- task ---
 
-Add a `wait until`{:class="block3control"} block to the end of your code, and inside this block a `touching Tree Feller`{:class="block3sensing"} block. Add a `change mature trees by 1`{:class="block3variables"} block and change the value to `-1`. Add a `delete this clone`{:class="block3control"} block to remove the tree:
+`wait until`{:class="block3control"} ಬ್ಲಾಕ್‌ನ್ನು ನಿಮ್ಮ ಕೋಡ್‌ನ ಕೊನೆಗೆ ಸೇರಿಸಿ, ಮತ್ತು ಈ ಬ್ಲಾಕ್‌ನ ಒಳಗೆ `touching Tree Feller`{:class="block3sensing"} ಬ್ಲಾಕ್‌ ಸೇರಿಸಿ. `change mature trees by 1`{:class="block3variables"} ಬ್ಲಾಕ್‌ನ್ನು ಸೇರಿಸಿ ಮತ್ತು ಮೌಲ್ಯವನ್ನು `-1` ಕ್ಕೆ ಬದಲಾಯಿಸಿ. ಮರವನ್ನು ತೆಗೆದುಹಾಕಲು `delete this clone`{:class="block3control"} ಬ್ಲಾಕ್‌ ಸೇರಿಸಿ:
 
-![image of the Tree sprite](images/tree-sprite.png)
+![Tree  ಸ್ಪ್ರೈಟ್‌ನ ಚಿತ್ರ](images/tree-sprite.png)
 
 ```blocks3
 when I start as a clone
@@ -83,13 +83,13 @@ change (mature trees) by (1)
 
 --- /task ---
 
-Trees can also die from natural deforestation, whether they are mature or still growing. To show this, reduce your count of trees if a tree has been touched by the **Natural Disaster** sprite.
+ಮರಗಳು ಪ್ರೌಢವಾಗಿರಬಹುದು ಅಥವಾ ಇನ್ನೂ ಬೆಳೆಯುತ್ತಿರಬಹುದು ಅವುಗಳು ನೈಸರ್ಗಿಕ ಅರಣ್ಯನಾಶದಿಂದಲೂ ಸಹ ಸಾಯಬಹುದು. ಇದನ್ನು ತೋರಿಸಲು, ಮರವನ್ನು **Natural Disaster** ಸ್ಪ್ರೈಟ್‌ ಸ್ಪರ್ಶಿಸಿದರೆ ನಿಮ್ಮ ಮರಗಳ ಸಂಖ್ಯೆಯನ್ನು ಕಡಿಮೆ ಮಾಡಿ.
 
 --- task ---
 
-Start a new script with a `when I start as a clone`{:class="block3control"} block. Add a `wait until`{:class="block3control"} block to the end of your code, and inside this block a `touching Natural Disaster`{:class="block3sensing"} block. Add an `if ... then`{:class="block3control"} block with the condition `size`{:class="block3looks"} `=`{:class="block3operators"} `20`.
+`when I start as a clone`{:class="block3control"} ಬ್ಲಾಕ್‌ನೊಂದಿಗೆ ಹೊಸ ಬರಹವನ್ನು ಪ್ರಾರಂಭಿಸಿ. `wait until`{:class="block3control"} ಬ್ಲಾಕ್‌ನ್ನು ನಿಮ್ಮ ಕೋಡ್‌ನ ಕೊನೆಯಲ್ಲಿ ಸೇರಿಸಿ ಮತ್ತು ಈ ಬ್ಲಾಕ್‌ ಒಳಗೆ `touching Natural Disaster`{:class="block3sensing"} ಬ್ಲಾಕ್‌ ಸೇರಿಸಿ. `size`{:class="block3looks"} `=`{:class="block3operators"} `20` ಷರತ್ತಿನೊಂದಿಗೆ `if ... then`{:class="block3control"} ಬ್ಲಾಕ್‌ ಸೇರಿಸಿ .
 
-Inside the `if ... then`{:class="block3control"} block, add a `change mature trees by 1`{:class="block3variables"} block, so that the count of mature trees is only decreased if it were a full-grown tree. Add a `delete this clone`{:class="block3control"} block to remove the tree:
+`if ... then`{:class="block3control"} ಬ್ಲಾಕ್‌ ಒಳಗೆ, `change mature trees by 1`{:class="block3variables"} ಬ್ಲಾಕ್‌ ಸೇರಿಸಿ, ಅದರಿಂದ ಸಂಪೂರ್ಣ ಬೆಳೆದ ಮರವಾದರೆ ಮಾತ್ರ ಪೌಢ ಮರಗಳ ಸಂಖ್ಯೆ ಕಡಿಮೆಯಾಗುತ್ತದೆ. ಮರವನ್ನು ತೆಗದುಹಾಕಲು `delete this clone`{:class="block3control"} ಬ್ಲಾಕ್‌ ಸೇರಿಸಿ:
 
 ```blocks3
 when I start as a clone
