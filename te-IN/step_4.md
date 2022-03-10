@@ -1,22 +1,22 @@
-## Count the trees
+## చెట్లను లెక్కించండి
 
-Scientists monitor trees and wildlife. They record the cover (size), variety, and health of the trees and surrounding areas. By doing this, they can see the true impact of deforestation. Observations can be taken from planes and satellites in the air, as well as sensors and people on the ground. People can use their findings to see where extra measures are needed to protect trees. For example, the construction of fences around a forest to allow trees to thrive, or the employment of more firefighters to help find and stop fires.
+శాస్త్రవేత్తలు చెట్లు మరియు వన్యప్రాణులను పర్యవేక్షిస్తారు. వారు చెట్లు మరియు పరిసర ప్రాంతాల కవర్ (పరిమాణం), వైవిధ్యం మరియు ఆరోగ్యాన్ని నమోదు చేస్తారు. ఇలా చేయడం ద్వారా, వారు అటవీ నిర్మూలన యొక్క నిజమైన ప్రభావాన్ని చూడగలరు. గాలిలోని విమానాలు మరియు ఉపగ్రహాల నుండి, అలాగే భూమిపై ఉన్న సెన్సార్లు మరియు వ్యక్తుల నుండి పరిశీలనలను తీసుకోవచ్చు. చెట్లను రక్షించడానికి అదనపు చర్యలు ఎక్కడ అవసరమో చూడడానికి ప్రజలు తమ పరిశీలనలను ఉపయోగించవచ్చు. ఉదాహరణకు, చెట్లు వృద్ధి చెందడానికి అడవి చుట్టూ కంచెల నిర్మాణం లేదా మంటలను కనుగొని ఆపడంలో సహాయపడటానికి ఎక్కువ మంది అగ్నిమాపక సిబ్బందిని నియమించడం.
 
-In this step, you'll monitor the trees in your simulation through a variable that stores the number of trees and reflects changes to the environment.
+ఈ దశలో, చెట్ల సంఖ్యను నిల్వ చేసే మరియు పర్యావరణంలో మార్పులను ప్రతిబింబించే వేరియబుల్ ద్వారా మీరు మీ సిమ్యులేషన్ లోని చెట్లను పర్యవేక్షిస్తారు.
 
 --- task ---
 
-Create a new `variable`{:class="block3variables"} to store the number of full-grown trees. Call this variable `mature trees`{:class="block3variables"}.
+పూర్తిగా పెరిగిన చెట్ల సంఖ్యను నిల్వ చేయడానికి కొత్త `variable`{:class="block3variables"}ని సృష్టించండి. ఈ వేరియబుల్ ను`mature trees`{:class="block3variables"} అని పిలవండి.
 
 --- /task ---
 
-Reset the number of trees when the simulation starts to `0`.
+సిమ్యులేషన్ `0` వద్ద ప్రారంభమైనప్పుడు చెట్ల సంఖ్యను రీసెట్ చేయండి.
 
 --- task ---
 
-Underneath the `when green flag clicked`{:class="block3events"} block, set the `mature trees`{:class="block3variables"} variable to `0`:
+`when green flag clicked`{:class="block3events"} బ్లాక్‌ కింద గల, `mature trees`{:class="block3variables"} వేరియబుల్‌ను `0` కు సెట్ చేయండి:
 
-![image of the Tree sprite](images/tree-sprite.png)
+![Tree sprite యొక్క చిత్రం](images/tree-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -34,13 +34,13 @@ end
 
 --- /task ---
 
-Make sure your counter records how many trees are created while the simulation runs.
+సిమ్యులేషన్ నడుస్తున్నప్పుడు మీ కౌంటర్ ఎన్ని చెట్లు సృష్టించబడిందో నిర్ధారించుకోండి.
 
 --- task ---
 
-Find your `when I start as a clone`{:class="block3control"} script and add a `change mature trees by 1`{:class="block3variables"} block at the end:
+మీ `when I start as a clone`{:class="block3control"} స్క్రిప్ట్‌ ని ప్రారంభించినప్పుడు `change mature trees by 1`{:class="block3variables"} బ్లాక్‌ ని చివర్లో జోడించండి:
 
-![image of the Tree sprite](images/tree-sprite.png)
+![Tree sprite యొక్క చిత్రం](images/tree-sprite.png)
 
 ```blocks3
 when I start as a clone
@@ -56,15 +56,15 @@ end
 
 --- /task ---
 
-Now you can count your new trees, however not all those trees will survive. The survival rate for new trees is estimated to be 80 percent, which means that 2 trees out of every 10 planted will die of natural causes before they are full grown. You aren't going to reflect this in your simulation, but it's important to know that not all new trees survive naturally.
+ఇప్పుడు మీరు మీ కొత్త చెట్లను లెక్కించవచ్చు, అయితే ఆ చెట్లన్నీ మనుగడ సాగించవు. కొత్త చెట్ల మనుగడ రేటు 80 శాతంగా అంచనా వేయబడింది, అంటే నాటిన ప్రతి 10 చెట్లలో 2 చెట్లు పూర్తిగా ఎదగకముందే సహజ కారణాల వల్ల చనిపోతాయి. మీరు దీన్ని మీ సిమ్యులేషన్ లో ప్రతిబింబించరు, కానీ కొత్త చెట్లన్నీ సహజంగా మనుగడ సాగించవని తెలుసుకోవడం ముఖ్యం.
 
-Mature trees can also be chopped down through human deforestation. To show this, reduce the count of mature trees if a tree has been touched by the **Tree Feller** sprite.
+మానవుల అటవీ నిర్మూలన ద్వారా ఎదిగిన చెట్లను కూడా నరికివేయవచ్చు. ఏదైనా చెట్టుని, **Tree feller** sprite తాకినట్లయితే, ఎదిగిన చెట్ల గణనను తగ్గించండి.
 
 --- task ---
 
-Add a `wait until`{:class="block3control"} block to the end of your code, and inside this block a `touching Tree Feller`{:class="block3sensing"} block. Add a `change mature trees by 1`{:class="block3variables"} block and change the value to `-1`. Add a `delete this clone`{:class="block3control"} block to remove the tree:
+మీ కోడ్ చివరన, `wait until`{:class="block3control"} బ్లాక్ ని జోడించండి మరియు దాని లోపల `touching Tree Feller`{:class="block3sensing"} బ్లాక్‌ను జోడించండి. `change mature trees by 1`{:class="block3variables"} బ్లాక్ ని జోడించండి మరియు దాని విలువను `-1`కి మార్చండి. చెట్టును తొలగించడానికి, `delete this clone`{:class="block3control"} బ్లాక్‌ను జోడించండి:
 
-![image of the Tree sprite](images/tree-sprite.png)
+![Tree sprite యొక్క చిత్రం](images/tree-sprite.png)
 
 ```blocks3
 when I start as a clone
@@ -83,13 +83,13 @@ change (mature trees) by (1)
 
 --- /task ---
 
-Trees can also die from natural deforestation, whether they are mature or still growing. To show this, reduce your count of trees if a tree has been touched by the **Natural Disaster** sprite.
+సహజమైన అటవీ నిర్మూలన వల్ల కూడా చెట్లు చనిపోతాయి, అవి పరిపక్వం చెందినా లేదా ఇంకా పెరుగుతున్నాయి. దీన్ని చూపించడానికి, చెట్టును **Natural Disaster** sprite చెట్టుని తాకినట్లయితే మీ చెట్ల సంఖ్యను తగ్గించండి.
 
 --- task ---
 
-Start a new script with a `when I start as a clone`{:class="block3control"} block. Add a `wait until`{:class="block3control"} block to the end of your code, and inside this block a `touching Natural Disaster`{:class="block3sensing"} block. Add an `if ... then`{:class="block3control"} block with the condition `size`{:class="block3looks"} `=`{:class="block3operators"} `20`.
+`when i start as a clone`{:class="block3control"} బ్లాక్‌తో కొత్త స్క్రిప్ట్‌ను ప్రారంభించండి. `wait until`{:class="block3control"} బ్లాక్ ని మీ కోడ్ చివర జోడించండి, మరియు దాని లోపల `touchind Natural Disaster`{:class="block3sensing"} బ్లాక్‌ను జోడించండి. `size`{:class="block3looks"} `=`{:class="block3operators"} `20` కండిషన్తో `if ... then`{:class="block3control"} బ్లాక్‌ని జోడించండి .
 
-Inside the `if ... then`{:class="block3control"} block, add a `change mature trees by 1`{:class="block3variables"} block, so that the count of mature trees is only decreased if it were a full-grown tree. Add a `delete this clone`{:class="block3control"} block to remove the tree:
+`if ... then`{: class = "block3control"} బ్లాక్ లోపల, ఒక జోడించండి `change mature trees by 1`: {class = "block3variables"} బ్లాక్ ను జోడించండి, తద్వారా పూర్తిగా పెరిగితేనే, పరిపక్వ చెట్ల సంఖ్య తక్కువవుతుంది.,. చెట్టును తొలగించడానికి, `delete this clone`{:class="block3control"} బ్లాక్‌ను జోడించండి:
 
 ```blocks3
 when I start as a clone
