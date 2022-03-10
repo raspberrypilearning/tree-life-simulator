@@ -1,11 +1,11 @@
-## What next?
+## ಮುಂದೆ ಏನು?
 
-In this project, you have:
+ಈ ಪ್ರಾಜೆಕ್ಟ್‌ನಲ್ಲಿ ನೀವು:
 
-+ Used `clone`{:class="block3control"} blocks to generate trees in `random`{:class="block3operators"} locations
-+ Used `>`{:class="block3operators"} `<`{:class="block3operators"} operators to control the human character to alert the user about the state of the environment
-+ Programmed a simulation to explore the impact of humans on trees and the surrounding wildlife
++ `random`{:class="block3operators"} ಸ್ಥಳಗಳಲ್ಲಿ ಮರಗಳನ್ನು ಉತ್ಪತ್ತಿ ಮಾಡಲು `clone`{:class="block3control"} ಬ್ಲಾಕ್‌ಗಳನ್ನು ಉಪಯೋಗಿಸಿದಿರಿ
++ `>`{:class="block3operators"} `<`{:class="block3operators"} ಆಪರೇಟರ್‌ಗಳನ್ನು ಬಳಕೆದಾರರಿಗೆ ವಾತಾವರಣದ ಸ್ಥಿತಿಯ ಬಗೆಗೆ ಎಚ್ಚರಿಸಲು ಮಾನವ ಪಾತ್ರವನ್ನು ನಿಯಂತ್ರಿಸಲು ಉಪಯೋಗಿಸಿದಿರಿ
++ ಮರಗಳು ಮತ್ತು ಸುತ್ತಮುತ್ತಲಿನ ವನ್ಯಜೀವಿಗಳ ಮೇಲೆ ಮಾನವರ ಪ್ರಭಾವವನ್ನು ಅನ್ವೇಷಿಸಲು ಸಾದೃಶ್ಯವನ್ನು ಪ್ರೋಗ್ರಾಮ್ ಮಾಡಿದಿರಿ
 
-If you are following the [Protect our planet](https://projects.raspberrypi.org/en/raspberrypi/protect-our-planet) projects, then try out the next project, [Count the creatures](https://projects.raspberrypi.org/en/projects/count-the-creatures). In this project, you will create a program to input real data on the range of natural resources used by countries to generate electricity. Then, you will compare the results using animated and interactive data visualisation.
+ನೀವು [Protect our planet](https://projects.raspberrypi.org/en/raspberrypi/protect-our-planet) ಪ್ರಾಜೆಕ್ಟ್‌ಗಳನ್ನು ಅನುಸರಿಸುತ್ತಿರುವಿರಾದರೆ, ಮುಂದಿನ ಪ್ರಾಜೆಕ್ಟ್ [Count the creatures](https://projects.raspberrypi.org/en/projects/count-the-creatures) ನ್ನು ಪ್ರಯತ್ನಿಸಿ. ಈ ಪ್ರಾಜೆಕ್ಟ್‌ನಲ್ಲಿ, ವಿದ್ಯುತ್ ಉತ್ಪಾದಿಸಲು ದೇಶಗಳು ಬಳಸುವ ನೈಸರ್ಗಿಕ ಸಂಪನ್ಮೂಲಗಳ ಶ್ರೇಣಿಯ ನೈಜ ದತ್ತಾಂಶವನ್ನು ಇನ್‌ಪುಟ್ ಮಾಡಲು ನೀವು ಪ್ರೋಗ್ರಾಮ್‌ನ್ನು ರಚಿಸುತ್ತೀರಿ. ನಂತರ, ನೀವು ಅನಿಮೇಟೆಡ್ ಮತ್ತು ಸಂವಾದಾತ್ಮಕ ದತ್ತಾಂಶ ದೃಶ್ಯೀಕರಣವನ್ನು ಬಳಸಿಕೊಂಡು ಫಲಿತಾಂಶಗಳನ್ನು ಹೋಲಿಸುತ್ತೀರಿ.
 
-Did you enjoy the project? Have you spotted a mistake? Please click the **Send feedback** button below and let us know!
+ನೀವು ಪ್ರಾಜೆಕ್ಟ್‌ನ್ನು ಆನಂದಿಸಿದ್ದೀರಾ? ನೀವು ತಪ್ಪುನ್ನು ಪತ್ತೆ ಮಾಡಿದ್ದೀರಾ? ದಯವಿಟ್ಟು ಈ ಕೆಳಗಿನ **Send feedback** ಬಟನ್‌ ಕ್ಲಿಕ್‌ ಮಾಡಿ ಮತ್ತು ನಮಗೆ ತಿಳಿಸಿ!
