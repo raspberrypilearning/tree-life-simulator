@@ -1,0 +1,20 @@
+---
+title: वृक्ष जीवन सिम्युलेटर
+hero_image: images/banner.png
+description: एक सिम्युलेशन बनाएं जो भूमि प्रबंधन और वनोन्मूलन के पेड़ों, वन्य जीवन और पर्यावरण पर प्रभाव दिखाता है
+version: 4
+listed: true
+copyedit: false
+last_tested: '2020-09-15'
+steps:
+  - title: परिचय
+    completion: engaged
+  - title: कुछ पेड़ उगाओ
+  - title: वृक्ष प्रबंधन
+  - title: पेड़ों की गिनती करें
+  - title: मानव द्वारा जंगलों का वनोन्मूलन
+  - title: पेड़ के स्तर की निगरानी करें
+  - title: प्राकृतिक वनोन्मूलन
+    completion: internal
+  - title: अपना प्रॉजेक्ट साझा करें
+  - title: आगे क्या?
