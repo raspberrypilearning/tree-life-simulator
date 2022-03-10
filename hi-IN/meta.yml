@@ -1,27 +1,29 @@
 ---
-title: Tree life simulator
+title: वृक्ष जीवन सिम्युलेटर
 hero_image: images/banner.png
-description: Create a simulation that shows the impact of land management and deforestation on trees, wildlife, and the environment
+description: एक सिम्युलेशन बनाएं जो भूमि प्रबंधन और वनोन्मूलन के पेड़ों, वन्य जीवन और पर्यावरण पर प्रभाव दिखाता है
 version: 4
 listed: true
 copyedit: false
-last_tested: "2020-09-15"
+last_tested: '2020-09-15'
 steps:
   - 
-    title: Introduction
+    title: परिचय
+    completion: engaged
   - 
-    title: Grow some trees
+    title: कुछ पेड़ उगाओ
   - 
-    title: Tree management
+    title: वृक्ष प्रबंधन
   - 
-    title: Count the trees
+    title: पेड़ों की गिनती करें
   - 
-    title: Human deforestation
+    title: मानव द्वारा जंगलों का वनोन्मूलन
   - 
-    title: Monitor tree levels
+    title: पेड़ के स्तर की निगरानी करें
   - 
-    title: Natural deforestation
+    title: प्राकृतिक वनोन्मूलन
+    completion: internal
   - 
-    title: Share your project
+    title: अपना प्रॉजेक्ट साझा करें
   - 
-    title: What next?
+    title: आगे क्या?
