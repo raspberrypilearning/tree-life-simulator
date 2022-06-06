@@ -9,13 +9,15 @@ copyedit: false
 last_tested: '2020-09-15'
 steps:
 - title: Introduction
-  completion: engaged
 - title: Grow some trees
 - title: Tree management
+  completion:
+  - engaged
 - title: Count the trees
 - title: Human deforestation
 - title: Monitor tree levels
 - title: Natural deforestation
-  completion: internal
+  completion:
+  - internal
 - title: Share your project
 - title: What next?
