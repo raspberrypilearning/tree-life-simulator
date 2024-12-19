@@ -1,6 +1,6 @@
 ## Tree management
 
-The rate at which new trees grow depends on a number of factors, such as climate conditions, soil quality, disease, sunlight, and water. In this step, you'll add a slider to demonstrate how managing these conditions can impact the number of trees in the area. 
+The rate at which new trees grow depends on a number of factors, such as climate conditions, soil quality, disease, sunlight, and water. Add a slider to demonstrate how managing these conditions can impact the number of trees in the area. 
 
 The growing speed will be held in a `variable`{:class="block3variables"} called `tree management`{:class="block3variables"}.
 
@@ -11,6 +11,7 @@ To create a new variable, click on the `Variables`{:class="block3variables"} blo
 Then click on the **Make a Variable** button.
 
 You can give your `variable`{:class="block3variables"} a name. Call it `tree management`.
+![A user interface pop-up titled "New Variable" with a purple header. Below, a text field labeled "New variable name:" contains the typed text "tree management." Two radio button options are shown: "For all sprites" (selected) and "For this sprite only." At the bottom right are two buttons, "Cancel" and "OK," with the "OK" button highlighted in purple.](images/make_variable.png)
 
 --- /task ---
 
@@ -22,6 +23,8 @@ On the Stage, right-click on the `tree management`{:class="block3variables"} var
 
 Select **slider** in the menu.
 
+![A graphical interface on a green background featuring a label "tree management" with a value of "0" displayed in an orange box beside it. To the right, a drop-down menu is open with options: "normal readout," "large readout," "slider" (highlighted in purple), and "hide." A small yellow forklift icon is partially visible next to the "tree management" label.](images/slider_menu.png)
+
 --- /task ---
 
 At the moment, the `tree management`{:class="block3variables"} range is too wide.
@@ -30,19 +33,22 @@ At the moment, the `tree management`{:class="block3variables"} range is too wide
 
 On the Stage, right-click on the **tree management** slider and select **change slider range**.
 
+![A graphical interface on a green background featuring a label "tree management" with a value of "0" displayed in an orange box beside it. Below the label is a slider bar with a blue knob set to the left. To the right, a drop-down menu is open with options: "normal readout," "large readout," "slider," "change slider range" (highlighted in purple), and "hide." A portion of a yellow forklift icon is visible next to the "tree management" label.](images/slider_range.png)
+
 Change the range to between `0` and `5`.
+![A pop-up interface titled "Change slider range" with a purple header. It contains two labeled input fields: "Minimum value" with the default value of "0" and "Maximum value" with the value "5" in a purple-bordered box. At the bottom, there are two buttons: "Cancel" on the left and "OK" highlighted in purple on the right.](images/slider_range_change.png)
 
 --- /task ---
 
 In the simulation, the **tree management** slider controls the speed that new trees grow. If you move the slider to the right, it speeds up the growth; if you move it to the left, it slows down the growth. 
 
-When the slider is at the right (5), the simulation waits one second to plant a tree, and when it is at the left (0) it waits six seconds to plant a tree.
-
-You will add a set of blocks to make sure that the speed that new trees grow is in reaction to a change in the **tree management** slider.  
+Add a set of blocks to make sure that the speed that new trees grow is in reaction to a change in the **tree management** slider.  
 
 --- task ---
 
-In this task, you'll see how the `timer`{:class="block3sensing"} block works. Go to the `Sensing`{:class="block3sensing"} blocks menu, and click on the checkbox next to the `timer`{:class="block3sensing"} block to show the timer on the Stage. 
+Go to the `Sensing`{:class="block3sensing"} blocks menu, and click on the checkbox next to the `timer`{:class="block3sensing"} block to show the timer on the Stage. 
+
+![A graphical interface showing a blue checkbox with a checkmark, followed by an oval button labeled "timer." Below, a puzzle-piece-shaped blue block is labeled "reset timer." The elements are arranged vertically against a light background.](images/timer_tick.png)
 
 Click on the green flag and you'll notice the timer starts to count up immediately. Click on the checkbox again to hide the timer from view. 
 
@@ -61,7 +67,7 @@ when flag clicked
 hide
 forever
 go to x:(pick random (-150) to (200)) y:(pick random (-120) to (120))
-+ reset timer
++reset timer
 create clone of [myself v]
 end
 ```
@@ -72,18 +78,36 @@ Create a quick response to the slider so that the user immediately sees the impa
 
 --- task ---
 
-Insert a `repeat until`{:class="block3control"} block with the condition `timer`{:class="block3sensing"} `>`{:class="block3operators"} `6` `-`{:class="block3operators"} `tree management`{:class="block3variables"}.  Within the `repeat until`{:class="block3control"} block, add a `wait 1 seconds`{:class="block3control"} block:
+Insert a `repeat until`{:class="block3control"} block with the condition `timer`{:class="block3sensing"} `>`{:class="block3operators"} `6` `-`{:class="block3operators"} `tree management`{:class="block3variables"}. Place it within the `forever`{:class="block3control"} loop.
 
 ![image of the Tree sprite](images/tree-sprite.png)
-
 ```blocks3
 when flag clicked
 hide
 forever
 go to x:(pick random (-150) to (200)) y:(pick random (-120) to (120))
 reset timer
-+ repeat until {{(timer)>((6)-(tree management))}}
-wait (1) seconds
++repeat until {{(timer)>((6)-(tree management))}}
+end
+create clone of [myself v]
+end
+```
+
+--- /task ---
+
+--- task ---
+
+Within the `repeat until`{:class="block3control"} block, add a `wait 1 seconds`{:class="block3control"} block.
+
+![image of the Tree sprite](images/tree-sprite.png)
+```blocks3
+when flag clicked
+hide
+forever
+go to x:(pick random (-150) to (200)) y:(pick random (-120) to (120))
+reset timer
+repeat until {{(timer)>((6)-(tree management))}}
++wait (1) seconds
 end
 create clone of [myself v]
 end

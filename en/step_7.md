@@ -1,6 +1,8 @@
 ## Natural deforestation
-
+<div border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;
+color: #0faeb0>
 Deforestation can happen when a natural disaster — such as drought, a forest fire, or a tornado — devastates an area of land. It can also be triggered by human activity, like a campfire, but spread quickly due to natural conditions, like a very dry season. This can be particularly deadly as, in the wide area affected, entire species can disappear along with the destruction of their habitats.
+</div>
 
 Simulate the impact of natural disasters that randomly move through the forest. Hide the **Natural Disaster** sprite at the start of the simulation.
 
@@ -21,19 +23,62 @@ The **Natural Disaster** sprite will move from the top to the bottom of the scre
 
 --- task ---
 
-Add a `forever`{:class="block3control"} block to the end of your code. Within it, add a `go to x:0 y:0`{:class="block3motion"} block, and change the `y:`{:class="block3motion"} value to `200`. Add a `show`{:class="block3looks"} block, followed by a `glide 1 secs to x:0 y:0`{:class="block3motion"}, and change the seconds value to `3` and the `y:`{:class="block3motion"} value to `-200`:
+Add a `forever`{:class="block3control"} block to the end of your code.
 
 ![image of the Natural Disaster sprite](images/natural-disaster-sprite.png)
-
-
 ```blocks3
 when flag clicked
 hide
-+ forever
++forever
+end
+```
+
+--- /task ---
+
+--- task ---
+
+Within the `forever`{:class="block3control"} block, add a `go to x:0 y:0`{:class="block3motion"} block, and change the `y:`{:class="block3motion"} value to `200`.
+
+![image of the Natural Disaster sprite](images/natural-disaster-sprite.png)
+```blocks3
+when flag clicked
+hide
+forever
++go to x:(0) y:(200)
+end
+```
+
+--- /task ---
+
+--- task ---
+
+Add a `show`{:class="block3looks"} block below the `go to x:0 y:200`{:class="block3motion"} block.
+
+![image of the Natural Disaster sprite](images/natural-disaster-sprite.png)
+```blocks3
+when flag clicked
+hide
+forever
+go to x:(0) y:(200)
++show
+end
+```
+
+--- /task ---
+
+--- task ---
+
+Add a `glide 1 secs to x:0 y:0`{:class="block3motion"} block below the `show`{:class="block3looks"} block. Change the seconds value to `3` and the `y:`{:class="block3motion"} value to `-200`.
+
+![image of the Natural Disaster sprite](images/natural-disaster-sprite.png)
+```blocks3
+when flag clicked
+hide
+forever
 go to x:(0) y:(200)
 show
-glide (3) secs to x:(0) y:(-200)
-+ end
++glide (3) secs to x:(0) y:(-200)
+end
 ```
 
 --- /task ---
