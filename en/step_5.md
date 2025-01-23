@@ -388,7 +388,7 @@ Add a `Looks`{:class="block3looks"} block to the end of your code so that the **
 when this sprite clicked
 ask [How many trees are needed? (max 20)] and wait
 change [trees needed v] by (answer)
-if {(trees neeed) > (20)} then
+if {(trees needed) > (20)} then
 set (trees needed v) to (20)
 end
 repeat until {(trees needed) = (0)}
@@ -426,7 +426,7 @@ Add two `Motion`{:class="block3motion"} blocks: a `set x to`{:class="block3motio
 when this sprite clicked
 ask [How many trees are needed? (max 20)] and wait
 change [trees needed v] by (answer)
-if {(trees neeed) > (20)} then
+if {(trees needed) > (20)} then
 set (trees needed v) to (20)
 end
 repeat until {(trees needed) = (0)}
