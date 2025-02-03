@@ -8,10 +8,11 @@ listed: true
 copyedit: false
 last_tested: '2020-09-15'
 steps:
-- title: Introduction
+- title: What you will make
 - title: Grow some trees
   completion:
   - engaged
+- title: Make them different
 - title: Tree management
 - title: Count the trees
   completion:

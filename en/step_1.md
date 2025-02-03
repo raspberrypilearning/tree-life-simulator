@@ -1,16 +1,5 @@
-## Introduction
 
-Use Scratch to create a simulation that shows the impact of land management and deforestation on trees, wildlife, and the environment.
-
-This project focuses on three of the United Nations Sustainable Development Goals:
-
-+ [Responsible Consumption and Production](https://www.undp.org/sustainable-development-goals#responsible-consumption-and-production){:target="_blank"}
-+ [Climate Action](https://www.undp.org/sustainable-development-goals#climate-action){:target="_blank"}
-+ [Life Below Water](https://www.undp.org/sustainable-development-goals#below-water){:target="_blank"}
-
-Thanks to [Ecosia](https://www.ecosia.org){:target="_blank"}, for their guidance on tree life simulation.
-
-### What you will make
+Create a simulation that shows the impact of land management and deforestation on trees, wildlife, and the environment.
 
 --- no-print ---
 
