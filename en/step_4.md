@@ -1,34 +1,93 @@
-## Count the trees
-<div border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;
-color: #0faeb0>
-Scientists monitor trees and wildlife. They record the cover (size), variety, and health of the trees and surrounding areas. By doing this, they can see the true impact of deforestation. Observations can be taken from planes and satellites in the air, as well as sensors and people on the ground. People can use their findings to see where extra measures are needed to protect trees. For example, the construction of fences around a forest to allow trees to thrive, or the employment of more firefighters to help find and stop fires.
-</div>
+## Tree management
 
-Monitor the trees in your simulation through a variable that stores the number of trees and reflects changes to the environment. 
+The rate at which new trees grow depends on a number of factors, such as climate conditions, soil quality, disease, sunlight, and water. Add a slider to demonstrate how managing these conditions can impact the number of trees in the area. 
+
+The growing speed will be held in a `variable`{:class="block3variables"} called `tree management`{:class="block3variables"}.
 
 --- task ---
 
-Create a new `variable`{:class="block3variables"} to store the number of full-grown trees. Call this variable `mature trees`{:class="block3variables"}.
+To create a new variable, click on the `Variables`{:class="block3variables"} blocks menu.
+
+Then click on the **Make a Variable** button.
+
+You can give your `variable`{:class="block3variables"} a name. Call it `tree management`.
+![A user interface pop-up titled "New Variable" with a purple header. Below, a text field labeled "New variable name:" contains the typed text "tree management." Two radio button options are shown: "For all sprites" (selected) and "For this sprite only." At the bottom right are two buttons, "Cancel" and "OK," with the "OK" button highlighted in purple.](images/make_variable.png)
 
 --- /task ---
 
-Reset the number of trees when the simulation starts to `0`.
+Your new `variable`{:class="block3variables"} is visible on the Stage. Next, create a slider to control the speed in your simulation.
 
 --- task ---
 
-Underneath the `when green flag clicked`{:class="block3events"} block, set the `mature trees`{:class="block3variables"} variable to `0`:
+On the Stage, right-click on the `tree management`{:class="block3variables"} variable, and a menu will appear.
+
+Select **slider** in the menu.
+
+![A graphical interface on a green background featuring a label "tree management" with a value of "0" displayed in an orange box beside it. To the right, a drop-down menu is open with options: "normal readout," "large readout," "slider" (highlighted in purple), and "hide." A small yellow forklift icon is partially visible next to the "tree management" label.](images/slider_menu.png)
+
+--- /task ---
+
+At the moment, the `tree management`{:class="block3variables"} range is too wide.
+
+--- task ---
+
+On the Stage, right-click on the **tree management** slider and select **change slider range**.
+
+![A graphical interface on a green background featuring a label "tree management" with a value of "0" displayed in an orange box beside it. Below the label is a slider bar with a blue knob set to the left. To the right, a drop-down menu is open with options: "normal readout," "large readout," "slider," "change slider range" (highlighted in purple), and "hide." A portion of a yellow forklift icon is visible next to the "tree management" label.](images/slider_range.png)
+
+Change the range to between `0` and `5`.
+![A pop-up interface titled "Change slider range" with a purple header. It contains two labeled input fields: "Minimum value" with the default value of "0" and "Maximum value" with the value "5" in a purple-bordered box. At the bottom, there are two buttons: "Cancel" on the left and "OK" highlighted in purple on the right.](images/slider_range_change.png)
+
+--- /task ---
+
+In the simulation, the **tree management** slider controls the speed that new trees grow. If you move the slider to the right, it speeds up the growth; if you move it to the left, it slows down the growth. 
+
+Add a set of blocks to make sure that the speed that new trees grow is in reaction to a change in the **tree management** slider.  
+
+--- task ---
+
+Go to the `Sensing`{:class="block3sensing"} blocks menu, and click on the checkbox next to the `timer`{:class="block3sensing"} block to show the timer on the Stage. 
+
+![A graphical interface showing a blue checkbox with a checkmark, followed by an oval button labeled "timer." Below, a puzzle-piece-shaped blue block is labeled "reset timer." The elements are arranged vertically against a light background.](images/timer_tick.png)
+
+Click on the green flag and you'll notice the timer starts to count up immediately. Click on the checkbox again to hide the timer from view. 
+
+--- /task ---
+
+Reset the timer to zero each time the flag is clicked.
+
+--- task ---
+
+Insert a `reset timer`{:class="block3sensing"} block into your `when green flag clicked`{:class="block3events"} script for the **Tree** sprite, so that the timer resets each time a new tree is cloned: 
 
 ![image of the Tree sprite](images/tree-sprite.png)
 
 ```blocks3
 when flag clicked
-+ set (mature trees) to (0)
+hide
+forever
+go to x:(pick random (-150) to (200)) y:(pick random (-120) to (120))
++reset timer
+create clone of [myself v]
+end
+```
+
+--- /task ---
+
+Create a quick response to the slider so that the user immediately sees the impact of their interaction. Set up a loop that checks the **tree management** slider value frequently and adjusts the speed before cloning another tree.
+
+--- task ---
+
+Insert a `repeat until`{:class="block3control"} block with the condition `timer`{:class="block3sensing"} `>`{:class="block3operators"} `6` `-`{:class="block3operators"} `tree management`{:class="block3variables"}. Place it within the `forever`{:class="block3control"} loop.
+
+![image of the Tree sprite](images/tree-sprite.png)
+```blocks3
+when flag clicked
 hide
 forever
 go to x:(pick random (-150) to (200)) y:(pick random (-120) to (120))
 reset timer
-repeat until {{(timer)>((6)-(tree management))}}
-wait (1) seconds
++repeat until {{(timer)>((6)-(tree management))}}
 end
 create clone of [myself v]
 end
@@ -36,159 +95,21 @@ end
 
 --- /task ---
 
-Make sure your counter records how many trees are created while the simulation runs.
-
 --- task ---
 
-Find your `when I start as a clone`{:class="block3control"} script and add a `change mature trees by 1`{:class="block3variables"} block at the end:
+Within the `repeat until`{:class="block3control"} block, add a `wait 1 seconds`{:class="block3control"} block.
 
 ![image of the Tree sprite](images/tree-sprite.png)
-
 ```blocks3
-when I start as a clone
-show
-switch costume to (pick random (1) to (3))
-set size to (0)%
-repeat until {(size)=[20]}
-change size by (1)
-wait (0.1) seconds
+when flag clicked
+hide
+forever
+go to x:(pick random (-150) to (200)) y:(pick random (-120) to (120))
+reset timer
+repeat until {{(timer)>((6)-(tree management))}}
++wait (1) seconds
 end
-+ change (mature trees) by (1)
-```
-
---- /task ---
-
-Now you can count your new trees, however not all those trees will survive. 
-
-<div border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;
-color: #0faeb0>
-The survival rate for new trees is estimated to be 80 percent, which means that 2 trees out of every 10 planted will die of natural causes before they are full grown. 
-</div>
-
-### Human Deforestation
-Mature trees can also be chopped down through human deforestation. To show this, reduce the count of mature trees if a tree has been touched by the **Tree Feller** sprite. 
-
---- task ---
-
-Add a `wait until`{:class="block3control"} block to the end of your code.
-
-![image of the Tree sprite](images/tree-sprite.png)
-```blocks3
-when I start as a clone
-show
-switch costume to (pick random (1) to (3))
-set size to (0)%
-repeat until {(size)=[20]}
-change size by (1)
-wait (0.1) seconds
-end
-change (mature trees) by (1)
-+wait until {<>}
-```
-
---- /task ---
-
---- task ---
-
-Inside the `wait until`{:class="block3control"} block, add a `touching Tree Feller`{:class="block3sensing"} block.
-
-![image of the Tree sprite](images/tree-sprite.png)
-```blocks3
-when I start as a clone
-show
-switch costume to (pick random (1) to (3))
-set size to (0)%
-repeat until {(size)=[20]}
-change size by (1)
-wait (0.1) seconds
-end
-change (mature trees) by (1)
-+wait until {touching [Tree Feller v]?}
-```
-
---- /task ---
-
---- task ---
-
-Add a `change mature trees by 1`{:class="block3variables"} block below the `wait until`{:class="block3control"} block, and change the value to `-1`.
-
-![image of the Tree sprite](images/tree-sprite.png)
-```blocks3
-when I start as a clone
-show
-switch costume to (pick random (1) to (3))
-set size to (0)%
-repeat until {(size)=[20]}
-change size by (1)
-wait (0.1) seconds
-end
-change (mature trees) by (1)
-wait until {touching [Tree Feller v]?}
-+change (mature trees) by (-1)
-```
-
---- /task ---
-
---- task ---
-
-Add a `delete this clone`{:class="block3control"} block below the `change mature trees by 1`{:class="block3variables"} block to remove the tree.
-
-![image of the Tree sprite](images/tree-sprite.png)
-```blocks3
-when I start as a clone
-show
-switch costume to (pick random (1) to (3))
-set size to (0)%
-repeat until {(size)=[20]}
-change size by (1)
-wait (0.1) seconds
-end
-change (mature trees) by (1)
-wait until {touching [Tree Feller v]?}
-change (mature trees) by (-1)
-+delete this clone
-```
-
---- /task ---
-
-### Natural Disaster
-Trees can also die from natural deforestation, whether they are mature or still growing. To show this, reduce your count of trees if a tree has been touched by the **Natural Disaster** sprite.
-
---- task ---
-
-Start a new script with a `when I start as a clone`{:class="block3control"} block.
-
-![image of the Tree sprite](images/tree-sprite.png)
-
-```blocks3
-when I start as a clone
-```
-
---- /task ---
-
---- task ---
-
-Add a `wait until`{:class="block3control"} block to the end of your code. Inside this block, add a `touching Natural Disaster`{:class="block3sensing"} block.
-
-![image of the Tree sprite](images/tree-sprite.png)
-
-```blocks3
-when I start as a clone
-+wait until {touching [Natural Disaster v]?}
-```
-
---- /task ---
-
---- task ---
-
-Add an `if ... then`{:class="block3control"} block below the `wait until`{:class="block3control"} block, with the condition `size`{:class="block3looks"} `=`{:class="block3operators"} `20`.
-
-![image of the Tree sprite](images/tree-sprite.png)
-
-```blocks3
-when I start as a clone
-wait until {touching [Natural Disaster v]?}
-+if {(size) = (20)} then
+create clone of [myself v]
 end
 ```
 
@@ -196,34 +117,9 @@ end
 
 --- task ---
 
-Inside the `if ... then`{:class="block3control"} block, add a `change mature trees by 1`{:class="block3variables"} block, and change the value to `-1`.
+Test your simulation again. The **tree management** slider should control the speed that new trees grow.
 
-![image of the Tree sprite](images/tree-sprite.png)
-
-```blocks3
-when I start as a clone
-wait until {touching [Natural Disaster v]?}
-if {(size) = (20)} then
-+change (mature trees) by (-1)
-end
-```
-
---- /task ---
-
---- task ---
-
-Add a `delete this clone`{:class="block3control"} block below the `if ... then`{:class="block3control"} block to remove the tree.
-
-![image of the Tree sprite](images/tree-sprite.png)
-
-```blocks3
-when I start as a clone
-wait until {touching [Natural Disaster v]?}
-if {(size) = (20)} then
-change (mature trees) by (-1)
-end
-+delete this clone
-```
+![image of a busy forest](images/busy-forest.png)
 
 --- /task ---
 
