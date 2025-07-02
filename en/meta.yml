@@ -20,6 +20,5 @@ steps:
 - title: Human deforestation
 - title: Monitor tree levels
 - title: Natural deforestation
-- title: What can you do now?
   completion:
   - external
