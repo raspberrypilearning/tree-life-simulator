@@ -64,6 +64,7 @@ Mature trees can also be chopped down through human deforestation. To show this,
 Add a `wait until`{:class="block3control"} block to the end of your code.
 
 ![image of the Tree sprite](images/tree-sprite.png)
+
 ```blocks3
 when I start as a clone
 show
@@ -75,7 +76,7 @@ wait (0.1) seconds
 end
 change (mature trees) by (1)
 +wait until {<>}
-
+```
 
 --- /task ---
 
@@ -84,6 +85,7 @@ change (mature trees) by (1)
 Inside the `wait until`{:class="block3control"} block, add a `touching Tree Feller`{:class="block3sensing"} block.
 
 ![image of the Tree sprite](images/tree-sprite.png)
+
 ```blocks3
 when I start as a clone
 show
@@ -95,7 +97,7 @@ wait (0.1) seconds
 end
 change (mature trees) by (1)
 +wait until {touching [Tree Feller v]?}
-
+```
 
 --- /task ---
 
@@ -116,7 +118,7 @@ end
 change (mature trees) by (1)
 wait until {touching [Tree Feller v]?}
 +change (mature trees) by (-1)
-
+```
 
 --- /task ---
 
@@ -138,7 +140,7 @@ change (mature trees) by (1)
 wait until {touching [Tree Feller v]?}
 change (mature trees) by (-1)
 +delete this clone
-
+```
 
 --- /task ---
 
@@ -154,7 +156,7 @@ Start a new script with a `when I start as a clone`{:class="block3control"} bloc
 
 ```blocks3
 when I start as a clone
-
+```
 
 --- /task ---
 
@@ -167,7 +169,7 @@ Add a `wait until`{:class="block3control"} block to the end of your code. Inside
 ```blocks3
 when I start as a clone
 +wait until {touching [Natural Disaster v]?}
-
+```
 
 --- /task ---
 
@@ -182,7 +184,7 @@ when I start as a clone
 wait until {touching [Natural Disaster v]?}
 +if {(size) = (20)} then
 end
-
+```
 
 --- /task ---
 
@@ -198,7 +200,7 @@ wait until {touching [Natural Disaster v]?}
 if {(size) = (20)} then
 +change (mature trees) by (-1)
 end
-
+```
 
 --- /task ---
 
@@ -215,7 +217,7 @@ if {(size) = (20)} then
 change (mature trees) by (-1)
 end
 +delete this clone
-
+```
 
 --- /task ---
 
