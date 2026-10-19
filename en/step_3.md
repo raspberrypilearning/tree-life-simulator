@@ -150,6 +150,7 @@ repeat until {(size)=[20]}
 change size by (1)
 wait (0.1) seconds
 end
+```
 
 --- /task ---
 

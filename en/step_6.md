@@ -173,7 +173,7 @@ Click on the **Tree Feller** sprite and in the `when green flag clicked`{:class=
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 ```blocks3
 when flag clicked
-set [trees felled v] to (0)
+set [trees needed v] to (0)
 +set rotation style [left-right v]
 ```
 
@@ -186,7 +186,7 @@ Add a `go to x:0 y:0`{:class="block3motion"} block and change the values to `-20
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 ```blocks3
 when flag clicked
-set [trees felled v] to (0)
+set [trees needed v] to (0)
 set rotation style [left-right v]
 +go to x: (-200) y: (150)
 ```
@@ -200,7 +200,7 @@ Add a `point in direction 90`{:class="block3motion"} block to make the **Tree Fe
 ![image of the Tree Feller sprite](images/tree-feller-sprite.png)
 ```blocks3
 when flag clicked
-set [trees felled v] to (0)
+set [trees needed v] to (0)
 set rotation style [left-right v]
 go to x: (-200) y: (150)
 +point in direction (90)

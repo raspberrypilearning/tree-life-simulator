@@ -118,7 +118,7 @@ end
 if {{(mature trees)>[0]} and {(mature trees)<[10]}} then
 end
 end
-
+```
 
 --- /task ---
 
@@ -140,7 +140,7 @@ if {{(mature trees)>[0]} and {(mature trees)<[10]}} then
 +say [Global warming is at dangerous levels.] for (2) seconds
 end
 end
-
+```
 
 --- /task ---
 
@@ -166,11 +166,11 @@ end
 if {{(mature trees)>[0]} and {(mature trees)<[10]}} then
 say [Global warming is at dangerous levels.] for (2) seconds
 end
-+ if {{(mature trees)>[50]} and {(mature trees)<[60]}} then
++if {{(mature trees)>[50]} and {(mature trees)<[60]}} then
 say [Animals have many habitats.] for (2) seconds
 end
 end
-
+```
 
 --- /task ---
 
